@@ -1,0 +1,38 @@
+{
+  "Navigation": {
+    "searchPlaceholder": "Search for software, categories, or alternatives...",
+    "marketing": "Marketing",
+    "development": "Development",
+    "freeTools": "Free Tools"
+  },
+  "HomePage": {
+    "title": "Find the Best Software Alternatives",
+    "subtitle": "Discover, compare, and choose the right tools for your workflow.",
+    "popularCategories": "Popular Categories",
+    "featuredSoftware": "Featured Software",
+    "viewAll": "View all"
+  },
+  "SearchPage": {
+    "title": "Search Results",
+    "noResults": "No results found for your query.",
+    "placeholder": "Type to search..."
+  },
+  "NotFound": {
+    "title": "Page Not Found",
+    "description": "The page you are looking for does not exist or has been moved.",
+    "backHome": "Back to Home"
+  },
+  "Error": {
+    "title": "Something went wrong",
+    "description": "An unexpected error occurred. Please try again later.",
+    "retry": "Try again"
+  },
+  "seo": {
+    "title": "SEO Title",
+    "description": "SEO Description"
+  },
+  "software": {
+    "about": "About",
+    "features": "Features"
+  }
+}

@@ -1,0 +1,125 @@
+{
+  "meta": {
+    "siteName": "AppAlter",
+    "tagline": "En iyi yazılım alternatiflerini keşfet",
+    "description": "Her yazılım için en iyi alternatifleri keşfedin. Özellikler, fiyatlandırma ve puanları karşılaştırarak mükemmel aracınızı bulun.",
+    "og": {
+      "type": "website"
+    }
+  },
+  "nav": {
+    "home": "Ana Sayfa",
+    "search": "Arama",
+    "categories": "Kategoriler",
+    "collections": "Koleksiyonlar",
+    "submit": "Yazılım Ekle",
+    "blog": "Blog"
+  },
+  "common": {
+    "loading": "Yükleniyor...",
+    "error": "Bir şeyler ters gitti",
+    "retry": "Tekrar dene",
+    "seeAll": "Tümünü gör",
+    "learnMore": "Daha fazla öğren",
+    "getStarted": "Başla",
+    "freeTrial": "Ücretsiz deneme",
+    "viewAlternatives": "Alternatifleri gör",
+    "compareWith": "Karşılaştır",
+    "visitWebsite": "Web sitesini ziyaret et",
+    "viewPricing": "Fiyatlandırmayı gör",
+    "perMonth": "/ay",
+    "perYear": "/yıl",
+    "free": "Ücretsiz",
+    "startingAt": "Başlangıç fiyatı",
+    "noResults": "Sonuç bulunamadı",
+    "backToHome": "Ana sayfaya dön"
+  },
+  "software": {
+    "alternatives": "Alternatifler",
+    "alternativesTo": "{name} Alternatifleri",
+    "bestAlternativesTo": "{year} İçin En İyi {name} Alternatifleri",
+    "compareTitle": "{name} vs {alternative}",
+    "features": "Özellikler",
+    "pricing": "Fiyatlandırma",
+    "reviews": "Yorumlar",
+    "screenshots": "Ekran Görüntüleri",
+    "faqs": "Sıkça Sorulan Sorular",
+    "pros": "Artılar",
+    "cons": "Eksiler",
+    "platforms": "Platformlar",
+    "useCases": "Kullanım Senaryoları",
+    "integrations": "Entegrasyonlar",
+    "similarApps": "Benzer Uygulamalar",
+    "foundedIn": "{year} yılında kuruldu",
+    "lastUpdated": "Son güncelleme: {date}",
+    "discontinued": "Bu yazılım artık geliştirilmiyor",
+    "verified": "Doğrulanmış",
+    "sponsored": "Sponsorlu",
+    "featured": "Öne Çıkan",
+    "overallRating": "Genel puan",
+    "basedOnReviews": "{count} yoruma dayalı",
+    "writeReview": "Yorum yaz",
+    "migrationDifficulty": {
+      "easy": "Kolay geçiş",
+      "medium": "Orta zorluk",
+      "hard": "Zorlu geçiş",
+      "expert": "Uzman gerektirir"
+    },
+    "pricingModels": {
+      "free": "Ücretsiz",
+      "freemium": "Freemium",
+      "subscription": "Abonelik",
+      "one-time": "Tek Seferlik",
+      "open-source": "Açık Kaynak",
+      "enterprise": "Kurumsal",
+      "usage-based": "Kullanım Bazlı",
+      "paid": "Ücretli",
+      "free-trial": "Ücretsiz Deneme"
+    }
+  },
+  "search": {
+    "placeholder": "Yazılım ara...",
+    "poweredBy": "Yapay Zeka Destekli",
+    "resultsFor": "\"{query}\" için sonuçlar",
+    "filterBy": "Filtrele",
+    "sortBy": "Sırala",
+    "sortOptions": {
+      "relevance": "Alaka düzeyi",
+      "rating": "En yüksek puanlı",
+      "reviews": "En çok yorumlanan",
+      "newest": "En yeni",
+      "alternatives": "En çok alternatifi olan"
+    }
+  },
+  "reviews": {
+    "helpful": "Yararlı",
+    "notHelpful": "Yararlı değil",
+    "reportAbuse": "Şikayet et",
+    "verifiedPurchase": "Doğrulanmış kullanıcı",
+    "ratingLabel": "5 üzerinden {rating}",
+    "noReviews": "Henüz yorum yok. İlk yorumu sen yap!",
+    "submitReview": "Yorum gönder",
+    "yourRating": "Puanın",
+    "reviewTitle": "Yorum başlığı",
+    "reviewBody": "Yorumun",
+    "reviewSubmitted": "Teşekkürler! Yorumunuz onay için gönderildi."
+  },
+  "faq": {
+    "title": "Sıkça Sorulan Sorular",
+    "about": "{name} Hakkında"
+  },
+  "seo": {
+    "alternativesTitle": "{year} İçin En İyi {name} Alternatifleri",
+    "alternativesDescription": "{name} alternatifi mi arıyorsunuz? Fiyatlandırma, özellikler ve puanlarla en iyi {count} {name} alternatifini derledik.",
+    "compareTitle": "{name} vs {alternative}: {year}'da Hangisi Daha İyi?",
+    "compareDescription": "{name} ve {alternative} detaylı karşılaştırması. İhtiyaçlarınıza en uygun aracı bulmak için özellikleri, fiyatları ve yorumları karşılaştırın.",
+    "categoryTitle": "{year}'da En İyi {category} Yazılımları",
+    "categoryDescription": "En iyi {category} araçlarını keşfedin. {count}+ {category} yazılım seçeneği için özellikleri, fiyatları ve kullanıcı yorumlarını karşılaştırın."
+  },
+  "errors": {
+    "notFound": "Sayfa bulunamadı",
+    "notFoundDescription": "Aradığınız yazılım veya sayfa mevcut değil ya da taşınmış olabilir.",
+    "serverError": "Sunucu hatası",
+    "serverErrorDescription": "Beklenmeyen bir hata oluştu. Bildiriminizi aldık ve düzeltme üzerinde çalışıyoruz."
+  }
+}

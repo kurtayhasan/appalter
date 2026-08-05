@@ -1,0 +1,125 @@
+{
+  "meta": {
+    "siteName": "AppAlter",
+    "tagline": "Find the best software alternatives",
+    "description": "Discover the best alternatives to any software. Compare features, pricing, and ratings to find your perfect tool.",
+    "og": {
+      "type": "website"
+    }
+  },
+  "nav": {
+    "home": "Home",
+    "search": "Search",
+    "categories": "Categories",
+    "collections": "Collections",
+    "submit": "Submit Software",
+    "blog": "Blog"
+  },
+  "common": {
+    "loading": "Loading...",
+    "error": "Something went wrong",
+    "retry": "Try again",
+    "seeAll": "See all",
+    "learnMore": "Learn more",
+    "getStarted": "Get started",
+    "freeTrial": "Free trial",
+    "viewAlternatives": "View alternatives",
+    "compareWith": "Compare with",
+    "visitWebsite": "Visit website",
+    "viewPricing": "View pricing",
+    "perMonth": "/month",
+    "perYear": "/year",
+    "free": "Free",
+    "startingAt": "Starting at",
+    "noResults": "No results found",
+    "backToHome": "Back to home"
+  },
+  "software": {
+    "alternatives": "Alternatives",
+    "alternativesTo": "Alternatives to {name}",
+    "bestAlternativesTo": "Best Alternatives to {name} in {year}",
+    "compareTitle": "{name} vs {alternative}",
+    "features": "Features",
+    "pricing": "Pricing",
+    "reviews": "Reviews",
+    "screenshots": "Screenshots",
+    "faqs": "FAQs",
+    "pros": "Pros",
+    "cons": "Cons",
+    "platforms": "Platforms",
+    "useCases": "Use Cases",
+    "integrations": "Integrations",
+    "similarApps": "Similar Apps",
+    "foundedIn": "Founded in {year}",
+    "lastUpdated": "Last updated {date}",
+    "discontinued": "This software has been discontinued",
+    "verified": "Verified",
+    "sponsored": "Sponsored",
+    "featured": "Featured",
+    "overallRating": "Overall rating",
+    "basedOnReviews": "Based on {count} reviews",
+    "writeReview": "Write a review",
+    "migrationDifficulty": {
+      "easy": "Easy migration",
+      "medium": "Moderate migration",
+      "hard": "Challenging migration",
+      "expert": "Expert migration required"
+    },
+    "pricingModels": {
+      "free": "Free",
+      "freemium": "Freemium",
+      "subscription": "Subscription",
+      "one-time": "One-Time",
+      "open-source": "Open Source",
+      "enterprise": "Enterprise",
+      "usage-based": "Usage-Based",
+      "paid": "Paid",
+      "free-trial": "Free Trial"
+    }
+  },
+  "search": {
+    "placeholder": "Search for software...",
+    "poweredBy": "Powered by AI",
+    "resultsFor": "Results for \"{query}\"",
+    "filterBy": "Filter by",
+    "sortBy": "Sort by",
+    "sortOptions": {
+      "relevance": "Relevance",
+      "rating": "Highest rated",
+      "reviews": "Most reviewed",
+      "newest": "Newest first",
+      "alternatives": "Most alternatives"
+    }
+  },
+  "reviews": {
+    "helpful": "Helpful",
+    "notHelpful": "Not helpful",
+    "reportAbuse": "Report",
+    "verifiedPurchase": "Verified user",
+    "ratingLabel": "{rating} out of 5",
+    "noReviews": "No reviews yet. Be the first to review!",
+    "submitReview": "Submit review",
+    "yourRating": "Your rating",
+    "reviewTitle": "Review title",
+    "reviewBody": "Your review",
+    "reviewSubmitted": "Thank you! Your review has been submitted for approval."
+  },
+  "faq": {
+    "title": "Frequently Asked Questions",
+    "about": "About {name}"
+  },
+  "seo": {
+    "alternativesTitle": "Best {name} Alternatives in {year}",
+    "alternativesDescription": "Looking for alternatives to {name}? We've compiled the {count} best {name} alternatives with pricing, features, and ratings to help you choose.",
+    "compareTitle": "{name} vs {alternative}: Which is Better in {year}?",
+    "compareDescription": "Detailed comparison of {name} vs {alternative}. Compare features, pricing, integrations, and user reviews to find the best tool for your needs.",
+    "categoryTitle": "Best {category} Software in {year}",
+    "categoryDescription": "Discover the top {category} tools. Compare features, pricing, and user reviews for {count}+ {category} software options."
+  },
+  "errors": {
+    "notFound": "Page not found",
+    "notFoundDescription": "The software or page you are looking for does not exist or may have been moved.",
+    "serverError": "Server error",
+    "serverErrorDescription": "An unexpected error occurred. We have been notified and are working on a fix."
+  }
+}

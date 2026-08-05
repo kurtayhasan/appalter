@@ -1,0 +1,38 @@
+{
+  "Navigation": {
+    "searchPlaceholder": "Yazılım, kategori veya alternatif arayın...",
+    "marketing": "Pazarlama",
+    "development": "Geliştirme",
+    "freeTools": "Ücretsiz Araçlar"
+  },
+  "HomePage": {
+    "title": "En İyi Yazılım Alternatiflerini Bulun",
+    "subtitle": "İş akışınız için doğru araçları keşfedin, karşılaştırın ve seçin.",
+    "popularCategories": "Popüler Kategoriler",
+    "featuredSoftware": "Öne Çıkan Yazılımlar",
+    "viewAll": "Tümünü gör"
+  },
+  "SearchPage": {
+    "title": "Arama Sonuçları",
+    "noResults": "Aramanızla eşleşen sonuç bulunamadı.",
+    "placeholder": "Aramak için yazın..."
+  },
+  "NotFound": {
+    "title": "Sayfa Bulunamadı",
+    "description": "Aradığınız sayfa mevcut değil veya taşınmış.",
+    "backHome": "Ana Sayfaya Dön"
+  },
+  "Error": {
+    "title": "Bir şeyler ters gitti",
+    "description": "Beklenmeyen bir hata oluştu. Lütfen daha sonra tekrar deneyin.",
+    "retry": "Tekrar dene"
+  },
+  "seo": {
+    "title": "SEO Title",
+    "description": "SEO Description"
+  },
+  "software": {
+    "about": "About",
+    "features": "Features"
+  }
+}
