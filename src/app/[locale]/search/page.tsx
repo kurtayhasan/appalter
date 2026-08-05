@@ -16,7 +16,7 @@ interface SearchPageProps {
   searchParams: Promise<{ [key: string]: string | string[] | undefined }>;
 }
 
-export const instant = false;
+
 
 export default async function SearchPage(props: SearchPageProps) {
   const { locale } = await props.params;

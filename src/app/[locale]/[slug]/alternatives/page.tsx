@@ -21,7 +21,7 @@ import { getSoftwareBasic } from "@/lib/cache/queries";
 export async function generateStaticParams(): Promise<
   Array<{ locale: string; slug: string }>
 > {
-  if (process.env.NEXT_PUBLIC_SUPABASE_URL?.includes("invalid-domain") || !process.env.NEXT_PUBLIC_SUPABASE_URL) return [{ locale: "en", slug: "demo-slug" }];
+  if (process.env.NEXT_PUBLIC_SUPABASE_URL?.includes("invalid-domain") || !process.env.NEXT_PUBLIC_SUPABASE_URL) return [];
 
   const { createAdminClient } = await import("@/lib/supabase/admin");
   const supabase = createAdminClient();
@@ -33,7 +33,7 @@ export async function generateStaticParams(): Promise<
     .order("alternative_count", { ascending: false })
     .limit(500);
 
-  if (!data || data.length === 0) return [{ locale: "en", slug: "demo-slug" }];
+  if (!data || data.length === 0) return [];
 
   return routing.locales.flatMap((locale) =>
     data.map((row: any) => ({ locale, slug: row.slug }))

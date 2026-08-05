@@ -24,7 +24,7 @@ interface Props {
 export async function generateStaticParams(): Promise<
   Array<{ locale: string; category_slug: string }>
 > {
-  if (process.env.NEXT_PUBLIC_SUPABASE_URL?.includes("invalid-domain") || !process.env.NEXT_PUBLIC_SUPABASE_URL) return [{ locale: "en", category_slug: "demo-category" }];
+  if (process.env.NEXT_PUBLIC_SUPABASE_URL?.includes("invalid-domain") || !process.env.NEXT_PUBLIC_SUPABASE_URL) return [];
   const { createAdminClient } = await import("@/lib/supabase/admin");
   const supabase = createAdminClient();
 
@@ -33,7 +33,7 @@ export async function generateStaticParams(): Promise<
     .select("slug")
     .eq("is_active", true);
 
-  if (!data || data.length === 0) return [{ locale: "en", category_slug: "demo-category" }];
+  if (!data || data.length === 0) return [];
 
   // Limit locales to save build time
   const buildLocales: Locale[] = ["en", "tr"];

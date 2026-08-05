@@ -16,7 +16,7 @@ import { getSoftwareBasic } from "@/lib/cache/queries";
 export async function generateStaticParams(): Promise<
   Array<{ locale: string; slug: string; alternative_slug: string }>
 > {
-  if (process.env.NEXT_PUBLIC_SUPABASE_URL?.includes("invalid-domain") || !process.env.NEXT_PUBLIC_SUPABASE_URL) return [{ locale: "en", slug: "demo-slug", alternative_slug: "demo-alt-slug" }];
+  if (process.env.NEXT_PUBLIC_SUPABASE_URL?.includes("invalid-domain") || !process.env.NEXT_PUBLIC_SUPABASE_URL) return [];
 
   const { createAdminClient } = await import("@/lib/supabase/admin");
   const supabase = createAdminClient();
@@ -35,7 +35,7 @@ export async function generateStaticParams(): Promise<
     .order("similarity_score", { ascending: false })
     .limit(1000);
 
-  if (!data || data.length === 0) return [{ locale: "en", slug: "demo-slug", alternative_slug: "demo-alt-slug" }];
+  if (!data || data.length === 0) return [];
 
   // Type the raw Supabase join result
   type Row = {

@@ -29,7 +29,7 @@ import { getSoftwareBySlugCached } from "@/lib/cache/queries";
 export async function generateStaticParams(): Promise<
   Array<{ locale: string; slug: string }>
 > {
-  if (process.env.NEXT_PUBLIC_SUPABASE_URL?.includes("invalid-domain") || !process.env.NEXT_PUBLIC_SUPABASE_URL) return [{ locale: "en", slug: "demo-slug" }];
+  if (process.env.NEXT_PUBLIC_SUPABASE_URL?.includes("invalid-domain") || !process.env.NEXT_PUBLIC_SUPABASE_URL) return [];
 
   const { createAdminClient } = await import("@/lib/supabase/admin");
   const supabase = createAdminClient();
@@ -41,7 +41,7 @@ export async function generateStaticParams(): Promise<
     .order("view_count", { ascending: false })
     .limit(10000);
 
-  if (!data || data.length === 0) return [{ locale: "en", slug: "demo-slug" }];
+  if (!data || data.length === 0) return [];
 
   // Only pre-render for top 3 locales to control build time
   const buildLocales: Locale[] = ["en", "tr"];
