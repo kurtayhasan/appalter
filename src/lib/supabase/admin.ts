@@ -12,8 +12,8 @@ import type { Database } from "@/types/supabase";
 // Her çağrıda yeni instance oluşturur (singleton gereksiz — sunucu taraflı).
 // ---------------------------------------------------------------------------
 export function createAdminClient() {
-  const supabaseUrl = process.env.NEXT_PUBLIC_SUPABASE_URL;
-  const serviceRoleKey = process.env.SUPABASE_SERVICE_ROLE_KEY;
+  const supabaseUrl = process.env.NEXT_PUBLIC_SUPABASE_URL || "https://invalid-domain.supabase.co";
+  const serviceRoleKey = process.env.SUPABASE_SERVICE_ROLE_KEY || "dummy-key";
 
   if (!supabaseUrl) {
     throw new Error(

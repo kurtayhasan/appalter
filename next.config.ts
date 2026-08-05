@@ -7,7 +7,6 @@ const nextConfig: NextConfig = {
   // ---------------------------------------------------------------------------
   // PPR (cacheComponents) + React 19
   // ---------------------------------------------------------------------------
-  cacheComponents: true,      // Replaces ppr: true in Next 16 canary
   typedRoutes: false,         // Disable typedRoutes because dynamic programmatic SEO routes throw TS errors
   serverExternalPackages: [
     "@supabase/supabase-js",
