@@ -62,7 +62,7 @@ export default async function middleware(request: NextRequest) {
   // ── 3. Inject CSP nonce (production only) ─────────────────────────────────
   // Edge Runtime has globalThis.crypto available (Web Crypto API)
   if (process.env.NODE_ENV === "production") {
-    const nonce = Buffer.from(globalThis.crypto.randomUUID()).toString("base64");
+    const nonce = btoa(globalThis.crypto.randomUUID());
 
     // Build a tight CSP with the nonce
     const cspHeader = [
