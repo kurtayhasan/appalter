@@ -1,4 +1,4 @@
-import { type Locale, routing } from "@/i18n/routing";
+import { type Locale, routing } from "./src/i18n/routing";
 import createMiddleware from "next-intl/middleware";
 import { type NextRequest, NextResponse } from "next/server";
 
