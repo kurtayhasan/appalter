@@ -26,7 +26,8 @@ export default async function HomePage({
       <main className="home-page">
         {/* Hero Section */}
         <section className="home-hero">
-          <div className="container">
+          <div className="bg-grid-pattern"></div>
+          <div className="container" style={{ position: 'relative', zIndex: 1 }}>
             <h1 className="home-title">{t("title")}</h1>
             <p className="home-subtitle">{t("subtitle")}</p>
             

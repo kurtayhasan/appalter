@@ -7,6 +7,7 @@ import { getTranslations, setRequestLocale } from "next-intl/server";
 import { getCategoryCached, getCategorySoftwaresCached } from "@/lib/cache/queries";
 import { SoftwareCard } from "@/components/software/SoftwareCard";
 import { BreadcrumbJsonLd } from "@/components/seo/BreadcrumbJsonLd";
+import Link from "next/link";
 
 
 type SortOption = "relevance" | "rating" | "reviews" | "newest" | undefined;
@@ -109,7 +110,8 @@ export default async function CategoryPage({ params, searchParams }: Props) {
       <main className="category-page">
         {/* Static shell */}
         <section className="home-hero" style={{ padding: "4rem 0 2rem" }}>
-          <div className="container">
+          <div className="bg-grid-pattern"></div>
+          <div className="container" style={{ position: 'relative', zIndex: 1 }}>
             <h1 className="home-title" style={{ fontSize: "3rem", marginBottom: "1rem" }}>
               {category.name} Software
             </h1>
@@ -160,8 +162,14 @@ async function CategorySoftwareList({
 
   if (!softwares.length) {
     return (
-      <div className="empty-state" style={{ padding: "4rem", textAlign: "center", background: "var(--bg-card)", borderRadius: "var(--radius-lg)" }}>
-        <p style={{ fontSize: "1.25rem", color: "var(--text-secondary)" }}>No software found in this category matching your filters.</p>
+      <div className="empty-state">
+        <svg className="empty-state-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5">
+          <path strokeLinecap="round" strokeLinejoin="round" d="M21 21l-5.197-5.197m0 0A7.5 7.5 0 105.196 5.196a7.5 7.5 0 0010.607 10.607z" />
+        </svg>
+        <p>No tools available yet. We're currently reviewing software for this category.</p>
+        <Link href={`/${locale}/search`} className="btn btn-secondary btn-sm" style={{ marginTop: '0.5rem' }}>
+          Explore all software
+        </Link>
       </div>
     );
   }
