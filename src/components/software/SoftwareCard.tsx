@@ -47,13 +47,22 @@ export function SoftwareCard({
     return (
       <article className="software-card software-card--compact">
         <Link href={href} className="card-link" tabIndex={-1} aria-hidden="true">
-          {logo_url && (
+          {logo_url ? (
             <Image
               src={logo_url}
               alt={`${name} logo`}
               width={40}
               height={40}
               className="card-logo-sm"
+            />
+          ) : (
+            <img
+              src={`https://ui-avatars.com/api/?name=${encodeURIComponent(name)}&background=random&color=fff&size=80&rounded=true&bold=true&font-size=0.5`}
+              alt={`${name} logo fallback`}
+              width={40}
+              height={40}
+              className="card-logo-sm"
+              loading="lazy"
             />
           )}
         </Link>
@@ -108,9 +117,14 @@ export function SoftwareCard({
               className="card-logo"
             />
           ) : (
-            <div className="card-logo-placeholder" aria-hidden="true">
-              {name.charAt(0)}
-            </div>
+            <img
+              src={`https://ui-avatars.com/api/?name=${encodeURIComponent(name)}&background=random&color=fff&size=128&rounded=true&bold=true&font-size=0.5`}
+              alt={`${name} logo fallback`}
+              width={64}
+              height={64}
+              className="card-logo"
+              loading="lazy"
+            />
           )}
         </Link>
 

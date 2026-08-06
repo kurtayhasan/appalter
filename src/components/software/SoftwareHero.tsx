@@ -100,9 +100,13 @@ export function SoftwareHero({ software, locale }: SoftwareHeroProps) {
                 priority
               />
             ) : (
-              <div className="hero-logo-placeholder" aria-hidden="true">
-                {name.charAt(0)}
-              </div>
+              <img
+                src={`https://ui-avatars.com/api/?name=${encodeURIComponent(name)}&background=random&color=fff&size=192&rounded=true&bold=true&font-size=0.5`}
+                alt={`${name} logo fallback`}
+                width={96}
+                height={96}
+                className="hero-logo"
+              />
             )}
           </div>
 
