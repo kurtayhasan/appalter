@@ -41,6 +41,7 @@ export async function POST(request: NextRequest) {
         price_currency: item.price_currency || "USD",
         is_featured: item.is_featured || false,
         is_sponsored: item.is_sponsored || false,
+        status: "published",
         category_id
       };
     });
