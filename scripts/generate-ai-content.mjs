@@ -29,8 +29,8 @@ async function generateSoftwareContent(softwareName, categorySlug, apiKey) {
   const prompt = `Generate the JSON data for the software product: "${softwareName}". Category: "${categorySlug}".`;
 
   try {
-    // Using gemini-1.5-flash which is extremely fast and has a great free tier
-    const url = `https://generativelanguage.googleapis.com/v1beta/models/gemini-1.5-flash:generateContent?key=${apiKey}`;
+    // Using gemini-3.5-flash-lite which is extremely fast and cost-effective
+    const url = `https://generativelanguage.googleapis.com/v1beta/models/gemini-3.5-flash-lite:generateContent?key=${apiKey}`;
     
     const response = await fetch(url, {
       method: 'POST',
@@ -80,8 +80,8 @@ async function run() {
   
   // To avoid hitting rate limits, process in small batches or sequentially.
   // For demonstration, we'll process the first 5. (Change to seedData.length for all)
-  const LIMIT = 5; 
-  console.log(`Found ${seedData.length} items. Processing first ${LIMIT} for testing...`);
+  const LIMIT = seedData.length; 
+  console.log(`Found ${seedData.length} items. Processing all ${LIMIT} items...`);
 
   for (let i = 0; i < LIMIT; i++) {
     const item = seedData[i];
