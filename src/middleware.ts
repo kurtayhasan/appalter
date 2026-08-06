@@ -60,32 +60,7 @@ export default async function middleware(request: NextRequest) {
     // ── 2. Run next-intl locale middleware ─────────────────────────────────────
     const response = intlMiddleware(request);
 
-    // ── 3. Inject CSP nonce (production only) ─────────────────────────────────
-    if (process.env.NODE_ENV === "production") {
-      // Use simple unguessable string to avoid Edge crypto compatibility issues
-      const nonce = btoa(Math.random().toString(36).substring(2, 15) + Math.random().toString(36).substring(2, 15));
-
-    // Build a tight CSP with the nonce
-    const cspHeader = [
-      "default-src 'self'",
-      `script-src 'self' 'nonce-${nonce}' https://app.posthog.com https://vercel.live`,
-      "style-src 'self' 'unsafe-inline' https://fonts.googleapis.com",
-      "font-src 'self' https://fonts.gstatic.com",
-      "img-src 'self' data: blob: https:",
-      "connect-src 'self' https://*.supabase.co https://app.posthog.com https://o*.ingest.sentry.io wss://*.supabase.co",
-      "media-src 'self'",
-      "frame-src 'none'",
-      "frame-ancestors 'none'",
-      "base-uri 'self'",
-      "form-action 'self'",
-      "object-src 'none'",
-      "upgrade-insecure-requests",
-    ].join("; ");
-
-    response.headers.set("Content-Security-Policy", cspHeader);
-    // Surface nonce to Server Components via custom request header
-    response.headers.set("x-nonce", nonce);
-  }
+    // Removed CSP header injection to prevent Edge runtime crashes.
 
   // ── 4. Slug-level 301 redirect resolution (slug_history table) ───────────
   const localePattern = new RegExp(
@@ -137,6 +112,12 @@ export default async function middleware(request: NextRequest) {
     return response;
   } catch (error) {
     console.error("Middleware critical crash caught:", error);
+    
+    // If it crashed on the root path, redirect to default locale instead of 404ing
+    if (request.nextUrl.pathname === "/") {
+      return NextResponse.redirect(new URL("/en", request.url));
+    }
+    
     // As a last resort, never break the page, just pass the request through
     return NextResponse.next();
   }
