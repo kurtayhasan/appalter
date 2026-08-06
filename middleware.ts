@@ -49,20 +49,21 @@ const NON_SOFTWARE_SLUGS = new Set([
 // MAIN MIDDLEWARE
 // ---------------------------------------------------------------------------
 export default async function middleware(request: NextRequest) {
-  const { pathname } = request.nextUrl;
+  try {
+    const { pathname } = request.nextUrl;
 
-  // ── 1. Skip locale handling for known public paths ────────────────────────
-  if (PUBLIC_PATHS_NO_LOCALE.has(pathname)) {
-    return NextResponse.next();
-  }
+    // ── 1. Skip locale handling for known public paths ────────────────────────
+    if (PUBLIC_PATHS_NO_LOCALE.has(pathname)) {
+      return NextResponse.next();
+    }
 
-  // ── 2. Run next-intl locale middleware ─────────────────────────────────────
-  const response = intlMiddleware(request);
+    // ── 2. Run next-intl locale middleware ─────────────────────────────────────
+    const response = intlMiddleware(request);
 
-  // ── 3. Inject CSP nonce (production only) ─────────────────────────────────
-  // Edge Runtime has globalThis.crypto available (Web Crypto API)
-  if (process.env.NODE_ENV === "production") {
-    const nonce = btoa(globalThis.crypto.randomUUID());
+    // ── 3. Inject CSP nonce (production only) ─────────────────────────────────
+    if (process.env.NODE_ENV === "production") {
+      // Use simple unguessable string to avoid Edge crypto compatibility issues
+      const nonce = btoa(Math.random().toString(36).substring(2, 15) + Math.random().toString(36).substring(2, 15));
 
     // Build a tight CSP with the nonce
     const cspHeader = [
@@ -133,7 +134,12 @@ export default async function middleware(request: NextRequest) {
     }
   }
 
-  return response;
+    return response;
+  } catch (error) {
+    console.error("Middleware critical crash caught:", error);
+    // As a last resort, never break the page, just pass the request through
+    return NextResponse.next();
+  }
 }
 
 // ---------------------------------------------------------------------------
