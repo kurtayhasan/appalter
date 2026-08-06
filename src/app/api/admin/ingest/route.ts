@@ -27,8 +27,9 @@ export async function POST(request: NextRequest) {
     // Clean payload and map category_id
     const cleanedPayload = payload.map((item: any) => {
       let category_id = null;
-      if (item.category_slug && categoryMap.has(item.category_slug)) {
-        category_id = categoryMap.get(item.category_slug);
+      const slugToCheck = item.category_slug?.toLowerCase();
+      if (slugToCheck && categoryMap.has(slugToCheck)) {
+        category_id = categoryMap.get(slugToCheck);
       }
       
       return {
