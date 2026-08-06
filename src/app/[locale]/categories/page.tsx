@@ -76,15 +76,12 @@ export default async function CategoriesPage({
                       style={{ width: "24px", height: "24px", objectFit: "contain" }}
                     />
                   ) : (
-                    <span
-                      style={{
-                        fontSize: "1.25rem",
-                        fontWeight: "bold",
-                        color: "var(--text-primary)",
-                      }}
-                    >
-                      {cat.name.charAt(0)}
-                    </span>
+                    // eslint-disable-next-line @next/next/no-img-element
+                    <img
+                      src={`https://ui-avatars.com/api/?name=${encodeURIComponent(cat.name)}&background=random&color=fff&size=96&rounded=true&bold=true&font-size=0.4`}
+                      alt={cat.name}
+                      style={{ width: "48px", height: "48px", objectFit: "contain" }}
+                    />
                   )}
                 </div>
                 <div>

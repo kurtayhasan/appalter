@@ -126,12 +126,17 @@ async function CategoriesIsland({ locale }: { locale: Locale }) {
           href={`/${locale}/category/${cat.slug}`}
           className="category-card"
         >
-          <div className="category-icon" aria-hidden="true" style={{ display: 'flex', alignItems: 'center', justifyContent: 'center', width: '40px', height: '40px', borderRadius: '8px', backgroundColor: '#f3f4f6', overflow: 'hidden' }}>
+          <div className="category-icon" aria-hidden="true" style={{ display: 'flex', alignItems: 'center', justifyContent: 'center', width: '40px', height: '40px', borderRadius: '8px', backgroundColor: 'transparent', overflow: 'hidden' }}>
             {cat.icon_url ? (
               // eslint-disable-next-line @next/next/no-img-element
               <img src={cat.icon_url} alt={cat.name} style={{ width: '24px', height: '24px', objectFit: 'contain' }} />
             ) : (
-              <span style={{ fontSize: '1.25rem', fontWeight: 'bold', color: '#6b7280' }}>{cat.name.charAt(0)}</span>
+              // eslint-disable-next-line @next/next/no-img-element
+              <img
+                src={`https://ui-avatars.com/api/?name=${encodeURIComponent(cat.name)}&background=random&color=fff&size=80&rounded=true&bold=true&font-size=0.4`}
+                alt={cat.name}
+                style={{ width: '40px', height: '40px', objectFit: 'contain' }}
+              />
             )}
           </div>
           <div>
