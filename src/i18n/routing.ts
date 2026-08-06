@@ -15,7 +15,7 @@ export const routing = defineRouting({
   //   URL: /project-management  (en, prefix yok)
   //        /tr/proje-yonetimi   (tr)
   //        /de/projektmanagement (de)
-  localePrefix: "always",
+  localePrefix: "as-needed",
 
   // Locale algılama sırası: URL → Accept-Language header → varsayılan
   localeDetection: true,

@@ -29,7 +29,9 @@
   },
   "seo": {
     "title": "SEO Title",
-    "description": "SEO Description"
+    "description": "SEO Description",
+    "categoryTitle": "{category} Alternatifleri ve Rakipleri",
+    "categoryDescription": "{category} için en iyi alternatifleri ve rakipleri bulun."
   },
   "software": {
     "about": "About",

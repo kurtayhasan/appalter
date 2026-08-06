@@ -29,7 +29,9 @@
   },
   "seo": {
     "title": "SEO Title",
-    "description": "SEO Description"
+    "description": "SEO Description",
+    "categoryTitle": "{category} Alternatives & Competitors",
+    "categoryDescription": "Find the best alternatives and competitors to {category}."
   },
   "software": {
     "about": "About",
