@@ -19,11 +19,36 @@ export async function POST(request: NextRequest) {
 
     const supabase = createAdminClient();
 
+    // Fetch categories to map slug -> id
+    const { data: categories } = await supabase.from('categories').select('id, slug');
+    const categoryMap = new Map();
+    categories?.forEach((c: any) => categoryMap.set(c.slug, c.id));
+
+    // Clean payload and map category_id
+    const cleanedPayload = payload.map((item: any) => {
+      let category_id = null;
+      if (item.category_slug && categoryMap.has(item.category_slug)) {
+        category_id = categoryMap.get(item.category_slug);
+      }
+      
+      return {
+        slug: item.slug,
+        name: item.name,
+        tagline: item.tagline || null,
+        description: item.description || null,
+        short_description: item.short_description || null,
+        starting_price: item.starting_price || null,
+        price_currency: item.price_currency || "USD",
+        is_featured: item.is_featured || false,
+        is_sponsored: item.is_sponsored || false,
+        category_id
+      };
+    });
+
     // Ingest payload into softwares table
-    // Assuming payload matches the 'softwares' table structure
     const { data, error } = await supabase
       .from("softwares")
-      .upsert(payload, { onConflict: "slug" })
+      .upsert(cleanedPayload, { onConflict: "slug" })
       .select("id, slug");
 
     if (error) {
