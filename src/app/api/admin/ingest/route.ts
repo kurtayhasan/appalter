@@ -48,7 +48,7 @@ export async function POST(request: NextRequest) {
     // Ingest payload into softwares table
     const { data, error } = await supabase
       .from("softwares")
-      .upsert(cleanedPayload, { onConflict: "slug" })
+      .upsert(cleanedPayload as any, { onConflict: "slug" })
       .select("id, slug");
 
     if (error) {
