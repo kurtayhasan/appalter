@@ -12,14 +12,7 @@ const intlMiddleware = createMiddleware(routing);
 // ---------------------------------------------------------------------------
 export const config = {
   matcher: [
-    /*
-     * Match all request paths EXCEPT:
-     *  - _next/static / _next/image (build assets)
-     *  - favicon.ico
-     *  - Static file extensions
-     *  - API routes (/api/*)
-     */
-    "/((?!_next/static|_next/image|favicon\\.ico|.*\\.(?:svg|png|jpg|jpeg|gif|webp|ico|css|js|map|woff2?|ttf|eot|otf)|api/).*)",
+    "/((?!api|_next|_vercel|favicon\\.ico|.*\\.(?:svg|png|jpg|jpeg|gif|webp|ico|css|js|map|woff2?|ttf|eot|otf)).*)",
   ],
 };
 
