@@ -1,8 +1,8 @@
 import { redirect } from "next/navigation";
 import { routing } from "@/i18n/routing";
 
-// Root page component to register the '/' route in Next.js build output
-// and prevent Vercel native 404: NOT_FOUND errors.
 export default function RootPage() {
+  // Middleware should normally intercept this, but this provides a fallback
+  // for Next.js build requirement and statically handles '/' routes.
   redirect(`/${routing.defaultLocale}`);
 }

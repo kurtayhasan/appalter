@@ -120,29 +120,10 @@ export default async function RootLayout({ children, params }: Props) {
   const messages = await getMessages();
 
   return (
-    <html lang={locale} className={inter.variable} suppressHydrationWarning>
-      <head>
-        {/* Preconnect to critical third-party origins */}
-        <link rel="preconnect" href="https://fonts.googleapis.com" />
-        <link
-          rel="preconnect"
-          href="https://fonts.gstatic.com"
-          crossOrigin="anonymous"
-        />
-        {process.env.NEXT_PUBLIC_SUPABASE_URL && (
-          <link
-            rel="preconnect"
-            href={process.env.NEXT_PUBLIC_SUPABASE_URL}
-          />
-        )}
-      </head>
-      <body>
-        <NextIntlClientProvider locale={locale} messages={messages}>
-          <Header locale={locale as Locale} />
-          <main className="site-main">{children}</main>
-          <Footer locale={locale as Locale} />
-        </NextIntlClientProvider>
-      </body>
-    </html>
+    <NextIntlClientProvider locale={locale} messages={messages}>
+      <Header locale={locale as Locale} />
+      <main className="site-main">{children}</main>
+      <Footer locale={locale as Locale} />
+    </NextIntlClientProvider>
   );
 }
