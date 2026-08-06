@@ -155,25 +155,8 @@ const nextConfig: NextConfig = {
 
   // ---------------------------------------------------------------------------
   // Redirects — handled dynamically via Supabase `redirects` table in
-  // middleware.ts, but static redirects can be added here.
+  // middleware.ts, static redirects handled by next-intl (as-needed prefix)
   // ---------------------------------------------------------------------------
-  async redirects() {
-    return [
-      // Redirect bare /en root to /  (canonical default locale)
-      {
-        source: "/en",
-        destination: "/",
-        permanent: true,
-        locale: false,
-      },
-      {
-        source: "/en/:path*",
-        destination: "/:path*",
-        permanent: true,
-        locale: false,
-      },
-    ];
-  },
 
   // ---------------------------------------------------------------------------
   // Webpack — suppress Supabase realtime ws warning in SSR

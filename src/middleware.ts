@@ -113,11 +113,6 @@ export default async function middleware(request: NextRequest) {
   } catch (error) {
     console.error("Middleware critical crash caught:", error);
     
-    // If it crashed on the root path, redirect to default locale instead of 404ing
-    if (request.nextUrl.pathname === "/") {
-      return NextResponse.redirect(new URL("/en", request.url));
-    }
-    
     // As a last resort, never break the page, just pass the request through
     return NextResponse.next();
   }
