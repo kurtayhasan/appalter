@@ -29,30 +29,35 @@ async function generateSoftwareContent(softwareName, categorySlug, apiKey) {
   const prompt = `Generate the JSON data for the software product: "${softwareName}". Category: "${categorySlug}".`;
 
   try {
-    const response = await fetch('https://api.openai.com/v1/chat/completions', {
+    // Using gemini-1.5-flash which is extremely fast and has a great free tier
+    const url = `https://generativelanguage.googleapis.com/v1beta/models/gemini-1.5-flash:generateContent?key=${apiKey}`;
+    
+    const response = await fetch(url, {
       method: 'POST',
       headers: {
-        'Content-Type': 'application/json',
-        'Authorization': `Bearer ${apiKey}`
+        'Content-Type': 'application/json'
       },
       body: JSON.stringify({
-        model: 'gpt-4o',
-        response_format: { type: "json_object" },
-        messages: [
-          { role: 'system', content: SYSTEM_PROMPT },
-          { role: 'user', content: prompt }
+        system_instruction: {
+          parts: { text: SYSTEM_PROMPT }
+        },
+        contents: [
+          { parts: [{ text: prompt }] }
         ],
-        temperature: 0.7,
+        generationConfig: {
+          responseMimeType: "application/json",
+          temperature: 0.7,
+        }
       })
     });
 
     if (!response.ok) {
       const errorText = await response.text();
-      throw new Error(`OpenAI API error: ${response.status} - ${errorText}`);
+      throw new Error(`Gemini API error: ${response.status} - ${errorText}`);
     }
 
     const data = await response.json();
-    const content = data.choices[0].message.content;
+    const content = data.candidates[0].content.parts[0].text;
     return JSON.parse(content);
   } catch (err) {
     console.error(`Failed to generate content for ${softwareName}:`, err.message);
@@ -61,10 +66,10 @@ async function generateSoftwareContent(softwareName, categorySlug, apiKey) {
 }
 
 async function run() {
-  const apiKey = process.env.OPENAI_API_KEY;
+  const apiKey = process.env.GEMINI_API_KEY;
   if (!apiKey) {
-    console.error("❌ Error: OPENAI_API_KEY environment variable is not set.");
-    console.log("Please run: set OPENAI_API_KEY=your_key && node scripts/generate-ai-content.mjs");
+    console.error("❌ Error: GEMINI_API_KEY environment variable is not set.");
+    console.log("Please run: set GEMINI_API_KEY=your_key && node scripts/generate-ai-content.mjs");
     process.exit(1);
   }
 
@@ -87,8 +92,8 @@ async function run() {
       console.log(`✅ Success: ${generated.name}`);
     }
     
-    // Slight delay to respect rate limits
-    await new Promise(resolve => setTimeout(resolve, 1000));
+    // Slight delay to respect rate limits (Gemini free tier has 15 RPM)
+    await new Promise(resolve => setTimeout(resolve, 4500));
   }
 
   const outPath = path.resolve(process.cwd(), 'scripts/generated-content.json');
