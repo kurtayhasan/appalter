@@ -65,7 +65,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const software = await getSoftwareBySlugCached(slug);
   if (!software) return {};
 
-  const year = 2025;
+  const year = 2026;
   const siteUrl = process.env.NEXT_PUBLIC_SITE_URL ?? "https://appalter.com";
 
   const hreflangAlternates = Object.fromEntries(

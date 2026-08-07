@@ -61,7 +61,7 @@ export async function GET() {
       "Programmatic SEO platform indexing 1,000,000+ software products with alternatives, comparisons, and AI-readable content.",
     url: baseUrl,
     version: "1.0.0",
-    updated_at: "2025-01-01T00:00:00Z",
+    updated_at: "2026-01-01T00:00:00Z",
     contact: {
       ai_partnerships: "ai@appalter.com",
       data_licensing: "data@appalter.com",

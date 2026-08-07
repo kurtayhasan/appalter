@@ -79,7 +79,7 @@ ${softwareLinks || "- Visit the sitemap for a complete list of software pages."}
 - **Total software**: 1,000,000+
 - **Categories**: 30+
 - **Languages**: English, Turkish, German, French, Spanish, Japanese, Portuguese, Chinese, Arabic, Korean
-- **Updated**: ${"2025-01-01T00:00:00Z".split("T")[0]}
+- **Updated**: ${"2026-01-01T00:00:00Z".split("T")[0]}
 
 ## Data License
 

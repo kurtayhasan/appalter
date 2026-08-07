@@ -56,7 +56,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
     const t = await getTranslations({ locale, namespace: "seo" });
     const category = await getCategoryCached(category_slug);
     if (category) {
-      const year = 2025;
+      const year = 2026;
       title = t("categoryTitle", { category: category.name, year });
       description = t("categoryDescription", {
         category: category.name,
@@ -67,7 +67,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
     // Translation fallback
     const category = await getCategoryCached(category_slug);
     if (category) {
-      title = `Best ${category.name} Software & Tools (${2025})`;
+      title = `Best ${category.name} Software & Tools (${2026})`;
       description = `Compare ${category.software_count} best ${category.name} tools. Find alternatives and read user reviews.`;
     }
   }

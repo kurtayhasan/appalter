@@ -56,7 +56,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
 
   if (!software) return {};
 
-  const year = 2025;
+  const year = 2026;
   const title = t("alternativesTitle", { name: software.name, year });
   const description = t("alternativesDescription", {
     name: software.name,
@@ -103,7 +103,7 @@ export default async function AlternativesPage({ params, searchParams }: Props) 
         <h1>
           {t("bestAlternativesTo", {
             name: software.name,
-            year: 2025,
+            year: 2026,
           })}
         </h1>
         <p className="alternatives-count">

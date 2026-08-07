@@ -5,7 +5,7 @@ import { routing } from "./routing";
 // next-intl server-side request configuration
 // Çağrıldığı yer: next-intl'in internal Next.js plugin'i (App Router)
 // ---------------------------------------------------------------------------
-const STATIC_NOW = new Date("2025-01-01T00:00:00Z");
+const STATIC_NOW = new Date("2026-01-01T00:00:00Z");
 
 export default getRequestConfig(async ({ requestLocale }) => {
   // requestLocale, [locale] segment'inden gelir; doğrula

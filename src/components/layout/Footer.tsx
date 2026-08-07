@@ -5,7 +5,7 @@ import Link from "next/link";
 import type { Locale } from "@/i18n/routing";
 
 export function Footer({ locale }: { locale: Locale }) {
-  const currentYear = 2025;
+  const currentYear = 2026;
 
   return (
     <footer className="site-footer">

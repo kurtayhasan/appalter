@@ -78,7 +78,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
 
   if (!software || !alternative) return {};
 
-  const year = 2025;
+  const year = 2026;
   const title = t("compareTitle", {
     name: software.name,
     alternative: alternative.name,

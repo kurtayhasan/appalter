@@ -62,7 +62,7 @@ export async function GET(
   for (const { slug, updated_at } of slugs) {
     const lastmod = updated_at
       ? new Date(updated_at).toISOString().split("T")[0]
-      : "2025-01-01T00:00:00Z".split("T")[0];
+      : "2026-01-01T00:00:00Z".split("T")[0];
 
     // Default locale URL (prefix yok)
     const canonicalUrl = `${baseUrl}/${slug}`;
