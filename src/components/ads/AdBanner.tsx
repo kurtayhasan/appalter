@@ -18,14 +18,18 @@ export function AdBanner({
   const adRef = useRef<HTMLModElement>(null);
 
   useEffect(() => {
+    let timeoutId: ReturnType<typeof setTimeout>;
     try {
       if (adRef.current && !adRef.current.hasAttribute("data-adsbygoogle-status")) {
-        // @ts-ignore
-        (window.adsbygoogle = window.adsbygoogle || []).push({});
+        timeoutId = setTimeout(() => {
+          // @ts-ignore
+          (window.adsbygoogle = window.adsbygoogle || []).push({});
+        }, 150);
       }
     } catch (e) {
       console.error("AdSense error:", e);
     }
+    return () => clearTimeout(timeoutId);
   }, []);
 
   return (
@@ -34,7 +38,7 @@ export function AdBanner({
       <ins
         ref={adRef}
         className="adsbygoogle"
-        style={{ display: "block" }}
+        style={{ display: "block", minWidth: "250px", width: "100%" }}
         data-ad-client="ca-pub-5280507999154958"
         data-ad-slot={adSlot}
         data-ad-format={adFormat}

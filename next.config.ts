@@ -79,7 +79,7 @@ const nextConfig: NextConfig = {
           "default-src 'self'",
           // Scripts: self + Vercel analytics + PostHog + Google Services
           // NOTE: nonce is injected by middleware.ts via Content-Security-Policy header override
-          "script-src 'self' 'unsafe-inline' 'unsafe-eval' https://app.posthog.com https://vercel.live https://cdn.vercel-insights.com https://pagead2.googlesyndication.com https://www.googletagmanager.com https://www.google-analytics.com",
+          "script-src 'self' 'unsafe-inline' 'unsafe-eval' https://app.posthog.com https://vercel.live https://cdn.vercel-insights.com https://pagead2.googlesyndication.com https://www.googletagmanager.com https://www.google-analytics.com https://ep1.adtrafficquality.google https://ep2.adtrafficquality.google",
           // Styles: self + inline (needed for Tailwind's JIT output)
           "style-src 'self' 'unsafe-inline' https://fonts.googleapis.com",
           // Fonts
