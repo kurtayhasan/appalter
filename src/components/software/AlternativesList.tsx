@@ -10,6 +10,7 @@ import { formatPrice, formatRating, formatCount, difficultyColor } from "@/lib/u
 import { StarRating } from "@/components/ui/StarRating";
 import { PricingBadge } from "@/components/software/PricingBadge";
 import { AlternativesListJsonLd } from "@/components/seo/JsonLd";
+import { AdBanner } from "@/components/ads/AdBanner";
 
 interface AlternativesListProps {
   softwareSlug: string;
@@ -63,6 +64,8 @@ export async function AlternativesList({
           </h2>
           <span className="alternatives-count">Page {page} of {totalPages}</span>
         </div>
+
+        <AdBanner adSlot="alternatives_top" />
 
         {/* Grid */}
         <div className="alternatives-grid" role="list">

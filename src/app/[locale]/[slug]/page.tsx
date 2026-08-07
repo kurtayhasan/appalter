@@ -9,6 +9,7 @@ import { SoftwareHero } from "@/components/software/SoftwareHero";
 import { SoftwareJsonLd } from "@/components/seo/JsonLd";
 import { BreadcrumbJsonLd } from "@/components/seo/BreadcrumbJsonLd";
 import { getSoftwareBySlugCached } from "@/lib/cache/queries";
+import { AdBanner } from "@/components/ads/AdBanner";
 
 // ---------------------------------------------------------------------------
 // Route: /[locale]/[slug]
@@ -176,6 +177,10 @@ export default async function SoftwarePage({ params }: Props) {
             Rendered immediately via PPR, served from CDN edge.
         ────────────────────────────────────────────────────────────── */}
         <SoftwareHero software={software} locale={locale as Locale} />
+
+        <div className="container">
+          <AdBanner adSlot="detail_top" />
+        </div>
 
         {/* ── DYNAMIC ISLAND 1: Alternatives ─────────────────────────── */}
         <section id="alternatives" aria-labelledby="alternatives-heading">

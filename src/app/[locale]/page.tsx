@@ -6,6 +6,7 @@ import type { Locale } from "@/i18n/routing";
 import { getFeaturedSoftwaresCached, getCategoriesCached } from "@/lib/cache/queries";
 import { SoftwareCard } from "@/components/software/SoftwareCard";
 import { WebSiteJsonLd } from "@/components/seo/JsonLd";
+import { AdBanner } from "@/components/ads/AdBanner";
 import Link from "next/link";
 import { Suspense } from "react";
 
@@ -65,6 +66,11 @@ export default async function HomePage({
               <FeaturedIsland locale={locale as Locale} />
             </Suspense>
           </div>
+        </section>
+
+        {/* Homepage Ad Banner */}
+        <section className="container">
+          <AdBanner adSlot="homepage_middle" />
         </section>
 
         {/* Categories */}
