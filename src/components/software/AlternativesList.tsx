@@ -93,9 +93,14 @@ export async function AlternativesList({
                     className="alt-logo"
                   />
                 ) : (
-                  <div className="alt-logo-placeholder">
-                    {alt.alternative_name.charAt(0)}
-                  </div>
+                  <img
+                    src={`https://ui-avatars.com/api/?name=${encodeURIComponent(alt.alternative_name)}&background=random&color=fff&size=112&rounded=true&bold=true&font-size=0.5`}
+                    alt={`${alt.alternative_name} logo fallback`}
+                    width={56}
+                    height={56}
+                    className="alt-logo"
+                    loading="lazy"
+                  />
                 )}
               </Link>
 

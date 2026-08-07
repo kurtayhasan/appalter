@@ -33,6 +33,8 @@ const PUBLIC_PATHS_NO_LOCALE = new Set([
   "/ai.json",
   "/sitemap.xml",
   "/robots.txt",
+  "/favicon.ico",
+  "/icon",
 ]);
 
 // Locale slugs that are NOT software slugs (skip slug-redirect check)
