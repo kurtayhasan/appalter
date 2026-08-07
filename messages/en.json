@@ -32,8 +32,8 @@
     "description": "SEO Description",
     "categoryTitle": "{category} Alternatives & Competitors",
     "categoryDescription": "Find the best alternatives and competitors to {category}.",
-    "compareTitle": "{software1} vs {software2} ({year}) | AppAlter",
-    "compareDescription": "Compare {software1} and {software2} by features, pricing, and user reviews.",
+    "compareTitle": "{name} vs {alternative} ({year}) | AppAlter",
+    "compareDescription": "Compare {name} and {alternative} by features, pricing, and user reviews.",
     "alternativesTitle": "{name} Alternatives & Competitors ({year})",
     "alternativesDescription": "Find the best alternatives to {name}. Compare {count}+ competitors by features, pricing, and user reviews."
   },
