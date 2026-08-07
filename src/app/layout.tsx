@@ -1,6 +1,7 @@
 import React from "react";
 import { getLocale } from "next-intl/server";
 import { Inter } from "next/font/google";
+import Script from "next/script";
 import "@/app/globals.css";
 
 const inter = Inter({
@@ -32,7 +33,27 @@ export default async function GlobalLayout({
           />
         )}
       </head>
-      <body>{children}</body>
+      <body>
+        {children}
+        
+        {/* Google Analytics */}
+        <Script
+          strategy="afterInteractive"
+          src="https://www.googletagmanager.com/gtag/js?id=G-7S5JDVBGYL"
+        />
+        <Script
+          id="google-analytics"
+          strategy="afterInteractive"
+          dangerouslySetInnerHTML={{
+            __html: `
+              window.dataLayer = window.dataLayer || [];
+              function gtag(){dataLayer.push(arguments);}
+              gtag('js', new Date());
+              gtag('config', 'G-7S5JDVBGYL');
+            `,
+          }}
+        />
+      </body>
     </html>
   );
 }
