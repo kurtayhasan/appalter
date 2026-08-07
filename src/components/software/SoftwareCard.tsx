@@ -154,7 +154,7 @@ export function SoftwareCard({
               </span>
             </div>
           ) : (
-            <span className="card-no-rating">No reviews yet</span>
+            <div className="card-no-rating">No reviews yet</div>
           )}
         </div>
 
