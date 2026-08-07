@@ -144,7 +144,27 @@ const nextConfig: NextConfig = {
 
     return [
       {
-        // Apply to all routes
+        // Cache Next.js static assets
+        source: "/_next/static/(.*)",
+        headers: [
+          {
+            key: "Cache-Control",
+            value: "public, max-age=31536000, immutable",
+          },
+        ],
+      },
+      {
+        // Cache public static assets (images, fonts, etc.)
+        source: "/(.*)\\.(png|jpg|jpeg|gif|svg|webp|ico|woff|woff2|ttf|otf)",
+        headers: [
+          {
+            key: "Cache-Control",
+            value: "public, max-age=31536000, immutable",
+          },
+        ],
+      },
+      {
+        // Apply security headers to all routes
         source: "/(.*)",
         headers: securityHeaders,
       },
@@ -180,6 +200,13 @@ const nextConfig: NextConfig = {
       process.env.NODE_ENV === "production"
         ? { exclude: ["error", "warn"] }
         : false,
+  },
+
+  // ---------------------------------------------------------------------------
+  // Experimental
+  // ---------------------------------------------------------------------------
+  experimental: {
+    optimizeCss: true, // Requires 'critters' package, extracts critical CSS and defers the rest
   },
 
   // ---------------------------------------------------------------------------

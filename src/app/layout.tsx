@@ -49,11 +49,12 @@ export default async function GlobalLayout({
         />
 
         {/* Google AdSense */}
-        <script
-          async
+        <Script
+          id="google-adsense"
+          strategy="afterInteractive"
           crossOrigin="anonymous"
           src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5280507999154958"
-        ></script>
+        />
       </body>
     </html>
   );
