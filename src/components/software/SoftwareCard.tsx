@@ -177,7 +177,7 @@ export function SoftwareCard({
 
       {/* Footer */}
       <div className="card-footer">
-        <span className="card-alternatives">
+        <span className={`card-alternatives ${alternative_count >= 8 ? 'text-success' : alternative_count > 0 ? 'text-warning' : 'text-danger'}`}>
           {formatCount(alternative_count)} alternatives
         </span>
 

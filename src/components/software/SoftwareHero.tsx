@@ -171,7 +171,9 @@ export function SoftwareHero({ software, locale }: SoftwareHeroProps) {
 
           {/* Alternatives */}
           <div className="stat-item" role="listitem">
-            <span className="stat-value">{formatCount(alternative_count)}</span>
+            <span className={`stat-value ${alternative_count >= 8 ? 'text-success' : alternative_count > 0 ? 'text-warning' : 'text-danger'}`}>
+              {formatCount(alternative_count)}
+            </span>
             <span className="stat-label">alternatives</span>
           </div>
 

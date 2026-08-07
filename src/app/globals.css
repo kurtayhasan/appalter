@@ -1022,3 +1022,236 @@ img, svg {
   background: var(--text-primary);
 }
 
+/* ==========================================================================
+   ALTERNATIVES LIST (List & Grid Layouts)
+   ========================================================================== */
+.alternatives-list {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  margin-top: 2rem;
+}
+
+.alternatives-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  border-bottom: 1px solid var(--border-subtle);
+  padding-bottom: 1rem;
+}
+
+.section-title {
+  font-size: 1.75rem;
+  font-family: var(--font-display);
+  color: var(--text-primary);
+}
+
+.alternatives-count {
+  color: var(--text-muted);
+  font-size: 0.875rem;
+}
+
+.alternatives-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1.5rem;
+}
+
+.alternative-card {
+  display: flex;
+  flex-direction: column;
+  background: var(--bg-card);
+  border: 1px solid var(--border-subtle);
+  border-radius: var(--radius-lg);
+  padding: 1.5rem;
+  position: relative;
+  transition: all var(--transition-normal);
+  backdrop-filter: blur(12px);
+}
+
+@media (min-width: 768px) {
+  .alternative-card {
+    flex-direction: row;
+    align-items: stretch;
+  }
+}
+
+.alternative-card:hover {
+  background: var(--bg-elevated);
+  border-color: rgba(255, 255, 255, 0.15);
+  transform: translateY(-2px);
+  box-shadow: var(--shadow-md);
+}
+
+.alt-rank {
+  position: absolute;
+  top: -0.75rem;
+  left: -0.75rem;
+  background: var(--text-primary);
+  color: var(--bg-primary);
+  font-weight: 800;
+  width: 2rem;
+  height: 2rem;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 0.875rem;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.5);
+  z-index: 10;
+}
+
+.alt-logo-link {
+  flex-shrink: 0;
+  background: #fff;
+  border-radius: 12px;
+  padding: 0.5rem;
+  margin-bottom: 1rem;
+  align-self: flex-start;
+  border: 1px solid rgba(255,255,255,0.1);
+}
+
+@media (min-width: 768px) {
+  .alt-logo-link {
+    margin-bottom: 0;
+    margin-right: 1.5rem;
+  }
+}
+
+.alt-logo {
+  border-radius: 8px;
+  object-fit: contain;
+}
+
+.alt-content {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  min-width: 0;
+}
+
+.alt-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 0.5rem;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.alt-name {
+  font-size: 1.25rem;
+}
+
+.alt-link {
+  color: var(--text-primary);
+  transition: opacity var(--transition-fast);
+}
+
+.alt-link:hover {
+  opacity: 0.8;
+}
+
+.alt-tagline {
+  color: var(--text-secondary);
+  font-size: 0.9375rem;
+  margin-bottom: 1rem;
+  line-height: 1.5;
+}
+
+.alt-meta {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 1.25rem;
+  margin-bottom: 1rem;
+}
+
+.alt-rating {
+  display: flex;
+  align-items: center;
+  gap: 0.375rem;
+  font-size: 0.875rem;
+}
+
+.alt-rating-value {
+  color: var(--text-primary);
+  font-weight: 700;
+}
+
+.alt-review-count {
+  color: var(--text-muted);
+}
+
+.alt-difficulty {
+  font-size: 0.75rem;
+  font-weight: 600;
+  padding: 0.125rem 0.5rem;
+  border-radius: var(--radius-full);
+}
+
+.alt-similarity {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 0.25rem;
+  min-width: 100px;
+}
+
+.similarity-bar {
+  height: 4px;
+  background: var(--success);
+  border-radius: 2px;
+}
+
+.similarity-label {
+  font-size: 0.75rem;
+  color: var(--success);
+  font-weight: 600;
+}
+
+.alt-pros {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  margin-top: auto;
+  border-top: 1px solid rgba(255,255,255,0.05);
+  padding-top: 1rem;
+}
+
+.alt-pro {
+  display: flex;
+  align-items: flex-start;
+  gap: 0.5rem;
+  font-size: 0.875rem;
+  color: var(--text-secondary);
+}
+
+.alt-pro-icon {
+  color: var(--success);
+  font-weight: 700;
+}
+
+.alt-actions {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 0.75rem;
+  margin-top: 1.5rem;
+}
+
+@media (min-width: 768px) {
+  .alt-actions {
+    flex-direction: column;
+    justify-content: center;
+    margin-top: 0;
+    margin-left: 1.5rem;
+    padding-left: 1.5rem;
+    border-left: 1px solid var(--border-subtle);
+  }
+}
+
+.text-success { color: var(--success); }
+.text-warning { color: var(--warning); }
+.text-danger { color: var(--danger); }
+
