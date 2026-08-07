@@ -1,4 +1,5 @@
 import { MetadataRoute } from "next";
+import { routing } from "@/i18n/routing";
 
 export const revalidate = 86400; // Cache for 24 hours
 
@@ -7,46 +8,97 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
   const supabaseUrl = process.env.NEXT_PUBLIC_SUPABASE_URL;
   const anonKey = process.env.NEXT_PUBLIC_SUPABASE_ANON_KEY;
 
-  const routes: MetadataRoute.Sitemap = [
-    {
-      url: `${baseUrl}/en`,
+  const routes: MetadataRoute.Sitemap = [];
+
+  // 1. Static Routes (Home & Categories Index)
+  for (const locale of routing.locales) {
+    routes.push({
+      url: `${baseUrl}/${locale}`,
       lastModified: new Date(),
       changeFrequency: "daily",
       priority: 1,
-    },
-    {
-      url: `${baseUrl}/en/categories`,
+    });
+    routes.push({
+      url: `${baseUrl}/${locale}/categories`,
       lastModified: new Date(),
       changeFrequency: "weekly",
       priority: 0.8,
-    },
-  ];
+    });
+  }
 
-  if (supabaseUrl && anonKey) {
-    try {
-      const headers = {
-        apikey: anonKey,
-        Authorization: `Bearer ${anonKey}`,
-      };
+  if (!supabaseUrl || !anonKey) return routes;
 
-      const res = await fetch(`${supabaseUrl}/rest/v1/softwares?status=eq.published&select=slug,updated_at&limit=50000`, {
-        headers,
-      });
+  try {
+    const headers = { apikey: anonKey, Authorization: `Bearer ${anonKey}` };
 
-      if (res.ok) {
-        const softwares = await res.json();
-        for (const sw of softwares) {
+    // 2. Fetch Categories
+    const catRes = await fetch(`${supabaseUrl}/rest/v1/categories?select=slug`, { headers });
+    if (catRes.ok) {
+      const categories = await catRes.json();
+      for (const cat of categories) {
+        for (const locale of routing.locales) {
           routes.push({
-            url: `${baseUrl}/en/${sw.slug}`,
-            lastModified: sw.updated_at ? new Date(sw.updated_at) : new Date(),
+            url: `${baseUrl}/${locale}/category/${cat.slug}`,
+            lastModified: new Date(),
+            changeFrequency: "weekly",
+            priority: 0.8,
+          });
+        }
+      }
+    }
+
+    // 3. Fetch Softwares
+    const swRes = await fetch(`${supabaseUrl}/rest/v1/softwares?status=eq.published&select=slug,updated_at&limit=1000`, { headers });
+    let softwares = [];
+    if (swRes.ok) {
+      softwares = await swRes.json();
+      for (const sw of softwares) {
+        const lastMod = sw.updated_at ? new Date(sw.updated_at) : new Date();
+        for (const locale of routing.locales) {
+          // Software Detail Page
+          routes.push({
+            url: `${baseUrl}/${locale}/${sw.slug}`,
+            lastModified: lastMod,
+            changeFrequency: "weekly",
+            priority: 0.9,
+          });
+          // Alternatives List Page
+          routes.push({
+            url: `${baseUrl}/${locale}/${sw.slug}/alternatives`,
+            lastModified: lastMod,
             changeFrequency: "weekly",
             priority: 0.7,
           });
         }
       }
-    } catch (e) {
-      console.error("Failed to fetch software for sitemap", e);
     }
+
+    // 4. Fetch Top VS Pairs (Alternatives)
+    // We only fetch a subset to avoid hitting the 50,000 URL limit in a single file
+    // Ideally we'd use sitemap index for scale, but this works for 100 softwares.
+    const altRes = await fetch(
+      `${supabaseUrl}/rest/v1/alternatives?select=software_id,alternative_id,software:softwares!alternatives_software_id_fkey(slug),alternative:softwares!alternatives_alternative_id_fkey(slug)&is_approved=eq.true&limit=1000`,
+      { headers }
+    );
+    if (altRes.ok) {
+      const alternatives = await altRes.json();
+      for (const alt of alternatives) {
+        const swSlug = alt.software?.slug;
+        const altSlug = alt.alternative?.slug;
+        if (swSlug && altSlug) {
+          for (const locale of routing.locales) {
+            routes.push({
+              url: `${baseUrl}/${locale}/${swSlug}/vs/${altSlug}`,
+              lastModified: new Date(),
+              changeFrequency: "monthly",
+              priority: 0.6,
+            });
+          }
+        }
+      }
+    }
+  } catch (e) {
+    console.error("Failed to fetch data for sitemap", e);
   }
 
   return routes;
