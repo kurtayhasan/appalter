@@ -86,10 +86,10 @@ const nextConfig: NextConfig = {
           "font-src 'self' https://fonts.gstatic.com",
           // Images: self + data URIs + Supabase + known CDNs
           "img-src 'self' data: blob: https: *.supabase.co logo.clearbit.com",
-          "connect-src 'self' https://*.supabase.co https://app.posthog.com https://*.sentry.io wss://*.supabase.co",
+          "connect-src 'self' https://*.supabase.co https://app.posthog.com https://*.sentry.io wss://*.supabase.co https://www.google-analytics.com https://www.google.com https://ep1.adtrafficquality.google https://pagead2.googlesyndication.com",
           "media-src 'self'",
           // Frames
-          "frame-src 'none'",
+          "frame-src 'self' https://googleads.g.doubleclick.net https://www.google.com",
           // Frame ancestors
           "frame-ancestors 'none'",
           // Base URI
