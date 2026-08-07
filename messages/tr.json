@@ -31,10 +31,16 @@
     "title": "SEO Title",
     "description": "SEO Description",
     "categoryTitle": "{category} Alternatifleri ve Rakipleri",
-    "categoryDescription": "{category} için en iyi alternatifleri ve rakipleri bulun."
+    "categoryDescription": "{category} için en iyi alternatifleri ve rakipleri bulun.",
+    "compareTitle": "{software1} vs {software2} ({year}) | AppAlter",
+    "compareDescription": "{software1} ve {software2} özelliklerini, fiyatlandırmalarını ve kullanıcı yorumlarını karşılaştırın.",
+    "alternativesTitle": "{name} Alternatifleri ve Rakipleri ({year})",
+    "alternativesDescription": "{name} için en iyi alternatifleri bulun. {count}+ rakibi özelliklerine ve fiyatlarına göre karşılaştırın."
   },
   "software": {
-    "about": "About",
-    "features": "Features"
+    "about": "Hakkında",
+    "features": "Özellikler",
+    "bestAlternativesTo": "{name} için en iyi alternatifler ({year})",
+    "basedOnReviews": "{count} değerlendirme ve yoruma göre"
   }
 }
