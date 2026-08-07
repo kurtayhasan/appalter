@@ -26,12 +26,6 @@ export default async function GlobalLayout({
   return (
     <html lang={locale} className={`${inter.variable} ${outfit.variable}`} suppressHydrationWarning>
       <head>
-        {process.env.NEXT_PUBLIC_SUPABASE_URL && (
-          <link
-            rel="preconnect"
-            href={process.env.NEXT_PUBLIC_SUPABASE_URL}
-          />
-        )}
       </head>
       <body>
         {children}
