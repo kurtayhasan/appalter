@@ -11,6 +11,7 @@ import { StarRating } from "@/components/ui/StarRating";
 import { PricingBadge } from "@/components/software/PricingBadge";
 import { AlternativesListJsonLd } from "@/components/seo/JsonLd";
 import { AdBanner } from "@/components/ads/AdBanner";
+import { UpvoteButton } from "@/components/ui/UpvoteButton";
 
 interface AlternativesListProps {
   softwareSlug: string;
@@ -188,19 +189,50 @@ export async function AlternativesList({
               </div>
 
               {/* Actions */}
-              <div className="alt-actions">
+              <div className="alt-actions" style={{ display: 'flex', gap: '0.5rem', flexWrap: 'wrap', alignItems: 'center', marginTop: '1rem' }}>
+                <UpvoteButton 
+                  alternativeRecordId={alt.relation_id} 
+                  softwareSlug={softwareSlug}
+                  initialUpvotes={alt.upvotes || 0}
+                />
+                
                 <Link
                   href={`/${locale}/${alt.alternative_slug}`}
                   className="btn btn-secondary btn-sm"
                 >
                   View
                 </Link>
+                
                 <Link
                   href={`/${locale}/${softwareSlug}/vs/${alt.alternative_slug}`}
                   className="btn btn-ghost btn-sm"
                 >
                   Compare
                 </Link>
+
+                {alt.alternative_website_url && (
+                  <a
+                    href={alt.alternative_website_url}
+                    target="_blank"
+                    rel="noopener noreferrer nofollow"
+                    className="btn btn-primary btn-sm"
+                  >
+                    Visit Website
+                    <svg
+                      width="14"
+                      height="14"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      stroke="currentColor"
+                      strokeWidth="2"
+                      style={{ marginLeft: '4px' }}
+                    >
+                      <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6" />
+                      <polyline points="15 3 21 3 21 9" />
+                      <line x1="10" y1="14" x2="21" y2="3" />
+                    </svg>
+                  </a>
+                )}
               </div>
             </article>
           ))}

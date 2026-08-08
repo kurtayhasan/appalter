@@ -94,6 +94,9 @@ export interface AlternativeItem {
   reason: string | null;
   pros: string[] | null;
   cons: string[] | null;
+  relation_id: string;
+  upvotes: number;
+  alternative_website_url: string | null;
 }
 
 /** Yorum tipi */

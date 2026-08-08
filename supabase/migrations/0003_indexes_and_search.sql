@@ -487,6 +487,7 @@ CREATE OR REPLACE FUNCTION public.get_alternatives_for_software(
   p_offset  INTEGER DEFAULT 0
 )
 RETURNS TABLE (
+  relation_id       UUID,
   alternative_id    UUID,
   alternative_slug  TEXT,
   alternative_name  TEXT,
@@ -503,13 +504,16 @@ RETURNS TABLE (
   difficulty        TEXT,
   reason            TEXT,
   pros              TEXT[],
-  cons              TEXT[]
+  cons              TEXT[],
+  upvotes           INTEGER,
+  alternative_website_url TEXT
 )
 LANGUAGE sql
 STABLE
 SECURITY DEFINER
 AS $$
   SELECT
+    a.id                 AS relation_id,
     alt.id               AS alternative_id,
     alt.slug             AS alternative_slug,
     alt.name             AS alternative_name,
@@ -526,7 +530,9 @@ AS $$
     a.difficulty,
     a.reason,
     a.pros,
-    a.cons
+    a.cons,
+    a.upvotes,
+    alt.website_url AS alternative_website_url
   FROM public.alternatives a
   JOIN public.softwares s
     ON s.id = a.software_id
@@ -537,6 +543,7 @@ AS $$
    AND alt.status = 'published'
   WHERE a.is_approved = TRUE
   ORDER BY
+    a.upvotes DESC NULLS LAST,
     a.similarity_score DESC NULLS LAST,
     a.migration_score DESC NULLS LAST,
     alt.avg_rating DESC NULLS LAST
