@@ -38,7 +38,7 @@ export function AdBanner({
       <ins
         ref={adRef}
         className="adsbygoogle"
-        style={{ display: "block", minWidth: "250px", width: "100%" }}
+        style={{ display: "block", minWidth: "250px", width: "100%", minHeight: "100px" }}
         data-ad-client="ca-pub-5280507999154958"
         data-ad-slot={adSlot}
         data-ad-format={adFormat}

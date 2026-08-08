@@ -56,5 +56,9 @@
   },
   "engines": {
     "node": ">=20.0.0"
-  }
+  },
+  "browserslist": [
+    "defaults",
+    "not ie 11"
+  ]
 }
