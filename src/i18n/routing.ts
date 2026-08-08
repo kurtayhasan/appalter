@@ -1,4 +1,5 @@
 import { defineRouting } from "next-intl/routing";
+import { createNavigation } from "next-intl/navigation";
 
 // ---------------------------------------------------------------------------
 // next-intl routing configuration
@@ -36,3 +37,5 @@ export const routing = defineRouting({
 // Exported types — kullanımı: import type { Locale } from "@/i18n/routing"
 // ---------------------------------------------------------------------------
 export type Locale = (typeof routing.locales)[number];
+
+export const { Link, redirect, usePathname, useRouter } = createNavigation(routing);

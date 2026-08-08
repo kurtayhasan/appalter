@@ -4,6 +4,7 @@
 import Link from "next/link";
 import { getTranslations } from "next-intl/server";
 import { routing, type Locale } from "@/i18n/routing";
+import { LanguageSwitcher } from "@/components/ui/LanguageSwitcher";
 
 export async function Header({ locale }: { locale: Locale }) {
   // next-intl server-side translation fetch
@@ -57,19 +58,9 @@ export async function Header({ locale }: { locale: Locale }) {
           </ul>
         </nav>
 
-        {/* Locale Switcher (Basit versiyon) */}
+        {/* Locale Switcher (Client Component) */}
         <div className="header-locale">
-          <select 
-            className="locale-select" 
-            defaultValue={locale}
-            aria-label="Language selection"
-          >
-            {routing.locales.map((loc) => (
-              <option key={loc} value={loc}>
-                {loc.toUpperCase()}
-              </option>
-            ))}
-          </select>
+          <LanguageSwitcher currentLocale={locale} locales={[...routing.locales]} />
         </div>
       </div>
     </header>
