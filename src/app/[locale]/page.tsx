@@ -2,13 +2,45 @@
 // Ana sayfa — Server Component (PPR ile render edilir).
 
 import { getTranslations, setRequestLocale } from "next-intl/server";
-import type { Locale } from "@/i18n/routing";
+import { type Locale, routing } from "@/i18n/routing";
+import type { Metadata } from "next";
 import { getFeaturedSoftwaresCached, getCategoriesCached } from "@/lib/cache/queries";
 import { SoftwareCard } from "@/components/software/SoftwareCard";
 import { WebSiteJsonLd } from "@/components/seo/JsonLd";
 import { AdBanner } from "@/components/ads/AdBanner";
 import Link from "next/link";
 import { Suspense } from "react";
+
+export async function generateMetadata({
+  params,
+}: {
+  params: Promise<{ locale: string }>;
+}): Promise<Metadata> {
+  const { locale } = await params;
+  const siteUrl = process.env.NEXT_PUBLIC_SITE_URL ?? "https://appalter.com";
+  const canonicalUrl =
+    locale === routing.defaultLocale ? siteUrl : `${siteUrl}/${locale}`;
+
+  return {
+    title: "AppAlter — Find the Best Software Alternatives",
+    description: "Discover the best alternatives to any software. Compare features, pricing, and ratings to find your perfect tool.",
+    alternates: {
+      canonical: canonicalUrl,
+      languages: Object.fromEntries(
+        routing.locales.map((loc) => [
+          loc,
+          loc === routing.defaultLocale ? siteUrl : `${siteUrl}/${loc}`,
+        ])
+      ),
+    },
+    openGraph: {
+      title: "AppAlter — Find the Best Software Alternatives",
+      description: "Discover the best alternatives to any software. Compare features, pricing, and ratings to find your perfect tool.",
+      url: canonicalUrl,
+      type: "website",
+    },
+  };
+}
 
 export default async function HomePage({
   params,

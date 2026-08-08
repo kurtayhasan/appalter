@@ -5,11 +5,39 @@
 import { Suspense } from "react";
 import { getTranslations, setRequestLocale } from "next-intl/server";
 import { redirect } from "next/navigation";
-import type { Locale } from "@/i18n/routing";
+import { type Locale, routing } from "@/i18n/routing";
 import { searchSoftwaresCached } from "@/lib/cache/queries";
 import { SoftwareCard } from "@/components/software/SoftwareCard";
 import { formatCount } from "@/lib/utils";
 import { SearchResults } from "@/components/search/SearchResults";
+import type { Metadata } from "next";
+
+export async function generateMetadata({
+  params,
+  searchParams,
+}: {
+  params: Promise<{ locale: string }>;
+  searchParams: Promise<{ [key: string]: string | string[] | undefined }>;
+}): Promise<Metadata> {
+  const { locale } = await params;
+  const { q } = await searchParams;
+  
+  const siteUrl = process.env.NEXT_PUBLIC_SITE_URL ?? "https://appalter.com";
+  const query = typeof q === 'string' ? q : '';
+  
+  const title = query 
+    ? `Search results for "${query}" | AppAlter`
+    : "Search Software & Alternatives | AppAlter";
+    
+  return {
+    title,
+    description: "Search across thousands of software products to find the best alternatives.",
+    robots: {
+      index: false,
+      follow: true,
+    },
+  };
+}
 
 interface SearchPageProps {
   params: Promise<{ locale: string }>;

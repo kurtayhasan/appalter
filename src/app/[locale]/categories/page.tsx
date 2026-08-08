@@ -4,12 +4,35 @@ import { getCategoriesCached } from "@/lib/cache/queries";
 import Link from "next/link";
 import { BreadcrumbJsonLd } from "@/components/seo/BreadcrumbJsonLd";
 
-export async function generateMetadata({ params }: { params: Promise<{ locale: string }> }) {
+import type { Metadata } from "next";
+import { routing } from "@/i18n/routing";
+
+export async function generateMetadata({ params }: { params: Promise<{ locale: string }> }): Promise<Metadata> {
   const { locale } = await params;
   const t = await getTranslations({ locale, namespace: "HomePage" });
+  
+  const siteUrl = process.env.NEXT_PUBLIC_SITE_URL ?? "https://appalter.com";
+  const canonicalUrl =
+    locale === routing.defaultLocale ? `${siteUrl}/categories` : `${siteUrl}/${locale}/categories`;
+    
   return {
     title: `All Software Categories | AppAlter`,
     description: "Browse all software categories to find the best tools and alternatives for your business.",
+    alternates: {
+      canonical: canonicalUrl,
+      languages: Object.fromEntries(
+        routing.locales.map((loc) => [
+          loc,
+          loc === routing.defaultLocale ? `${siteUrl}/categories` : `${siteUrl}/${loc}/categories`,
+        ])
+      ),
+    },
+    openGraph: {
+      title: "All Software Categories | AppAlter",
+      description: "Browse all software categories to find the best tools and alternatives for your business.",
+      url: canonicalUrl,
+      type: "website",
+    },
   };
 }
 

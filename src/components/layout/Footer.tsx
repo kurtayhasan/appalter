@@ -52,6 +52,7 @@ export function Footer({ locale }: { locale: Locale }) {
             <h3 className="footer-heading">Legal</h3>
             <ul className="footer-links">
               <li><Link href={`/${locale}/about`}>About Us</Link></li>
+              <li><Link href={`/${locale}/contact`}>Contact Us</Link></li>
               <li><Link href={`/${locale}/privacy`}>Privacy Policy</Link></li>
               <li><Link href={`/${locale}/terms`}>Terms of Service</Link></li>
             </ul>

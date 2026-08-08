@@ -7,6 +7,7 @@ import { routing, type Locale } from "@/i18n/routing";
 import { Inter } from "next/font/google";
 import { Header } from "@/components/layout/Header";
 import { Footer } from "@/components/layout/Footer";
+import { CookieConsent } from "@/components/layout/CookieConsent";
 import "@/app/globals.css";
 
 // ---------------------------------------------------------------------------
@@ -124,6 +125,7 @@ export default async function RootLayout({ children, params }: Props) {
       <Header locale={locale as Locale} />
       <main className="site-main">{children}</main>
       <Footer locale={locale as Locale} />
+      <CookieConsent />
     </NextIntlClientProvider>
   );
 }
