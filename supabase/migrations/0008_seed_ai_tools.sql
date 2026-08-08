@@ -68,7 +68,15 @@ BEGIN
   )
   ON CONFLICT (slug) DO NOTHING;
 
-  -- 2. Link Alternatives
+  -- B. ALTERNATİF EŞLEŞTİRMELERİ İÇİN GÜNCEL ID'LERİ AL
+  -- Eğer ON CONFLICT ile atlandıysa, gerçek ID'leri veritabanından çekmemiz gerekir.
+  SELECT id INTO v_chatgpt FROM public.softwares WHERE slug = 'chatgpt';
+  SELECT id INTO v_claude FROM public.softwares WHERE slug = 'claude';
+  SELECT id INTO v_gemini FROM public.softwares WHERE slug = 'gemini';
+  SELECT id INTO v_cursor FROM public.softwares WHERE slug = 'cursor';
+  SELECT id INTO v_copilot FROM public.softwares WHERE slug = 'github-copilot';
+
+  -- C. ALTERNATİF EŞLEŞTİRMELERİ
   -- ChatGPT vs Claude
   INSERT INTO public.alternatives (software_id, alternative_id, similarity_score, is_approved)
   VALUES (v_chatgpt, v_claude, 0.95, true), (v_claude, v_chatgpt, 0.95, true)
