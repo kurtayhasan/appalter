@@ -11,7 +11,7 @@ import { StarRating } from "@/components/ui/StarRating";
 import { PricingBadge } from "@/components/software/PricingBadge";
 import { AlternativesListJsonLd } from "@/components/seo/JsonLd";
 import { AdBanner } from "@/components/ads/AdBanner";
-import { UpvoteButton } from "@/components/ui/UpvoteButton";
+import { VoteControls } from "@/components/ui/VoteControls";
 
 interface AlternativesListProps {
   softwareSlug: string;
@@ -190,10 +190,11 @@ export async function AlternativesList({
 
               {/* Actions */}
               <div className="alt-actions" style={{ display: 'flex', gap: '0.5rem', flexWrap: 'wrap', alignItems: 'center', marginTop: '1rem' }}>
-                <UpvoteButton 
+                <VoteControls 
                   alternativeRecordId={alt.relation_id} 
                   softwareSlug={softwareSlug}
                   initialUpvotes={alt.upvotes || 0}
+                  initialDownvotes={alt.downvotes || 0}
                 />
                 
                 <Link

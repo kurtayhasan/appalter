@@ -39,6 +39,10 @@ export function SoftwareHero({ software, locale }: SoftwareHeroProps) {
     slug,
     developer_name,
     founded_year,
+    price_rating,
+    ease_of_use_rating,
+    features_rating,
+    support_rating,
   } = software;
 
   return (
@@ -187,6 +191,36 @@ export function SoftwareHero({ software, locale }: SoftwareHeroProps) {
             />
           </div>
         </div>
+
+        {/* Detailed Ratings */}
+        {(price_rating || ease_of_use_rating || features_rating || support_rating) && (
+          <div className="hero-detailed-ratings" style={{ display: 'flex', gap: '1rem', marginTop: '1.5rem', flexWrap: 'wrap' }} aria-label="Detailed Ratings">
+            {price_rating && (
+              <div className="detailed-rating-item" style={{ background: 'var(--bg-secondary)', padding: '0.5rem 1rem', borderRadius: '8px', textAlign: 'center' }}>
+                <div style={{ fontSize: '1.25rem', fontWeight: 700, color: 'var(--text-primary)' }}>{price_rating}/10</div>
+                <div style={{ fontSize: '0.75rem', color: 'var(--text-secondary)', textTransform: 'uppercase', letterSpacing: '0.05em' }}>Value</div>
+              </div>
+            )}
+            {ease_of_use_rating && (
+              <div className="detailed-rating-item" style={{ background: 'var(--bg-secondary)', padding: '0.5rem 1rem', borderRadius: '8px', textAlign: 'center' }}>
+                <div style={{ fontSize: '1.25rem', fontWeight: 700, color: 'var(--text-primary)' }}>{ease_of_use_rating}/10</div>
+                <div style={{ fontSize: '0.75rem', color: 'var(--text-secondary)', textTransform: 'uppercase', letterSpacing: '0.05em' }}>Ease of Use</div>
+              </div>
+            )}
+            {features_rating && (
+              <div className="detailed-rating-item" style={{ background: 'var(--bg-secondary)', padding: '0.5rem 1rem', borderRadius: '8px', textAlign: 'center' }}>
+                <div style={{ fontSize: '1.25rem', fontWeight: 700, color: 'var(--text-primary)' }}>{features_rating}/10</div>
+                <div style={{ fontSize: '0.75rem', color: 'var(--text-secondary)', textTransform: 'uppercase', letterSpacing: '0.05em' }}>Features</div>
+              </div>
+            )}
+            {support_rating && (
+              <div className="detailed-rating-item" style={{ background: 'var(--bg-secondary)', padding: '0.5rem 1rem', borderRadius: '8px', textAlign: 'center' }}>
+                <div style={{ fontSize: '1.25rem', fontWeight: 700, color: 'var(--text-primary)' }}>{support_rating}/10</div>
+                <div style={{ fontSize: '0.75rem', color: 'var(--text-secondary)', textTransform: 'uppercase', letterSpacing: '0.05em' }}>Support</div>
+              </div>
+            )}
+          </div>
+        )}
 
         {/* CTA buttons */}
         <div className="hero-ctas">

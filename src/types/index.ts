@@ -47,6 +47,10 @@ export interface SoftwareDetail {
   is_featured: boolean;
   is_sponsored: boolean;
   data_quality_score: number | null;
+  price_rating: number | null;
+  ease_of_use_rating: number | null;
+  features_rating: number | null;
+  support_rating: number | null;
   published_at: string | null;
   // Joined fields
   category_name: string | null;
@@ -96,6 +100,7 @@ export interface AlternativeItem {
   cons: string[] | null;
   relation_id: string;
   upvotes: number;
+  downvotes: number;
   alternative_website_url: string | null;
 }
 

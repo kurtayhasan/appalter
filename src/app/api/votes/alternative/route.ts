@@ -6,10 +6,14 @@ import crypto from "crypto";
 export async function POST(req: Request) {
   try {
     const body = await req.json();
-    const { alternative_record_id, software_slug } = body;
+    const { alternative_record_id, software_slug, vote_type = 1 } = body;
 
     if (!alternative_record_id || !software_slug) {
       return NextResponse.json({ error: "Missing required fields" }, { status: 400 });
+    }
+
+    if (vote_type !== 1 && vote_type !== -1) {
+      return NextResponse.json({ error: "Invalid vote type" }, { status: 400 });
     }
 
     // Hash the IP address for GDPR compliance
@@ -24,6 +28,7 @@ export async function POST(req: Request) {
       .insert({
         alternative_record_id,
         ip_hash: ipHash,
+        vote_type,
       });
 
     if (insertError) {
@@ -34,9 +39,10 @@ export async function POST(req: Request) {
       return NextResponse.json({ error: "Failed to record vote" }, { status: 500 });
     }
 
-    // 2. Increment upvotes atomically (bypassing strict types)
-    const { error: updateError } = await (supabase as any).rpc("increment_alternative_upvotes", {
+    // 2. Increment upvotes/downvotes atomically (bypassing strict types)
+    const { error: updateError } = await (supabase as any).rpc("vote_alternative", {
       p_id: alternative_record_id,
+      p_vote_type: vote_type,
     });
 
     if (updateError) {
