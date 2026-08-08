@@ -18,8 +18,8 @@ export async function POST(req: Request) {
 
     const supabase = createAdminClient();
 
-    // 1. Insert vote
-    const { error: insertError } = await supabase
+    // 1. Insert vote (bypassing strict types since they are not generated yet)
+    const { error: insertError } = await (supabase as any)
       .from("alternative_votes")
       .insert({
         alternative_record_id,
@@ -34,8 +34,8 @@ export async function POST(req: Request) {
       return NextResponse.json({ error: "Failed to record vote" }, { status: 500 });
     }
 
-    // 2. Increment upvotes atomically
-    const { error: updateError } = await supabase.rpc("increment_alternative_upvotes", {
+    // 2. Increment upvotes atomically (bypassing strict types)
+    const { error: updateError } = await (supabase as any).rpc("increment_alternative_upvotes", {
       p_id: alternative_record_id,
     });
 
