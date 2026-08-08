@@ -192,7 +192,7 @@ export function SoftwareHero({ software, locale }: SoftwareHeroProps) {
         <div className="hero-ctas">
           {website_url && (
             <a
-              href={website_url}
+              href={`/api/go/${slug}`}
               target="_blank"
               rel="noopener noreferrer nofollow"
               className="btn btn-primary btn-lg"

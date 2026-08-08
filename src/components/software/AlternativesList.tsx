@@ -212,7 +212,7 @@ export async function AlternativesList({
 
                 {alt.alternative_website_url && (
                   <a
-                    href={alt.alternative_website_url}
+                    href={`/api/go/${alt.alternative_slug}`}
                     target="_blank"
                     rel="noopener noreferrer nofollow"
                     className="btn btn-primary btn-sm"
