@@ -32,8 +32,7 @@ export default function robots(): MetadataRoute.Robots {
       },
     ],
     sitemap: [
-      `${siteUrl}/sitemap.xml`,
-      `${siteUrl}/sitemap-softwares-0`
+      `${siteUrl}/sitemap.xml`
     ],
   };
 }
