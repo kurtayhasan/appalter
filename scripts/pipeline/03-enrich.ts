@@ -60,9 +60,26 @@ async function runEnrich(category: string) {
   const normalizedData = JSON.parse(fs.readFileSync(inputPath, "utf-8"));
   console.log(`Enriching ${normalizedData.length} items for category: ${category}`);
 
-  const enrichedData = [];
+  const outputPath = path.join(__dirname, "../../data/raw", `${category}-enriched.json`);
+  
+  let enrichedData: any[] = [];
+  if (fs.existsSync(outputPath)) {
+    try {
+      enrichedData = JSON.parse(fs.readFileSync(outputPath, "utf-8"));
+      console.log(`Resuming from checkpoint: Found ${enrichedData.length} already enriched items.`);
+    } catch (e) {
+      console.warn("Could not read existing enriched data, starting fresh.");
+    }
+  }
+
+  const processedSlugs = new Set(enrichedData.map(item => item.slug));
   
   for (const item of normalizedData) {
+    if (processedSlugs.has(item.slug)) {
+      console.log(`Skipping ${item.slug}, already enriched.`);
+      continue;
+    }
+
     console.log(`Enriching ${item.slug}...`);
     
     let ai_features = null;
@@ -82,14 +99,14 @@ async function runEnrich(category: string) {
         ...item,
         ai_features
       });
+      
+      // Save checkpoint after every successful enrichment
+      fs.writeFileSync(outputPath, JSON.stringify(enrichedData, null, 2));
     }
     
     // Add a 3 second delay to avoid rate limits
     await new Promise(resolve => setTimeout(resolve, 3000));
   }
-
-  const outputPath = path.join(__dirname, "../../data/raw", `${category}-enriched.json`);
-  fs.writeFileSync(outputPath, JSON.stringify(enrichedData, null, 2));
   
   console.log(`Successfully enriched ${enrichedData.length} items and saved to ${outputPath}`);
 }

@@ -52,14 +52,21 @@ const nextConfig: NextConfig = {
         protocol: "https",
         hostname: "**.wikimedia.org",
       },
-      // Allow all HTTPS origins for dynamically-sourced logos (with size constraint)
       {
         protocol: "https",
-        hostname: "**",
+        hostname: "ui-avatars.com",
+      },
+      {
+        protocol: "https",
+        hostname: "logo.clearbit.com",
+      },
+      {
+        protocol: "https",
+        hostname: "logo.brandfetch.io",
       },
     ],
     formats: ["image/avif", "image/webp"],
-    minimumCacheTTL: 86400,       // 24h CDN cache for images
+    minimumCacheTTL: 604800,       // 7 days CDN cache for images
     dangerouslyAllowSVG: true,
     contentSecurityPolicy: "default-src 'self'; script-src 'none'; sandbox;",
   },
