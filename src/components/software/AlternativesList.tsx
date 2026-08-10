@@ -175,17 +175,40 @@ export async function AlternativesList({
                   )}
                 </div>
 
-                {/* Pros */}
-                {alt.pros && alt.pros.length > 0 && (
-                  <ul className="alt-pros" aria-label="Pros">
-                    {alt.pros.slice(0, 2).map((pro: any, i: number) => (
-                      <li key={i} className="alt-pro">
-                        <span className="alt-pro-icon" aria-hidden="true">✓</span>
-                        {pro}
-                      </li>
-                    ))}
-                  </ul>
-                )}
+                {/* Pros and Cons (AI Generated) */}
+                <div className="alt-pros-cons" style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '1rem', marginTop: '1rem' }}>
+                  {alt.pros && alt.pros.length > 0 && (
+                    <div className="alt-pros-section">
+                      <h4 style={{ fontSize: '0.875rem', color: 'var(--success)', marginBottom: '0.5rem', display: 'flex', alignItems: 'center', gap: '0.25rem' }}>
+                        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path><polyline points="22 4 12 14.01 9 11.01"></polyline></svg>
+                        Pros
+                      </h4>
+                      <ul className="alt-pros" aria-label="Pros" style={{ listStyle: 'none', padding: 0, margin: 0 }}>
+                        {alt.pros.slice(0, 3).map((pro: any, i: number) => (
+                          <li key={i} className="alt-pro" style={{ fontSize: '0.875rem', marginBottom: '0.25rem', color: 'var(--text-secondary)' }}>
+                            • {pro}
+                          </li>
+                        ))}
+                      </ul>
+                    </div>
+                  )}
+
+                  {alt.cons && alt.cons.length > 0 && (
+                    <div className="alt-cons-section">
+                      <h4 style={{ fontSize: '0.875rem', color: 'var(--danger)', marginBottom: '0.5rem', display: 'flex', alignItems: 'center', gap: '0.25rem' }}>
+                        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><circle cx="12" cy="12" r="10"></circle><line x1="15" y1="9" x2="9" y2="15"></line><line x1="9" y1="9" x2="15" y2="15"></line></svg>
+                        Cons
+                      </h4>
+                      <ul className="alt-cons" aria-label="Cons" style={{ listStyle: 'none', padding: 0, margin: 0 }}>
+                        {alt.cons.slice(0, 3).map((con: any, i: number) => (
+                          <li key={i} className="alt-con" style={{ fontSize: '0.875rem', marginBottom: '0.25rem', color: 'var(--text-secondary)' }}>
+                            • {con}
+                          </li>
+                        ))}
+                      </ul>
+                    </div>
+                  )}
+                </div>
               </div>
 
               {/* Actions */}
