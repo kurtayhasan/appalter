@@ -35,6 +35,18 @@ const nextConfig: NextConfig = {
         hostname: "storage.appalter.com",
         pathname: "/**",
       },
+      // Clearbit Logos
+      {
+        protocol: "https",
+        hostname: "logo.clearbit.com",
+        pathname: "/**",
+      },
+      // Google Favicons (Fallback)
+      {
+        protocol: "https",
+        hostname: "www.google.com",
+        pathname: "/s2/favicons/**",
+      },
       // Software vendor logos from common CDNs
       {
         protocol: "https",
