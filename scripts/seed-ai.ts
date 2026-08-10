@@ -68,7 +68,7 @@ async function getCategoryAndPricingMaps() {
   const pricingMap = new Map(pricingModels.map(p => [p.slug, p.id]));
   
   // Fallback pricing model if Claude returns something weird
-  const defaultPricingId = pricingMap.get("freemium") || pricingModels[0].id;
+  const defaultPricingId = pricingMap.get("freemium") || pricingModels?.[0]?.id;
 
   return { categoryMap, pricingMap, defaultPricingId };
 }
