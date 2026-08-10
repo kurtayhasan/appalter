@@ -79,20 +79,19 @@ export async function ComparisonTable({
           <div className="comparison-header-label" />
           {/* Software A */}
           <div className="comparison-col-header" role="columnheader">
-            {software.logo_url && (
-              <Image
-                src={software.logo_url}
-                alt={`${software.name} logo`}
-                width={48}
-                height={48}
-                className="comparison-col-logo"
-              />
-            )}
-            <Link
-              href={`/${locale}/${softwareSlug}`}
-              className="comparison-col-name"
-            >
-              {software.name}
+            <Link href={`/${locale}/${softwareSlug}`} className="comparison-col-name-link" style={{ display: "flex", flexDirection: "column", alignItems: "center", textDecoration: "none" }}>
+              {software.logo_url && (
+                <Image
+                  src={software.logo_url}
+                  alt={`${software.name} logo`}
+                  width={48}
+                  height={48}
+                  className="comparison-col-logo"
+                />
+              )}
+              <span className="comparison-col-name">
+                {software.name}
+              </span>
             </Link>
             {software.avg_rating && (
               <div className="comparison-col-rating">
@@ -103,20 +102,19 @@ export async function ComparisonTable({
           </div>
           {/* Software B */}
           <div className="comparison-col-header" role="columnheader">
-            {alternative.logo_url && (
-              <Image
-                src={alternative.logo_url}
-                alt={`${alternative.name} logo`}
-                width={48}
-                height={48}
-                className="comparison-col-logo"
-              />
-            )}
-            <Link
-              href={`/${locale}/${alternativeSlug}`}
-              className="comparison-col-name"
-            >
-              {alternative.name}
+            <Link href={`/${locale}/${alternativeSlug}`} className="comparison-col-name-link" style={{ display: "flex", flexDirection: "column", alignItems: "center", textDecoration: "none" }}>
+              {alternative.logo_url && (
+                <Image
+                  src={alternative.logo_url}
+                  alt={`${alternative.name} logo`}
+                  width={48}
+                  height={48}
+                  className="comparison-col-logo"
+                />
+              )}
+              <span className="comparison-col-name">
+                {alternative.name}
+              </span>
             </Link>
             {alternative.avg_rating && (
               <div className="comparison-col-rating">
@@ -224,36 +222,114 @@ export async function ComparisonTable({
 
         {/* Pros & Cons */}
         <div className="comparison-pros-cons">
-          <div className="pros-cons-col">
-            <h3 className="pros-cons-title">{software.name} Pros</h3>
-            {swProsCons.pros.length > 0 ? (
-              <ul className="pros-list">
-                {swProsCons.pros.map((pro) => (
-                  <li key={pro.id} className="pro-item">
-                    <span className="pro-icon" aria-hidden="true">✓</span>
-                    {pro.content}
-                  </li>
-                ))}
-              </ul>
-            ) : (
-              <p className="pros-cons-empty">No pros listed yet.</p>
-            )}
+          {/* PROS ROW */}
+          <div className="pros-cons-row" style={{ display: "grid", gridTemplateColumns: "1fr 1fr", gap: "2rem", marginBottom: "2rem" }}>
+            <div className="pros-cons-col">
+              <h3 className="pros-cons-title" style={{ color: "var(--success)", display: "flex", alignItems: "center", gap: "0.5rem" }}>
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path><polyline points="22 4 12 14.01 9 11.01"></polyline></svg>
+                {software.name} Pros
+              </h3>
+              {(software.ai_features as any)?.pros?.length > 0 ? (
+                <ul className="pros-list">
+                  {(software.ai_features as any).pros.map((pro: string, i: number) => (
+                    <li key={i} className="pro-item">
+                      {pro}
+                    </li>
+                  ))}
+                </ul>
+              ) : swProsCons.pros.length > 0 ? (
+                <ul className="pros-list">
+                  {swProsCons.pros.map((pro) => (
+                    <li key={pro.id} className="pro-item">
+                      {pro.content}
+                    </li>
+                  ))}
+                </ul>
+              ) : (
+                <p className="pros-cons-empty">No pros listed yet.</p>
+              )}
+            </div>
+
+            <div className="pros-cons-col">
+              <h3 className="pros-cons-title" style={{ color: "var(--success)", display: "flex", alignItems: "center", gap: "0.5rem" }}>
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path><polyline points="22 4 12 14.01 9 11.01"></polyline></svg>
+                {alternative.name} Pros
+              </h3>
+              {(alternative.ai_features as any)?.pros?.length > 0 ? (
+                <ul className="pros-list">
+                  {(alternative.ai_features as any).pros.map((pro: string, i: number) => (
+                    <li key={i} className="pro-item">
+                      {pro}
+                    </li>
+                  ))}
+                </ul>
+              ) : altProsCons.pros.length > 0 ? (
+                <ul className="pros-list">
+                  {altProsCons.pros.map((pro) => (
+                    <li key={pro.id} className="pro-item">
+                      {pro.content}
+                    </li>
+                  ))}
+                </ul>
+              ) : (
+                <p className="pros-cons-empty">No pros listed yet.</p>
+              )}
+            </div>
           </div>
 
-          <div className="pros-cons-col">
-            <h3 className="pros-cons-title">{alternative.name} Pros</h3>
-            {altProsCons.pros.length > 0 ? (
-              <ul className="pros-list">
-                {altProsCons.pros.map((pro) => (
-                  <li key={pro.id} className="pro-item">
-                    <span className="pro-icon" aria-hidden="true">✓</span>
-                    {pro.content}
-                  </li>
-                ))}
-              </ul>
-            ) : (
-              <p className="pros-cons-empty">No pros listed yet.</p>
-            )}
+          {/* CONS ROW */}
+          <div className="pros-cons-row" style={{ display: "grid", gridTemplateColumns: "1fr 1fr", gap: "2rem" }}>
+            <div className="pros-cons-col">
+              <h3 className="pros-cons-title" style={{ color: "var(--danger)", display: "flex", alignItems: "center", gap: "0.5rem" }}>
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><circle cx="12" cy="12" r="10"></circle><line x1="15" y1="9" x2="9" y2="15"></line><line x1="9" y1="9" x2="15" y2="15"></line></svg>
+                {software.name} Cons
+              </h3>
+              {(software.ai_features as any)?.cons?.length > 0 ? (
+                <ul className="cons-list">
+                  {(software.ai_features as any).cons.map((con: string, i: number) => (
+                    <li key={i} className="con-item" style={{ marginBottom: "0.5rem" }}>
+                      {con}
+                    </li>
+                  ))}
+                </ul>
+              ) : swProsCons.cons.length > 0 ? (
+                <ul className="cons-list">
+                  {swProsCons.cons.map((con) => (
+                    <li key={con.id} className="con-item" style={{ marginBottom: "0.5rem" }}>
+                      {con.content}
+                    </li>
+                  ))}
+                </ul>
+              ) : (
+                <p className="pros-cons-empty">No cons listed yet.</p>
+              )}
+            </div>
+
+            <div className="pros-cons-col">
+              <h3 className="pros-cons-title" style={{ color: "var(--danger)", display: "flex", alignItems: "center", gap: "0.5rem" }}>
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><circle cx="12" cy="12" r="10"></circle><line x1="15" y1="9" x2="9" y2="15"></line><line x1="9" y1="9" x2="15" y2="15"></line></svg>
+                {alternative.name} Cons
+              </h3>
+              {(alternative.ai_features as any)?.cons?.length > 0 ? (
+                <ul className="cons-list">
+                  {(alternative.ai_features as any).cons.map((con: string, i: number) => (
+                    <li key={i} className="con-item" style={{ marginBottom: "0.5rem" }}>
+                      {con}
+                    </li>
+                  ))}
+                </ul>
+              ) : altProsCons.cons.length > 0 ? (
+                <ul className="cons-list">
+                  {altProsCons.cons.map((con) => (
+                    <li key={con.id} className="con-item" style={{ marginBottom: "0.5rem" }}>
+                      {con.content}
+                    </li>
+                  ))}
+                </ul>
+              ) : (
+                <p className="pros-cons-empty">No cons listed yet.</p>
+              )}
+            </div>
           </div>
         </div>
 
