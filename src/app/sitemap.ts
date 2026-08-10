@@ -77,7 +77,7 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
     // 4. Fetch Top VS Pairs (Alternatives)
     // Added order=created_at.desc.nullslast to ensure newly opened comparisons are indexed
     const altRes = await fetch(
-      `${supabaseUrl}/rest/v1/alternatives?select=software_id,alternative_id,software:softwares!alternatives_software_id_fkey(slug),alternative:softwares!alternatives_alternative_id_fkey(slug)&is_approved=eq.true&order=created_at.desc.nullslast&limit=1000`,
+      `${supabaseUrl}/rest/v1/alternatives?select=software_id,alternative_id,software:softwares!alternatives_software_id_fkey(slug),alternative:softwares!alternatives_alternative_id_fkey(slug)&is_approved=eq.true&is_indexable=eq.true&order=created_at.desc.nullslast&limit=1000`,
       { headers }
     );
     if (altRes.ok) {

@@ -168,10 +168,10 @@ export function SoftwareCard({
         </div>
       </div>
 
-      {/* Description */}
-      {(tagline || short_description) && (
-        <p className="card-description">
-          {tagline ?? short_description}
+      {/* Description / TLDR */}
+      {(software.ai_features?.tldr || tagline || short_description) && (
+        <p className="card-description" style={{ fontStyle: software.ai_features?.tldr ? "italic" : "normal" }}>
+          {software.ai_features?.tldr ?? tagline ?? short_description}
         </p>
       )}
 

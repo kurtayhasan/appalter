@@ -127,6 +127,32 @@ export async function ComparisonTable({
           </div>
         </div>
 
+        {/* AI Overview / TLDR & Core Difference */}
+        {((software.ai_features as any)?.tldr || (alternative.ai_features as any)?.tldr || relation?.core_difference) && (
+          <div className="comparison-ai-summary" style={{ margin: "2rem 0", padding: "1.5rem", background: "var(--bg-muted)", borderRadius: "var(--radius-lg)" }}>
+            {relation?.core_difference && (
+              <div style={{ marginBottom: "1rem" }}>
+                <strong style={{ color: "var(--primary)" }}>The Core Difference: </strong>
+                <span>{relation.core_difference}</span>
+              </div>
+            )}
+            <div style={{ display: "grid", gridTemplateColumns: "1fr 1fr", gap: "2rem" }}>
+              {(software.ai_features as any)?.tldr && (
+                <div>
+                  <strong>Why {software.name}? </strong>
+                  <span>{(software.ai_features as any).tldr}</span>
+                </div>
+              )}
+              {(alternative.ai_features as any)?.tldr && (
+                <div>
+                  <strong>Why {alternative.name}? </strong>
+                  <span>{(alternative.ai_features as any).tldr}</span>
+                </div>
+              )}
+            </div>
+          </div>
+        )}
+
         {/* Overview rows */}
         <table className="comparison-table" role="table">
           <caption className="sr-only">

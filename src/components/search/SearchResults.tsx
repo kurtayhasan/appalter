@@ -64,6 +64,7 @@ export async function SearchResults({
               category_name: null,
               category_slug: null,
               pricing_model_slug: null,
+              ai_features: result.ai_features || null,
             };
 
             return (

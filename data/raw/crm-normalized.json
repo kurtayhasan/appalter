@@ -1,0 +1,242 @@
+[
+  {
+    "slug": "salesforce",
+    "name": "Salesforce",
+    "tagline": "The world's leading CRM platform",
+    "short_description": "Salesforce is a cloud-based customer relationship management platform that helps businesses manage sales, marketing, and customer service.",
+    "website_url": "https://www.salesforce.com",
+    "pricing_model_slug": "paid-only"
+  },
+  {
+    "slug": "hubspot",
+    "name": "HubSpot",
+    "tagline": "Grow better with HubSpot CRM",
+    "short_description": "HubSpot offers a comprehensive suite of inbound marketing, sales, and customer service tools built on a free CRM.",
+    "website_url": "https://www.hubspot.com",
+    "pricing_model_slug": "freemium"
+  },
+  {
+    "slug": "zoho-crm",
+    "name": "Zoho CRM",
+    "tagline": "Convert more leads, engage customers",
+    "short_description": "Zoho CRM is a cloud-based software designed to help businesses manage sales, marketing, and customer support in one place.",
+    "website_url": "https://www.zoho.com/crm/",
+    "pricing_model_slug": "freemium"
+  },
+  {
+    "slug": "pipedrive",
+    "name": "Pipedrive",
+    "tagline": "The first pipeline-centric CRM",
+    "short_description": "Pipedrive is a web-based sales CRM designed to help small businesses manage leads, track activities, and automate sales pipelines.",
+    "website_url": "https://www.pipedrive.com",
+    "pricing_model_slug": "paid-only"
+  },
+  {
+    "slug": "monday-crm",
+    "name": "Monday CRM",
+    "tagline": "Customize your entire sales pipeline",
+    "short_description": "Monday CRM allows teams to manage leads, customer relationships, and sales pipelines on a highly visual and customizable platform.",
+    "website_url": "https://monday.com/crm",
+    "pricing_model_slug": "paid-only"
+  },
+  {
+    "slug": "freshsales",
+    "name": "Freshsales",
+    "tagline": "Context-driven sales CRM software",
+    "short_description": "Freshsales is an AI-powered sales CRM by Freshworks that helps businesses track deals, manage contacts, and automate sales processes.",
+    "website_url": "https://www.freshworks.com/crm/sales/",
+    "pricing_model_slug": "freemium"
+  },
+  {
+    "slug": "keap",
+    "name": "Keap",
+    "tagline": "Automate your sales and marketing",
+    "short_description": "Keap is an all-in-one CRM, sales, and marketing automation platform designed specifically for small businesses.",
+    "website_url": "https://keap.com",
+    "pricing_model_slug": "paid-only"
+  },
+  {
+    "slug": "activecampaign",
+    "name": "ActiveCampaign",
+    "tagline": "Intelligent marketing and sales automation",
+    "short_description": "ActiveCampaign combines email marketing, marketing automation, and CRM tools to create personalized customer experiences.",
+    "website_url": "https://www.activecampaign.com",
+    "pricing_model_slug": "paid-only"
+  },
+  {
+    "slug": "copper",
+    "name": "Copper",
+    "tagline": "The CRM built for Google Workspace",
+    "short_description": "Copper is a recommended Google Workspace CRM that integrates seamlessly with Gmail, Calendar, and Drive to automate sales tasks.",
+    "website_url": "https://www.copper.com",
+    "pricing_model_slug": "paid-only"
+  },
+  {
+    "slug": "insightly",
+    "name": "Insightly",
+    "tagline": "Modern CRM for growing businesses",
+    "short_description": "Insightly is a unified CRM platform that combines sales pipeline management, marketing automation, and project tracking.",
+    "website_url": "https://www.insightly.com",
+    "pricing_model_slug": "paid-only"
+  },
+  {
+    "slug": "zendesk-sell",
+    "name": "Zendesk Sell",
+    "tagline": "Sales CRM to boost productivity",
+    "short_description": "Zendesk Sell is a modern sales CRM that helps teams maximize productivity, maintain pipeline visibility, and grow revenue.",
+    "website_url": "https://www.zendesk.com/sell/",
+    "pricing_model_slug": "paid-only"
+  },
+  {
+    "slug": "nimble",
+    "name": "Nimble",
+    "tagline": "The social sales and marketing CRM",
+    "short_description": "Nimble is a relationship-focused CRM that automatically builds your contact database from social media, emails, and calendar events.",
+    "website_url": "https://www.nimble.com",
+    "pricing_model_slug": "paid-only"
+  },
+  {
+    "slug": "sugarcrm",
+    "name": "SugarCRM",
+    "tagline": "Let the platform do the work",
+    "short_description": "SugarCRM is an automated, intelligent CRM platform that helps marketing, sales, and service teams collaborate and improve customer retention.",
+    "website_url": "https://www.sugarcrm.com",
+    "pricing_model_slug": "paid-only"
+  },
+  {
+    "slug": "capsule",
+    "name": "Capsule",
+    "tagline": "The simple online CRM",
+    "short_description": "Capsule is an easy-to-use CRM that helps businesses stay organized, build stronger relationships, and make more sales.",
+    "website_url": "https://capsulecrm.com",
+    "pricing_model_slug": "freemium"
+  },
+  {
+    "slug": "less-annoying-crm",
+    "name": "Less Annoying CRM",
+    "tagline": "CRM designed for small businesses",
+    "short_description": "Less Annoying CRM is a simple, affordable CRM built from the ground up specifically to help small businesses stay organized.",
+    "website_url": "https://www.lessannoyingcrm.com",
+    "pricing_model_slug": "paid-only"
+  },
+  {
+    "slug": "creatio",
+    "name": "Creatio",
+    "tagline": "No-code CRM and workflow automation",
+    "short_description": "Creatio is a global vendor of one platform to automate industry workflows and CRM with no-code technology.",
+    "website_url": "https://www.creatio.com",
+    "pricing_model_slug": "paid-only"
+  },
+  {
+    "slug": "apptivo",
+    "name": "Apptivo",
+    "tagline": "Integrated business management software suite",
+    "short_description": "Apptivo is a cloud-based suite of business applications, including CRM, project management, invoicing, and customer support.",
+    "website_url": "https://www.apptivo.com",
+    "pricing_model_slug": "freemium"
+  },
+  {
+    "slug": "nutshell",
+    "name": "Nutshell",
+    "tagline": "Sneaky powerful CRM for teams",
+    "short_description": "Nutshell is an all-in-one CRM and email marketing platform that helps B2B sales teams close more deals.",
+    "website_url": "https://www.nutshell.com",
+    "pricing_model_slug": "paid-only"
+  },
+  {
+    "slug": "streak",
+    "name": "Streak",
+    "tagline": "CRM inside your Gmail inbox",
+    "short_description": "Streak is a CRM integrated directly into Gmail, allowing users to manage sales, support, and hiring pipelines without leaving their inbox.",
+    "website_url": "https://www.streak.com",
+    "pricing_model_slug": "freemium"
+  },
+  {
+    "slug": "agile-crm",
+    "name": "Agile CRM",
+    "tagline": "All-in-one CRM for small businesses",
+    "short_description": "Agile CRM offers sales, marketing, and service automation in a single platform, designed to help small-to-medium businesses scale.",
+    "website_url": "https://www.agilecrm.com",
+    "pricing_model_slug": "freemium"
+  },
+  {
+    "slug": "close",
+    "name": "Close",
+    "tagline": "The CRM built for growth",
+    "short_description": "Close is a high-velocity sales CRM designed to help startups and SMBs turn more leads into revenue with built-in calling and emailing.",
+    "website_url": "https://www.close.com",
+    "pricing_model_slug": "paid-only"
+  },
+  {
+    "slug": "salesloft",
+    "name": "Salesloft",
+    "tagline": "The leading sales engagement platform",
+    "short_description": "Salesloft helps B2B sales teams close more deals by automating communication, tracking engagement, and providing actionable insights.",
+    "website_url": "https://salesloft.com",
+    "pricing_model_slug": "paid-only"
+  },
+  {
+    "slug": "outreach",
+    "name": "Outreach",
+    "tagline": "The sales execution platform",
+    "short_description": "Outreach is a sales execution platform that helps revenue teams automate workflows, manage pipelines, and forecast sales accurately.",
+    "website_url": "https://www.outreach.io",
+    "pricing_model_slug": "paid-only"
+  },
+  {
+    "slug": "bitrix24",
+    "name": "Bitrix24",
+    "tagline": "Free collaboration and CRM platform",
+    "short_description": "Bitrix24 is a comprehensive workspace offering CRM, project management, collaboration, and communication tools for teams.",
+    "website_url": "https://www.bitrix24.com",
+    "pricing_model_slug": "freemium"
+  },
+  {
+    "slug": "onepagecrm",
+    "name": "OnePageCRM",
+    "tagline": "Action-focused CRM for sales",
+    "short_description": "OnePageCRM converts your database into a simple, actionable to-do list to help you focus on closing sales.",
+    "website_url": "https://www.onepagecrm.com",
+    "pricing_model_slug": "paid-only"
+  },
+  {
+    "slug": "vtiger",
+    "name": "Vtiger",
+    "tagline": "One view of your customer",
+    "short_description": "Vtiger CRM is an all-in-one CRM that helps sales, marketing, and support teams collaborate to deliver seamless customer experiences.",
+    "website_url": "https://www.vtiger.com",
+    "pricing_model_slug": "open-source"
+  },
+  {
+    "slug": "netsuite-crm",
+    "name": "NetSuite CRM",
+    "tagline": "Real-time customer lifecycle management",
+    "short_description": "NetSuite CRM delivers a 360-degree view of your customers, from lead generation through sales, order management, and support.",
+    "website_url": "https://www.netsuite.com",
+    "pricing_model_slug": "paid-only"
+  },
+  {
+    "slug": "microsoft-dynamics-365",
+    "name": "Microsoft Dynamics 365",
+    "tagline": "Intelligent business applications for growth",
+    "short_description": "Microsoft Dynamics 365 is a suite of enterprise resource planning and customer relationship management applications.",
+    "website_url": "https://dynamics.microsoft.com",
+    "pricing_model_slug": "paid-only"
+  },
+  {
+    "slug": "engagebay",
+    "name": "EngageBay",
+    "tagline": "All-in-one marketing, sales, and service",
+    "short_description": "EngageBay is an affordable, all-in-one CRM software designed for startups and growing businesses to manage marketing, sales, and support.",
+    "website_url": "https://www.engagebay.com",
+    "pricing_model_slug": "freemium"
+  },
+  {
+    "slug": "highlevel",
+    "name": "HighLevel",
+    "tagline": "All-in-one marketing platform for agencies",
+    "short_description": "HighLevel (GoHighLevel) is an all-in-one sales and marketing platform designed specifically for agencies and marketers to manage clients and capture leads.",
+    "website_url": "https://www.gohighlevel.com",
+    "pricing_model_slug": "paid-only"
+  }
+]

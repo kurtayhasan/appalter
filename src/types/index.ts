@@ -39,6 +39,7 @@ export interface SoftwareDetail {
   focus_keywords: string[] | null;
   geo_summary: string | null;
   ai_description: string | null;
+  ai_features: any | null;
   review_count: number;
   avg_rating: number | null;
   alternative_count: number;
@@ -67,6 +68,7 @@ export interface SoftwareBasic {
   tagline: string | null;
   short_description: string | null;
   logo_url: string | null;
+  ai_features: any | null;
   avg_rating: number | null;
   review_count: number;
   alternative_count: number;
@@ -96,6 +98,7 @@ export interface AlternativeItem {
   migration_score: number | null;
   difficulty: "easy" | "medium" | "hard" | "expert" | null;
   reason: string | null;
+  core_difference: string | null;
   pros: string[] | null;
   cons: string[] | null;
   relation_id: string;

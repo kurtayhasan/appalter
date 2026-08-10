@@ -13,10 +13,18 @@
     "supabase:migrate": "supabase db push",
     "supabase:reset": "supabase db reset",
     "seed": "tsx scripts/seed-ai.ts",
-    "seed:dry": "tsx scripts/seed-ai.ts --dry-run"
+    "seed:dry": "tsx scripts/seed-ai.ts --dry-run",
+    "pipeline:discovery": "tsx scripts/pipeline/01-discovery.ts",
+    "pipeline:normalize": "tsx scripts/pipeline/02-normalize.ts",
+    "pipeline:enrich": "tsx scripts/pipeline/03-enrich.ts",
+    "pipeline:relations": "tsx scripts/pipeline/04-relations.ts",
+    "pipeline:validate": "tsx scripts/pipeline/05-validate.ts",
+    "pipeline:publish": "tsx scripts/pipeline/06-publish.ts",
+    "pipeline:run-all": "npm run pipeline:discovery crm && npm run pipeline:normalize crm && npm run pipeline:enrich crm && npm run pipeline:relations crm && npm run pipeline:validate crm && npm run pipeline:publish crm"
   },
   "dependencies": {
     "@anthropic-ai/sdk": "^0.116.0",
+    "@google/generative-ai": "^0.24.1",
     "@radix-ui/react-avatar": "^1.1.1",
     "@radix-ui/react-dialog": "^1.1.2",
     "@radix-ui/react-dropdown-menu": "^2.1.2",

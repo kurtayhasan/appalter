@@ -92,7 +92,7 @@ export async function getSoftwareBasic(
           `
           id, slug, name, tagline, short_description, logo_url,
           avg_rating, review_count, alternative_count,
-          starting_price, price_currency, is_sponsored, is_featured,
+          starting_price, price_currency, is_sponsored, is_featured, ai_features,
           categories!softwares_category_id_fkey (name, slug),
           pricing_models!softwares_pricing_model_id_fkey (slug)
           `
@@ -125,6 +125,7 @@ export async function getSoftwareBasic(
         price_currency: data.price_currency,
         is_sponsored: data.is_sponsored,
         is_featured: data.is_featured,
+        ai_features: data.ai_features,
         category_name: (category as { name: string } | null)?.name ?? null,
         category_slug: (category as { slug: string } | null)?.slug ?? null,
         pricing_model_slug: (pricingModel as { slug: string } | null)?.slug ?? null,

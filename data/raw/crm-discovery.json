@@ -1,0 +1,122 @@
+[
+  {
+    "slug": "salesforce",
+    "name": "Salesforce"
+  },
+  {
+    "slug": "hubspot",
+    "name": "HubSpot"
+  },
+  {
+    "slug": "zoho-crm",
+    "name": "Zoho CRM"
+  },
+  {
+    "slug": "pipedrive",
+    "name": "Pipedrive"
+  },
+  {
+    "slug": "monday-crm",
+    "name": "Monday CRM"
+  },
+  {
+    "slug": "freshsales",
+    "name": "Freshsales"
+  },
+  {
+    "slug": "keap",
+    "name": "Keap"
+  },
+  {
+    "slug": "activecampaign",
+    "name": "ActiveCampaign"
+  },
+  {
+    "slug": "copper",
+    "name": "Copper"
+  },
+  {
+    "slug": "insightly",
+    "name": "Insightly"
+  },
+  {
+    "slug": "zendesk-sell",
+    "name": "Zendesk Sell"
+  },
+  {
+    "slug": "nimble",
+    "name": "Nimble"
+  },
+  {
+    "slug": "sugarcrm",
+    "name": "SugarCRM"
+  },
+  {
+    "slug": "capsule",
+    "name": "Capsule"
+  },
+  {
+    "slug": "less-annoying-crm",
+    "name": "Less Annoying CRM"
+  },
+  {
+    "slug": "creatio",
+    "name": "Creatio"
+  },
+  {
+    "slug": "apptivo",
+    "name": "Apptivo"
+  },
+  {
+    "slug": "nutshell",
+    "name": "Nutshell"
+  },
+  {
+    "slug": "streak",
+    "name": "Streak"
+  },
+  {
+    "slug": "agile-crm",
+    "name": "Agile CRM"
+  },
+  {
+    "slug": "close",
+    "name": "Close"
+  },
+  {
+    "slug": "salesloft",
+    "name": "Salesloft"
+  },
+  {
+    "slug": "outreach",
+    "name": "Outreach"
+  },
+  {
+    "slug": "bitrix24",
+    "name": "Bitrix24"
+  },
+  {
+    "slug": "onepagecrm",
+    "name": "OnePageCRM"
+  },
+  {
+    "slug": "vtiger",
+    "name": "Vtiger"
+  },
+  {
+    "slug": "netsuite-crm",
+    "name": "NetSuite CRM"
+  },
+  {
+    "slug": "microsoft-dynamics-365",
+    "name": "Microsoft Dynamics 365"
+  },
+  {
+    "slug": "engagebay",
+    "name": "EngageBay"
+  },
+  {
+    "slug": "highlevel",
+    "name": "HighLevel"
+  }
+]

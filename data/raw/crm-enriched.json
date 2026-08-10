@@ -1,0 +1,344 @@
+[
+  {
+    "slug": "pipedrive",
+    "name": "Pipedrive",
+    "tagline": "The first pipeline-centric CRM",
+    "short_description": "Pipedrive is a web-based sales CRM designed to help small businesses manage leads, track activities, and automate sales pipelines.",
+    "website_url": "https://www.pipedrive.com",
+    "pricing_model_slug": "paid-only",
+    "ai_features": {
+      "tldr": "An ultra-visual, sales-first CRM designed to help growing teams close deals with minimal administrative effort.",
+      "pros": [
+        "Highly intuitive visual pipeline",
+        "Quick and easy setup",
+        "Excellent mobile sales app"
+      ],
+      "cons": [
+        "Essential features require paid add-ons",
+        "Basic reporting on cheaper plans",
+        "Limited built-in marketing tools"
+      ],
+      "pricing_model_type": "Paid Only",
+      "target_audience_size": "Startup",
+      "dealbreakers": [
+        "You require a deeply integrated, all-in-one marketing, sales, and customer support suite.",
+        "You need complex, multi-layered data permissions and enterprise-grade custom objects."
+      ],
+      "hidden_costs": [
+        "LeadBooster add-on for web forms and chatbots is billed as an extra monthly fee.",
+        "Campaigns add-on is required to send bulk email marketing campaigns."
+      ],
+      "migration_difficulty": "easy",
+      "best_for": [
+        "Outbound sales teams focused on visual pipeline management.",
+        "SMBs seeking a CRM with high user adoption rates."
+      ],
+      "not_for": [
+        "Large enterprises needing highly customized, ERP-integrated CRM systems.",
+        "B2C e-commerce brands requiring automated transactional marketing."
+      ],
+      "switching_reasons": [
+        "Outgrowing the reporting capabilities and needing advanced data analytics.",
+        "Consolidating sales, marketing, and support into a single platform like HubSpot."
+      ],
+      "key_limitations": [
+        "Strict limits on open deals and custom fields on lower-tier plans.",
+        "Native two-way email sync is restricted on the entry-level tier."
+      ],
+      "confidence": 0.95
+    }
+  },
+  {
+    "slug": "monday-crm",
+    "name": "Monday CRM",
+    "tagline": "Customize your entire sales pipeline",
+    "short_description": "Monday CRM allows teams to manage leads, customer relationships, and sales pipelines on a highly visual and customizable platform.",
+    "website_url": "https://monday.com/crm",
+    "pricing_model_slug": "paid-only",
+    "ai_features": {
+      "tldr": "A highly visual, customizable CRM built on Monday.com's Work OS that effortlessly unites sales pipelines with post-sale project management.",
+      "pros": [
+        "Highly customizable visual pipelines",
+        "Powerful, code-free automation builder",
+        "Seamless Monday.com ecosystem integration"
+      ],
+      "cons": [
+        "Strict three-seat minimum purchase",
+        "Advanced reporting locked behind expensive tiers",
+        "Steep learning curve for complex setups"
+      ],
+      "pricing_model_type": "Paid Only",
+      "target_audience_size": "Any",
+      "dealbreakers": [
+        "You are a solo user, as Monday CRM enforces a strict 3-seat minimum subscription.",
+        "You require deep, native enterprise-grade financial auditing and accounting tools within your CRM."
+      ],
+      "hidden_costs": [
+        "Enforced 3-seat minimum billing even for single users.",
+        "Overage charges or tier upgrades required when exceeding monthly automation action limits."
+      ],
+      "migration_difficulty": "medium",
+      "best_for": [
+        "Teams already using Monday.com for project management",
+        "SMBs wanting a highly visual, customizable sales pipeline"
+      ],
+      "not_for": [
+        "Solo freelancers needing a cheap single-user CRM",
+        "Enterprises requiring complex, native multi-currency accounting integrations"
+      ],
+      "switching_reasons": [
+        "Outgrowing the platform's reporting and forecasting capabilities compared to Salesforce",
+        "Frustration with escalating costs due to seat minimums and automation limits"
+      ],
+      "key_limitations": [
+        "Monthly automation and integration actions are capped based on your pricing tier.",
+        "Lacks native, advanced email marketing campaign management out of the box."
+      ],
+      "confidence": 0.95
+    }
+  },
+  {
+    "slug": "freshsales",
+    "name": "Freshsales",
+    "tagline": "Context-driven sales CRM software",
+    "short_description": "Freshsales is an AI-powered sales CRM by Freshworks that helps businesses track deals, manage contacts, and automate sales processes.",
+    "website_url": "https://www.freshworks.com/crm/sales/",
+    "pricing_model_slug": "freemium",
+    "ai_features": {
+      "tldr": "An intuitive, AI-powered CRM that seamlessly unites built-in telephony, email, and activity tracking to accelerate sales pipelines.",
+      "pros": [
+        "Built-in phone and email integration",
+        "Extremely intuitive, modern user interface",
+        "AI-powered lead scoring and insights"
+      ],
+      "cons": [
+        "Advanced reporting requires expensive plans",
+        "Limited deep customization options",
+        "Customer support can be slow"
+      ],
+      "pricing_model_type": "Freemium",
+      "target_audience_size": "Any",
+      "dealbreakers": [
+        "You require highly complex, code-level workflow customization similar to Salesforce Apex.",
+        "You need advanced, native project management features directly tied to your sales pipelines."
+      ],
+      "hidden_costs": [
+        "Freddy AI features and advanced automation require upgrading to the highest-priced tiers.",
+        "Call charges and phone number rentals for the built-in telephony are billed separately."
+      ],
+      "migration_difficulty": "medium",
+      "best_for": [
+        "High-velocity outbound sales teams requiring integrated communication tools.",
+        "Growing SMBs looking for an easy-to-adopt CRM with minimal setup time."
+      ],
+      "not_for": [
+        "Enterprises requiring deep, multi-layered organizational hierarchy and custom database structures.",
+        "Teams looking for a highly specialized, industry-specific CRM (e.g., real estate or construction)."
+      ],
+      "switching_reasons": [
+        "Outgrowing the platform's customization limits and migrating to Salesforce or HubSpot.",
+        "Frustration with feature gating, where basic automation tools require expensive plan upgrades."
+      ],
+      "key_limitations": [
+        "The reporting engine is highly restrictive on the lower-tier pricing plans.",
+        "Deep marketing automation requires purchasing and integrating the separate Freshmarketer suite."
+      ],
+      "confidence": 0.95
+    }
+  },
+  {
+    "slug": "keap",
+    "name": "Keap",
+    "tagline": "Automate your sales and marketing",
+    "short_description": "Keap is an all-in-one CRM, sales, and marketing automation platform designed specifically for small businesses.",
+    "website_url": "https://keap.com",
+    "pricing_model_slug": "paid-only",
+    "ai_features": {
+      "tldr": "Keap consolidates CRM, email marketing, and robust sales automation into a single platform to help growing service businesses automate client acquisition and follow-ups.",
+      "pros": [
+        "Powerful visual automation builder",
+        "All-in-one CRM and marketing",
+        "Robust client management tools"
+      ],
+      "cons": [
+        "Steep initial learning curve",
+        "Expensive entry-level pricing",
+        "Clunky legacy interface elements"
+      ],
+      "pricing_model_type": "Paid Only",
+      "target_audience_size": "Startup",
+      "dealbreakers": [
+        "You want a simple, low-cost newsletter tool without complex automation setups.",
+        "You do not have the time or resources to dedicate to a steep platform learning curve."
+      ],
+      "hidden_costs": [
+        "Mandatory paid onboarding and expert setup fees.",
+        "Steep pricing tiers as contact list size increases."
+      ],
+      "migration_difficulty": "hard",
+      "best_for": [
+        "Service-based small businesses automating lead capture and follow-ups.",
+        "Sales teams needing integrated CRM, invoicing, and email marketing."
+      ],
+      "not_for": [
+        "Enterprise organizations requiring highly customized database schemas.",
+        "Casual creators needing only basic, low-cost email newsletters."
+      ],
+      "switching_reasons": [
+        "Overwhelmed by the complexity of setting up campaigns (the 'Confusionsoft' effect).",
+        "Seeking more modern, intuitive UI designs found in newer competitors."
+      ],
+      "key_limitations": [
+        "Native reporting features are rigid and lack deep customization.",
+        "Email template builder is less flexible than dedicated marketing tools."
+      ],
+      "confidence": 0.95
+    }
+  },
+  {
+    "slug": "capsule",
+    "name": "Capsule",
+    "tagline": "The simple online CRM",
+    "short_description": "Capsule is an easy-to-use CRM that helps businesses stay organized, build stronger relationships, and make more sales.",
+    "website_url": "https://capsulecrm.com",
+    "pricing_model_slug": "freemium",
+    "ai_features": {
+      "tldr": "A delightfully simple CRM that keeps your relationships and sales pipelines organized without the bloat of enterprise software.",
+      "pros": [
+        "Clean and intuitive user interface",
+        "Affordable pricing for growing teams",
+        "Simple contact and pipeline management"
+      ],
+      "cons": [
+        "Limited advanced automation features",
+        "Basic reporting and analytics capabilities",
+        "Fewer native third-party integrations"
+      ],
+      "pricing_model_type": "Freemium",
+      "target_audience_size": "Startup",
+      "dealbreakers": [
+        "You require advanced, built-in marketing automation and email campaigns.",
+        "You need highly customizable, enterprise-grade reporting and forecasting."
+      ],
+      "hidden_costs": [
+        "Zapier subscription costs to connect unsupported apps.",
+        "Storage limit upgrades as contact database grows."
+      ],
+      "migration_difficulty": "easy",
+      "best_for": [
+        "Small teams wanting straightforward sales pipeline tracking.",
+        "Businesses focusing on relationship management over complex workflows."
+      ],
+      "not_for": [
+        "Large enterprise sales teams requiring deep customization.",
+        "Marketing-heavy organizations needing native outbound campaign tools."
+      ],
+      "switching_reasons": [
+        "Outgrowing the basic reporting and analytics features.",
+        "The need for native, advanced marketing automation integrations."
+      ],
+      "key_limitations": [
+        "No native bulk email marketing tool.",
+        "Limited dashboard customization and advanced data visualization."
+      ],
+      "confidence": 0.95
+    }
+  },
+  {
+    "slug": "nutshell",
+    "name": "Nutshell",
+    "tagline": "Sneaky powerful CRM for teams",
+    "short_description": "Nutshell is an all-in-one CRM and email marketing platform that helps B2B sales teams close more deals.",
+    "website_url": "https://www.nutshell.com",
+    "pricing_model_slug": "paid-only",
+    "ai_features": {
+      "tldr": "An intuitive, all-in-one CRM and email marketing platform designed to help B2B sales teams collaborate and close deals without enterprise complexity.",
+      "pros": [
+        "Intuitive pipeline and lead management.",
+        "Unlimited contacts and data storage.",
+        "Outstanding, free live customer support."
+      ],
+      "cons": [
+        "Limited advanced reporting customization.",
+        "Fewer native integrations than competitors.",
+        "Basic mobile app functionality."
+      ],
+      "pricing_model_type": "Paid Only",
+      "target_audience_size": "Startup",
+      "dealbreakers": [
+        "You require highly complex, custom-coded enterprise workflows and deep ERP integrations.",
+        "You need a free-forever CRM tier for a solo business."
+      ],
+      "hidden_costs": [
+        "Nutshell Campaigns (email marketing) costs extra as your contact list grows.",
+        "Phone support is restricted to higher-tier paid plans."
+      ],
+      "migration_difficulty": "easy",
+      "best_for": [
+        "B2B sales teams needing simple, automated pipeline management.",
+        "SMBs wanting integrated CRM and email marketing in one tool."
+      ],
+      "not_for": [
+        "Large enterprises requiring highly customized database schemas.",
+        "B2C brands requiring high-volume transactional SMS automation."
+      ],
+      "switching_reasons": [
+        "Needing advanced custom reporting and business intelligence integrations.",
+        "Seeking a free-forever entry-level CRM option."
+      ],
+      "key_limitations": [
+        "Reporting dashboards lack deep visual customization options.",
+        "Native integration library is smaller than major competitors."
+      ],
+      "confidence": 0.95
+    }
+  },
+  {
+    "slug": "streak",
+    "name": "Streak",
+    "tagline": "CRM inside your Gmail inbox",
+    "short_description": "Streak is a CRM integrated directly into Gmail, allowing users to manage sales, support, and hiring pipelines without leaving their inbox.",
+    "website_url": "https://www.streak.com",
+    "pricing_model_slug": "freemium",
+    "ai_features": {
+      "tldr": "Streak turns your Gmail inbox into a powerful, fully-integrated CRM, eliminating the need to switch between apps.",
+      "pros": [
+        "Runs entirely inside Gmail inbox",
+        "Extremely fast and easy setup",
+        "Excellent built-in email tracking"
+      ],
+      "cons": [
+        "Only works within Google Chrome",
+        "Can slow down Gmail performance",
+        "Limited mobile app functionality"
+      ],
+      "pricing_model_type": "Freemium",
+      "target_audience_size": "Startup",
+      "dealbreakers": [
+        "Your team uses Microsoft Outlook or another non-Gmail email client.",
+        "You require a standalone CRM that operates independently of your email browser extension."
+      ],
+      "hidden_costs": [
+        "High per-user pricing tiers required to access basic team sharing features."
+      ],
+      "migration_difficulty": "easy",
+      "best_for": [
+        "Small teams managing sales pipelines directly from their Gmail inbox.",
+        "Freelancers and recruiters tracking outreach campaigns without leaving email."
+      ],
+      "not_for": [
+        "Large enterprises requiring complex multi-department CRM workflows.",
+        "Organizations using Microsoft 365 or Outlook for company email."
+      ],
+      "switching_reasons": [
+        "Outgrowing Gmail's UI and needing a dedicated, scalable CRM platform.",
+        "Experiencing browser lag and performance issues within Gmail."
+      ],
+      "key_limitations": [
+        "Hard dependency on the Google Chrome browser extension to function.",
+        "Basic reporting capabilities compared to dedicated CRM platforms."
+      ],
+      "confidence": 0.95
+    }
+  }
+]
