@@ -98,17 +98,17 @@ const nextConfig: NextConfig = {
           "default-src 'self'",
           // Scripts: self + Vercel analytics + PostHog + Google Services
           // NOTE: nonce is injected by middleware.ts via Content-Security-Policy header override
-          "script-src 'self' 'unsafe-inline' 'unsafe-eval' https://app.posthog.com https://vercel.live https://cdn.vercel-insights.com https://pagead2.googlesyndication.com https://www.googletagmanager.com https://www.google-analytics.com https://ep1.adtrafficquality.google https://ep2.adtrafficquality.google",
+          "script-src 'self' 'unsafe-inline' 'unsafe-eval' https://app.posthog.com https://us.i.posthog.com https://us-assets.i.posthog.com https://eu.i.posthog.com https://eu-assets.i.posthog.com https://vercel.live https://cdn.vercel-insights.com https://pagead2.googlesyndication.com https://www.googletagmanager.com https://www.google-analytics.com https://ep1.adtrafficquality.google https://ep2.adtrafficquality.google",
           // Styles: self + inline (needed for Tailwind's JIT output)
           "style-src 'self' 'unsafe-inline' https://fonts.googleapis.com",
           // Fonts
           "font-src 'self' https://fonts.gstatic.com",
           // Images: self + data URIs + Supabase + known CDNs
           "img-src 'self' data: blob: https: *.supabase.co logo.clearbit.com",
-          "connect-src 'self' https://*.supabase.co https://app.posthog.com https://*.sentry.io wss://*.supabase.co https://www.google-analytics.com https://www.google.com https://ep1.adtrafficquality.google https://pagead2.googlesyndication.com",
+          "connect-src 'self' https://*.supabase.co https://app.posthog.com https://us.i.posthog.com https://eu.i.posthog.com https://*.sentry.io wss://*.supabase.co https://www.google-analytics.com https://www.google.com https://ep1.adtrafficquality.google https://pagead2.googlesyndication.com",
           "media-src 'self'",
           // Frames
-          "frame-src 'self' https://googleads.g.doubleclick.net https://www.google.com",
+          "frame-src 'self' https://googleads.g.doubleclick.net https://www.google.com https://ep1.adtrafficquality.google https://ep2.adtrafficquality.google",
           // Frame ancestors
           "frame-ancestors 'none'",
           // Base URI
