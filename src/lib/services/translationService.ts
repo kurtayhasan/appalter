@@ -1,9 +1,7 @@
 import OpenAI from "openai";
 import { createClient } from "@supabase/supabase-js";
 
-const openai = new OpenAI({
-  apiKey: process.env.OPENAI_API_KEY,
-});
+// We don't instantiate OpenAI at module level to avoid build errors if env var is missing during build time
 
 export async function translateSoftwareData(softwareId: string, record: any) {
   const targetLocales = ["tr", "es", "de"];
@@ -11,6 +9,10 @@ export async function translateSoftwareData(softwareId: string, record: any) {
     process.env.NEXT_PUBLIC_SUPABASE_URL!,
     process.env.SUPABASE_SERVICE_ROLE_KEY!
   );
+
+  const openai = new OpenAI({
+    apiKey: process.env.OPENAI_API_KEY,
+  });
 
   console.log(`Starting translation for software ${softwareId} to ${targetLocales.join(', ')}...`);
 
