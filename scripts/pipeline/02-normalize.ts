@@ -40,7 +40,7 @@ async function runNormalize(category: string) {
       temperature: 0.1
     });
 
-    const content = response.choices[0].message.content;
+    const content = response.choices[0]?.message?.content;
     const parsedData = parseJsonSafely(content || "[]");
     
     // Validate with Zod

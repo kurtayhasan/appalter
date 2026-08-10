@@ -39,7 +39,7 @@ async function enrichSoftware(software: any) {
       temperature: 0.2
     });
 
-    const content = response.choices[0].message.content;
+    const content = response.choices[0]?.message?.content;
     const parsedData = parseJsonSafely(content || "{}");
     
     // Validate with Zod
