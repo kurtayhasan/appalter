@@ -1083,6 +1083,8 @@ img, svg {
   border: 1px solid var(--border-subtle);
   border-radius: var(--radius-lg);
   padding: 1.5rem;
+  margin-top: 0.75rem;
+  margin-left: 0.75rem;
   position: relative;
   transition: all var(--transition-normal);
   backdrop-filter: blur(12px);
