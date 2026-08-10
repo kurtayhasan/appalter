@@ -48,7 +48,8 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
     }
 
     // 3. Fetch Softwares
-    const swRes = await fetch(`${supabaseUrl}/rest/v1/softwares?status=eq.published&select=slug,updated_at&limit=1000`, { headers });
+    // Added order=updated_at.desc.nullslast to ensure the newest published softwares are always included
+    const swRes = await fetch(`${supabaseUrl}/rest/v1/softwares?status=eq.published&select=slug,updated_at&order=updated_at.desc.nullslast&limit=1000`, { headers });
     let softwares = [];
     if (swRes.ok) {
       softwares = await swRes.json();
@@ -74,10 +75,9 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
     }
 
     // 4. Fetch Top VS Pairs (Alternatives)
-    // We only fetch a subset to avoid hitting the 50,000 URL limit in a single file
-    // Ideally we'd use sitemap index for scale, but this works for 100 softwares.
+    // Added order=created_at.desc.nullslast to ensure newly opened comparisons are indexed
     const altRes = await fetch(
-      `${supabaseUrl}/rest/v1/alternatives?select=software_id,alternative_id,software:softwares!alternatives_software_id_fkey(slug),alternative:softwares!alternatives_alternative_id_fkey(slug)&is_approved=eq.true&limit=1000`,
+      `${supabaseUrl}/rest/v1/alternatives?select=software_id,alternative_id,software:softwares!alternatives_software_id_fkey(slug),alternative:softwares!alternatives_alternative_id_fkey(slug)&is_approved=eq.true&order=created_at.desc.nullslast&limit=1000`,
       { headers }
     );
     if (altRes.ok) {
