@@ -1,5 +1,6 @@
 import { NextRequest, NextResponse } from "next/server";
 import { revalidatePath } from "next/cache";
+import { translateSoftwareData } from "@/lib/services/translationService";
 
 export async function POST(request: NextRequest) {
   try {
@@ -15,8 +16,26 @@ export async function POST(request: NextRequest) {
     }
 
     // Parse the payload from Supabase (optional: you can use it to do granular revalidation)
-    // const payload = await request.json();
+    const payload = await request.json();
     
+    // Auto-translation logic
+    if (payload.table === "softwares" && payload.type === "UPDATE") {
+      const record = payload.record;
+      const old = payload.old_record;
+      
+      const hasChanged = 
+        record.name !== old?.name ||
+        record.tagline !== old?.tagline ||
+        record.short_description !== old?.short_description ||
+        JSON.stringify(record.ai_features) !== JSON.stringify(old?.ai_features);
+        
+      if (hasChanged) {
+        console.log(`Detected changes in English software: ${record.slug}. Translating...`);
+        // We await this so the serverless function doesn't terminate early.
+        await translateSoftwareData(record.id, record);
+      }
+    }
+
     // For maximum consistency and safety, any manual edit in Supabase 
     // will clear the entire site's Data Cache. 
     // Since manual edits are rare (e.g. done by an Admin in Supabase Studio),

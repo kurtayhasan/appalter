@@ -6,7 +6,7 @@ import { createNavigation } from "next-intl/navigation";
 // ---------------------------------------------------------------------------
 export const routing = defineRouting({
   // Desteklenen tüm diller — veritabanındaki translation_status lokalleriyle eşleşmeli
-  locales: ["en", "tr"],
+  locales: ["en", "tr", "es", "de"],
 
   // Varsayılan dil — "/" rotası "en" içeriğini prefix'siz sunar
   defaultLocale: "en",
@@ -19,7 +19,8 @@ export const routing = defineRouting({
   localePrefix: "as-needed",
 
   // Locale algılama sırası: URL → Accept-Language header → varsayılan
-  localeDetection: true,
+  // SEO ve B2B kullanım için kapalı (Kullanıcı otomatik yönlendirilmez, dilerse manuel seçer)
+  localeDetection: false,
 
   // Her rota için tanımlı path'ler (isteğe bağlı i18n URL'leri)
   // Şimdilik tüm localler aynı slug'ı kullanır; gelecekte
@@ -29,6 +30,8 @@ export const routing = defineRouting({
     "/search": {
       en: "/search",
       tr: "/ara",
+      es: "/buscar",
+      de: "/suchen",
     },
   },
 });

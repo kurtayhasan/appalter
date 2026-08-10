@@ -72,8 +72,8 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const t = await getTranslations({ locale, namespace: "seo" });
 
   const [software, alternative] = await Promise.all([
-    getSoftwareBasic(slug),
-    getSoftwareBasic(alternative_slug),
+    getSoftwareBasic(slug, locale),
+    getSoftwareBasic(alternative_slug, locale),
   ]);
 
   if (!software || !alternative) return {};
@@ -119,8 +119,8 @@ export default async function VsPage({ params }: Props) {
   if (slug === alternative_slug) notFound();
 
   const [software, alternative] = await Promise.all([
-    getSoftwareBasic(slug),
-    getSoftwareBasic(alternative_slug),
+    getSoftwareBasic(slug, locale),
+    getSoftwareBasic(alternative_slug, locale),
   ]);
 
   if (!software || !alternative) notFound();

@@ -52,7 +52,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const { locale, slug } = await params;
   setRequestLocale(locale);
   const t = await getTranslations({ locale, namespace: "seo" });
-  const software = await getSoftwareBasic(slug);
+  const software = await getSoftwareBasic(slug, locale);
 
   if (!software) return {};
 
@@ -93,7 +93,7 @@ export default async function AlternativesPage({ params, searchParams }: Props) 
   setRequestLocale(locale);
   const t = await getTranslations({ locale, namespace: "software" });
 
-  const software = await getSoftwareBasic(slug);
+  const software = await getSoftwareBasic(slug, locale);
   if (!software) notFound();
 
   return (

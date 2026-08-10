@@ -1,0 +1,46 @@
+{
+  "Navigation": {
+    "searchPlaceholder": "Buscar software, categorías o alternativas...",
+    "marketing": "Marketing",
+    "development": "Desarrollo",
+    "freeTools": "Herramientas Gratuitas"
+  },
+  "HomePage": {
+    "title": "Encuentra las Mejores Alternativas de Software",
+    "subtitle": "Descubre, compara y elige las herramientas adecuadas para tu flujo de trabajo.",
+    "popularCategories": "Categorías Populares",
+    "featuredSoftware": "Software Destacado",
+    "viewAll": "Ver todo"
+  },
+  "SearchPage": {
+    "title": "Resultados de búsqueda",
+    "noResults": "No se encontraron resultados para tu búsqueda.",
+    "placeholder": "Escribe para buscar..."
+  },
+  "NotFound": {
+    "title": "Página No Encontrada",
+    "description": "La página que buscas no existe o ha sido movida.",
+    "backHome": "Volver al Inicio"
+  },
+  "Error": {
+    "title": "Algo salió mal",
+    "description": "Ocurrió un error inesperado. Por favor, inténtalo de nuevo más tarde.",
+    "retry": "Intentar de nuevo"
+  },
+  "seo": {
+    "title": "Título SEO",
+    "description": "Descripción SEO",
+    "categoryTitle": "Alternativas y Competidores de {category}",
+    "categoryDescription": "Encuentra las mejores alternativas y competidores para {category}.",
+    "compareTitle": "{name} vs {alternative} ({year}) | AppAlter",
+    "compareDescription": "Compara {name} y {alternative} por características, precios y reseñas de usuarios.",
+    "alternativesTitle": "Alternativas y Competidores de {name} ({year})",
+    "alternativesDescription": "Encuentra las mejores alternativas a {name}. Compara {count}+ competidores por características, precios y reseñas de usuarios."
+  },
+  "software": {
+    "about": "Acerca de",
+    "features": "Características",
+    "bestAlternativesTo": "Las mejores alternativas a {name} ({year})",
+    "basedOnReviews": "Basado en {count} reseñas y valoraciones"
+  }
+}

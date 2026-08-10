@@ -63,7 +63,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const { locale, slug } = await params;
   setRequestLocale(locale);
 
-  const software = await getSoftwareBySlugCached(slug);
+  const software = await getSoftwareBySlugCached(slug, locale);
   if (!software) return {};
 
   const year = 2026;
@@ -145,7 +145,7 @@ export default async function SoftwarePage({ params }: Props) {
   const { locale, slug } = await params;
   setRequestLocale(locale);
 
-  const software = await getSoftwareBySlugCached(slug);
+  const software = await getSoftwareBySlugCached(slug, locale);
   if (!software) notFound();
 
   const siteUrl = process.env.NEXT_PUBLIC_SITE_URL ?? "https://appalter.com";

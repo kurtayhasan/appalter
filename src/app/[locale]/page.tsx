@@ -131,7 +131,7 @@ export default async function HomePage({
 
 async function FeaturedIsland({ locale }: { locale: Locale }) {
   // En üstteki 6 featured yazılım
-  const softwares = await getFeaturedSoftwaresCached(undefined, 6);
+  const softwares = await getFeaturedSoftwaresCached(undefined, 6, locale);
 
   if (softwares.length === 0) return null;
 

@@ -47,14 +47,15 @@ import {
 // Ana software sayfası için tam detay — PPR statik shell için kullanılır.
 // ---------------------------------------------------------------------------
 export async function getSoftwareBySlugCached(
-  slug: string
+  slug: string,
+  locale: string = "en"
 ): Promise<SoftwareDetail | null> {
   return unstable_cache(
     async () => {
       const supabase = createStaticClient();
 
       const { data, error } = await supabase
-        .rpc("get_software_by_slug", { p_slug: slug })
+        .rpc("get_software_by_slug", { p_slug: slug, p_locale: locale })
         .single();
 
       if (error || !data) {
@@ -66,7 +67,7 @@ export async function getSoftwareBySlugCached(
       return data as unknown as SoftwareDetail;
     },
     // Cache key: slug bazlı unique
-    [`software-detail-${slug}`],
+    [`software-detail-${slug}-${locale}`],
     {
       tags: [softwareTag(slug)],
       revalidate: REVALIDATE.STANDARD, // 1 saat
@@ -80,7 +81,8 @@ export async function getSoftwareBySlugCached(
 // generateMetadata ve VS sayfaları bu fonksiyonu kullanır.
 // ---------------------------------------------------------------------------
 export async function getSoftwareBasic(
-  slug: string
+  slug: string,
+  locale: string = "en"
 ): Promise<SoftwareBasic | null> {
   return unstable_cache(
     async () => {
@@ -94,11 +96,13 @@ export async function getSoftwareBasic(
           avg_rating, review_count, alternative_count,
           starting_price, price_currency, is_sponsored, is_featured, ai_features,
           categories!softwares_category_id_fkey (name, slug),
-          pricing_models!softwares_pricing_model_id_fkey (slug)
+          pricing_models!softwares_pricing_model_id_fkey (slug),
+          software_translations (locale, name, tagline, short_description, ai_features)
           `
         )
         .eq("slug", slug)
         .eq("status", "published")
+        .eq("software_translations.locale", locale)
         .single();
 
       if (error || !data) return null;
@@ -111,12 +115,17 @@ export async function getSoftwareBasic(
         ? data.pricing_models[0]
         : data.pricing_models;
 
+      const translation =
+        Array.isArray(data.software_translations) && data.software_translations.length > 0
+          ? data.software_translations[0]
+          : null;
+
       return {
         id: data.id,
         slug: data.slug,
-        name: data.name,
-        tagline: data.tagline,
-        short_description: data.short_description,
+        name: translation?.name ?? data.name,
+        tagline: translation?.tagline ?? data.tagline,
+        short_description: translation?.short_description ?? data.short_description,
         logo_url: data.logo_url,
         avg_rating: data.avg_rating,
         review_count: data.review_count,
@@ -125,13 +134,13 @@ export async function getSoftwareBasic(
         price_currency: data.price_currency,
         is_sponsored: data.is_sponsored,
         is_featured: data.is_featured,
-        ai_features: data.ai_features,
+        ai_features: translation?.ai_features ?? data.ai_features,
         category_name: (category as { name: string } | null)?.name ?? null,
         category_slug: (category as { slug: string } | null)?.slug ?? null,
         pricing_model_slug: (pricingModel as { slug: string } | null)?.slug ?? null,
       } satisfies SoftwareBasic;
     },
-    [`software-basic-${slug}`],
+    [`software-basic-${slug}-${locale}`],
     {
       tags: [softwareTag(slug)],
       revalidate: REVALIDATE.STANDARD,
@@ -145,11 +154,12 @@ export async function getSoftwareBasic(
 // ---------------------------------------------------------------------------
 export async function getFeaturedSoftwaresCached(
   categoryId?: string,
-  limit = 12
+  limit = 12,
+  locale: string = "en"
 ): Promise<SoftwareBasic[]> {
   const cacheKey = categoryId
-    ? `featured-softwares-${categoryId}-${limit}`
-    : `featured-softwares-all-${limit}`;
+    ? `featured-softwares-${categoryId}-${limit}-${locale}`
+    : `featured-softwares-all-${limit}-${locale}`;
 
   return unstable_cache(
     async () => {
@@ -158,6 +168,7 @@ export async function getFeaturedSoftwaresCached(
       const { data, error } = await supabase.rpc("get_featured_softwares", {
         p_category_id: categoryId ?? null,
         p_limit: limit,
+        p_locale: locale,
       });
 
       if (error || !data) return [];
@@ -183,7 +194,8 @@ export async function getFeaturedSoftwaresCached(
 export async function getAlternativesCached(
   softwareSlug: string,
   page = 1,
-  limit = 12
+  limit = 12,
+  locale: string = "en"
 ): Promise<{ items: AlternativeItem[]; total: number }> {
   const offset = (page - 1) * limit;
 
@@ -197,6 +209,7 @@ export async function getAlternativesCached(
           p_slug: softwareSlug,
           p_limit: limit,
           p_offset: offset,
+          p_locale: locale,
         }
       );
 
@@ -215,7 +228,7 @@ export async function getAlternativesCached(
         total: countData?.alternative_count ?? data.length,
       };
     },
-    [`alternatives-${softwareSlug}-page-${page}-limit-${limit}`],
+    [`alternatives-${softwareSlug}-${page}-${limit}-${locale}`],
     {
       tags: [alternativesTag(softwareSlug)],
       revalidate: REVALIDATE.STANDARD,
