@@ -1,8 +1,10 @@
 import React from "react";
 import { getLocale } from "next-intl/server";
 import { Inter, Outfit } from "next/font/google";
+import { Suspense } from "react";
 import Script from "next/script";
 import "@/app/globals.css";
+import { PostHogProvider, PostHogPageview } from "@/components/providers/PostHogProvider";
 
 const inter = Inter({
   subsets: ["latin", "latin-ext"],
@@ -28,7 +30,12 @@ export default async function GlobalLayout({
       <head>
       </head>
       <body>
-        {children}
+        <Suspense fallback={null}>
+          <PostHogPageview />
+        </Suspense>
+        <PostHogProvider>
+          {children}
+        </PostHogProvider>
         
         {/* Google Analytics */}
         <Script
