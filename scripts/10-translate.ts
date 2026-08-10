@@ -81,7 +81,7 @@ Return a valid JSON object with the exact following structure for each requested
         response_format: { type: "json_object" },
       });
 
-      const result = JSON.parse(response.choices[0].message.content || "{}");
+      const result = JSON.parse(response.choices?.[0]?.message?.content || "{}");
 
       for (const locale of missingLocales) {
         if (result[locale]) {
