@@ -37,14 +37,20 @@ async function runPublish(category: string) {
   const categoryId = await getCategoryId(category);
   const slugToIdMap = new Map<string, string>();
 
+  // Helper to sanitize slug
+  const sanitizeSlug = (slug: string) => {
+    return slug.toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/^-|-$/g, '');
+  };
+
   // Insert or update softwares
   for (const sw of softwares) {
     const pricingModelId = await getPricingModelId(sw.pricing_model_slug);
+    const cleanSlug = sanitizeSlug(sw.slug);
     
     const { data, error } = await supabase
       .from("softwares")
       .upsert({
-        slug: sw.slug,
+        slug: cleanSlug,
         name: sw.name,
         tagline: sw.tagline,
         short_description: sw.short_description,
@@ -53,16 +59,16 @@ async function runPublish(category: string) {
         pricing_model_id: pricingModelId,
         ai_features: sw.ai_features,
         status: "published",
-        is_verified: false // Set to true after manual review if needed
+        is_verified: false
       }, { onConflict: "slug" })
       .select("id")
       .single();
 
     if (error) {
-      console.error(`Error publishing ${sw.slug}:`, error);
+      console.error(`Error publishing ${cleanSlug}:`, error);
     } else {
-      slugToIdMap.set(sw.slug, data.id);
-      console.log(`Published software: ${sw.slug}`);
+      slugToIdMap.set(cleanSlug, data.id);
+      console.log(`Published software: ${cleanSlug}`);
     }
   }
 
@@ -70,11 +76,14 @@ async function runPublish(category: string) {
 
   // Insert or update relations
   for (const rel of relations) {
-    const swId = slugToIdMap.get(rel.software_slug);
-    const altId = slugToIdMap.get(rel.alternative_slug);
+    const cleanSwSlug = sanitizeSlug(rel.software_slug);
+    const cleanAltSlug = sanitizeSlug(rel.alternative_slug);
+    
+    const swId = slugToIdMap.get(cleanSwSlug);
+    const altId = slugToIdMap.get(cleanAltSlug);
 
     if (!swId || !altId) {
-      console.warn(`Skipping relation ${rel.software_slug} -> ${rel.alternative_slug} (IDs not found)`);
+      console.warn(`Skipping relation ${cleanSwSlug} -> ${cleanAltSlug} (IDs not found)`);
       continue;
     }
 
@@ -91,9 +100,9 @@ async function runPublish(category: string) {
       }, { onConflict: "software_id, alternative_id" });
 
     if (error) {
-      console.error(`Error publishing relation ${rel.software_slug} -> ${rel.alternative_slug}:`, error);
+      console.error(`Error publishing relation ${cleanSwSlug} -> ${cleanAltSlug}:`, error);
     } else {
-      console.log(`Published relation: ${rel.software_slug} -> ${rel.alternative_slug}`);
+      console.log(`Published relation: ${cleanSwSlug} -> ${cleanAltSlug}`);
     }
   }
 

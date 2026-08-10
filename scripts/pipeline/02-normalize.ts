@@ -1,6 +1,6 @@
 import * as fs from "fs";
 import * as path from "path";
-import { geminiModel, CATEGORIES, normalizedSchema, parseJsonSafely } from "./config";
+import { openai, CATEGORIES, normalizedSchema, parseJsonSafely } from "./config";
 
 async function runNormalize(category: string) {
   const inputPath = path.join(__dirname, "../../data/raw", `${category}-discovery.json`);
@@ -31,16 +31,17 @@ async function runNormalize(category: string) {
   `;
 
   try {
-    const result = await geminiModel.generateContent({
-      contents: [{ role: "user", parts: [{ text: prompt }] }],
-      generationConfig: {
-        temperature: 0.1,
-        responseMimeType: "application/json",
-      },
+    const response = await openai.chat.completions.create({
+      model: "gpt-4o-mini",
+      messages: [
+        { role: "system", content: "You are a specialized data extractor. Output strictly valid JSON without any markdown tags." },
+        { role: "user", content: prompt }
+      ],
+      temperature: 0.1
     });
 
-    const content = result.response.text();
-    const parsedData = parseJsonSafely(content);
+    const content = response.choices[0].message.content;
+    const parsedData = parseJsonSafely(content || "[]");
     
     // Validate with Zod
     const validatedData = normalizedSchema.parse(parsedData);

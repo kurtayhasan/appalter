@@ -1,22 +1,21 @@
 import * as dotenv from "dotenv";
 import { z } from "zod";
-import { GoogleGenerativeAI } from "@google/generative-ai";
+import OpenAI from "openai";
 import { createClient } from "@supabase/supabase-js";
 
 dotenv.config({ path: ".env.local" });
 
 export const SUPABASE_URL = process.env.NEXT_PUBLIC_SUPABASE_URL || process.env.SUPABASE_URL;
 export const SUPABASE_KEY = process.env.SUPABASE_SERVICE_ROLE_KEY;
-export const GEMINI_API_KEY = process.env.GEMINI_API_KEY;
+export const OPENAI_API_KEY = process.env.OPENAI_API_KEY;
 
-if (!SUPABASE_URL || !SUPABASE_KEY || !GEMINI_API_KEY) {
+if (!SUPABASE_URL || !SUPABASE_KEY || !OPENAI_API_KEY) {
   console.error("Missing environment variables. Check .env.local");
   process.exit(1);
 }
 
 export const supabase = createClient(SUPABASE_URL, SUPABASE_KEY);
-export const genAI = new GoogleGenerativeAI(GEMINI_API_KEY);
-export const geminiModel = genAI.getGenerativeModel({ model: "gemini-3.5-flash" });
+export const openai = new OpenAI({ apiKey: OPENAI_API_KEY });
 
 export const CATEGORIES = [
   "crm",

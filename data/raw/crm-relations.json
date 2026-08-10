@@ -1,149 +1,156 @@
 [
   {
-    "software_slug": "pipedrive",
-    "alternative_slug": "monday-crm",
+    "software_slug": "salesforce",
+    "alternative_slug": "microsoft-dynamics-365",
+    "similarity_score": 0.95,
+    "reason": "Both are comprehensive CRM platforms designed for large enterprises.",
+    "core_difference": "Salesforce is more focused on sales automation, while Microsoft Dynamics 365 offers broader business applications."
+  },
+  {
+    "software_slug": "salesforce",
+    "alternative_slug": "hubspot",
+    "similarity_score": 0.9,
+    "reason": "Both provide CRM solutions with strong marketing features.",
+    "core_difference": "Salesforce is more robust for sales teams, whereas HubSpot excels in inbound marketing."
+  },
+  {
+    "software_slug": "hubspot",
+    "alternative_slug": "salesforce",
+    "similarity_score": 0.9,
+    "reason": "Both provide CRM solutions with strong marketing features.",
+    "core_difference": "HubSpot excels in inbound marketing, while Salesforce is more robust for sales teams."
+  },
+  {
+    "software_slug": "hubspot",
+    "alternative_slug": "zoho-crm",
     "similarity_score": 0.85,
-    "reason": "Both are highly visual CRMs focused on pipeline management, but Pipedrive is built specifically for sales while Monday CRM is a highly customizable work management platform.",
-    "core_difference": "Pipedrive is a dedicated, sales-first CRM, whereas Monday CRM is a flexible work operating system adapted for sales pipelines."
+    "reason": "Both offer CRM solutions that cater to small and medium businesses.",
+    "core_difference": "HubSpot focuses more on marketing automation, while Zoho CRM is known for its affordability."
   },
   {
-    "software_slug": "pipedrive",
-    "alternative_slug": "nutshell",
-    "similarity_score": 0.88,
-    "reason": "Both target small-to-medium businesses with user-friendly, pipeline-centric interfaces, but Nutshell includes built-in email marketing features.",
-    "core_difference": "Pipedrive focuses strictly on sales pipeline execution, while Nutshell offers more integrated email marketing and team collaboration tools out of the box."
-  },
-  {
-    "software_slug": "pipedrive",
-    "alternative_slug": "freshsales",
-    "similarity_score": 0.87,
-    "reason": "Both are modern, sales-focused CRMs with strong pipeline tracking, but Freshsales offers deeper built-in communication tools and AI insights.",
-    "core_difference": "Pipedrive excels at visual deal-routing and activity-based selling, while Freshsales provides built-in telephony and AI-powered deal scoring."
-  },
-  {
-    "software_slug": "monday-crm",
-    "alternative_slug": "pipedrive",
+    "software_slug": "zoho-crm",
+    "alternative_slug": "hubspot",
     "similarity_score": 0.85,
-    "reason": "Both offer highly visual drag-and-drop pipeline interfaces, but Monday CRM allows for broader cross-departmental project management.",
-    "core_difference": "Monday CRM is highly customizable for non-sales workflows, whereas Pipedrive is strictly optimized for sales reps and deal tracking."
+    "reason": "Both offer CRM solutions that cater to small and medium businesses.",
+    "core_difference": "Zoho CRM is known for its affordability, while HubSpot focuses more on marketing automation."
   },
   {
-    "software_slug": "monday-crm",
+    "software_slug": "zoho-crm",
     "alternative_slug": "freshsales",
     "similarity_score": 0.8,
-    "reason": "Both help teams manage customer relationships with modern interfaces, but Freshsales is a dedicated CRM with built-in sales tools, while Monday CRM is a generalist platform.",
-    "core_difference": "Freshsales provides native sales intelligence and built-in communication channels, whereas Monday CRM requires manual setup or integrations for similar sales-specific features."
+    "reason": "Both are affordable CRM solutions aimed at small businesses.",
+    "core_difference": "Zoho CRM offers a broader suite of tools, while Freshsales emphasizes AI-powered features."
   },
   {
-    "software_slug": "monday-crm",
-    "alternative_slug": "streak",
-    "similarity_score": 0.72,
-    "reason": "Both offer flexible, spreadsheet-like pipeline tracking, but Streak is confined to Gmail while Monday CRM is a standalone, multi-view workspace.",
-    "core_difference": "Monday CRM is a comprehensive standalone work platform, while Streak is a lightweight CRM that operates entirely inside your Gmail inbox."
+    "software_slug": "microsoft-dynamics-365",
+    "alternative_slug": "salesforce",
+    "similarity_score": 0.95,
+    "reason": "Both are comprehensive CRM platforms designed for large enterprises.",
+    "core_difference": "Microsoft Dynamics 365 offers broader business applications, while Salesforce is more focused on sales automation."
+  },
+  {
+    "software_slug": "pipedrive",
+    "alternative_slug": "close",
+    "similarity_score": 0.88,
+    "reason": "Both are designed specifically for sales teams to manage their pipelines.",
+    "core_difference": "Pipedrive focuses on visual sales pipelines, while Close emphasizes communication tools."
   },
   {
     "software_slug": "freshsales",
+    "alternative_slug": "zoho-crm",
+    "similarity_score": 0.8,
+    "reason": "Both are affordable CRM solutions aimed at small businesses.",
+    "core_difference": "Freshsales emphasizes AI-powered features, while Zoho CRM offers a broader suite of tools."
+  },
+  {
+    "software_slug": "insightly",
+    "alternative_slug": "sugarcrm",
+    "similarity_score": 0.82,
+    "reason": "Both provide CRM solutions with project management capabilities.",
+    "core_difference": "Insightly integrates project management more deeply, while SugarCRM offers more customization options."
+  },
+  {
+    "software_slug": "sugarcrm",
+    "alternative_slug": "insightly",
+    "similarity_score": 0.82,
+    "reason": "Both provide CRM solutions with project management capabilities.",
+    "core_difference": "SugarCRM offers more customization options, while Insightly integrates project management more deeply."
+  },
+  {
+    "software_slug": "close",
     "alternative_slug": "pipedrive",
-    "similarity_score": 0.87,
-    "reason": "Both are powerful sales CRMs designed to keep deals moving, but Freshsales includes built-in phone and email capabilities directly in the platform.",
-    "core_difference": "Freshsales focuses on AI-driven insights and built-in communication, while Pipedrive focuses on visual, activity-based pipeline management."
+    "similarity_score": 0.88,
+    "reason": "Both are designed specifically for sales teams to manage their pipelines.",
+    "core_difference": "Close emphasizes communication tools, while Pipedrive focuses on visual sales pipelines."
   },
   {
-    "software_slug": "freshsales",
+    "software_slug": "keap",
+    "alternative_slug": "hubspot",
+    "similarity_score": 0.85,
+    "reason": "Both combine CRM with marketing automation features.",
+    "core_difference": "Keap is more focused on small business automation, while HubSpot excels in inbound marketing."
+  },
+  {
+    "software_slug": "copper",
+    "alternative_slug": "streak",
+    "similarity_score": 0.8,
+    "reason": "Both CRMs are designed to integrate closely with Google Workspace.",
+    "core_difference": "Copper is more comprehensive for businesses, while Streak is simpler and embedded within Gmail."
+  },
+  {
+    "software_slug": "streak",
+    "alternative_slug": "copper",
+    "similarity_score": 0.8,
+    "reason": "Both CRMs are designed to integrate closely with Google Workspace.",
+    "core_difference": "Streak is simpler and embedded within Gmail, while Copper is more comprehensive for businesses."
+  },
+  {
+    "software_slug": "salesflare",
+    "alternative_slug": "nimble",
+    "similarity_score": 0.85,
+    "reason": "Both are smart CRMs designed for small businesses.",
+    "core_difference": "Salesflare focuses on sales automation, while Nimble emphasizes social media integration."
+  },
+  {
+    "software_slug": "nimble",
+    "alternative_slug": "salesflare",
+    "similarity_score": 0.85,
+    "reason": "Both are smart CRMs designed for small businesses.",
+    "core_difference": "Nimble emphasizes social media integration, while Salesflare focuses on sales automation."
+  },
+  {
+    "software_slug": "teamgate",
+    "alternative_slug": "salesmate",
+    "similarity_score": 0.87,
+    "reason": "Both are sales-focused CRMs designed for teams.",
+    "core_difference": "Teamgate offers more pipeline management features, while Salesmate emphasizes team collaboration."
+  },
+  {
+    "software_slug": "salesmate",
+    "alternative_slug": "teamgate",
+    "similarity_score": 0.87,
+    "reason": "Both are sales-focused CRMs designed for teams.",
+    "core_difference": "Salesmate emphasizes team collaboration, while Teamgate offers more pipeline management features."
+  },
+  {
+    "software_slug": "ontraport",
     "alternative_slug": "keap",
-    "similarity_score": 0.78,
-    "reason": "Both offer automation features for sales teams, but Keap is heavily focused on marketing automation and e-commerce, while Freshsales is built for direct sales pipelines.",
-    "core_difference": "Freshsales is designed for B2B sales reps managing active deals, whereas Keap is built for small businesses needing automated marketing campaigns and client invoicing."
+    "similarity_score": 0.85,
+    "reason": "Both combine CRM with marketing automation for small businesses.",
+    "core_difference": "Ontraport is more focused on all-in-one business automation, while Keap emphasizes CRM."
   },
   {
-    "software_slug": "freshsales",
-    "alternative_slug": "nutshell",
-    "similarity_score": 0.82,
-    "reason": "Both are designed for growing sales teams, but Nutshell emphasizes simplicity and guided selling, while Freshsales offers more advanced enterprise-grade features.",
-    "core_difference": "Nutshell provides a simpler, more collaborative sales process out of the box, while Freshsales offers deeper customization and AI-powered contact scoring."
-  },
-  {
-    "software_slug": "keap",
-    "alternative_slug": "freshsales",
-    "similarity_score": 0.78,
-    "reason": "Both help automate customer interactions, but Keap focuses on the entire marketing-to-sales funnel for small businesses, while Freshsales focuses on sales pipeline execution.",
-    "core_difference": "Keap combines CRM with advanced marketing automation and e-commerce, whereas Freshsales is a dedicated sales tool with built-in telephony and AI insights."
-  },
-  {
-    "software_slug": "keap",
-    "alternative_slug": "pipedrive",
-    "similarity_score": 0.75,
-    "reason": "Both help SMBs manage their sales processes, but Keap is an all-in-one marketing and sales automation tool, whereas Pipedrive is a dedicated sales pipeline manager.",
-    "core_difference": "Keap is built to automate marketing campaigns and billing, while Pipedrive is designed to help sales reps manually track and close individual deals."
-  },
-  {
-    "software_slug": "keap",
-    "alternative_slug": "nutshell",
-    "similarity_score": 0.76,
-    "reason": "Both cater to small businesses looking to streamline operations, but Keap focuses on complex marketing automation, while Nutshell focuses on sales process guidance.",
-    "core_difference": "Keap is best for businesses needing automated email marketing and payment collection, while Nutshell is best for teams needing a collaborative sales pipeline."
-  },
-  {
-    "software_slug": "capsule",
-    "alternative_slug": "streak",
+    "software_slug": "daylite",
+    "alternative_slug": "insightly",
     "similarity_score": 0.8,
-    "reason": "Both are simple, lightweight CRMs designed for small businesses, but Streak is built directly into Gmail while Capsule is a standalone web application.",
-    "core_difference": "Streak operates entirely inside your Gmail inbox, whereas Capsule is an independent, browser-based contact and pipeline manager."
+    "reason": "Both CRMs cater to project management and business needs.",
+    "core_difference": "Daylite is specifically for Mac users, while Insightly is platform-agnostic."
   },
   {
-    "software_slug": "capsule",
-    "alternative_slug": "pipedrive",
-    "similarity_score": 0.78,
-    "reason": "Both offer straightforward contact and pipeline management, but Pipedrive is much more feature-rich and sales-focused than the minimalist Capsule.",
-    "core_difference": "Capsule focuses on simple contact organization and basic sales tracking, while Pipedrive is a dedicated, activity-driven sales pipeline tool."
-  },
-  {
-    "software_slug": "capsule",
-    "alternative_slug": "nutshell",
-    "similarity_score": 0.81,
-    "reason": "Both target small businesses looking for an easy-to-use CRM, but Nutshell offers more robust reporting and sales automation features.",
-    "core_difference": "Capsule is a minimalist contact manager with basic sales tracking, while Nutshell provides more advanced sales automation and performance analytics."
-  },
-  {
-    "software_slug": "nutshell",
-    "alternative_slug": "pipedrive",
-    "similarity_score": 0.88,
-    "reason": "Both are highly visual, pipeline-centric CRMs for SMBs, but Nutshell offers more built-in marketing and team collaboration features without needing add-ons.",
-    "core_difference": "Nutshell includes native email marketing and collaborative features for the whole team, while Pipedrive focuses strictly on individual sales rep productivity."
-  },
-  {
-    "software_slug": "nutshell",
-    "alternative_slug": "freshsales",
-    "similarity_score": 0.82,
-    "reason": "Both are designed to help sales teams close deals, but Freshsales relies on AI and built-in communication tools, while Nutshell focuses on guided sales processes.",
-    "core_difference": "Nutshell emphasizes ease of use and structured sales processes, while Freshsales offers more advanced AI insights and built-in phone/email tools."
-  },
-  {
-    "software_slug": "nutshell",
-    "alternative_slug": "capsule",
-    "similarity_score": 0.81,
-    "reason": "Both are user-friendly CRMs for small businesses, but Nutshell provides much stronger sales automation, reporting, and pipeline customization.",
-    "core_difference": "Nutshell is a fully-featured sales automation tool, whereas Capsule is a simpler, contact-centric CRM."
-  },
-  {
-    "software_slug": "streak",
-    "alternative_slug": "capsule",
+    "software_slug": "insightly",
+    "alternative_slug": "daylite",
     "similarity_score": 0.8,
-    "reason": "Both are lightweight CRMs for small teams, but Streak is integrated directly into Gmail while Capsule is a standalone web app.",
-    "core_difference": "Streak is built directly inside Gmail for inbox-centric workflows, while Capsule is a standalone web application for contact management."
-  },
-  {
-    "software_slug": "streak",
-    "alternative_slug": "pipedrive",
-    "similarity_score": 0.76,
-    "reason": "Both track deals through visual pipelines, but Streak is ideal for users who want to manage deals directly from their inbox, whereas Pipedrive is a dedicated external platform.",
-    "core_difference": "Streak turns your Gmail inbox into a CRM, while Pipedrive is a separate, dedicated sales platform with advanced pipeline features."
-  },
-  {
-    "software_slug": "streak",
-    "alternative_slug": "monday-crm",
-    "similarity_score": 0.72,
-    "reason": "Both offer highly flexible, spreadsheet-like tracking systems, but Streak is constrained to Gmail's interface while Monday CRM offers a broad, standalone workspace.",
-    "core_difference": "Streak is a specialized CRM extension for Gmail users, whereas Monday CRM is a standalone, highly customizable work management platform."
+    "reason": "Both CRMs cater to project management and business needs.",
+    "core_difference": "Insightly is platform-agnostic, while Daylite is specifically for Mac users."
   }
 ]

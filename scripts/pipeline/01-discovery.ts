@@ -1,6 +1,6 @@
 import * as fs from "fs";
 import * as path from "path";
-import { geminiModel, CATEGORIES, discoverySchema, parseJsonSafely } from "./config";
+import { openai, CATEGORIES, discoverySchema, parseJsonSafely } from "./config";
 
 async function runDiscovery(category: string, count: number = 30) {
   console.log(`Starting discovery for category: ${category} (Target: ${count} items)`);
@@ -16,16 +16,17 @@ async function runDiscovery(category: string, count: number = 30) {
   `;
 
   try {
-    const result = await geminiModel.generateContent({
-      contents: [{ role: "user", parts: [{ text: prompt }] }],
-      generationConfig: {
-        temperature: 0.2,
-        responseMimeType: "application/json",
-      },
+    const response = await openai.chat.completions.create({
+      model: "gpt-4o-mini",
+      messages: [
+        { role: "system", content: "You are a specialized data extractor. Output strictly valid JSON without any markdown tags." },
+        { role: "user", content: prompt }
+      ],
+      temperature: 0.2
     });
 
-    const content = result.response.text();
-    const parsedData = parseJsonSafely(content);
+    const content = response.choices[0].message.content;
+    const parsedData = parseJsonSafely(content || "[]");
     
     // Validate with Zod
     const validatedData = discoverySchema.parse(parsedData);

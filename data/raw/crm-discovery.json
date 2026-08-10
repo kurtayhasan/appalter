@@ -12,111 +12,127 @@
     "name": "Zoho CRM"
   },
   {
-    "slug": "pipedrive",
-    "name": "Pipedrive"
+    "slug": "microsoft-dynamics-365",
+    "name": "Microsoft Dynamics 365"
   },
   {
-    "slug": "monday-crm",
-    "name": "Monday CRM"
+    "slug": "pipedrive",
+    "name": "Pipedrive"
   },
   {
     "slug": "freshsales",
     "name": "Freshsales"
   },
   {
-    "slug": "keap",
-    "name": "Keap"
-  },
-  {
-    "slug": "activecampaign",
-    "name": "ActiveCampaign"
-  },
-  {
-    "slug": "copper",
-    "name": "Copper"
-  },
-  {
     "slug": "insightly",
     "name": "Insightly"
-  },
-  {
-    "slug": "zendesk-sell",
-    "name": "Zendesk Sell"
-  },
-  {
-    "slug": "nimble",
-    "name": "Nimble"
   },
   {
     "slug": "sugarcrm",
     "name": "SugarCRM"
   },
   {
-    "slug": "capsule",
-    "name": "Capsule"
-  },
-  {
-    "slug": "less-annoying-crm",
-    "name": "Less Annoying CRM"
-  },
-  {
-    "slug": "creatio",
-    "name": "Creatio"
-  },
-  {
-    "slug": "apptivo",
-    "name": "Apptivo"
-  },
-  {
-    "slug": "nutshell",
-    "name": "Nutshell"
-  },
-  {
-    "slug": "streak",
-    "name": "Streak"
-  },
-  {
-    "slug": "agile-crm",
-    "name": "Agile CRM"
+    "slug": "nimble",
+    "name": "Nimble"
   },
   {
     "slug": "close",
     "name": "Close"
   },
   {
-    "slug": "salesloft",
-    "name": "Salesloft"
+    "slug": "keap",
+    "name": "Keap"
   },
   {
-    "slug": "outreach",
-    "name": "Outreach"
+    "slug": "copper",
+    "name": "Copper"
+  },
+  {
+    "slug": "streak",
+    "name": "Streak"
   },
   {
     "slug": "bitrix24",
     "name": "Bitrix24"
   },
   {
-    "slug": "onepagecrm",
-    "name": "OnePageCRM"
+    "slug": "salesflare",
+    "name": "Salesflare"
   },
   {
-    "slug": "vtiger",
-    "name": "Vtiger"
+    "slug": "amoCRM",
+    "name": "amoCRM"
   },
   {
-    "slug": "netsuite-crm",
-    "name": "NetSuite CRM"
+    "slug": "hatchbuck",
+    "name": "Hatchbuck"
   },
   {
-    "slug": "microsoft-dynamics-365",
-    "name": "Microsoft Dynamics 365"
+    "slug": "pipelinecrm",
+    "name": "Pipeline CRM"
   },
   {
-    "slug": "engagebay",
-    "name": "EngageBay"
+    "slug": "vten",
+    "name": "VTEN"
   },
   {
-    "slug": "highlevel",
-    "name": "HighLevel"
+    "slug": "apptivo",
+    "name": "Apptivo"
+  },
+  {
+    "slug": "really-simple-systems",
+    "name": "Really Simple Systems"
+  },
+  {
+    "slug": "teamgate",
+    "name": "Teamgate"
+  },
+  {
+    "slug": "squeezely",
+    "name": "Squeezely"
+  },
+  {
+    "slug": "ontraport",
+    "name": "Ontraport"
+  },
+  {
+    "slug": "zohodesk",
+    "name": "Zoho Desk"
+  },
+  {
+    "slug": "salesmate",
+    "name": "Salesmate"
+  },
+  {
+    "slug": "caspio",
+    "name": "Caspio"
+  },
+  {
+    "slug": "clinchpad",
+    "name": "ClinchPad"
+  },
+  {
+    "slug": "kixie",
+    "name": "Kixie"
+  },
+  {
+    "slug": "satisficer",
+    "name": "Satisficer"
+  },
+  {
+    "slug": "nutshell",
+    "name": "Nutshell"
+  },
+  {
+    "slug": "symphony",
+    "name": "Symphony"
+  },
+  {
+    "slug": "daylite",
+    "name": "Daylite"
+  },
+  {
+    "slug": "squeezely",
+    "name": "Squeezely"
   }
 ]

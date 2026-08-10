@@ -44,6 +44,7 @@
     "lucide-react": "^0.468.0",
     "next": "^15.0.3",
     "next-intl": "^3.26.3",
+    "openai": "^7.4.0",
     "posthog-js": "^1.194.0",
     "posthog-node": "^4.2.1",
     "react": "^19.0.0",
