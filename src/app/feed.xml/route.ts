@@ -15,7 +15,9 @@ export async function GET() {
     .order("updated_at", { ascending: false })
     .limit(50);
 
-  const itemsXml = (softwares || [])
+  const itemsList = (softwares as any[]) || [];
+
+  const itemsXml = itemsList
     .map((sw) => {
       const pubDate = new Date(sw.updated_at || sw.created_at || Date.now()).toUTCString();
       const description = sw.tagline || sw.short_description || `Discover the best alternatives to ${sw.name}`;
