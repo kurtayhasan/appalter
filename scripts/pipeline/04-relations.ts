@@ -22,14 +22,18 @@ async function runRelations(category: string) {
     Here is the list:
     ${JSON.stringify(softwareList, null, 2)}
     
+    CRITICAL RULES:
+    1. NEVER alter/translate product brand names (keep Notion, Jira, Slack, etc. exact).
+    2. Be concise to save tokens.
+    
     Return a JSON array of relationships exactly matching this schema:
     [
       {
         "software_slug": "slug-1",
         "alternative_slug": "slug-2",
         "similarity_score": 0.90,
-        "reason": "Both are enterprise CRMs but slug-1 is better for sales while slug-2 is for marketing.",
-        "core_difference": "A punchy 1-sentence comparison highlighting the main difference."
+        "reason": "1 short sentence why they compete.",
+        "core_difference": "1 punchy sentence highlighting the main difference."
       }
     ]
     
@@ -41,10 +45,11 @@ async function runRelations(category: string) {
     const response = await openai.chat.completions.create({
       model: "gpt-4o-mini",
       messages: [
-        { role: "system", content: "You are a specialized data extractor. Output strictly valid JSON without any markdown tags." },
+        { role: "system", content: "You are a concise SaaS comparison generator. Output strictly valid JSON. Keep brand names exact." },
         { role: "user", content: prompt }
       ],
-      temperature: 0.2
+      max_tokens: 1500,
+      temperature: 0.1
     });
 
     const content = response.choices[0]?.message?.content;

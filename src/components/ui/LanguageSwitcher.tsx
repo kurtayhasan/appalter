@@ -22,8 +22,8 @@ export function LanguageSwitcher({ currentLocale, locales }: LanguageSwitcherPro
   }
 
   return (
-    <select 
-      className="locale-select" 
+    <select
+      className="locale-select"
       defaultValue={currentLocale}
       onChange={onSelectChange}
       disabled={isPending}

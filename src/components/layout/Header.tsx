@@ -5,6 +5,7 @@ import Link from "next/link";
 import { getTranslations } from "next-intl/server";
 import { routing, type Locale } from "@/i18n/routing";
 import { LanguageSwitcher } from "@/components/ui/LanguageSwitcher";
+import { LiveSearchModal } from "@/components/search/LiveSearchModal";
 
 export async function Header({ locale }: { locale: Locale }) {
   // next-intl server-side translation fetch
@@ -18,23 +19,9 @@ export async function Header({ locale }: { locale: Locale }) {
           <span className="logo-text">AppAlter</span>
         </Link>
 
-        {/* Search Bar Placeholder (Client Component eklenecek) */}
+        {/* Instant Live Search (Spotlight & Cmd+K) */}
         <div className="header-search">
-          <form action={`/${locale}/search`} className="search-form" role="search">
-            <input
-              type="search"
-              name="q"
-              placeholder={t("searchPlaceholder")}
-              className="search-input"
-              aria-label={t("searchPlaceholder")}
-            />
-            <button type="submit" className="search-submit" aria-label="Search">
-              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
-                <circle cx="11" cy="11" r="8" />
-                <line x1="21" y1="21" x2="16.65" y2="16.65" />
-              </svg>
-            </button>
-          </form>
+          <LiveSearchModal locale={locale} />
         </div>
 
         {/* Navigation */}

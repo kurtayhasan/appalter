@@ -4,39 +4,42 @@ import { openai, CATEGORIES, aiFeaturesSchema, parseJsonSafely } from "./config"
 
 async function enrichSoftware(software: any) {
   const prompt = `
-    Analyze the software: ${software.name} (${software.slug}).
-    This is a software in the B2B SaaS space.
+    Analyze software: ${software.name} (${software.slug}). Category SaaS.
+    Provide concise, highly accurate, 2026-current metadata.
 
-    I need you to generate highly specific, UX-optimized metadata for it.
-    
-    Provide the data in a JSON object exactly matching this schema:
+    CRITICAL RULES:
+    1. NEVER translate or alter proper product/brand/feature names (e.g. Cursor, Notion, Jira, Figma, Slack, Zapier must remain exactly as named).
+    2. Be ultra-concise to save tokens (bullets max 4-6 words).
+    3. Ensure facts and pricing reflect modern 2026 SaaS reality.
+
+    JSON Schema:
     {
-      "tldr": "A single sentence punchy sales pitch for why a user should choose this software.",
-      "pros": ["3 short bullet points (max 5-7 words each)"],
-      "cons": ["3 short bullet points (max 5-7 words each)"],
-      "pricing_model_type": "One of: Freemium, Open Source, Paid Only, Free",
-      "target_audience_size": "One of: Solo, Startup, Enterprise, Any",
-      "dealbreakers": ["1 or 2 specific reasons someone should NOT use this"],
-      "hidden_costs": ["1 or 2 common hidden costs"],
-      "migration_difficulty": "easy, medium, hard, or expert",
-      "best_for": ["2 specific use cases"],
-      "not_for": ["2 specific anti-use cases"],
-      "switching_reasons": ["2 reasons people switch away from this"],
-      "key_limitations": ["2 technical or feature limitations"],
-      "confidence": 0.95 // A score between 0.0 and 1.0 indicating how confident you are in this data
+      "tldr": "1 punchy sentence why choose this.",
+      "pros": ["3 short pros, max 6 words each"],
+      "cons": ["3 short cons, max 6 words each"],
+      "pricing_model_type": "Freemium" | "Open Source" | "Paid Only" | "Free",
+      "target_audience_size": "Solo" | "Startup" | "Enterprise" | "Any",
+      "dealbreakers": ["1-2 concise dealbreakers"],
+      "hidden_costs": ["1-2 concise pricing notes"],
+      "migration_difficulty": "easy" | "medium" | "hard" | "expert",
+      "best_for": ["2 concise use cases"],
+      "not_for": ["2 concise anti-use cases"],
+      "switching_reasons": ["2 concise switching reasons"],
+      "key_limitations": ["2 concise limitations"],
+      "confidence": 0.95
     }
-    
-    Output purely valid JSON. No markdown tags. No explanations.
+    Pure valid JSON only. No markdown fences.
   `;
 
   try {
     const response = await openai.chat.completions.create({
       model: "gpt-4o-mini",
       messages: [
-        { role: "system", content: "You are a specialized data extractor. Output strictly valid JSON without any markdown tags." },
+        { role: "system", content: "You are a concise SaaS data extractor. Output strictly valid JSON. Never translate brand names." },
         { role: "user", content: prompt }
       ],
-      temperature: 0.2
+      max_tokens: 600,
+      temperature: 0.1
     });
 
     const content = response.choices[0]?.message?.content;

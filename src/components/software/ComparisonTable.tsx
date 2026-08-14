@@ -9,6 +9,7 @@ import { getComparisonDataCached, getFeaturesCached, getProsConsCached } from "@
 import { formatPrice, formatRating, formatCount } from "@/lib/utils";
 import { StarRating } from "@/components/ui/StarRating";
 import { ComparisonJsonLd } from "@/components/seo/JsonLd";
+import { CommunityPoll } from "@/components/software/CommunityPoll";
 
 interface ComparisonTableProps {
   softwareSlug: string;
@@ -126,27 +127,47 @@ export async function ComparisonTable({
         </div>
 
         {/* AI Overview / TLDR & Core Difference */}
-        {((software.ai_features as any)?.tldr || (alternative.ai_features as any)?.tldr || relation?.core_difference) && (
-          <div className="comparison-ai-summary" style={{ margin: "2rem 0", padding: "1.5rem", background: "var(--bg-muted)", borderRadius: "var(--radius-lg)" }}>
+        {((software.ai_features as any)?.tldr || (alternative.ai_features as any)?.tldr || relation?.core_difference || relation?.difficulty) && (
+          <div className="comparison-ai-summary ai-decision-card" style={{ margin: "2rem 0" }}>
+            <div className="decision-header" style={{ marginBottom: "1rem" }}>
+              <span className="decision-badge">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round">
+                  <path d="m12 3-1.912 5.813a2 2 0 0 1-1.275 1.275L3 12l5.813 1.912a2 2 0 0 1 1.275 1.275L12 21l1.912-5.813a2 2 0 0 1 1.275-1.275L21 12l-5.813-1.912a2 2 0 0 1-1.275-1.275L12 3Z"/>
+                </svg>
+                AI Comparison Verdict
+              </span>
+              {relation?.difficulty && (
+                <span className="decision-tag" style={{ marginLeft: "auto", fontSize: "0.75rem" }}>
+                  Migration: <strong style={{ textTransform: "capitalize", marginLeft: "4px" }}>{relation.difficulty}</strong>
+                </span>
+              )}
+            </div>
+
             {relation?.core_difference && (
-              <div style={{ marginBottom: "1rem" }}>
-                <strong style={{ color: "var(--primary)" }}>The Core Difference: </strong>
-                <span>{relation.core_difference}</span>
+              <div style={{ marginBottom: "1.25rem", padding: "0.875rem 1rem", background: "rgba(255,255,255,0.05)", borderRadius: "var(--radius-md)", borderLeft: "3px solid var(--accent-primary)" }}>
+                <strong style={{ color: "var(--text-primary)" }}>The Core Difference: </strong>
+                <span style={{ color: "var(--text-secondary)" }}>{relation.core_difference}</span>
               </div>
             )}
-            <div style={{ display: "grid", gridTemplateColumns: "1fr 1fr", gap: "2rem" }}>
-              {(software.ai_features as any)?.tldr && (
-                <div>
-                  <strong>Why {software.name}? </strong>
-                  <span>{(software.ai_features as any).tldr}</span>
+
+            <div className="decision-grid">
+              <div className="decision-block">
+                <div className="decision-block-title" style={{ color: "var(--accent-primary)" }}>
+                  Why Choose {software.name}?
                 </div>
-              )}
-              {(alternative.ai_features as any)?.tldr && (
-                <div>
-                  <strong>Why {alternative.name}? </strong>
-                  <span>{(alternative.ai_features as any).tldr}</span>
+                <p style={{ fontSize: "0.9rem", color: "var(--text-secondary)", lineHeight: 1.5 }}>
+                  {(software.ai_features as any)?.tldr || `${software.name} offers specialized features with a starting price of ${formatPrice(software.starting_price, software.price_currency)}.`}
+                </p>
+              </div>
+
+              <div className="decision-block">
+                <div className="decision-block-title" style={{ color: "var(--accent-primary)" }}>
+                  Why Choose {alternative.name}?
                 </div>
-              )}
+                <p style={{ fontSize: "0.9rem", color: "var(--text-secondary)", lineHeight: 1.5 }}>
+                  {(alternative.ai_features as any)?.tldr || `${alternative.name} provides an alternative approach with starting price of ${formatPrice(alternative.starting_price, alternative.price_currency)}.`}
+                </p>
+              </div>
             </div>
           </div>
         )}
@@ -332,6 +353,14 @@ export async function ComparisonTable({
             </div>
           </div>
         </div>
+
+        {/* Community Recommendation Poll */}
+        <CommunityPoll
+          softwareA={software.name}
+          softwareB={alternative.name}
+          slugA={softwareSlug}
+          slugB={alternativeSlug}
+        />
 
         {/* CTA */}
         <div className="comparison-cta">

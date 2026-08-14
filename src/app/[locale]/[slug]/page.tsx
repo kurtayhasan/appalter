@@ -6,6 +6,7 @@ import { Suspense } from "react";
 import type { Metadata } from "next";
 import { type Locale, routing } from "@/i18n/routing";
 import { SoftwareHero } from "@/components/software/SoftwareHero";
+import { AIDecisionCard } from "@/components/software/AIDecisionCard";
 import { SoftwareJsonLd } from "@/components/seo/JsonLd";
 import { BreadcrumbJsonLd } from "@/components/seo/BreadcrumbJsonLd";
 import { getSoftwareBySlugCached } from "@/lib/cache/queries";
@@ -177,6 +178,9 @@ export default async function SoftwarePage({ params }: Props) {
             Rendered immediately via PPR, served from CDN edge.
         ────────────────────────────────────────────────────────────── */}
         <SoftwareHero software={software} locale={locale as Locale} />
+
+        {/* AI Quick Decision & Evaluation Card */}
+        <AIDecisionCard software={software} locale={locale as Locale} />
 
         <div className="container">
           <AdBanner adSlot="detail_top" />

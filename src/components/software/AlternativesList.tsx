@@ -175,6 +175,25 @@ export async function AlternativesList({
                   )}
                 </div>
 
+                {/* AI Core Difference or Reason */}
+                {(alt.core_difference || alt.reason) && (
+                  <div style={{ margin: "0.75rem 0 0.5rem", padding: "0.5rem 0.75rem", background: "rgba(255,255,255,0.03)", borderRadius: "var(--radius-sm)", borderLeft: "2px solid var(--accent-secondary)", fontSize: "0.85rem", color: "var(--text-secondary)" }}>
+                    <strong style={{ color: "var(--text-primary)" }}>Key Difference: </strong>
+                    {alt.core_difference || alt.reason}
+                  </div>
+                )}
+
+                {/* Best For Tags (AI) */}
+                {alt.best_for && alt.best_for.length > 0 && (
+                  <div style={{ display: "flex", flexWrap: "wrap", gap: "0.35rem", marginTop: "0.5rem" }}>
+                    {alt.best_for.slice(0, 3).map((tag: string, idx: number) => (
+                      <span key={idx} className="decision-tag best-for" style={{ fontSize: "0.75rem", padding: "0.15rem 0.45rem" }}>
+                        ✓ {tag}
+                      </span>
+                    ))}
+                  </div>
+                )}
+
                 {/* Pros and Cons (AI Generated) */}
                 <div className="alt-pros-cons" style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '1rem', marginTop: '1rem' }}>
                   {alt.pros && alt.pros.length > 0 && (
