@@ -12,6 +12,7 @@ import { PricingBadge } from "@/components/software/PricingBadge";
 import { AlternativesListJsonLd } from "@/components/seo/JsonLd";
 import { AdBanner } from "@/components/ads/AdBanner";
 import { VoteControls } from "@/components/ui/VoteControls";
+import { AlternativesMatrix } from "@/components/software/AlternativesMatrix";
 
 interface AlternativesListProps {
   softwareSlug: string;
@@ -57,11 +58,20 @@ export async function AlternativesList({
         }))}
       />
 
+      {/* Use Case Decision Matrix on Page 1 */}
+      {page === 1 && (
+        <AlternativesMatrix
+          software={{ name: softwareSlug, slug: softwareSlug } as any}
+          alternatives={items}
+          locale={locale}
+        />
+      )}
+
       <div className="alternatives-list">
         {/* Header */}
         <div className="alternatives-header">
           <h2 id="alternatives-heading" className="section-title">
-            {total} Alternatives
+            All {total} Alternatives & Competitors
           </h2>
           <span className="alternatives-count">Page {page} of {totalPages}</span>
         </div>
@@ -257,7 +267,7 @@ export async function AlternativesList({
                   <a
                     href={`/api/go/${alt.alternative_slug}`}
                     target="_blank"
-                    rel="noopener noreferrer nofollow"
+                    rel="noopener noreferrer nofollow sponsored"
                     className="btn btn-primary btn-sm"
                   >
                     Visit Website

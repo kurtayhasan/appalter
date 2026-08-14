@@ -1,6 +1,7 @@
 import { redirect } from "next/navigation";
 import { searchSoftwaresCached } from "@/lib/cache/queries";
 import { SoftwareCard } from "@/components/software/SoftwareCard";
+import { FreeToolsHub } from "@/components/software/FreeToolsHub";
 import { formatCount } from "@/lib/utils";
 import type { Locale } from "@/i18n/routing";
 
@@ -20,6 +21,11 @@ export async function SearchResults({
   const query = typeof searchParamsAwaited.q === "string" ? searchParamsAwaited.q : "";
   const categoryId = typeof searchParamsAwaited.category === "string" ? searchParamsAwaited.category : undefined;
   const pricingId = typeof searchParamsAwaited.pricing === "string" ? searchParamsAwaited.pricing : undefined;
+
+  // If user requested Free Tools without a specific query, show the rich Free Tools Hub showcase
+  if (!query && pricingId === "free" && !categoryId) {
+    return <FreeToolsHub locale={locale as Locale} />;
+  }
 
   if (!query && !categoryId && !pricingId) {
     redirect(`/${locale}`);

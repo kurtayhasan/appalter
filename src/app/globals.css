@@ -2196,3 +2196,31 @@ svg {
   font-size: 0.85rem;
   color: var(--text-secondary);
 }
+
+/* ==========================================================================
+   ALTERNATIVES DECISION MATRIX & USE CASES TABLE STYLES
+   ========================================================================== */
+.alternatives-matrix-card {
+  background: linear-gradient(135deg, rgba(255, 255, 255, 0.03) 0%, rgba(20, 20, 25, 0.7) 100%);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: var(--radius-lg);
+  padding: 2rem;
+  margin: 2.5rem 0;
+  box-shadow: var(--shadow-md);
+  position: relative;
+  overflow: hidden;
+}
+
+.alternatives-matrix-card::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 2px;
+  background: linear-gradient(90deg, #8b5cf6, #3b82f6, #10b981);
+}
+
+.matrix-table-wrapper table tbody tr:hover {
+  background: rgba(255, 255, 255, 0.03);
+}

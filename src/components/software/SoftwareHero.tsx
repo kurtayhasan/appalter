@@ -228,7 +228,7 @@ export function SoftwareHero({ software, locale }: SoftwareHeroProps) {
             <a
               href={`/api/go/${slug}`}
               target="_blank"
-              rel="noopener noreferrer nofollow"
+              rel="noopener noreferrer nofollow sponsored"
               className="btn btn-primary btn-lg"
               id="visit-website-btn"
             >
