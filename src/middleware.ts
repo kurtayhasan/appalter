@@ -37,6 +37,7 @@ const PUBLIC_PATHS_NO_LOCALE = new Set([
   "/favicon.ico",
   "/icon",
   "/appalter2026indexnowkey889.txt",
+  "/BingSiteAuth.xml",
 ]);
 
 // Locale slugs that are NOT software slugs (skip slug-redirect check)
