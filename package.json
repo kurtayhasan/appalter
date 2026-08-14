@@ -41,6 +41,7 @@
     "clsx": "^2.1.1",
     "critters": "^0.0.23",
     "dotenv": "^17.4.2",
+    "googleapis": "^174.0.1",
     "lucide-react": "^0.468.0",
     "next": "^15.0.3",
     "next-intl": "^3.26.3",
