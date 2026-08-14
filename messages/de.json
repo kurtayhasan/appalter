@@ -42,5 +42,32 @@
     "features": "Funktionen",
     "bestAlternativesTo": "Beste Alternativen zu {name} ({year})",
     "basedOnReviews": "Basierend auf {count} Rezensionen und Bewertungen"
+  },
+  "decisionMatrix": {
+    "badge": "Entscheidungsmatrix",
+    "title": "Top {name} Alternativen nach Anwendungsfall",
+    "subtitle": "Vergleichen Sie Hauptvorteile, Preise und spezifische Szenarien, in denen die Alternativen {name} übertreffen.",
+    "alternative": "Alternative",
+    "bestFor": "Am besten für",
+    "startingPrice": "Startpreis",
+    "keyAdvantage": "Hauptvorteil gegenüber {name}",
+    "action": "Aktion",
+    "compare": "Vergleichen (VS) →",
+    "trapsTitle": "Wichtige Faktoren & Kostenfallen vor dem Wechsel",
+    "trap1Title": "1. Die \"All-in-One\"-Falle:",
+    "trap1Desc": "Der Wechsel zu einer Speziallösung erfordert möglicherweise den Kauf zusätzlicher Tools.",
+    "trap2Title": "2. Datenmigration:",
+    "trap2Desc": "Der Export von Verläufen und Feldern erfordert Vorbereitung. Planen Sie eine Übergangszeit ein.",
+    "trap3Title": "3. Preisstufen & Nutzersprünge:",
+    "trap3Desc": "Kostenlose Stufen bieten Einstiegswert, prüfen Sie jedoch Nutzerlimits vorab sorgfältig."
+  },
+  "freeTools": {
+    "badge": "100% Kostenlose & Freemium Auswahl",
+    "title": "Beste kostenlose Software & Alternativen ({year})",
+    "subtitle": "Ausgewählte kostenlose Stufen und Open-Source-Tools, um Ihre Arbeitsabläufe ohne Kosten zu skalieren.",
+    "topFreeCategory": "Beste kostenlose {category} Software",
+    "categorySubtitle": "Kostenfreie und hochwertige Alternativen für {category}",
+    "viewAll": "Alle kostenlosen {category} anzeigen →",
+    "tryFree": "Kostenlos testen →"
   }
 }

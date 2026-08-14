@@ -42,5 +42,32 @@
     "features": "Özellikler",
     "bestAlternativesTo": "{name} için en iyi alternatifler ({year})",
     "basedOnReviews": "{count} değerlendirme ve yoruma göre"
+  },
+  "decisionMatrix": {
+    "badge": "Karar Matrisi",
+    "title": "Kullanım Senaryosuna Göre En İyi {name} Alternatifleri",
+    "subtitle": "Temel avantajları, fiyatları ve her alternatifin {name} aracından daha iyi performans gösterdiği senaryoları karşılaştırın.",
+    "alternative": "Alternatif",
+    "bestFor": "Kimin İçin En İyi",
+    "startingPrice": "Başlangıç Fiyatı",
+    "keyAdvantage": "{name} Karşısındaki Temel Avantajı",
+    "action": "İşlem",
+    "compare": "Karşılaştır (VS) →",
+    "trapsTitle": "Geçiş Yapmadan Önce Bilmeniz Gereken Önemli Faktörler ve Tuzaklar",
+    "trap1Title": "1. \"Hepsi Bir Arada\" Tuzağı:",
+    "trap1Desc": "Çok yönlü bir platformdan niş bir araca geçmek, operasyonlar için ek tamamlayıcı araçlar satın almanızı gerektirebilir.",
+    "trap2Title": "2. Veri Taşıma Süreci:",
+    "trap2Desc": "Geçmiş kayıtları ve özel alanları dışa aktarıp yeni sisteme haritalamak zaman alır. 1-2 haftalık bir geçiş dönemi planlayın.",
+    "trap3Title": "3. Fiyat Katlanması ve Paket Sıçramaları:",
+    "trap3Desc": "Ücretsiz paketler başlangıçta harika değer sunar; ancak bütçenin aniden katlanmaması için kullanıcı ve kişi sınırlarını önceden doğrulayın."
+  },
+  "freeTools": {
+    "badge": "%100 Ücretsiz & Freemium Seçkisi",
+    "title": "En İyi Ücretsiz Yazılımlar ve Alternatifler ({year})",
+    "subtitle": "İşinizi ve iş akışınızı tek kuruş ödemeden ölçeklendirmeniz için özenle seçilmiş ücretsiz ve açık kaynak araçlar.",
+    "topFreeCategory": "En İyi Ücretsiz {category} Yazılımları",
+    "categorySubtitle": "{category} kategorisi için sıfır maliyetli ve yüksek değerli alternatifler",
+    "viewAll": "Tüm ücretsiz {category} araçlarını gör →",
+    "tryFree": "Ücretsiz Dene →"
   }
 }

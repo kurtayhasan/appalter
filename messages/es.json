@@ -42,5 +42,32 @@
     "features": "Características",
     "bestAlternativesTo": "Las mejores alternativas a {name} ({year})",
     "basedOnReviews": "Basado en {count} reseñas y valoraciones"
+  },
+  "decisionMatrix": {
+    "badge": "Matriz de Decisión",
+    "title": "Las mejores alternativas a {name} clasificadas por caso de uso",
+    "subtitle": "Compara ventajas clave, precios y escenarios específicos donde cada alternativa supera a {name}.",
+    "alternative": "Alternativa",
+    "bestFor": "Ideal para",
+    "startingPrice": "Precio inicial",
+    "keyAdvantage": "Ventaja clave sobre {name}",
+    "action": "Acción",
+    "compare": "Comparar (VS) →",
+    "trapsTitle": "Factores importantes y costos ocultos antes de cambiar",
+    "trap1Title": "1. La trampa del \"Todo en uno\":",
+    "trap1Desc": "Cambiar a una solución muy específica puede requerir la compra de herramientas adicionales para tus operaciones.",
+    "trap2Title": "2. Migración de datos:",
+    "trap2Desc": "Exportar historiales y campos personalizados requiere tiempo de mapeo. Planifica un período de transición.",
+    "trap3Title": "3. Escalada de precios y límites:",
+    "trap3Desc": "Los planes gratuitos ofrecen gran valor inicial; verifica los límites de usuarios y contactos para evitar aumentos imprevistos."
+  },
+  "freeTools": {
+    "badge": "Selección 100% Gratuita y Freemium",
+    "title": "El mejor software gratuito y alternativas ({year})",
+    "subtitle": "Herramientas gratuitas y de código abierto seleccionadas para escalar tus flujos de trabajo sin costo.",
+    "topFreeCategory": "Mejor software gratuito de {category}",
+    "categorySubtitle": "Alternativas sin costo y de alto valor para {category}",
+    "viewAll": "Ver todas las herramientas gratuitas de {category} →",
+    "tryFree": "Probar Gratis →"
   }
 }

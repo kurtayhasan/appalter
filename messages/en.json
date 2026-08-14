@@ -42,5 +42,32 @@
     "features": "Features",
     "bestAlternativesTo": "Best alternatives to {name} ({year})",
     "basedOnReviews": "Based on {count} reviews and ratings"
+  },
+  "decisionMatrix": {
+    "badge": "Decision Matrix",
+    "title": "Top {name} Alternatives Ranked by Use Case",
+    "subtitle": "Compare key advantages, pricing, and specific scenarios where each alternative outperforms {name}.",
+    "alternative": "Alternative",
+    "bestFor": "Best For",
+    "startingPrice": "Starting Price",
+    "keyAdvantage": "Key Advantage over {name}",
+    "action": "Action",
+    "compare": "Compare VS →",
+    "trapsTitle": "Important Factors & Traps to Consider Before Switching",
+    "trap1Title": "1. The \"All-in-One\" Trap:",
+    "trap1Desc": "Switching to a specialized point solution may require purchasing supplementary tools for operations.",
+    "trap2Title": "2. Data Migration Liftoff:",
+    "trap2Desc": "Exporting historical logs and custom fields requires mapping time. Plan for a transition period.",
+    "trap3Title": "3. Tier Escalation & Seat Jumps:",
+    "trap3Desc": "Free tiers offer upfront value, but verify user thresholds to prevent unexpected budget spikes."
+  },
+  "freeTools": {
+    "badge": "100% Free & Freemium Selection",
+    "title": "Best Free Software & Alternatives ({year})",
+    "subtitle": "Hand-picked free tiers and open-source tools to scale your business without paying a dime.",
+    "topFreeCategory": "Top Free {category} Software",
+    "categorySubtitle": "Zero-cost & high-value alternatives for {category}",
+    "viewAll": "View all free {category} →",
+    "tryFree": "Try Free →"
   }
 }

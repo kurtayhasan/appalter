@@ -57,28 +57,47 @@ async function main() {
     console.log(`⏳ [${sw.slug}] Translating to ${missingLocales.join(", ")}...`);
 
     const prompt = `
-Translate the following software metadata into the target languages: ${missingLocales.join(", ")}. Keep the tone professional, marketing-oriented, and engaging.
+Translate the following software metadata into target languages: ${missingLocales.join(", ")}.
+
+CRITICAL LOCALIZATION RULES:
+1. NEVER translate, alter or literalize proper brand/product names (e.g. Cursor, Notion, Jira, Salesforce, HubSpot, Monday, ClickUp, Pipedrive, Zapier must NEVER be translated or changed).
+2. Keep bullets concise and natural for native speakers.
+3. Keep technical terms natural (e.g. API, CRM, AI, Open Source, Pipeline).
 
 Original English Data:
 Name: ${sw.name || ''}
 Tagline: ${sw.tagline || ''}
 Short Description: ${sw.short_description || ''}
-AI Features (Pros, Cons, TLDR): ${JSON.stringify(sw.ai_features || {})}
+AI Features: ${JSON.stringify(sw.ai_features || {})}
 
 Return a valid JSON object with the exact following structure for each requested language code:
 {
-  "tr": { "name": "...", "tagline": "...", "short_description": "...", "ai_features": { "pros": ["..."], "cons": ["..."], "tldr": "..." } } // only if "tr" is requested
+  "tr": {
+    "name": "${sw.name}",
+    "tagline": "...",
+    "short_description": "...",
+    "ai_features": {
+      "tldr": "...",
+      "pros": ["..."],
+      "cons": ["..."],
+      "best_for": ["..."],
+      "not_for": ["..."],
+      "dealbreakers": ["..."],
+      "hidden_costs": ["..."]
+    }
+  }
 }
-    `;
+`;
 
     try {
       const response = await openai.chat.completions.create({
-        model: "gpt-4o",
+        model: "gpt-4o-mini",
         messages: [
-          { role: "system", content: "You are a professional software localization expert. Always return JSON." },
+          { role: "system", content: "You are a professional software localization expert. Output pure valid JSON. Never translate brand names." },
           { role: "user", content: prompt }
         ],
         response_format: { type: "json_object" },
+        temperature: 0.1
       });
 
       const result = JSON.parse(response.choices?.[0]?.message?.content || "{}");
