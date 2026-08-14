@@ -69,5 +69,22 @@
     "categorySubtitle": "Zero-cost & high-value alternatives for {category}",
     "viewAll": "View all free {category} →",
     "tryFree": "Try Free →"
+  },
+  "decisionCard": {
+    "badge": "AppAlter Verdict",
+    "guideFor": "Editorial Decision Guide for {name}",
+    "theVerdict": "The Verdict:",
+    "bestSuitedFor": "Best Suited For",
+    "considerAlternativesIf": "Consider Alternatives If",
+    "watchOutTitle": "Factors to Watch Out For (Potential Dealbreakers & Pricing Notes)",
+    "dealbreaker": "Dealbreaker:",
+    "pricingNote": "Pricing Note:"
+  },
+  "comparison": {
+    "badge": "AppAlter Comparison Verdict",
+    "coreDifference": "The Core Difference:",
+    "whyChoose": "Why Choose {name}?",
+    "migration": "Migration:",
+    "startingPriceAt": "{name} offers specialized features with a starting price of {price}."
   }
 }

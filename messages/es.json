@@ -69,5 +69,22 @@
     "categorySubtitle": "Alternativas sin costo y de alto valor para {category}",
     "viewAll": "Ver todas las herramientas gratuitas de {category} →",
     "tryFree": "Probar Gratis →"
+  },
+  "decisionCard": {
+    "badge": "Veredicto de AppAlter",
+    "guideFor": "Guía de decisión editorial para {name}",
+    "theVerdict": "El Veredicto:",
+    "bestSuitedFor": "Ideal para",
+    "considerAlternativesIf": "Considera alternativas si",
+    "watchOutTitle": "Factores a considerar (posibles limitaciones y notas de precio)",
+    "dealbreaker": "Limitación clave:",
+    "pricingNote": "Nota de precio:"
+  },
+  "comparison": {
+    "badge": "Veredicto de comparación AppAlter",
+    "coreDifference": "La diferencia clave:",
+    "whyChoose": "¿Por qué elegir {name}?",
+    "migration": "Dificultad de migración:",
+    "startingPriceAt": "{name} ofrece funciones avanzadas con un precio inicial de {price}."
   }
 }

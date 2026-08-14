@@ -69,5 +69,22 @@
     "categorySubtitle": "{category} kategorisi için sıfır maliyetli ve yüksek değerli alternatifler",
     "viewAll": "Tüm ücretsiz {category} araçlarını gör →",
     "tryFree": "Ücretsiz Dene →"
+  },
+  "decisionCard": {
+    "badge": "AppAlter Karar Özeti",
+    "guideFor": "{name} İçin Karar Rehberi",
+    "theVerdict": "Karar Özeti:",
+    "bestSuitedFor": "Kimin İçin En Uygun",
+    "considerAlternativesIf": "Şu Durumlarda Alternatifleri Değerlendirin",
+    "watchOutTitle": "Dikkat Edilmesi Gereken Faktörler (Olası Tuzaklar ve Fiyat Notları)",
+    "dealbreaker": "Kritik Eşik:",
+    "pricingNote": "Fiyatlandırma Notu:"
+  },
+  "comparison": {
+    "badge": "AppAlter Karşılaştırma Özeti",
+    "coreDifference": "Temel Fark:",
+    "whyChoose": "Neden {name} Seçilmeli?",
+    "migration": "Geçiş Zorluğu:",
+    "startingPriceAt": "{name}, {price} başlangıç fiyatıyla özelleştirilmiş çözümler sunar."
   }
 }

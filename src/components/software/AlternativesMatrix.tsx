@@ -1,9 +1,10 @@
 // src/components/software/AlternativesMatrix.tsx
-// Use-Case Bazlı Alternatif Karar Matrisi ve Geçiş Tuzakları Rehberi (AI Benchmark formatı).
+// Use-Case Bazlı Alternatif Karar Matrisi ve Geçiş Tuzakları Rehberi.
 
 import React from "react";
 import Image from "next/image";
 import Link from "next/link";
+import { useTranslations } from "next-intl";
 import type { SoftwareDetail } from "@/types";
 import type { Locale } from "@/i18n/routing";
 import { formatPrice } from "@/lib/utils";
@@ -15,23 +16,25 @@ interface AlternativesMatrixProps {
 }
 
 export function AlternativesMatrix({ software, alternatives, locale }: AlternativesMatrixProps) {
+  const t = useTranslations("decisionMatrix");
+
   if (!alternatives || alternatives.length === 0) return null;
 
   const topAlternatives = alternatives.slice(0, 5);
 
   return (
     <div className="container">
-      <div className="alternatives-matrix-card" aria-label="Use Case Comparison Matrix">
+      <div className="alternatives-matrix-card" aria-label={t("badge")}>
         {/* Header */}
         <div style={{ marginBottom: "1.5rem" }}>
           <div style={{ display: "inline-flex", alignItems: "center", gap: "0.4rem", background: "rgba(139, 92, 246, 0.15)", border: "1px solid rgba(139, 92, 246, 0.3)", color: "#c084fc", padding: "0.25rem 0.65rem", borderRadius: "9999px", fontSize: "0.75rem", fontWeight: 700, textTransform: "uppercase", letterSpacing: "0.05em", marginBottom: "0.5rem" }}>
-            <span>💡 Decision Matrix</span>
+            <span>{t("badge")}</span>
           </div>
           <h2 style={{ fontSize: "1.6rem", fontWeight: 800, color: "var(--text-primary)", letterSpacing: "-0.02em" }}>
-            Top {software.name} Alternatives Ranked by Use Case
+            {t("title", { name: software.name })}
           </h2>
           <p style={{ fontSize: "0.95rem", color: "var(--text-secondary)", marginTop: "0.25rem" }}>
-            Compare key advantages, pricing, and specific scenarios where each alternative outperforms {software.name}.
+            {t("subtitle", { name: software.name })}
           </p>
         </div>
 
@@ -40,11 +43,11 @@ export function AlternativesMatrix({ software, alternatives, locale }: Alternati
           <table style={{ width: "100%", borderCollapse: "collapse", textAlign: "left", fontSize: "0.9rem" }}>
             <thead>
               <tr style={{ background: "rgba(255, 255, 255, 0.04)", borderBottom: "1px solid var(--border-subtle)" }}>
-                <th style={{ padding: "0.875rem 1rem", color: "var(--text-muted)", fontWeight: 600 }}>Alternative</th>
-                <th style={{ padding: "0.875rem 1rem", color: "var(--text-muted)", fontWeight: 600 }}>Best For</th>
-                <th style={{ padding: "0.875rem 1rem", color: "var(--text-muted)", fontWeight: 600 }}>Starting Price</th>
-                <th style={{ padding: "0.875rem 1rem", color: "var(--text-muted)", fontWeight: 600 }}>Key Advantage over {software.name}</th>
-                <th style={{ padding: "0.875rem 1rem", color: "var(--text-muted)", fontWeight: 600, textAlign: "right" }}>Action</th>
+                <th style={{ padding: "0.875rem 1rem", color: "var(--text-muted)", fontWeight: 600 }}>{t("alternative")}</th>
+                <th style={{ padding: "0.875rem 1rem", color: "var(--text-muted)", fontWeight: 600 }}>{t("bestFor")}</th>
+                <th style={{ padding: "0.875rem 1rem", color: "var(--text-muted)", fontWeight: 600 }}>{t("startingPrice")}</th>
+                <th style={{ padding: "0.875rem 1rem", color: "var(--text-muted)", fontWeight: 600 }}>{t("keyAdvantage", { name: software.name })}</th>
+                <th style={{ padding: "0.875rem 1rem", color: "var(--text-muted)", fontWeight: 600, textAlign: "right" }}>{t("action")}</th>
               </tr>
             </thead>
             <tbody>
@@ -81,7 +84,7 @@ export function AlternativesMatrix({ software, alternatives, locale }: Alternati
                     {/* Best For */}
                     <td style={{ padding: "1rem", color: "var(--text-primary)" }}>
                       <span className="decision-tag best-for" style={{ fontSize: "0.8rem", padding: "0.2rem 0.5rem" }}>
-                        ✓ {bestFor}
+                        {bestFor}
                       </span>
                     </td>
 
@@ -102,7 +105,7 @@ export function AlternativesMatrix({ software, alternatives, locale }: Alternati
                         className="btn btn-secondary btn-sm"
                         style={{ fontSize: "0.8rem", padding: "0.35rem 0.75rem" }}
                       >
-                        Compare VS →
+                        {t("compare")}
                       </Link>
                     </td>
                   </tr>
@@ -115,32 +118,32 @@ export function AlternativesMatrix({ software, alternatives, locale }: Alternati
         {/* Switching Traps & Hidden Costs to Consider */}
         <div style={{ marginTop: "2rem", padding: "1.25rem 1.5rem", background: "rgba(245, 158, 11, 0.05)", border: "1px solid rgba(245, 158, 11, 0.2)", borderRadius: "var(--radius-md)" }}>
           <div style={{ display: "flex", alignItems: "center", gap: "0.5rem", color: "#f59e0b", fontWeight: 700, fontSize: "0.95rem", marginBottom: "0.75rem" }}>
-            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round">
-              <path d="m21.73 18-8-14a2 2 0 0 0-3.48 0l-8 14A2 2 0 0 0 4 21h16a2 2 0 0 0 1.73-3Z"/>
-              <line x1="12" y1="9" x2="12" y2="13"/>
-              <line x1="12" y1="17" x2="12.01" y2="17"/>
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+              <circle cx="12" cy="12" r="10" />
+              <line x1="12" y1="8" x2="12" y2="12" />
+              <line x1="12" y1="16" x2="12.01" y2="16" />
             </svg>
-            Important Factors & Traps to Consider Before Switching
+            {t("trapsTitle")}
           </div>
 
           <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(260px, 1fr))", gap: "1.25rem", fontSize: "0.875rem", color: "var(--text-secondary)", lineHeight: 1.5 }}>
             <div>
               <strong style={{ color: "var(--text-primary)", display: "block", marginBottom: "0.25rem" }}>
-                1. The "All-in-One" Trap:
+                {t("trap1Title")}
               </strong>
-              Switching from a versatile platform to a specialized point solution may require purchasing supplementary tools for operations.
+              {t("trap1Desc")}
             </div>
             <div>
               <strong style={{ color: "var(--text-primary)", display: "block", marginBottom: "0.25rem" }}>
-                2. Data Migration Liftoff:
+                {t("trap2Title")}
               </strong>
-              Exporting historical logs, custom properties, and board relationships requires mapping time. Plan for a 1-2 week transition period.
+              {t("trap2Desc")}
             </div>
             <div>
               <strong style={{ color: "var(--text-primary)", display: "block", marginBottom: "0.25rem" }}>
-                3. Tier Escalation & Seat Jumps:
+                {t("trap3Title")}
               </strong>
-              Free and entry tiers offer massive upfront value, but verify user and contact thresholds to prevent sudden budget spikes.
+              {t("trap3Desc")}
             </div>
           </div>
         </div>

@@ -1,9 +1,10 @@
 // src/components/software/FreeToolsHub.tsx
-// Kategorilere göre gruplanmış En İyi Ücretsiz ve Açık Kaynak Araçlar Rehberi (Free Tools Hub).
+// Ücretsiz ve Freemium yazılımların kategorize edildiği zengin vitrin hub'ı.
 
 import React from "react";
 import Link from "next/link";
 import Image from "next/image";
+import { getTranslations } from "next-intl/server";
 import type { Locale } from "@/i18n/routing";
 import { createStaticClient } from "@/lib/supabase/server";
 import { StarRating } from "@/components/ui/StarRating";
@@ -14,6 +15,7 @@ interface FreeToolsHubProps {
 }
 
 export async function FreeToolsHub({ locale }: FreeToolsHubProps) {
+  const t = await getTranslations({ locale, namespace: "freeTools" });
   const supabase = createStaticClient();
 
   // Kategorileri ve her kategorideki ücretsiz/freemium/open-source yazılımları çekelim
@@ -70,17 +72,17 @@ export async function FreeToolsHub({ locale }: FreeToolsHubProps) {
   const activeGroups = Object.values(categoryGroups).filter((g) => g.items.length > 0);
 
   return (
-    <div className="free-tools-hub" aria-label="Free Tools Directory">
+    <div className="free-tools-hub" aria-label={t("title", { year: "2026" })}>
       {/* Hero Header */}
       <header className="free-tools-header" style={{ textAlign: "center", marginBottom: "3rem", padding: "2rem 0" }}>
         <div style={{ display: "inline-flex", alignItems: "center", gap: "0.5rem", background: "rgba(52, 211, 153, 0.1)", border: "1px solid rgba(52, 211, 153, 0.25)", color: "#34d399", padding: "0.35rem 0.85rem", borderRadius: "9999px", fontSize: "0.85rem", fontWeight: 600, marginBottom: "1rem" }}>
-          <span>🎁 100% Free & Freemium Selection</span>
+          <span>{t("badge")}</span>
         </div>
         <h1 style={{ fontSize: "2.5rem", fontWeight: 800, marginBottom: "0.75rem", letterSpacing: "-0.03em" }}>
-          Best Free Software & Alternatives (2026)
+          {t("title", { year: "2026" })}
         </h1>
         <p style={{ fontSize: "1.1rem", color: "var(--text-secondary)", maxWidth: "680px", margin: "0 auto" }}>
-          Hand-picked free tiers and open-source tools to scale your business, workflow, and projects without paying a dime.
+          {t("subtitle")}
         </p>
       </header>
 
@@ -91,10 +93,10 @@ export async function FreeToolsHub({ locale }: FreeToolsHubProps) {
             <div style={{ display: "flex", alignItems: "center", justifyContent: "space-between", marginBottom: "1.5rem", borderBottom: "1px solid var(--border-subtle)", paddingBottom: "0.75rem" }}>
               <div>
                 <h2 style={{ fontSize: "1.5rem", fontWeight: 700, color: "var(--text-primary)" }}>
-                  Top Free {group.categoryName} Software
+                  {t("topFreeCategory", { category: group.categoryName })}
                 </h2>
                 <span style={{ fontSize: "0.85rem", color: "var(--text-muted)" }}>
-                  Zero-cost & high-value alternatives for {group.categoryName.toLowerCase()}
+                  {t("categorySubtitle", { category: group.categoryName })}
                 </span>
               </div>
               <Link
@@ -102,7 +104,7 @@ export async function FreeToolsHub({ locale }: FreeToolsHubProps) {
                 className="view-all-link"
                 style={{ fontSize: "0.9rem", color: "var(--accent-primary)", fontWeight: 600 }}
               >
-                View all free {group.categoryName} →
+                {t("viewAll", { category: group.categoryName })}
               </Link>
             </div>
 
@@ -158,9 +160,9 @@ export async function FreeToolsHub({ locale }: FreeToolsHubProps) {
                         target="_blank"
                         rel="noopener noreferrer nofollow sponsored"
                         className="btn btn-primary btn-sm"
-                        style={{ flex: 1, textAlign: "center" }}
+                        style={{ flex: 1, textAlign: "center", fontSize: "0.85rem", padding: "0.45rem 0.75rem" }}
                       >
-                        Try Free →
+                        {t("tryFree")}
                       </a>
                     </div>
                   </div>

@@ -69,5 +69,22 @@
     "categorySubtitle": "Kostenfreie und hochwertige Alternativen für {category}",
     "viewAll": "Alle kostenlosen {category} anzeigen →",
     "tryFree": "Kostenlos testen →"
+  },
+  "decisionCard": {
+    "badge": "AppAlter-Urteil",
+    "guideFor": "Entscheidungsleitfaden für {name}",
+    "theVerdict": "Das Urteil:",
+    "bestSuitedFor": "Am besten geeignet für",
+    "considerAlternativesIf": "Alternativen prüfen, falls",
+    "watchOutTitle": "Wichtige Faktoren & Kostenfallen vor der Wahl",
+    "dealbreaker": "Ausschlusskriterium:",
+    "pricingNote": "Preishinweis:"
+  },
+  "comparison": {
+    "badge": "AppAlter-Vergleichsurteil",
+    "coreDifference": "Der Hauptunterschied:",
+    "whyChoose": "Warum {name} wählen?",
+    "migration": "Migrationsaufwand:",
+    "startingPriceAt": "{name} bietet spezialisierte Funktionen ab {price}."
   }
 }
