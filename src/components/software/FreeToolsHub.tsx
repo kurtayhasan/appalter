@@ -16,25 +16,24 @@ interface FreeToolsHubProps {
 export async function FreeToolsHub({ locale }: FreeToolsHubProps) {
   const supabase = createStaticClient();
 
-  // Kategorileri ve her kategorideki ücretsiz/freemium yazılımları çekelim
+  // Kategorileri ve her kategorideki ücretsiz/freemium/open-source yazılımları çekelim
   const { data: categories } = await supabase
     .from("categories")
     .select("id, slug, name, icon_url")
     .eq("is_active", true)
     .order("software_count", { ascending: false })
-    .limit(4);
+    .limit(10);
 
   const { data: freeSoftwares } = await supabase
     .from("softwares")
     .select(`
-      id, slug, name, tagline, logo_url, avg_rating, review_count, starting_price,
+      id, slug, name, tagline, logo_url, avg_rating, review_count, starting_price, has_free_trial,
       categories!softwares_category_id_fkey (id, slug, name),
       pricing_models!softwares_pricing_model_id_fkey (slug)
     `)
     .eq("status", "published")
-    .or("starting_price.is.null,starting_price.eq.0")
     .order("view_count", { ascending: false })
-    .limit(24);
+    .limit(80);
 
   // Softwares'ı kategorilerine göre gruplayalım
   const categoryGroups: Record<string, { categoryName: string; categorySlug: string; items: any[] }> = {};
@@ -62,7 +61,7 @@ export async function FreeToolsHub({ locale }: FreeToolsHubProps) {
         };
       }
 
-      if (categoryGroups[catSlug].items.length < 4) {
+      if (categoryGroups[catSlug].items.length < 8) {
         categoryGroups[catSlug].items.push(sw);
       }
     }

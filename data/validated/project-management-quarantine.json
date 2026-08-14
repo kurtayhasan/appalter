@@ -1,0 +1,12 @@
+{
+  "softwares": [],
+  "relations": [
+    {
+      "software_slug": "taskworld",
+      "alternative_slug": "todoist",
+      "similarity_score": 0.84,
+      "reason": "Both focus on task management and collaboration.",
+      "core_difference": "Todoist is more streamlined for individual task management."
+    }
+  ]
+}

@@ -1,0 +1,142 @@
+[
+  {
+    "slug": "asana",
+    "name": "Asana"
+  },
+  {
+    "slug": "trello",
+    "name": "Trello"
+  },
+  {
+    "slug": "jira",
+    "name": "Jira"
+  },
+  {
+    "slug": "microsoft-project",
+    "name": "Microsoft Project"
+  },
+  {
+    "slug": "clickup",
+    "name": "ClickUp"
+  },
+  {
+    "slug": "basecamp",
+    "name": "Basecamp"
+  },
+  {
+    "slug": "wrike",
+    "name": "Wrike"
+  },
+  {
+    "slug": "smartsheet",
+    "name": "Smartsheet"
+  },
+  {
+    "slug": "notion",
+    "name": "Notion"
+  },
+  {
+    "slug": "teamwork",
+    "name": "Teamwork"
+  },
+  {
+    "slug": "monday-com",
+    "name": "Monday.com"
+  },
+  {
+    "slug": "proofhub",
+    "name": "ProofHub"
+  },
+  {
+    "slug": "podio",
+    "name": "Podio"
+  },
+  {
+    "slug": "redmine",
+    "name": "Redmine"
+  },
+  {
+    "slug": "zoho-projects",
+    "name": "Zoho Projects"
+  },
+  {
+    "slug": "scoro",
+    "name": "Scoro"
+  },
+  {
+    "slug": "workfront",
+    "name": "Workfront"
+  },
+  {
+    "slug": "ganttpro",
+    "name": "GanttPRO"
+  },
+  {
+    "slug": "liquidplanner",
+    "name": "LiquidPlanner"
+  },
+  {
+    "slug": "taskworld",
+    "name": "Taskworld"
+  },
+  {
+    "slug": "freedcamp",
+    "name": "Freedcamp"
+  },
+  {
+    "slug": "ayrshare",
+    "name": "Ayrshare"
+  },
+  {
+    "slug": "taskrabbit",
+    "name": "TaskRabbit"
+  },
+  {
+    "slug": "hygger",
+    "name": "Hygger"
+  },
+  {
+    "slug": "nifty",
+    "name": "Nifty"
+  },
+  {
+    "slug": "workzone",
+    "name": "Workzone"
+  },
+  {
+    "slug": "projectmanager",
+    "name": "ProjectManager"
+  },
+  {
+    "slug": "easyproject",
+    "name": "Easy Project"
+  },
+  {
+    "slug": "teamgantt",
+    "name": "TeamGantt"
+  },
+  {
+    "slug": "clarizen",
+    "name": "Clarizen"
+  },
+  {
+    "slug": "coda",
+    "name": "Coda"
+  },
+  {
+    "slug": "todolist",
+    "name": "Todoist"
+  },
+  {
+    "slug": "kanbanize",
+    "name": "Kanbanize"
+  },
+  {
+    "slug": "sprintly",
+    "name": "Sprintly"
+  },
+  {
+    "slug": "workamajig",
+    "name": "Workamajig"
+  }
+]

@@ -1,0 +1,135 @@
+[
+  {
+    "software_slug": "asana",
+    "alternative_slug": "clickup",
+    "similarity_score": 0.92,
+    "reason": "Both focus on team collaboration and project management.",
+    "core_difference": "ClickUp offers more customization options and features."
+  },
+  {
+    "software_slug": "asana",
+    "alternative_slug": "wrike",
+    "similarity_score": 0.9,
+    "reason": "Both are designed for team collaboration and task management.",
+    "core_difference": "Wrike provides advanced reporting and analytics tools."
+  },
+  {
+    "software_slug": "trello",
+    "alternative_slug": "monday-com",
+    "similarity_score": 0.88,
+    "reason": "Both use visual boards for project management.",
+    "core_difference": "Monday.com offers more robust automation features."
+  },
+  {
+    "software_slug": "trello",
+    "alternative_slug": "clickup",
+    "similarity_score": 0.87,
+    "reason": "Both are visual tools for managing tasks and projects.",
+    "core_difference": "ClickUp includes more comprehensive features beyond boards."
+  },
+  {
+    "software_slug": "jira",
+    "alternative_slug": "sprintly",
+    "similarity_score": 0.91,
+    "reason": "Both are tailored for agile project management.",
+    "core_difference": "Sprintly focuses more on product management and feedback."
+  },
+  {
+    "software_slug": "jira",
+    "alternative_slug": "microsoft-project",
+    "similarity_score": 0.89,
+    "reason": "Both are used for managing complex projects.",
+    "core_difference": "Microsoft Project is more traditional and less agile-focused."
+  },
+  {
+    "software_slug": "microsoft-project",
+    "alternative_slug": "smartsheet",
+    "similarity_score": 0.9,
+    "reason": "Both provide comprehensive project management solutions.",
+    "core_difference": "Smartsheet emphasizes collaboration and automation."
+  },
+  {
+    "software_slug": "microsoft-project",
+    "alternative_slug": "wrike",
+    "similarity_score": 0.88,
+    "reason": "Both are designed for managing large projects.",
+    "core_difference": "Wrike offers more flexibility in task management."
+  },
+  {
+    "software_slug": "clickup",
+    "alternative_slug": "notion",
+    "similarity_score": 0.85,
+    "reason": "Both are versatile tools for productivity and collaboration.",
+    "core_difference": "Notion focuses more on documentation and knowledge management."
+  },
+  {
+    "software_slug": "clickup",
+    "alternative_slug": "teamwork",
+    "similarity_score": 0.87,
+    "reason": "Both aim to enhance team productivity and project management.",
+    "core_difference": "Teamwork has a stronger emphasis on client collaboration."
+  },
+  {
+    "software_slug": "basecamp",
+    "alternative_slug": "teamwork",
+    "similarity_score": 0.86,
+    "reason": "Both simplify project management for teams.",
+    "core_difference": "Teamwork offers more advanced task management features."
+  },
+  {
+    "software_slug": "basecamp",
+    "alternative_slug": "freedcamp",
+    "similarity_score": 0.84,
+    "reason": "Both focus on simplifying project management for teams.",
+    "core_difference": "Freedcamp offers a free tier with more features."
+  },
+  {
+    "software_slug": "wrike",
+    "alternative_slug": "monday-com",
+    "similarity_score": 0.89,
+    "reason": "Both are robust work management platforms.",
+    "core_difference": "Monday.com is more visually oriented and customizable."
+  },
+  {
+    "software_slug": "smartsheet",
+    "alternative_slug": "projectmanager",
+    "similarity_score": 0.87,
+    "reason": "Both provide tools for project tracking and management.",
+    "core_difference": "ProjectManager focuses more on real-time collaboration."
+  },
+  {
+    "software_slug": "notion",
+    "alternative_slug": "coda",
+    "similarity_score": 0.88,
+    "reason": "Both are all-in-one tools for documentation and collaboration.",
+    "core_difference": "Coda emphasizes building interactive documents."
+  },
+  {
+    "software_slug": "teamwork",
+    "alternative_slug": "nifty",
+    "similarity_score": 0.86,
+    "reason": "Both aim to streamline project management for teams.",
+    "core_difference": "Nifty integrates more features for remote collaboration."
+  },
+  {
+    "software_slug": "projectmanager",
+    "alternative_slug": "workzone",
+    "similarity_score": 0.85,
+    "reason": "Both are designed for online project management.",
+    "core_difference": "Workzone focuses more on team collaboration features."
+  },
+  {
+    "software_slug": "freedcamp",
+    "alternative_slug": "basecamp",
+    "similarity_score": 0.83,
+    "reason": "Both simplify project management for teams.",
+    "core_difference": "Freedcamp offers more features in its free version."
+  },
+  {
+    "software_slug": "nifty",
+    "alternative_slug": "clickup",
+    "similarity_score": 0.82,
+    "reason": "Both are designed for project management and collaboration.",
+    "core_difference": "ClickUp has a broader range of features."
+  }
+]

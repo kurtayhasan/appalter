@@ -1,0 +1,1683 @@
+[
+  {
+    "slug": "asana",
+    "name": "Asana",
+    "tagline": "Team collaboration made easy",
+    "short_description": "Asana helps teams organize, track, and manage their work projects efficiently.",
+    "website_url": "https://asana.com",
+    "pricing_model_slug": "freemium",
+    "ai_features": {
+      "tldr": "Asana streamlines team collaboration effortlessly.",
+      "pros": [
+        "User-friendly interface",
+        "Robust task management",
+        "Integrates with many tools"
+      ],
+      "cons": [
+        "Limited offline access",
+        "Can be overwhelming for new users",
+        "Pricing can escalate quickly"
+      ],
+      "pricing_model_type": "Freemium",
+      "target_audience_size": "Any",
+      "dealbreakers": [
+        "Limited features in free plan"
+      ],
+      "hidden_costs": [
+        "Add-ons may incur extra fees"
+      ],
+      "migration_difficulty": "medium",
+      "best_for": [
+        "Project management",
+        "Team collaboration"
+      ],
+      "not_for": [
+        "Solo users",
+        "Small teams on tight budgets"
+      ],
+      "switching_reasons": [
+        "Better features elsewhere",
+        "Lower pricing options"
+      ],
+      "key_limitations": [
+        "No time tracking",
+        "Limited customization options"
+      ],
+      "confidence": 0.95
+    }
+  },
+  {
+    "slug": "trello",
+    "name": "Trello",
+    "tagline": "Visual project management tool",
+    "short_description": "Trello uses boards, lists, and cards to help teams organize tasks and projects visually.",
+    "website_url": "https://trello.com",
+    "pricing_model_slug": "freemium",
+    "ai_features": {
+      "tldr": "Trello simplifies project management visually.",
+      "pros": [
+        "User-friendly interface",
+        "Flexible task organization",
+        "Integrates with many tools"
+      ],
+      "cons": [
+        "Limited features in free plan",
+        "Can become cluttered",
+        "Not ideal for complex projects"
+      ],
+      "pricing_model_type": "Freemium",
+      "target_audience_size": "Any",
+      "dealbreakers": [
+        "Limited offline functionality",
+        "No time tracking built-in"
+      ],
+      "hidden_costs": [
+        "Advanced features require paid plans",
+        "Power-ups may incur extra fees"
+      ],
+      "migration_difficulty": "easy",
+      "best_for": [
+        "Team collaboration",
+        "Simple project tracking"
+      ],
+      "not_for": [
+        "Large enterprise projects",
+        "Highly technical teams"
+      ],
+      "switching_reasons": [
+        "Need for advanced features",
+        "Preference for different UI"
+      ],
+      "key_limitations": [
+        "Limited reporting capabilities",
+        "No built-in time tracking"
+      ],
+      "confidence": 0.95
+    }
+  },
+  {
+    "slug": "jira",
+    "name": "Jira",
+    "tagline": "Agile project management software",
+    "short_description": "Jira is designed for agile teams to plan, track, and manage software development projects.",
+    "website_url": "https://www.atlassian.com/software/jira",
+    "pricing_model_slug": "paid-only",
+    "ai_features": {
+      "tldr": "Jira streamlines project management effectively.",
+      "pros": [
+        "Customizable workflows",
+        "Robust reporting tools",
+        "Integrates with many apps"
+      ],
+      "cons": [
+        "Steep learning curve",
+        "Can be overwhelming",
+        "Pricing can escalate quickly"
+      ],
+      "pricing_model_type": "Paid Only",
+      "target_audience_size": "Enterprise",
+      "dealbreakers": [
+        "Complex setup for new users"
+      ],
+      "hidden_costs": [
+        "Add-ons may incur extra fees"
+      ],
+      "migration_difficulty": "medium",
+      "best_for": [
+        "Agile project management",
+        "Software development teams"
+      ],
+      "not_for": [
+        "Small teams",
+        "Non-technical users"
+      ],
+      "switching_reasons": [
+        "Need simpler alternatives",
+        "Cost concerns"
+      ],
+      "key_limitations": [
+        "Limited offline functionality",
+        "Performance issues with large projects"
+      ],
+      "confidence": 0.95
+    }
+  },
+  {
+    "slug": "microsoft-project",
+    "name": "Microsoft Project",
+    "tagline": "Comprehensive project management",
+    "short_description": "Microsoft Project offers tools for project planning, scheduling, and resource management.",
+    "website_url": "https://www.microsoft.com/en-us/microsoft-365/project",
+    "pricing_model_slug": "paid-only",
+    "ai_features": {
+      "tldr": "Microsoft Project streamlines project management efficiently.",
+      "pros": [
+        "Robust scheduling features",
+        "Integration with Microsoft 365",
+        "User-friendly interface"
+      ],
+      "cons": [
+        "Steep learning curve",
+        "High subscription cost",
+        "Limited offline capabilities"
+      ],
+      "pricing_model_type": "Paid Only",
+      "target_audience_size": "Enterprise",
+      "dealbreakers": [
+        "Requires Microsoft ecosystem",
+        "Limited customization options"
+      ],
+      "hidden_costs": [
+        "Add-ons may increase costs",
+        "Training may be necessary"
+      ],
+      "migration_difficulty": "medium",
+      "best_for": [
+        "Large project management",
+        "Resource allocation tracking"
+      ],
+      "not_for": [
+        "Small teams",
+        "Budget-conscious users"
+      ],
+      "switching_reasons": [
+        "Need for better collaboration",
+        "Desire for lower costs"
+      ],
+      "key_limitations": [
+        "Complex for simple projects",
+        "Limited third-party integrations"
+      ],
+      "confidence": 0.95
+    }
+  },
+  {
+    "slug": "clickup",
+    "name": "ClickUp",
+    "tagline": "All-in-one productivity platform",
+    "short_description": "ClickUp combines tasks, docs, goals, and chat in one app to boost productivity.",
+    "website_url": "https://clickup.com",
+    "pricing_model_slug": "freemium",
+    "ai_features": {
+      "tldr": "ClickUp streamlines project management effortlessly.",
+      "pros": [
+        "Highly customizable workflows",
+        "Robust collaboration tools",
+        "Integrated time tracking"
+      ],
+      "cons": [
+        "Steep learning curve",
+        "Overwhelming features for beginners",
+        "Occasional performance issues"
+      ],
+      "pricing_model_type": "Freemium",
+      "target_audience_size": "Any",
+      "dealbreakers": [
+        "Limited offline functionality",
+        "Complex setup for large teams"
+      ],
+      "hidden_costs": [
+        "Advanced features require paid plans",
+        "Add-ons may incur extra fees"
+      ],
+      "migration_difficulty": "medium",
+      "best_for": [
+        "Agile project management",
+        "Team collaboration and tracking"
+      ],
+      "not_for": [
+        "Simple task management needs",
+        "Users preferring minimalistic tools"
+      ],
+      "switching_reasons": [
+        "Need for better integration",
+        "Desire for more features"
+      ],
+      "key_limitations": [
+        "Limited reporting capabilities",
+        "Mobile app lacks full features"
+      ],
+      "confidence": 0.95
+    }
+  },
+  {
+    "slug": "basecamp",
+    "name": "Basecamp",
+    "tagline": "Project management simplified",
+    "short_description": "Basecamp is a project management tool that helps teams collaborate and communicate effectively.",
+    "website_url": "https://basecamp.com",
+    "pricing_model_slug": "paid-only",
+    "ai_features": {
+      "tldr": "Basecamp simplifies team collaboration.",
+      "pros": [
+        "User-friendly interface",
+        "Strong project management tools",
+        "Effective communication features"
+      ],
+      "cons": [
+        "Limited customization options",
+        "No time tracking",
+        "Higher price for larger teams"
+      ],
+      "pricing_model_type": "Paid Only",
+      "target_audience_size": "Startup",
+      "dealbreakers": [
+        "No free tier available"
+      ],
+      "hidden_costs": [
+        "Additional fees for extra users"
+      ],
+      "migration_difficulty": "medium",
+      "best_for": [
+        "Remote team collaboration",
+        "Project management"
+      ],
+      "not_for": [
+        "Large enterprises",
+        "Complex project needs"
+      ],
+      "switching_reasons": [
+        "Simpler alternatives available",
+        "Better pricing options"
+      ],
+      "key_limitations": [
+        "Limited integrations",
+        "No advanced reporting"
+      ],
+      "confidence": 0.95
+    }
+  },
+  {
+    "slug": "wrike",
+    "name": "Wrike",
+    "tagline": "Work management software",
+    "short_description": "Wrike provides tools for project planning, collaboration, and reporting for teams.",
+    "website_url": "https://www.wrike.com",
+    "pricing_model_slug": "freemium",
+    "ai_features": {
+      "tldr": "Wrike streamlines project management effectively.",
+      "pros": [
+        "User-friendly interface",
+        "Robust collaboration tools",
+        "Customizable workflows"
+      ],
+      "cons": [
+        "Can be pricey",
+        "Steep learning curve",
+        "Limited offline access"
+      ],
+      "pricing_model_type": "Paid Only",
+      "target_audience_size": "Any",
+      "dealbreakers": [
+        "High cost for advanced features"
+      ],
+      "hidden_costs": [
+        "Add-ons may increase pricing"
+      ],
+      "migration_difficulty": "medium",
+      "best_for": [
+        "Project management teams",
+        "Remote collaboration"
+      ],
+      "not_for": [
+        "Small teams on a budget",
+        "Simple task tracking"
+      ],
+      "switching_reasons": [
+        "Need for better features",
+        "Improved user experience"
+      ],
+      "key_limitations": [
+        "Limited integrations",
+        "Complex setup process"
+      ],
+      "confidence": 0.95
+    }
+  },
+  {
+    "slug": "smartsheet",
+    "name": "Smartsheet",
+    "tagline": "Work management and automation",
+    "short_description": "Smartsheet is a platform for work management and automation that enables teams to collaborate.",
+    "website_url": "https://www.smartsheet.com",
+    "pricing_model_slug": "paid-only",
+    "ai_features": {
+      "tldr": "Smartsheet streamlines project management effortlessly.",
+      "pros": [
+        "User-friendly interface",
+        "Robust collaboration tools",
+        "Customizable templates"
+      ],
+      "cons": [
+        "Limited offline access",
+        "Can be pricey",
+        "Steep learning curve"
+      ],
+      "pricing_model_type": "Paid Only",
+      "target_audience_size": "Enterprise",
+      "dealbreakers": [
+        "No free tier available"
+      ],
+      "hidden_costs": [
+        "Add-ons can increase costs"
+      ],
+      "migration_difficulty": "medium",
+      "best_for": [
+        "Project tracking",
+        "Team collaboration"
+      ],
+      "not_for": [
+        "Small teams",
+        "Budget-conscious users"
+      ],
+      "switching_reasons": [
+        "Need for advanced features",
+        "Better integration options"
+      ],
+      "key_limitations": [
+        "Limited mobile functionality",
+        "Complex pricing structure"
+      ],
+      "confidence": 0.95
+    }
+  },
+  {
+    "slug": "notion",
+    "name": "Notion",
+    "tagline": "All-in-one workspace",
+    "short_description": "Notion combines notes, tasks, databases, and wikis in a single collaborative workspace.",
+    "website_url": "https://www.notion.so",
+    "pricing_model_slug": "freemium",
+    "ai_features": {
+      "tldr": "Notion streamlines collaboration and organization.",
+      "pros": [
+        "Highly customizable workspace",
+        "Rich integration options",
+        "User-friendly interface"
+      ],
+      "cons": [
+        "Can be overwhelming for beginners",
+        "Limited offline functionality",
+        "Performance issues with large databases"
+      ],
+      "pricing_model_type": "Freemium",
+      "target_audience_size": "Any",
+      "dealbreakers": [
+        "Complexity for simple tasks"
+      ],
+      "hidden_costs": [
+        "Advanced features require paid plan"
+      ],
+      "migration_difficulty": "medium",
+      "best_for": [
+        "Project management",
+        "Knowledge base creation"
+      ],
+      "not_for": [
+        "Simple note-taking",
+        "Heavy data analysis"
+      ],
+      "switching_reasons": [
+        "Need for simpler tools",
+        "Cost concerns"
+      ],
+      "key_limitations": [
+        "Limited export options",
+        "No built-in time tracking"
+      ],
+      "confidence": 0.95
+    }
+  },
+  {
+    "slug": "teamwork",
+    "name": "Teamwork",
+    "tagline": "Project management made simple",
+    "short_description": "Teamwork helps teams manage projects, tasks, and communication in one place.",
+    "website_url": "https://www.teamwork.com",
+    "pricing_model_slug": "freemium",
+    "ai_features": {
+      "tldr": "Teamwork enhances project collaboration effortlessly.",
+      "pros": [
+        "User-friendly interface",
+        "Robust task management",
+        "Integrates with popular tools"
+      ],
+      "cons": [
+        "Limited customization options",
+        "Can be pricey for teams",
+        "Steeper learning curve for new users"
+      ],
+      "pricing_model_type": "Paid Only",
+      "target_audience_size": "Startup",
+      "dealbreakers": [
+        "No free tier available"
+      ],
+      "hidden_costs": [
+        "Add-ons may incur extra fees"
+      ],
+      "migration_difficulty": "medium",
+      "best_for": [
+        "Project management",
+        "Team collaboration"
+      ],
+      "not_for": [
+        "Freelancers",
+        "Small teams on a budget"
+      ],
+      "switching_reasons": [
+        "Need for advanced features",
+        "Better integration options"
+      ],
+      "key_limitations": [
+        "Limited reporting capabilities",
+        "Mobile app lacks features"
+      ],
+      "confidence": 0.95
+    }
+  },
+  {
+    "slug": "monday-com",
+    "name": "Monday.com",
+    "tagline": "Work operating system",
+    "short_description": "Monday.com is a flexible platform for managing workflows, projects, and team collaboration.",
+    "website_url": "https://monday.com",
+    "pricing_model_slug": "freemium",
+    "ai_features": {
+      "tldr": "Monday.com streamlines team collaboration effortlessly.",
+      "pros": [
+        "Highly customizable workflows",
+        "User-friendly interface",
+        "Strong integration options"
+      ],
+      "cons": [
+        "Can be pricey for teams",
+        "Steep learning curve initially",
+        "Limited offline functionality"
+      ],
+      "pricing_model_type": "Paid Only",
+      "target_audience_size": "Any",
+      "dealbreakers": [
+        "High cost for larger teams",
+        "Complex features may overwhelm"
+      ],
+      "hidden_costs": [
+        "Add-ons increase overall pricing",
+        "Limited features in lower tiers"
+      ],
+      "migration_difficulty": "medium",
+      "best_for": [
+        "Project management",
+        "Team collaboration"
+      ],
+      "not_for": [
+        "Small teams on a budget",
+        "Users needing offline access"
+      ],
+      "switching_reasons": [
+        "Need for better integrations",
+        "Desire for more customization"
+      ],
+      "key_limitations": [
+        "Limited reporting features",
+        "Can become cluttered with use"
+      ],
+      "confidence": 0.95
+    }
+  },
+  {
+    "slug": "proofhub",
+    "name": "ProofHub",
+    "tagline": "Project planning and collaboration",
+    "short_description": "ProofHub offers project management, team collaboration, and time tracking tools in one place.",
+    "website_url": "https://www.proofhub.com",
+    "pricing_model_slug": "paid-only",
+    "ai_features": {
+      "tldr": "ProofHub streamlines project management effortlessly.",
+      "pros": [
+        "User-friendly interface",
+        "Comprehensive collaboration tools",
+        "Affordable pricing plans"
+      ],
+      "cons": [
+        "Limited integrations",
+        "Basic reporting features",
+        "No mobile app"
+      ],
+      "pricing_model_type": "Paid Only",
+      "target_audience_size": "Startup",
+      "dealbreakers": [
+        "No free tier available",
+        "Limited customization options"
+      ],
+      "hidden_costs": [
+        "Additional fees for extra users",
+        "Upgrades may incur costs"
+      ],
+      "migration_difficulty": "medium",
+      "best_for": [
+        "Small team project management",
+        "Remote collaboration"
+      ],
+      "not_for": [
+        "Large enterprise needs",
+        "Complex project requirements"
+      ],
+      "switching_reasons": [
+        "Need for advanced features",
+        "Better integration options"
+      ],
+      "key_limitations": [
+        "Lacks advanced analytics",
+        "Limited third-party support"
+      ],
+      "confidence": 0.95
+    }
+  },
+  {
+    "slug": "podio",
+    "name": "Podio",
+    "tagline": "Customizable work management",
+    "short_description": "Podio allows teams to create custom workflows and manage projects collaboratively.",
+    "website_url": "https://podio.com",
+    "pricing_model_slug": "freemium",
+    "ai_features": {
+      "tldr": "Podio streamlines team collaboration effortlessly.",
+      "pros": [
+        "Highly customizable workflows",
+        "User-friendly interface",
+        "Strong integration capabilities"
+      ],
+      "cons": [
+        "Limited offline functionality",
+        "Can be overwhelming for beginners",
+        "Pricing can escalate quickly"
+      ],
+      "pricing_model_type": "Freemium",
+      "target_audience_size": "Startup",
+      "dealbreakers": [
+        "Complexity for small teams",
+        "High costs for advanced features"
+      ],
+      "hidden_costs": [
+        "Add-ons may incur extra fees",
+        "Premium support costs additional"
+      ],
+      "migration_difficulty": "medium",
+      "best_for": [
+        "Project management",
+        "Team collaboration"
+      ],
+      "not_for": [
+        "Solo freelancers",
+        "Very small teams"
+      ],
+      "switching_reasons": [
+        "Need simpler alternatives",
+        "Cost concerns with scaling"
+      ],
+      "key_limitations": [
+        "Limited mobile app features",
+        "Performance issues with large data"
+      ],
+      "confidence": 0.95
+    }
+  },
+  {
+    "slug": "redmine",
+    "name": "Redmine",
+    "tagline": "Open-source project management",
+    "short_description": "Redmine is a flexible project management web application that supports multiple projects.",
+    "website_url": "https://www.redmine.org",
+    "pricing_model_slug": "open-source",
+    "ai_features": {
+      "tldr": "Redmine streamlines project management effectively.",
+      "pros": [
+        "Highly customizable",
+        "Open source",
+        "Strong community support"
+      ],
+      "cons": [
+        "Steep learning curve",
+        "Limited mobile app",
+        "Basic UI design"
+      ],
+      "pricing_model_type": "Open Source",
+      "target_audience_size": "Any",
+      "dealbreakers": [
+        "Requires self-hosting",
+        "Technical setup needed"
+      ],
+      "hidden_costs": [
+        "Hosting fees",
+        "Maintenance costs"
+      ],
+      "migration_difficulty": "medium",
+      "best_for": [
+        "Agile project management",
+        "Issue tracking"
+      ],
+      "not_for": [
+        "Non-technical users",
+        "Small teams"
+      ],
+      "switching_reasons": [
+        "Need for advanced features",
+        "Better user experience"
+      ],
+      "key_limitations": [
+        "Limited integrations",
+        "No built-in time tracking"
+      ],
+      "confidence": 0.95
+    }
+  },
+  {
+    "slug": "zoho-projects",
+    "name": "Zoho Projects",
+    "tagline": "Online project management software",
+    "short_description": "Zoho Projects helps teams plan, track, and collaborate on projects effectively.",
+    "website_url": "https://www.zoho.com/projects/",
+    "pricing_model_slug": "freemium",
+    "ai_features": {
+      "tldr": "Zoho Projects streamlines team collaboration effectively.",
+      "pros": [
+        "User-friendly interface",
+        "Robust project tracking",
+        "Integrates with Zoho suite"
+      ],
+      "cons": [
+        "Limited customization options",
+        "Can be overwhelming for beginners",
+        "Pricing can escalate quickly"
+      ],
+      "pricing_model_type": "Paid Only",
+      "target_audience_size": "Startup",
+      "dealbreakers": [
+        "No free tier available",
+        "Limited offline functionality"
+      ],
+      "hidden_costs": [
+        "Add-ons increase total cost",
+        "Advanced features require higher plans"
+      ],
+      "migration_difficulty": "medium",
+      "best_for": [
+        "Project management teams",
+        "Remote collaboration"
+      ],
+      "not_for": [
+        "Solo freelancers",
+        "Small teams with simple needs"
+      ],
+      "switching_reasons": [
+        "Need for more customization",
+        "Better pricing options elsewhere"
+      ],
+      "key_limitations": [
+        "Limited third-party integrations",
+        "Steep learning curve for advanced features"
+      ],
+      "confidence": 0.95
+    }
+  },
+  {
+    "slug": "scoro",
+    "name": "Scoro",
+    "tagline": "Business management software",
+    "short_description": "Scoro combines project management, time tracking, and billing in one platform.",
+    "website_url": "https://www.scoro.com",
+    "pricing_model_slug": "paid-only",
+    "ai_features": {
+      "tldr": "Scoro streamlines project management and finance.",
+      "pros": [
+        "Comprehensive project management",
+        "Integrated financial tools",
+        "User-friendly interface"
+      ],
+      "cons": [
+        "Steep learning curve",
+        "Limited customization options",
+        "Higher pricing tiers"
+      ],
+      "pricing_model_type": "Paid Only",
+      "target_audience_size": "Enterprise",
+      "dealbreakers": [
+        "No free tier available"
+      ],
+      "hidden_costs": [
+        "Add-ons may incur extra fees"
+      ],
+      "migration_difficulty": "medium",
+      "best_for": [
+        "Project management teams",
+        "Financial tracking"
+      ],
+      "not_for": [
+        "Small businesses",
+        "Freelancers"
+      ],
+      "switching_reasons": [
+        "Need for advanced features",
+        "Better integration options"
+      ],
+      "key_limitations": [
+        "Limited third-party integrations",
+        "Complex reporting tools"
+      ],
+      "confidence": 0.95
+    }
+  },
+  {
+    "slug": "workfront",
+    "name": "Workfront",
+    "tagline": "Enterprise work management",
+    "short_description": "Workfront provides a comprehensive solution for managing work across teams and projects.",
+    "website_url": "https://www.workfront.com",
+    "pricing_model_slug": "paid-only",
+    "ai_features": {
+      "tldr": "Workfront streamlines project management effectively.",
+      "pros": [
+        "Robust project tracking features",
+        "Customizable workflows",
+        "Strong collaboration tools"
+      ],
+      "cons": [
+        "Steep learning curve",
+        "High pricing tiers",
+        "Limited integrations"
+      ],
+      "pricing_model_type": "Paid Only",
+      "target_audience_size": "Enterprise",
+      "dealbreakers": [
+        "Requires extensive training",
+        "Not budget-friendly for small teams"
+      ],
+      "hidden_costs": [
+        "Additional fees for premium features",
+        "Costs for training sessions"
+      ],
+      "migration_difficulty": "medium",
+      "best_for": [
+        "Large team project management",
+        "Complex workflow automation"
+      ],
+      "not_for": [
+        "Small businesses",
+        "Simple project needs"
+      ],
+      "switching_reasons": [
+        "Need for more affordable options",
+        "Desire for simpler interfaces"
+      ],
+      "key_limitations": [
+        "Limited mobile functionality",
+        "Complex setup process"
+      ],
+      "confidence": 0.95
+    }
+  },
+  {
+    "slug": "ganttpro",
+    "name": "GanttPRO",
+    "tagline": "Gantt chart project management",
+    "short_description": "GanttPRO is a Gantt chart software for project planning and management.",
+    "website_url": "https://ganttpro.com",
+    "pricing_model_slug": "paid-only",
+    "ai_features": {
+      "tldr": "GanttPRO simplifies project planning visually.",
+      "pros": [
+        "User-friendly interface",
+        "Real-time collaboration",
+        "Customizable templates"
+      ],
+      "cons": [
+        "Limited offline access",
+        "Basic reporting features",
+        "Can be pricey for teams"
+      ],
+      "pricing_model_type": "Paid Only",
+      "target_audience_size": "Startup",
+      "dealbreakers": [
+        "No free tier available"
+      ],
+      "hidden_costs": [
+        "Add-ons may incur extra fees"
+      ],
+      "migration_difficulty": "medium",
+      "best_for": [
+        "Project management",
+        "Team collaboration"
+      ],
+      "not_for": [
+        "Solo freelancers",
+        "Large enterprises"
+      ],
+      "switching_reasons": [
+        "Better features elsewhere",
+        "Lower pricing options"
+      ],
+      "key_limitations": [
+        "Limited integrations",
+        "No mobile app"
+      ],
+      "confidence": 0.95
+    }
+  },
+  {
+    "slug": "liquidplanner",
+    "name": "LiquidPlanner",
+    "tagline": "Dynamic project management",
+    "short_description": "LiquidPlanner is a project management tool that adapts to changing project needs.",
+    "website_url": "https://www.liquidplanner.com",
+    "pricing_model_slug": "paid-only",
+    "ai_features": {
+      "tldr": "LiquidPlanner streamlines project management effectively.",
+      "pros": [
+        "Dynamic project scheduling",
+        "Collaborative team features",
+        "Robust reporting tools"
+      ],
+      "cons": [
+        "Steep learning curve",
+        "Limited integrations",
+        "Higher pricing tiers"
+      ],
+      "pricing_model_type": "Paid Only",
+      "target_audience_size": "Enterprise",
+      "dealbreakers": [
+        "No free tier available",
+        "Complex pricing structure"
+      ],
+      "hidden_costs": [
+        "Add-ons may increase costs",
+        "Training sessions may be needed"
+      ],
+      "migration_difficulty": "medium",
+      "best_for": [
+        "Large team project management",
+        "Resource allocation tracking"
+      ],
+      "not_for": [
+        "Small teams or freelancers",
+        "Simple project needs"
+      ],
+      "switching_reasons": [
+        "Need for simpler tools",
+        "Cost concerns with scaling"
+      ],
+      "key_limitations": [
+        "Limited mobile functionality",
+        "Performance issues with large data"
+      ],
+      "confidence": 0.95
+    }
+  },
+  {
+    "slug": "taskworld",
+    "name": "Taskworld",
+    "tagline": "Task management and collaboration",
+    "short_description": "Taskworld combines task management with team collaboration features for better productivity.",
+    "website_url": "https://taskworld.com",
+    "pricing_model_slug": "freemium",
+    "ai_features": {
+      "tldr": "Taskworld enhances team productivity effortlessly.",
+      "pros": [
+        "Intuitive user interface",
+        "Robust task management features",
+        "Integrated team collaboration tools"
+      ],
+      "cons": [
+        "Limited customization options",
+        "Steep learning curve for new users",
+        "Higher pricing for advanced features"
+      ],
+      "pricing_model_type": "Paid Only",
+      "target_audience_size": "Startup",
+      "dealbreakers": [
+        "No free tier available",
+        "Limited offline functionality"
+      ],
+      "hidden_costs": [
+        "Add-ons may incur extra fees",
+        "Premium support costs extra"
+      ],
+      "migration_difficulty": "medium",
+      "best_for": [
+        "Project management teams",
+        "Remote collaboration"
+      ],
+      "not_for": [
+        "Small teams with tight budgets",
+        "Users needing extensive integrations"
+      ],
+      "switching_reasons": [
+        "Need for better task tracking",
+        "Desire for enhanced collaboration"
+      ],
+      "key_limitations": [
+        "Lacks advanced reporting tools",
+        "Limited third-party integrations"
+      ],
+      "confidence": 0.95
+    }
+  },
+  {
+    "slug": "freedcamp",
+    "name": "Freedcamp",
+    "tagline": "Free project management tool",
+    "short_description": "Freedcamp offers a free project management solution with various collaboration features.",
+    "website_url": "https://freedcamp.com",
+    "pricing_model_slug": "freemium",
+    "ai_features": {
+      "tldr": "Freedcamp streamlines project management effortlessly.",
+      "pros": [
+        "User-friendly interface",
+        "Robust task management",
+        "Flexible pricing options"
+      ],
+      "cons": [
+        "Limited integrations",
+        "Steep learning curve",
+        "Occasional performance issues"
+      ],
+      "pricing_model_type": "Freemium",
+      "target_audience_size": "Startup",
+      "dealbreakers": [
+        "Lacks advanced reporting features"
+      ],
+      "hidden_costs": [
+        "Premium features require payment"
+      ],
+      "migration_difficulty": "medium",
+      "best_for": [
+        "Team collaboration",
+        "Project tracking"
+      ],
+      "not_for": [
+        "Large enterprises",
+        "Complex project needs"
+      ],
+      "switching_reasons": [
+        "Better features elsewhere",
+        "Cost concerns"
+      ],
+      "key_limitations": [
+        "Limited customization options",
+        "Basic mobile app functionality"
+      ],
+      "confidence": 0.95
+    }
+  },
+  {
+    "slug": "ayrshare",
+    "name": "Ayrshare",
+    "tagline": "Social media management tool",
+    "short_description": "Ayrshare simplifies social media management and scheduling for teams.",
+    "website_url": "https://ayrshare.com",
+    "pricing_model_slug": "freemium",
+    "ai_features": {
+      "tldr": "Ayrshare simplifies social media management.",
+      "pros": [
+        "User-friendly interface",
+        "Automated posting",
+        "Analytics tracking"
+      ],
+      "cons": [
+        "Limited integrations",
+        "Basic analytics features",
+        "No offline access"
+      ],
+      "pricing_model_type": "Freemium",
+      "target_audience_size": "Startup",
+      "dealbreakers": [
+        "Lacks advanced features",
+        "Limited customer support"
+      ],
+      "hidden_costs": [
+        "Premium features require payment",
+        "API access may incur fees"
+      ],
+      "migration_difficulty": "easy",
+      "best_for": [
+        "Social media scheduling",
+        "Content marketing"
+      ],
+      "not_for": [
+        "Large enterprises",
+        "Complex marketing teams"
+      ],
+      "switching_reasons": [
+        "Better features elsewhere",
+        "Lower pricing options"
+      ],
+      "key_limitations": [
+        "Limited platform support",
+        "Basic reporting tools"
+      ],
+      "confidence": 0.95
+    }
+  },
+  {
+    "slug": "taskrabbit",
+    "name": "TaskRabbit",
+    "tagline": "Find local help for tasks",
+    "short_description": "TaskRabbit connects you with local freelancers for various tasks and errands.",
+    "website_url": "https://www.taskrabbit.com",
+    "pricing_model_slug": "freemium",
+    "ai_features": {
+      "tldr": "TaskRabbit connects you with local help.",
+      "pros": [
+        "Wide range of tasks",
+        "Flexible scheduling options",
+        "User-friendly interface"
+      ],
+      "cons": [
+        "Service fees can add up",
+        "Variable task quality",
+        "Limited availability in areas"
+      ],
+      "pricing_model_type": "Freemium",
+      "target_audience_size": "Any",
+      "dealbreakers": [
+        "High service fees",
+        "Inconsistent worker quality"
+      ],
+      "hidden_costs": [
+        "Service fees on tasks",
+        "Potential tips for workers"
+      ],
+      "migration_difficulty": "easy",
+      "best_for": [
+        "Quick home repairs",
+        "Event assistance"
+      ],
+      "not_for": [
+        "Long-term projects",
+        "Highly specialized tasks"
+      ],
+      "switching_reasons": [
+        "Better pricing options elsewhere",
+        "More reliable service providers"
+      ],
+      "key_limitations": [
+        "Limited to local services",
+        "Not suitable for large jobs"
+      ],
+      "confidence": 0.95
+    }
+  },
+  {
+    "slug": "hygger",
+    "name": "Hygger",
+    "tagline": "Prioritize and manage tasks",
+    "short_description": "Hygger helps teams prioritize tasks and manage projects using various methodologies.",
+    "website_url": "https://hygger.io",
+    "pricing_model_slug": "freemium",
+    "ai_features": {
+      "tldr": "Hygger streamlines project management efficiently.",
+      "pros": [
+        "User-friendly interface",
+        "Robust feature set",
+        "Flexible prioritization tools"
+      ],
+      "cons": [
+        "Limited integrations",
+        "Steep learning curve",
+        "Occasional performance issues"
+      ],
+      "pricing_model_type": "Freemium",
+      "target_audience_size": "Startup",
+      "dealbreakers": [
+        "Lacks advanced reporting features"
+      ],
+      "hidden_costs": [
+        "Premium features require subscription"
+      ],
+      "migration_difficulty": "medium",
+      "best_for": [
+        "Agile project management",
+        "Team collaboration"
+      ],
+      "not_for": [
+        "Large enterprises",
+        "Non-tech teams"
+      ],
+      "switching_reasons": [
+        "Better pricing options",
+        "More integrations available"
+      ],
+      "key_limitations": [
+        "Limited customization options",
+        "Basic analytics tools"
+      ],
+      "confidence": 0.95
+    }
+  },
+  {
+    "slug": "nifty",
+    "name": "Nifty",
+    "tagline": "Project management and collaboration",
+    "short_description": "Nifty combines project management with team collaboration tools for seamless workflows.",
+    "website_url": "https://nifty.pm",
+    "pricing_model_slug": "freemium",
+    "ai_features": {
+      "tldr": "Nifty streamlines project management effortlessly.",
+      "pros": [
+        "User-friendly interface",
+        "Integrated collaboration tools",
+        "Customizable workflows"
+      ],
+      "cons": [
+        "Limited offline access",
+        "Basic reporting features",
+        "Steep learning curve for advanced features"
+      ],
+      "pricing_model_type": "Freemium",
+      "target_audience_size": "Startup",
+      "dealbreakers": [
+        "No advanced analytics",
+        "Limited integrations"
+      ],
+      "hidden_costs": [
+        "Premium features require subscription",
+        "Add-ons may incur extra fees"
+      ],
+      "migration_difficulty": "medium",
+      "best_for": [
+        "Agile project management",
+        "Team collaboration"
+      ],
+      "not_for": [
+        "Large enterprises",
+        "Complex project requirements"
+      ],
+      "switching_reasons": [
+        "Better pricing options",
+        "More robust features"
+      ],
+      "key_limitations": [
+        "Limited customization options",
+        "Performance issues with large teams"
+      ],
+      "confidence": 0.95
+    }
+  },
+  {
+    "slug": "workzone",
+    "name": "Workzone",
+    "tagline": "Project management software",
+    "short_description": "Workzone provides project management tools designed for teams to collaborate effectively.",
+    "website_url": "https://www.workzone.com",
+    "pricing_model_slug": "paid-only",
+    "ai_features": {
+      "tldr": "Workzone streamlines project management effectively.",
+      "pros": [
+        "User-friendly interface",
+        "Robust collaboration tools",
+        "Customizable workflows"
+      ],
+      "cons": [
+        "Limited integrations",
+        "Higher pricing tiers",
+        "Steeper learning curve"
+      ],
+      "pricing_model_type": "Paid Only",
+      "target_audience_size": "Startup",
+      "dealbreakers": [
+        "No free tier available"
+      ],
+      "hidden_costs": [
+        "Additional fees for premium features"
+      ],
+      "migration_difficulty": "medium",
+      "best_for": [
+        "Project tracking",
+        "Team collaboration"
+      ],
+      "not_for": [
+        "Freelancers",
+        "Small teams"
+      ],
+      "switching_reasons": [
+        "Need for better features",
+        "Cost efficiency"
+      ],
+      "key_limitations": [
+        "Limited mobile functionality",
+        "No offline access"
+      ],
+      "confidence": 0.95
+    }
+  },
+  {
+    "slug": "projectmanager",
+    "name": "ProjectManager",
+    "tagline": "Online project management tool",
+    "short_description": "ProjectManager offers tools for planning, tracking, and reporting on projects online.",
+    "website_url": "https://www.projectmanager.com",
+    "pricing_model_slug": "paid-only",
+    "ai_features": {
+      "tldr": "Streamline projects with powerful tools.",
+      "pros": [
+        "User-friendly interface",
+        "Robust collaboration features",
+        "Comprehensive reporting tools"
+      ],
+      "cons": [
+        "Limited integrations",
+        "Higher pricing tiers",
+        "Steep learning curve"
+      ],
+      "pricing_model_type": "Paid Only",
+      "target_audience_size": "Startup",
+      "dealbreakers": [
+        "No free tier available",
+        "Limited offline functionality"
+      ],
+      "hidden_costs": [
+        "Add-ons increase overall cost",
+        "Premium support incurs fees"
+      ],
+      "migration_difficulty": "medium",
+      "best_for": [
+        "Team project management",
+        "Resource allocation tracking"
+      ],
+      "not_for": [
+        "Solo freelancers",
+        "Small teams on tight budgets"
+      ],
+      "switching_reasons": [
+        "Need for better integrations",
+        "Desire for lower costs"
+      ],
+      "key_limitations": [
+        "Limited mobile app features",
+        "No time tracking built-in"
+      ],
+      "confidence": 0.95
+    }
+  },
+  {
+    "slug": "easyproject",
+    "name": "Easy Project",
+    "tagline": "Project management made easy",
+    "short_description": "Easy Project provides a comprehensive solution for managing projects and resources.",
+    "website_url": "https://www.easyproject.com",
+    "pricing_model_slug": "paid-only",
+    "ai_features": {
+      "tldr": "Easy Project streamlines project management efficiently.",
+      "pros": [
+        "Comprehensive project tracking",
+        "User-friendly interface",
+        "Strong collaboration tools"
+      ],
+      "cons": [
+        "Can be pricey for small teams",
+        "Steep learning curve initially",
+        "Limited offline capabilities"
+      ],
+      "pricing_model_type": "Paid Only",
+      "target_audience_size": "Enterprise",
+      "dealbreakers": [
+        "High cost for advanced features"
+      ],
+      "hidden_costs": [
+        "Additional fees for integrations"
+      ],
+      "migration_difficulty": "medium",
+      "best_for": [
+        "Large team project management",
+        "Complex project tracking"
+      ],
+      "not_for": [
+        "Small businesses on a budget",
+        "Simple project needs"
+      ],
+      "switching_reasons": [
+        "Need for better features",
+        "Cost-effective alternatives available"
+      ],
+      "key_limitations": [
+        "Limited customization options",
+        "Requires robust internet connection"
+      ],
+      "confidence": 0.95
+    }
+  },
+  {
+    "slug": "teamgantt",
+    "name": "TeamGantt",
+    "tagline": "Gantt chart project planning",
+    "short_description": "TeamGantt offers an intuitive Gantt chart tool for project planning and collaboration.",
+    "website_url": "https://www.teamgantt.com",
+    "pricing_model_slug": "freemium",
+    "ai_features": {
+      "tldr": "TeamGantt simplifies project management visually.",
+      "pros": [
+        "User-friendly interface",
+        "Visual timeline feature",
+        "Collaboration tools included"
+      ],
+      "cons": [
+        "Limited integrations",
+        "No offline access",
+        "Pricing can escalate"
+      ],
+      "pricing_model_type": "Paid Only",
+      "target_audience_size": "Startup",
+      "dealbreakers": [
+        "No free tier available"
+      ],
+      "hidden_costs": [
+        "Add-ons may incur extra fees"
+      ],
+      "migration_difficulty": "medium",
+      "best_for": [
+        "Project planning",
+        "Team collaboration"
+      ],
+      "not_for": [
+        "Large enterprises",
+        "Complex project needs"
+      ],
+      "switching_reasons": [
+        "Better features elsewhere",
+        "Lower pricing options"
+      ],
+      "key_limitations": [
+        "Limited reporting capabilities",
+        "No mobile app"
+      ],
+      "confidence": 0.95
+    }
+  },
+  {
+    "slug": "clarizen",
+    "name": "Clarizen",
+    "tagline": "Enterprise project management",
+    "short_description": "Clarizen provides a platform for managing projects, resources, and collaboration in enterprises.",
+    "website_url": "https://www.clarizen.com",
+    "pricing_model_slug": "paid-only",
+    "ai_features": {
+      "tldr": "Choose Clarizen for robust project management.",
+      "pros": [
+        "Customizable workflows",
+        "Strong collaboration tools",
+        "Real-time reporting"
+      ],
+      "cons": [
+        "Steep learning curve",
+        "Higher pricing tiers",
+        "Limited integrations"
+      ],
+      "pricing_model_type": "Paid Only",
+      "target_audience_size": "Enterprise",
+      "dealbreakers": [
+        "Requires extensive setup",
+        "Not budget-friendly for small teams"
+      ],
+      "hidden_costs": [
+        "Add-ons may increase costs",
+        "Training sessions may be extra"
+      ],
+      "migration_difficulty": "medium",
+      "best_for": [
+        "Large project management",
+        "Cross-department collaboration"
+      ],
+      "not_for": [
+        "Small teams",
+        "Simple project needs"
+      ],
+      "switching_reasons": [
+        "Need for better features",
+        "Dissatisfaction with current tools"
+      ],
+      "key_limitations": [
+        "Complex interface",
+        "Limited mobile functionality"
+      ],
+      "confidence": 0.95
+    }
+  },
+  {
+    "slug": "coda",
+    "name": "Coda",
+    "tagline": "Document collaboration tool",
+    "short_description": "Coda combines documents and spreadsheets into a single collaborative workspace.",
+    "website_url": "https://coda.io",
+    "pricing_model_slug": "freemium",
+    "ai_features": {
+      "tldr": "Coda combines documents and spreadsheets seamlessly.",
+      "pros": [
+        "Highly customizable workflows",
+        "Collaborative real-time editing",
+        "Integrates with various tools"
+      ],
+      "cons": [
+        "Steeper learning curve",
+        "Limited offline functionality",
+        "Performance issues with large docs"
+      ],
+      "pricing_model_type": "Freemium",
+      "target_audience_size": "Any",
+      "dealbreakers": [
+        "Complex for simple tasks"
+      ],
+      "hidden_costs": [
+        "Advanced features require paid plan"
+      ],
+      "migration_difficulty": "medium",
+      "best_for": [
+        "Project management",
+        "Team collaboration"
+      ],
+      "not_for": [
+        "Simple note-taking",
+        "Non-collaborative users"
+      ],
+      "switching_reasons": [
+        "Need for more features",
+        "Better integration options"
+      ],
+      "key_limitations": [
+        "Limited templates available",
+        "Can be overwhelming for new users"
+      ],
+      "confidence": 0.95
+    }
+  },
+  {
+    "slug": "todolist",
+    "name": "Todoist",
+    "tagline": "Task management made simple",
+    "short_description": "Todoist helps users manage tasks and projects with a simple and intuitive interface.",
+    "website_url": "https://todoist.com",
+    "pricing_model_slug": "freemium",
+    "ai_features": {
+      "tldr": "Todoist streamlines task management effortlessly.",
+      "pros": [
+        "Intuitive user interface",
+        "Cross-platform availability",
+        "Powerful integrations"
+      ],
+      "cons": [
+        "Limited free features",
+        "No time tracking",
+        "Steep learning curve for advanced features"
+      ],
+      "pricing_model_type": "Freemium",
+      "target_audience_size": "Any",
+      "dealbreakers": [
+        "Lacks advanced project management",
+        "Limited offline functionality"
+      ],
+      "hidden_costs": [
+        "Premium features require subscription",
+        "Add-ons may incur extra fees"
+      ],
+      "migration_difficulty": "medium",
+      "best_for": [
+        "Personal task management",
+        "Team collaboration"
+      ],
+      "not_for": [
+        "Complex project management",
+        "Users needing time tracking"
+      ],
+      "switching_reasons": [
+        "Better features in competitors",
+        "Lower pricing options available"
+      ],
+      "key_limitations": [
+        "No Gantt charts",
+        "Limited reporting tools"
+      ],
+      "confidence": 0.95
+    }
+  },
+  {
+    "slug": "kanbanize",
+    "name": "Kanbanize",
+    "tagline": "Kanban project management tool",
+    "short_description": "Kanbanize helps teams visualize and manage their work using Kanban boards.",
+    "website_url": "https://kanbanize.com",
+    "pricing_model_slug": "paid-only",
+    "ai_features": {
+      "tldr": "Kanbanize streamlines project management visually.",
+      "pros": [
+        "Intuitive Kanban boards",
+        "Powerful analytics tools",
+        "Customizable workflows"
+      ],
+      "cons": [
+        "Steep learning curve",
+        "Limited integrations",
+        "Higher pricing tiers"
+      ],
+      "pricing_model_type": "Paid Only",
+      "target_audience_size": "Startup",
+      "dealbreakers": [
+        "No free tier available"
+      ],
+      "hidden_costs": [
+        "Add-ons may increase costs"
+      ],
+      "migration_difficulty": "medium",
+      "best_for": [
+        "Agile project management",
+        "Team collaboration"
+      ],
+      "not_for": [
+        "Solo freelancers",
+        "Small teams on a budget"
+      ],
+      "switching_reasons": [
+        "Need for advanced features",
+        "Better user experience"
+      ],
+      "key_limitations": [
+        "Limited mobile functionality",
+        "Complex setup for new users"
+      ],
+      "confidence": 0.95
+    }
+  },
+  {
+    "slug": "sprintly",
+    "name": "Sprintly",
+    "tagline": "Agile project management",
+    "short_description": "Sprintly provides tools for agile project management and team collaboration.",
+    "website_url": "https://sprint.ly",
+    "pricing_model_slug": "paid-only",
+    "ai_features": {
+      "tldr": "Sprintly streamlines project management effortlessly.",
+      "pros": [
+        "User-friendly interface",
+        "Real-time collaboration",
+        "Customizable workflows"
+      ],
+      "cons": [
+        "Limited integrations",
+        "Steep learning curve",
+        "Pricing can escalate"
+      ],
+      "pricing_model_type": "Paid Only",
+      "target_audience_size": "Startup",
+      "dealbreakers": [
+        "No free tier available"
+      ],
+      "hidden_costs": [
+        "Additional fees for premium features"
+      ],
+      "migration_difficulty": "medium",
+      "best_for": [
+        "Agile project management",
+        "Team collaboration"
+      ],
+      "not_for": [
+        "Solo freelancers",
+        "Large enterprises"
+      ],
+      "switching_reasons": [
+        "Better features elsewhere",
+        "Lower costs available"
+      ],
+      "key_limitations": [
+        "Limited reporting tools",
+        "No offline access"
+      ],
+      "confidence": 0.95
+    }
+  },
+  {
+    "slug": "workamajig",
+    "name": "Workamajig",
+    "tagline": "Creative project management software",
+    "short_description": "Workamajig is designed for creative teams to manage projects, resources, and finances.",
+    "website_url": "https://www.workamajig.com",
+    "pricing_model_slug": "paid-only",
+    "ai_features": {
+      "tldr": "Workamajig streamlines project management efficiently.",
+      "pros": [
+        "Comprehensive project tracking",
+        "User-friendly interface",
+        "Strong client collaboration tools"
+      ],
+      "cons": [
+        "Limited customization options",
+        "Steep learning curve",
+        "Higher pricing tiers"
+      ],
+      "pricing_model_type": "Paid Only",
+      "target_audience_size": "Enterprise",
+      "dealbreakers": [
+        "No free tier available",
+        "Complex setup process"
+      ],
+      "hidden_costs": [
+        "Additional fees for integrations",
+        "Training costs may apply"
+      ],
+      "migration_difficulty": "medium",
+      "best_for": [
+        "Creative agencies",
+        "Project-based teams"
+      ],
+      "not_for": [
+        "Small businesses",
+        "Non-project focused teams"
+      ],
+      "switching_reasons": [
+        "Need for better features",
+        "Cost-effective alternatives"
+      ],
+      "key_limitations": [
+        "Limited mobile functionality",
+        "Slow customer support"
+      ],
+      "confidence": 0.95
+    }
+  }
+]

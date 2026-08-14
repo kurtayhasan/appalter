@@ -1,0 +1,282 @@
+[
+  {
+    "slug": "asana",
+    "name": "Asana",
+    "tagline": "Team collaboration made easy",
+    "short_description": "Asana helps teams organize, track, and manage their work projects efficiently.",
+    "website_url": "https://asana.com",
+    "pricing_model_slug": "freemium"
+  },
+  {
+    "slug": "trello",
+    "name": "Trello",
+    "tagline": "Visual project management tool",
+    "short_description": "Trello uses boards, lists, and cards to help teams organize tasks and projects visually.",
+    "website_url": "https://trello.com",
+    "pricing_model_slug": "freemium"
+  },
+  {
+    "slug": "jira",
+    "name": "Jira",
+    "tagline": "Agile project management software",
+    "short_description": "Jira is designed for agile teams to plan, track, and manage software development projects.",
+    "website_url": "https://www.atlassian.com/software/jira",
+    "pricing_model_slug": "paid-only"
+  },
+  {
+    "slug": "microsoft-project",
+    "name": "Microsoft Project",
+    "tagline": "Comprehensive project management",
+    "short_description": "Microsoft Project offers tools for project planning, scheduling, and resource management.",
+    "website_url": "https://www.microsoft.com/en-us/microsoft-365/project",
+    "pricing_model_slug": "paid-only"
+  },
+  {
+    "slug": "clickup",
+    "name": "ClickUp",
+    "tagline": "All-in-one productivity platform",
+    "short_description": "ClickUp combines tasks, docs, goals, and chat in one app to boost productivity.",
+    "website_url": "https://clickup.com",
+    "pricing_model_slug": "freemium"
+  },
+  {
+    "slug": "basecamp",
+    "name": "Basecamp",
+    "tagline": "Project management simplified",
+    "short_description": "Basecamp is a project management tool that helps teams collaborate and communicate effectively.",
+    "website_url": "https://basecamp.com",
+    "pricing_model_slug": "paid-only"
+  },
+  {
+    "slug": "wrike",
+    "name": "Wrike",
+    "tagline": "Work management software",
+    "short_description": "Wrike provides tools for project planning, collaboration, and reporting for teams.",
+    "website_url": "https://www.wrike.com",
+    "pricing_model_slug": "freemium"
+  },
+  {
+    "slug": "smartsheet",
+    "name": "Smartsheet",
+    "tagline": "Work management and automation",
+    "short_description": "Smartsheet is a platform for work management and automation that enables teams to collaborate.",
+    "website_url": "https://www.smartsheet.com",
+    "pricing_model_slug": "paid-only"
+  },
+  {
+    "slug": "notion",
+    "name": "Notion",
+    "tagline": "All-in-one workspace",
+    "short_description": "Notion combines notes, tasks, databases, and wikis in a single collaborative workspace.",
+    "website_url": "https://www.notion.so",
+    "pricing_model_slug": "freemium"
+  },
+  {
+    "slug": "teamwork",
+    "name": "Teamwork",
+    "tagline": "Project management made simple",
+    "short_description": "Teamwork helps teams manage projects, tasks, and communication in one place.",
+    "website_url": "https://www.teamwork.com",
+    "pricing_model_slug": "freemium"
+  },
+  {
+    "slug": "monday-com",
+    "name": "Monday.com",
+    "tagline": "Work operating system",
+    "short_description": "Monday.com is a flexible platform for managing workflows, projects, and team collaboration.",
+    "website_url": "https://monday.com",
+    "pricing_model_slug": "freemium"
+  },
+  {
+    "slug": "proofhub",
+    "name": "ProofHub",
+    "tagline": "Project planning and collaboration",
+    "short_description": "ProofHub offers project management, team collaboration, and time tracking tools in one place.",
+    "website_url": "https://www.proofhub.com",
+    "pricing_model_slug": "paid-only"
+  },
+  {
+    "slug": "podio",
+    "name": "Podio",
+    "tagline": "Customizable work management",
+    "short_description": "Podio allows teams to create custom workflows and manage projects collaboratively.",
+    "website_url": "https://podio.com",
+    "pricing_model_slug": "freemium"
+  },
+  {
+    "slug": "redmine",
+    "name": "Redmine",
+    "tagline": "Open-source project management",
+    "short_description": "Redmine is a flexible project management web application that supports multiple projects.",
+    "website_url": "https://www.redmine.org",
+    "pricing_model_slug": "open-source"
+  },
+  {
+    "slug": "zoho-projects",
+    "name": "Zoho Projects",
+    "tagline": "Online project management software",
+    "short_description": "Zoho Projects helps teams plan, track, and collaborate on projects effectively.",
+    "website_url": "https://www.zoho.com/projects/",
+    "pricing_model_slug": "freemium"
+  },
+  {
+    "slug": "scoro",
+    "name": "Scoro",
+    "tagline": "Business management software",
+    "short_description": "Scoro combines project management, time tracking, and billing in one platform.",
+    "website_url": "https://www.scoro.com",
+    "pricing_model_slug": "paid-only"
+  },
+  {
+    "slug": "workfront",
+    "name": "Workfront",
+    "tagline": "Enterprise work management",
+    "short_description": "Workfront provides a comprehensive solution for managing work across teams and projects.",
+    "website_url": "https://www.workfront.com",
+    "pricing_model_slug": "paid-only"
+  },
+  {
+    "slug": "ganttpro",
+    "name": "GanttPRO",
+    "tagline": "Gantt chart project management",
+    "short_description": "GanttPRO is a Gantt chart software for project planning and management.",
+    "website_url": "https://ganttpro.com",
+    "pricing_model_slug": "paid-only"
+  },
+  {
+    "slug": "liquidplanner",
+    "name": "LiquidPlanner",
+    "tagline": "Dynamic project management",
+    "short_description": "LiquidPlanner is a project management tool that adapts to changing project needs.",
+    "website_url": "https://www.liquidplanner.com",
+    "pricing_model_slug": "paid-only"
+  },
+  {
+    "slug": "taskworld",
+    "name": "Taskworld",
+    "tagline": "Task management and collaboration",
+    "short_description": "Taskworld combines task management with team collaboration features for better productivity.",
+    "website_url": "https://taskworld.com",
+    "pricing_model_slug": "freemium"
+  },
+  {
+    "slug": "freedcamp",
+    "name": "Freedcamp",
+    "tagline": "Free project management tool",
+    "short_description": "Freedcamp offers a free project management solution with various collaboration features.",
+    "website_url": "https://freedcamp.com",
+    "pricing_model_slug": "freemium"
+  },
+  {
+    "slug": "ayrshare",
+    "name": "Ayrshare",
+    "tagline": "Social media management tool",
+    "short_description": "Ayrshare simplifies social media management and scheduling for teams.",
+    "website_url": "https://ayrshare.com",
+    "pricing_model_slug": "freemium"
+  },
+  {
+    "slug": "taskrabbit",
+    "name": "TaskRabbit",
+    "tagline": "Find local help for tasks",
+    "short_description": "TaskRabbit connects you with local freelancers for various tasks and errands.",
+    "website_url": "https://www.taskrabbit.com",
+    "pricing_model_slug": "freemium"
+  },
+  {
+    "slug": "hygger",
+    "name": "Hygger",
+    "tagline": "Prioritize and manage tasks",
+    "short_description": "Hygger helps teams prioritize tasks and manage projects using various methodologies.",
+    "website_url": "https://hygger.io",
+    "pricing_model_slug": "freemium"
+  },
+  {
+    "slug": "nifty",
+    "name": "Nifty",
+    "tagline": "Project management and collaboration",
+    "short_description": "Nifty combines project management with team collaboration tools for seamless workflows.",
+    "website_url": "https://nifty.pm",
+    "pricing_model_slug": "freemium"
+  },
+  {
+    "slug": "workzone",
+    "name": "Workzone",
+    "tagline": "Project management software",
+    "short_description": "Workzone provides project management tools designed for teams to collaborate effectively.",
+    "website_url": "https://www.workzone.com",
+    "pricing_model_slug": "paid-only"
+  },
+  {
+    "slug": "projectmanager",
+    "name": "ProjectManager",
+    "tagline": "Online project management tool",
+    "short_description": "ProjectManager offers tools for planning, tracking, and reporting on projects online.",
+    "website_url": "https://www.projectmanager.com",
+    "pricing_model_slug": "paid-only"
+  },
+  {
+    "slug": "easyproject",
+    "name": "Easy Project",
+    "tagline": "Project management made easy",
+    "short_description": "Easy Project provides a comprehensive solution for managing projects and resources.",
+    "website_url": "https://www.easyproject.com",
+    "pricing_model_slug": "paid-only"
+  },
+  {
+    "slug": "teamgantt",
+    "name": "TeamGantt",
+    "tagline": "Gantt chart project planning",
+    "short_description": "TeamGantt offers an intuitive Gantt chart tool for project planning and collaboration.",
+    "website_url": "https://www.teamgantt.com",
+    "pricing_model_slug": "freemium"
+  },
+  {
+    "slug": "clarizen",
+    "name": "Clarizen",
+    "tagline": "Enterprise project management",
+    "short_description": "Clarizen provides a platform for managing projects, resources, and collaboration in enterprises.",
+    "website_url": "https://www.clarizen.com",
+    "pricing_model_slug": "paid-only"
+  },
+  {
+    "slug": "coda",
+    "name": "Coda",
+    "tagline": "Document collaboration tool",
+    "short_description": "Coda combines documents and spreadsheets into a single collaborative workspace.",
+    "website_url": "https://coda.io",
+    "pricing_model_slug": "freemium"
+  },
+  {
+    "slug": "todolist",
+    "name": "Todoist",
+    "tagline": "Task management made simple",
+    "short_description": "Todoist helps users manage tasks and projects with a simple and intuitive interface.",
+    "website_url": "https://todoist.com",
+    "pricing_model_slug": "freemium"
+  },
+  {
+    "slug": "kanbanize",
+    "name": "Kanbanize",
+    "tagline": "Kanban project management tool",
+    "short_description": "Kanbanize helps teams visualize and manage their work using Kanban boards.",
+    "website_url": "https://kanbanize.com",
+    "pricing_model_slug": "paid-only"
+  },
+  {
+    "slug": "sprintly",
+    "name": "Sprintly",
+    "tagline": "Agile project management",
+    "short_description": "Sprintly provides tools for agile project management and team collaboration.",
+    "website_url": "https://sprint.ly",
+    "pricing_model_slug": "paid-only"
+  },
+  {
+    "slug": "workamajig",
+    "name": "Workamajig",
+    "tagline": "Creative project management software",
+    "short_description": "Workamajig is designed for creative teams to manage projects, resources, and finances.",
+    "website_url": "https://www.workamajig.com",
+    "pricing_model_slug": "paid-only"
+  }
+]
