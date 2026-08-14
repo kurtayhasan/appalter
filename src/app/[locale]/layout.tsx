@@ -8,6 +8,8 @@ import { Inter } from "next/font/google";
 import { Header } from "@/components/layout/Header";
 import { Footer } from "@/components/layout/Footer";
 import { CookieConsent } from "@/components/layout/CookieConsent";
+import { CompareProvider } from "@/context/CompareContext";
+import { CompareFloatingBar } from "@/components/common/CompareFloatingBar";
 import "@/app/globals.css";
 
 // ---------------------------------------------------------------------------
@@ -122,10 +124,13 @@ export default async function RootLayout({ children, params }: Props) {
 
   return (
     <NextIntlClientProvider locale={locale} messages={messages}>
-      <Header locale={locale as Locale} />
-      <main className="site-main">{children}</main>
-      <Footer locale={locale as Locale} />
-      <CookieConsent />
+      <CompareProvider>
+        <Header locale={locale as Locale} />
+        <main className="site-main">{children}</main>
+        <Footer locale={locale as Locale} />
+        <CookieConsent />
+        <CompareFloatingBar />
+      </CompareProvider>
     </NextIntlClientProvider>
   );
 }

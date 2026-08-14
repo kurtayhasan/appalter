@@ -33,12 +33,17 @@ async function syncAllCounts() {
       .eq("status", "published");
 
     const realCount = count || 0;
-    if (realCount !== cat.software_count) {
-      await supabase.from("categories").update({ software_count: realCount }).eq("id", cat.id);
-      console.log(`✅ Category [${cat.name}] count synced: ${cat.software_count} -> ${realCount}`);
-    } else {
-      console.log(`✨ Category [${cat.name}] count is accurate: ${realCount}`);
-    }
+    const isActive = realCount > 0;
+    
+    await supabase
+      .from("categories")
+      .update({
+        software_count: realCount,
+        is_active: isActive
+      })
+      .eq("id", cat.id);
+
+    console.log(`✅ Category [${cat.name}] (${cat.slug}) -> Count: ${realCount}, Active: ${isActive}`);
   }
 
   // 2. Report total published softwares & relations

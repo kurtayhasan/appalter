@@ -9,6 +9,7 @@ import type { Locale } from "@/i18n/routing";
 import { formatPrice, formatCount, formatRating } from "@/lib/utils";
 import { StarRating } from "@/components/ui/StarRating";
 import { PricingBadge } from "@/components/software/PricingBadge";
+import { CompareButton } from "@/components/software/CompareButton";
 
 interface SoftwareCardProps {
   software: SoftwareBasic;
@@ -176,14 +177,26 @@ export function SoftwareCard({
       )}
 
       {/* Footer */}
-      <div className="card-footer">
+      <div className="card-footer" style={{ display: "flex", alignItems: "center", justifyContent: "space-between", gap: "0.5rem" }}>
         <span className={`card-alternatives ${alternative_count >= 8 ? 'text-success' : alternative_count > 0 ? 'text-warning' : 'text-danger'}`}>
           {formatCount(alternative_count)} alternatives
         </span>
 
-        <Link href={href} className="card-cta">
-          View details →
-        </Link>
+        <div style={{ display: "flex", alignItems: "center", gap: "0.5rem" }}>
+          <CompareButton
+            software={{
+              id: software.id,
+              slug: software.slug,
+              name: software.name,
+              logo_url: software.logo_url,
+              category_slug: software.category_slug,
+            }}
+          />
+
+          <Link href={href} className="card-cta">
+            View details →
+          </Link>
+        </div>
       </div>
     </article>
   );

@@ -3,13 +3,11 @@ import type { Locale } from "@/i18n/routing";
 import { getCategoriesCached } from "@/lib/cache/queries";
 import Link from "next/link";
 import { BreadcrumbJsonLd } from "@/components/seo/BreadcrumbJsonLd";
-
 import type { Metadata } from "next";
 import { routing } from "@/i18n/routing";
 
 export async function generateMetadata({ params }: { params: Promise<{ locale: string }> }): Promise<Metadata> {
   const { locale } = await params;
-  const t = await getTranslations({ locale, namespace: "HomePage" });
   
   const siteUrl = process.env.NEXT_PUBLIC_SITE_URL ?? "https://appalter.com";
   const canonicalUrl =
@@ -17,7 +15,7 @@ export async function generateMetadata({ params }: { params: Promise<{ locale: s
     
   return {
     title: `All Software Categories | AppAlter`,
-    description: "Browse all software categories to find the best tools and alternatives for your business.",
+    description: "Browse all verified software categories to find the best tools and alternatives for your business.",
     alternates: {
       canonical: canonicalUrl,
       languages: Object.fromEntries(
@@ -29,7 +27,7 @@ export async function generateMetadata({ params }: { params: Promise<{ locale: s
     },
     openGraph: {
       title: "All Software Categories | AppAlter",
-      description: "Browse all software categories to find the best tools and alternatives for your business.",
+      description: "Browse all verified software categories to find the best tools and alternatives for your business.",
       url: canonicalUrl,
       type: "website",
     },
@@ -43,12 +41,13 @@ export default async function CategoriesPage({
 }) {
   const { locale } = await params;
   setRequestLocale(locale);
-  const t = await getTranslations({ locale, namespace: "HomePage" });
   const baseUrl = process.env.NEXT_PUBLIC_SITE_URL ?? "https://appalter.com";
 
-  // Fetch all categories and sort by software count (descending)
+  // Fetch all categories and filter for active ones with products (> 0)
   const categories = await getCategoriesCached();
-  const sortedCategories = categories.sort((a, b) => b.software_count - a.software_count);
+  const activeCategories = categories
+    .filter((cat) => (cat.software_count || 0) > 0)
+    .sort((a, b) => b.software_count - a.software_count);
 
   return (
     <>
@@ -61,16 +60,16 @@ export default async function CategoriesPage({
       <main className="category-page" style={{ padding: "4rem 0" }}>
         <div className="container">
           <header style={{ marginBottom: "3rem", textAlign: "center" }}>
-            <h1 className="home-title" style={{ fontSize: "2.5rem", marginBottom: "1rem" }}>
-              All Categories
+            <h1 className="home-title" style={{ fontSize: "2.5rem", marginBottom: "1rem", letterSpacing: "-0.03em" }}>
+              All Software Categories
             </h1>
-            <p className="home-subtitle" style={{ fontSize: "1.125rem", color: "var(--text-secondary)" }}>
-              Explore our extensive directory of software categories to find the perfect tools.
+            <p className="home-subtitle" style={{ fontSize: "1.125rem", color: "var(--text-secondary)", maxWidth: "600px", margin: "0 auto" }}>
+              Explore our verified directory of SaaS and software categories to find the best tools for your workflow.
             </p>
           </header>
 
           <div className="grid-cards">
-            {sortedCategories.map((cat) => (
+            {activeCategories.map((cat) => (
               <Link
                 key={cat.id}
                 href={`/${locale}/category/${cat.slug}`}

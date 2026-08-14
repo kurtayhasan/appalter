@@ -7,6 +7,7 @@ import { getTranslations, setRequestLocale } from "next-intl/server";
 import { getCategoryCached, getCategorySoftwaresCached } from "@/lib/cache/queries";
 import { SoftwareCard } from "@/components/software/SoftwareCard";
 import { BreadcrumbJsonLd } from "@/components/seo/BreadcrumbJsonLd";
+import { CategoryFilterBar } from "@/components/category/CategoryFilterBar";
 import Link from "next/link";
 
 
@@ -133,6 +134,7 @@ export default async function CategoryPage({ params, searchParams }: Props) {
 
         {/* Dynamic software list — streamed */}
         <section className="container" style={{ padding: "2rem 1.5rem 4rem" }}>
+          <CategoryFilterBar />
           <Suspense fallback={<CategorySkeleton />}>
             <CategorySoftwareList
               categorySlug={category_slug}

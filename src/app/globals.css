@@ -2224,3 +2224,26 @@ svg {
 .matrix-table-wrapper table tbody tr:hover {
   background: rgba(255, 255, 255, 0.03);
 }
+
+/* ==========================================================================
+   FLOATING COMPARE BAR & CATEGORY FILTERS
+   ========================================================================== */
+@keyframes slideUp {
+  from {
+    opacity: 0;
+    transform: translate(-50%, 20px) scale(0.95);
+  }
+  to {
+    opacity: 1;
+    transform: translate(-50%, 0) scale(1);
+  }
+}
+
+@media (max-width: 640px) {
+  .compare-floating-bar {
+    width: 95vw !important;
+    padding: 0.5rem 0.75rem !important;
+    gap: 0.5rem !important;
+    bottom: 1rem !important;
+  }
+}
