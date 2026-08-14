@@ -2,12 +2,39 @@ import * as fs from "fs";
 import * as path from "path";
 import { supabase, CATEGORIES } from "./config";
 
+const CATEGORY_NAMES: Record<string, string> = {
+  vpn: "VPN & Privacy",
+  "web-hosting": "Web Hosting & Cloud",
+  "ai-tools": "AI Tools & Assistants",
+  crm: "CRM",
+  "project-management": "Project Management",
+  email: "Email & Marketing",
+  design: "Design"
+};
+
 async function getCategoryId(slug: string) {
   const { data, error } = await supabase.from("categories").select("id").eq("slug", slug).single();
-  if (error || !data) {
-    throw new Error(`Category not found: ${slug}`);
+  if (data) {
+    return data.id;
   }
-  return data.id;
+  
+  // Create category if missing
+  const name = CATEGORY_NAMES[slug] || slug.replace(/-/g, ' ').replace(/\b\w/g, l => l.toUpperCase());
+  const { data: newCat, error: insertErr } = await supabase
+    .from("categories")
+    .insert({
+      slug,
+      name,
+      is_active: true,
+      software_count: 0
+    })
+    .select("id")
+    .single();
+
+  if (insertErr || !newCat) {
+    throw new Error(`Failed to get or create category ${slug}: ${insertErr?.message}`);
+  }
+  return newCat.id;
 }
 
 async function getPricingModelId(slug: string) {

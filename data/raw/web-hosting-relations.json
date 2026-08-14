@@ -1,0 +1,128 @@
+[
+  {
+    "software_slug": "bluehost",
+    "alternative_slug": "hostgator",
+    "similarity_score": 0.85,
+    "reason": "Both offer affordable web hosting services.",
+    "core_difference": "Bluehost is known for its WordPress integration, while HostGator focuses on shared hosting."
+  },
+  {
+    "software_slug": "siteground",
+    "alternative_slug": "dreamhost",
+    "similarity_score": 0.8,
+    "reason": "Both provide reliable web hosting solutions.",
+    "core_difference": "SiteGround emphasizes speed and security, whereas DreamHost highlights its reliability."
+  },
+  {
+    "software_slug": "a2-hosting",
+    "alternative_slug": "wp-engine",
+    "similarity_score": 0.75,
+    "reason": "Both cater to WordPress users with hosting solutions.",
+    "core_difference": "A2 Hosting focuses on speed, while WP Engine specializes in managed WordPress hosting."
+  },
+  {
+    "software_slug": "digitalocean",
+    "alternative_slug": "linode",
+    "similarity_score": 0.9,
+    "reason": "Both are popular cloud infrastructure providers.",
+    "core_difference": "DigitalOcean is known for its simplicity, while Linode offers more advanced configurations."
+  },
+  {
+    "software_slug": "godaddy",
+    "alternative_slug": "namecheap",
+    "similarity_score": 0.85,
+    "reason": "Both provide domain registration and hosting services.",
+    "core_difference": "GoDaddy has a broader range of services, while Namecheap focuses on affordability."
+  },
+  {
+    "software_slug": "hostinger",
+    "alternative_slug": "iPage",
+    "similarity_score": 0.8,
+    "reason": "Both offer affordable web hosting solutions.",
+    "core_difference": "Hostinger provides more features at a lower price compared to iPage."
+  },
+  {
+    "software_slug": "green-geeks",
+    "alternative_slug": "hostpapa",
+    "similarity_score": 0.75,
+    "reason": "Both focus on eco-friendly web hosting.",
+    "core_difference": "GreenGeeks emphasizes renewable energy, while HostPapa highlights its green initiatives."
+  },
+  {
+    "software_slug": "fatcow",
+    "alternative_slug": "justhost",
+    "similarity_score": 0.8,
+    "reason": "Both offer simple web hosting solutions.",
+    "core_difference": "FatCow has a unique branding approach, while JustHost focuses on reliability."
+  },
+  {
+    "software_slug": "cloudways",
+    "alternative_slug": "kinsta",
+    "similarity_score": 0.85,
+    "reason": "Both provide managed hosting solutions.",
+    "core_difference": "Cloudways supports multiple cloud providers, while Kinsta specializes in Google Cloud."
+  },
+  {
+    "software_slug": "ovh",
+    "alternative_slug": "rackspace",
+    "similarity_score": 0.8,
+    "reason": "Both are known for managed cloud solutions.",
+    "core_difference": "OVH offers a wider range of services, while Rackspace focuses on customer support."
+  },
+  {
+    "software_slug": "wpx-hosting",
+    "alternative_slug": "kinsta",
+    "similarity_score": 0.75,
+    "reason": "Both target high-performance WordPress hosting.",
+    "core_difference": "WPX Hosting emphasizes speed, while Kinsta focuses on managed services."
+  },
+  {
+    "software_slug": "heroku",
+    "alternative_slug": "firebase",
+    "similarity_score": 0.7,
+    "reason": "Both are platforms for app development.",
+    "core_difference": "Heroku is a PaaS, while Firebase offers backend services for mobile apps."
+  },
+  {
+    "software_slug": "amazon-web-services",
+    "alternative_slug": "microsoft-azure",
+    "similarity_score": 0.9,
+    "reason": "Both are leading cloud service providers.",
+    "core_difference": "AWS has a broader service range, while Azure integrates better with Microsoft products."
+  },
+  {
+    "software_slug": "google-cloud-platform",
+    "alternative_slug": "amazon-web-services",
+    "similarity_score": 0.85,
+    "reason": "Both offer comprehensive cloud solutions.",
+    "core_difference": "Google Cloud excels in data analytics, while AWS leads in overall service variety."
+  },
+  {
+    "software_slug": "site5",
+    "alternative_slug": "webhostinghub",
+    "similarity_score": 0.75,
+    "reason": "Both provide affordable hosting options.",
+    "core_difference": "Site5 focuses on ease of use, while Web Hosting Hub emphasizes customer support."
+  },
+  {
+    "software_slug": "interserver",
+    "alternative_slug": "hostgator",
+    "similarity_score": 0.8,
+    "reason": "Both offer reliable web hosting services.",
+    "core_difference": "InterServer provides a price-lock guarantee, while HostGator has a wider range of plans."
+  },
+  {
+    "software_slug": "tsohost",
+    "alternative_slug": "siteground",
+    "similarity_score": 0.7,
+    "reason": "Both are UK-based hosting providers.",
+    "core_difference": "SiteGround is more recognized for its performance, while TSOHost focuses on local support."
+  },
+  {
+    "software_slug": "vultr",
+    "alternative_slug": "digitalocean",
+    "similarity_score": 0.85,
+    "reason": "Both provide cloud compute services.",
+    "core_difference": "Vultr offers more data center locations, while DigitalOcean is known for its user-friendly interface."
+  }
+]

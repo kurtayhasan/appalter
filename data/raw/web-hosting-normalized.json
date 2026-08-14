@@ -1,0 +1,266 @@
+[
+  {
+    "slug": "bluehost",
+    "name": "Bluehost",
+    "tagline": "Reliable web hosting services",
+    "short_description": "Bluehost offers a range of hosting solutions with 24/7 support and a user-friendly interface.",
+    "website_url": "https://www.bluehost.com",
+    "pricing_model_slug": "paid-only"
+  },
+  {
+    "slug": "hostgator",
+    "name": "HostGator",
+    "tagline": "Affordable hosting for everyone",
+    "short_description": "HostGator provides flexible hosting plans with a focus on customer support and uptime.",
+    "website_url": "https://www.hostgator.com",
+    "pricing_model_slug": "paid-only"
+  },
+  {
+    "slug": "siteground",
+    "name": "SiteGround",
+    "tagline": "Fast and secure hosting",
+    "short_description": "SiteGround is known for its excellent customer service and high-performance hosting solutions.",
+    "website_url": "https://www.siteground.com",
+    "pricing_model_slug": "paid-only"
+  },
+  {
+    "slug": "dreamhost",
+    "name": "DreamHost",
+    "tagline": "Reliable web hosting solutions",
+    "short_description": "DreamHost offers a variety of hosting services with a commitment to privacy and security.",
+    "website_url": "https://www.dreamhost.com",
+    "pricing_model_slug": "paid-only"
+  },
+  {
+    "slug": "a2-hosting",
+    "name": "A2 Hosting",
+    "tagline": "Speed-focused web hosting",
+    "short_description": "A2 Hosting provides high-speed hosting solutions with a focus on performance and reliability.",
+    "website_url": "https://www.a2hosting.com",
+    "pricing_model_slug": "paid-only"
+  },
+  {
+    "slug": "inmotion-hosting",
+    "name": "InMotion Hosting",
+    "tagline": "Business-class hosting solutions",
+    "short_description": "InMotion Hosting offers a range of hosting services tailored for businesses with excellent support.",
+    "website_url": "https://www.inmotionhosting.com",
+    "pricing_model_slug": "paid-only"
+  },
+  {
+    "slug": "wp-engine",
+    "name": "WP Engine",
+    "tagline": "Managed WordPress hosting",
+    "short_description": "WP Engine specializes in managed WordPress hosting with top-notch performance and security.",
+    "website_url": "https://wpengine.com",
+    "pricing_model_slug": "paid-only"
+  },
+  {
+    "slug": "digitalocean",
+    "name": "DigitalOcean",
+    "tagline": "Cloud infrastructure for developers",
+    "short_description": "DigitalOcean provides scalable cloud computing solutions designed for developers and teams.",
+    "website_url": "https://www.digitalocean.com",
+    "pricing_model_slug": "paid-only"
+  },
+  {
+    "slug": "linode",
+    "name": "Linode",
+    "tagline": "Powerful cloud hosting",
+    "short_description": "Linode offers high-performance cloud hosting solutions with a focus on simplicity and reliability.",
+    "website_url": "https://www.linode.com",
+    "pricing_model_slug": "paid-only"
+  },
+  {
+    "slug": "vultr",
+    "name": "Vultr",
+    "tagline": "Cloud compute made simple",
+    "short_description": "Vultr provides cloud infrastructure with a focus on performance and ease of use.",
+    "website_url": "https://www.vultr.com",
+    "pricing_model_slug": "paid-only"
+  },
+  {
+    "slug": "godaddy",
+    "name": "GoDaddy",
+    "tagline": "Domain registration and hosting",
+    "short_description": "GoDaddy is a leading domain registrar that also offers a variety of hosting services.",
+    "website_url": "https://www.godaddy.com",
+    "pricing_model_slug": "paid-only"
+  },
+  {
+    "slug": "hostinger",
+    "name": "Hostinger",
+    "tagline": "Affordable web hosting solutions",
+    "short_description": "Hostinger provides budget-friendly hosting plans with a focus on performance and support.",
+    "website_url": "https://www.hostinger.com",
+    "pricing_model_slug": "paid-only"
+  },
+  {
+    "slug": "green-geeks",
+    "name": "GreenGeeks",
+    "tagline": "Eco-friendly web hosting",
+    "short_description": "GreenGeeks offers environmentally friendly hosting solutions with a commitment to sustainability.",
+    "website_url": "https://www.greengeeks.com",
+    "pricing_model_slug": "paid-only"
+  },
+  {
+    "slug": "iPage",
+    "name": "iPage",
+    "tagline": "Simple and affordable hosting",
+    "short_description": "iPage provides easy-to-use hosting solutions with a focus on value and customer support.",
+    "website_url": "https://www.ipage.com",
+    "pricing_model_slug": "paid-only"
+  },
+  {
+    "slug": "fatcow",
+    "name": "FatCow",
+    "tagline": "Simple web hosting solutions",
+    "short_description": "FatCow offers straightforward hosting services with a focus on simplicity and customer care.",
+    "website_url": "https://www.fatcow.com",
+    "pricing_model_slug": "paid-only"
+  },
+  {
+    "slug": "justhost",
+    "name": "JustHost",
+    "tagline": "Reliable hosting for everyone",
+    "short_description": "JustHost provides affordable hosting solutions with a focus on customer satisfaction.",
+    "website_url": "https://www.justhost.com",
+    "pricing_model_slug": "paid-only"
+  },
+  {
+    "slug": "namecheap",
+    "name": "Namecheap",
+    "tagline": "Domains and hosting made easy",
+    "short_description": "Namecheap offers domain registration and hosting services with a focus on affordability.",
+    "website_url": "https://www.namecheap.com",
+    "pricing_model_slug": "paid-only"
+  },
+  {
+    "slug": "cloudways",
+    "name": "Cloudways",
+    "tagline": "Managed cloud hosting platform",
+    "short_description": "Cloudways provides managed cloud hosting solutions with a focus on flexibility and performance.",
+    "website_url": "https://www.cloudways.com",
+    "pricing_model_slug": "paid-only"
+  },
+  {
+    "slug": "kinsta",
+    "name": "Kinsta",
+    "tagline": "Premium managed WordPress hosting",
+    "short_description": "Kinsta offers high-performance managed WordPress hosting with a focus on speed and security.",
+    "website_url": "https://kinsta.com",
+    "pricing_model_slug": "paid-only"
+  },
+  {
+    "slug": "ovh",
+    "name": "OVH",
+    "tagline": "Global cloud services provider",
+    "short_description": "OVH provides a wide range of cloud services and hosting solutions with a global presence.",
+    "website_url": "https://www.ovh.com",
+    "pricing_model_slug": "paid-only"
+  },
+  {
+    "slug": "rackspace",
+    "name": "Rackspace",
+    "tagline": "Managed cloud solutions",
+    "short_description": "Rackspace offers managed cloud services with a focus on customer support and expertise.",
+    "website_url": "https://www.rackspace.com",
+    "pricing_model_slug": "paid-only"
+  },
+  {
+    "slug": "wpx-hosting",
+    "name": "WPX Hosting",
+    "tagline": "High-speed WordPress hosting",
+    "short_description": "WPX Hosting specializes in fast WordPress hosting with a focus on performance and support.",
+    "website_url": "https://wpxhosting.com",
+    "pricing_model_slug": "paid-only"
+  },
+  {
+    "slug": "scaleway",
+    "name": "Scaleway",
+    "tagline": "Flexible cloud infrastructure",
+    "short_description": "Scaleway provides cloud computing solutions with a focus on flexibility and scalability.",
+    "website_url": "https://www.scaleway.com",
+    "pricing_model_slug": "paid-only"
+  },
+  {
+    "slug": "heroku",
+    "name": "Heroku",
+    "tagline": "Platform as a Service",
+    "short_description": "Heroku offers a platform for building, running, and managing applications in the cloud.",
+    "website_url": "https://www.heroku.com",
+    "pricing_model_slug": "paid-only"
+  },
+  {
+    "slug": "firebase",
+    "name": "Firebase",
+    "tagline": "Mobile and web app development",
+    "short_description": "Firebase provides a platform for building mobile and web applications with real-time capabilities.",
+    "website_url": "https://firebase.google.com",
+    "pricing_model_slug": "freemium"
+  },
+  {
+    "slug": "amazon-web-services",
+    "name": "Amazon Web Services",
+    "tagline": "Comprehensive cloud services",
+    "short_description": "AWS offers a wide range of cloud computing services for businesses of all sizes.",
+    "website_url": "https://aws.amazon.com",
+    "pricing_model_slug": "paid-only"
+  },
+  {
+    "slug": "microsoft-azure",
+    "name": "Microsoft Azure",
+    "tagline": "Cloud computing platform",
+    "short_description": "Microsoft Azure provides a comprehensive cloud services platform for building and managing applications.",
+    "website_url": "https://azure.microsoft.com",
+    "pricing_model_slug": "paid-only"
+  },
+  {
+    "slug": "google-cloud-platform",
+    "name": "Google Cloud Platform",
+    "tagline": "Powerful cloud solutions",
+    "short_description": "Google Cloud Platform offers a suite of cloud computing services for businesses and developers.",
+    "website_url": "https://cloud.google.com",
+    "pricing_model_slug": "paid-only"
+  },
+  {
+    "slug": "site5",
+    "name": "Site5",
+    "tagline": "Web hosting made easy",
+    "short_description": "Site5 provides user-friendly web hosting solutions with a focus on customer support.",
+    "website_url": "https://www.site5.com",
+    "pricing_model_slug": "paid-only"
+  },
+  {
+    "slug": "hostpapa",
+    "name": "HostPapa",
+    "tagline": "Green web hosting solutions",
+    "short_description": "HostPapa offers eco-friendly hosting services with a focus on small businesses.",
+    "website_url": "https://www.hostpapa.com",
+    "pricing_model_slug": "paid-only"
+  },
+  {
+    "slug": "webhostinghub",
+    "name": "Web Hosting Hub",
+    "tagline": "Affordable hosting for everyone",
+    "short_description": "Web Hosting Hub provides budget-friendly hosting solutions with a focus on customer service.",
+    "website_url": "https://www.webhostinghub.com",
+    "pricing_model_slug": "paid-only"
+  },
+  {
+    "slug": "interserver",
+    "name": "InterServer",
+    "tagline": "Reliable web hosting services",
+    "short_description": "InterServer offers a variety of hosting solutions with a focus on affordability and support.",
+    "website_url": "https://www.interserver.net",
+    "pricing_model_slug": "paid-only"
+  },
+  {
+    "slug": "tsohost",
+    "name": "TSOHost",
+    "tagline": "UK-based web hosting",
+    "short_description": "TSOHost provides reliable web hosting services with a focus on UK customers.",
+    "website_url": "https://www.tsohost.com",
+    "pricing_model_slug": "paid-only"
+  }
+]

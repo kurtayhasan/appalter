@@ -1,0 +1,134 @@
+[
+  {
+    "slug": "nordvpn",
+    "name": "NordVPN"
+  },
+  {
+    "slug": "expressvpn",
+    "name": "ExpressVPN"
+  },
+  {
+    "slug": "surfshark",
+    "name": "Surfshark"
+  },
+  {
+    "slug": "cyberghost",
+    "name": "CyberGhost"
+  },
+  {
+    "slug": "privateinternetaccess",
+    "name": "Private Internet Access"
+  },
+  {
+    "slug": "ipvanish",
+    "name": "IPVanish"
+  },
+  {
+    "slug": "protonvpn",
+    "name": "ProtonVPN"
+  },
+  {
+    "slug": "torguard",
+    "name": "TorGuard"
+  },
+  {
+    "slug": "mullvad",
+    "name": "Mullvad"
+  },
+  {
+    "slug": "windscribe",
+    "name": "Windscribe"
+  },
+  {
+    "slug": "zenmate",
+    "name": "ZenMate"
+  },
+  {
+    "slug": "hide.me",
+    "name": "hide.me"
+  },
+  {
+    "slug": "avast-secureline-vpn",
+    "name": "Avast SecureLine VPN"
+  },
+  {
+    "slug": "bitdefender-vpn",
+    "name": "Bitdefender VPN"
+  },
+  {
+    "slug": "norton-secure-vpn",
+    "name": "Norton Secure VPN"
+  },
+  {
+    "slug": "safervpn",
+    "name": "SaferVPN"
+  },
+  {
+    "slug": "strongvpn",
+    "name": "StrongVPN"
+  },
+  {
+    "slug": "vpnunlimited",
+    "name": "VPN Unlimited"
+  },
+  {
+    "slug": "cactusvpn",
+    "name": "CactusVPN"
+  },
+  {
+    "slug": "hoxx-vpn",
+    "name": "Hoxx VPN"
+  },
+  {
+    "slug": "fastestvpn",
+    "name": "FastestVPN"
+  },
+  {
+    "slug": "keepSolid-vpn-unlimited",
+    "name": "KeepSolid VPN Unlimited"
+  },
+  {
+    "slug": "tunnelbear",
+    "name": "TunnelBear"
+  },
+  {
+    "slug": "avira-phantom-vpn",
+    "name": "Avira Phantom VPN"
+  },
+  {
+    "slug": "hola-vpn",
+    "name": "Hola VPN"
+  },
+  {
+    "slug": "vpnhub",
+    "name": "VPNhub"
+  },
+  {
+    "slug": "zenvpn",
+    "name": "ZenVPN"
+  },
+  {
+    "slug": "browsec",
+    "name": "Browsec"
+  },
+  {
+    "slug": "socks5-proxy",
+    "name": "Socks5 Proxy"
+  },
+  {
+    "slug": "ivacy",
+    "name": "Ivacy"
+  },
+  {
+    "slug": "purevpn",
+    "name": "PureVPN"
+  },
+  {
+    "slug": "nordlayer",
+    "name": "NordLayer"
+  },
+  {
+    "slug": "perimeter-81",
+    "name": "Perimeter 81"
+  }
+]

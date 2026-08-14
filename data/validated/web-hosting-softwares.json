@@ -1,0 +1,1584 @@
+[
+  {
+    "slug": "bluehost",
+    "name": "Bluehost",
+    "tagline": "Reliable web hosting services",
+    "short_description": "Bluehost offers a range of hosting solutions with 24/7 support and a user-friendly interface.",
+    "website_url": "https://www.bluehost.com",
+    "pricing_model_slug": "paid-only",
+    "ai_features": {
+      "tldr": "Bluehost offers reliable web hosting solutions.",
+      "pros": [
+        "User-friendly interface",
+        "24/7 customer support",
+        "Affordable pricing plans"
+      ],
+      "cons": [
+        "Limited storage options",
+        "Higher renewal rates",
+        "Basic features on lower tiers"
+      ],
+      "pricing_model_type": "Paid Only",
+      "target_audience_size": "Startup",
+      "dealbreakers": [
+        "No free tier available",
+        "Limited advanced features"
+      ],
+      "hidden_costs": [
+        "Domain registration fees",
+        "Backup service charges"
+      ],
+      "migration_difficulty": "medium",
+      "best_for": [
+        "Small business websites",
+        "Personal blogs"
+      ],
+      "not_for": [
+        "Large enterprise solutions",
+        "High-traffic e-commerce sites"
+      ],
+      "switching_reasons": [
+        "Need for advanced features",
+        "Better performance options"
+      ],
+      "key_limitations": [
+        "Limited scalability options",
+        "Basic security features"
+      ],
+      "confidence": 0.95
+    }
+  },
+  {
+    "slug": "hostgator",
+    "name": "HostGator",
+    "tagline": "Affordable hosting for everyone",
+    "short_description": "HostGator provides flexible hosting plans with a focus on customer support and uptime.",
+    "website_url": "https://www.hostgator.com",
+    "pricing_model_slug": "paid-only",
+    "ai_features": {
+      "tldr": "HostGator offers reliable web hosting solutions.",
+      "pros": [
+        "Affordable hosting plans",
+        "24/7 customer support",
+        "User-friendly interface"
+      ],
+      "cons": [
+        "Limited storage options",
+        "Higher renewal rates",
+        "Basic security features"
+      ],
+      "pricing_model_type": "Paid Only",
+      "target_audience_size": "Startup",
+      "dealbreakers": [
+        "No free trial available"
+      ],
+      "hidden_costs": [
+        "Domain registration fees apply"
+      ],
+      "migration_difficulty": "medium",
+      "best_for": [
+        "Small business websites",
+        "Personal blogs"
+      ],
+      "not_for": [
+        "Large enterprise applications",
+        "High-traffic e-commerce sites"
+      ],
+      "switching_reasons": [
+        "Better performance elsewhere",
+        "More advanced features needed"
+      ],
+      "key_limitations": [
+        "Limited scalability options",
+        "Basic backup solutions"
+      ],
+      "confidence": 0.95
+    }
+  },
+  {
+    "slug": "siteground",
+    "name": "SiteGround",
+    "tagline": "Fast and secure hosting",
+    "short_description": "SiteGround is known for its excellent customer service and high-performance hosting solutions.",
+    "website_url": "https://www.siteground.com",
+    "pricing_model_slug": "paid-only",
+    "ai_features": {
+      "tldr": "SiteGround offers reliable hosting solutions.",
+      "pros": [
+        "Excellent customer support",
+        "High uptime rates",
+        "User-friendly interface"
+      ],
+      "cons": [
+        "Higher pricing tiers",
+        "Limited storage options",
+        "No free plan available"
+      ],
+      "pricing_model_type": "Paid Only",
+      "target_audience_size": "Startup",
+      "dealbreakers": [
+        "No free trial available"
+      ],
+      "hidden_costs": [
+        "Renewal rates may increase"
+      ],
+      "migration_difficulty": "medium",
+      "best_for": [
+        "Small business websites",
+        "E-commerce platforms"
+      ],
+      "not_for": [
+        "Large enterprise solutions",
+        "Budget-conscious users"
+      ],
+      "switching_reasons": [
+        "Better performance elsewhere",
+        "Lower costs available"
+      ],
+      "key_limitations": [
+        "Limited data centers",
+        "No VPS hosting options"
+      ],
+      "confidence": 0.95
+    }
+  },
+  {
+    "slug": "dreamhost",
+    "name": "DreamHost",
+    "tagline": "Reliable web hosting solutions",
+    "short_description": "DreamHost offers a variety of hosting services with a commitment to privacy and security.",
+    "website_url": "https://www.dreamhost.com",
+    "pricing_model_slug": "paid-only",
+    "ai_features": {
+      "tldr": "DreamHost offers reliable web hosting solutions.",
+      "pros": [
+        "Affordable pricing plans",
+        "User-friendly interface",
+        "24/7 customer support"
+      ],
+      "cons": [
+        "Limited advanced features",
+        "No free tier",
+        "Higher renewal rates"
+      ],
+      "pricing_model_type": "Paid Only",
+      "target_audience_size": "Startup",
+      "dealbreakers": [
+        "No monthly billing option"
+      ],
+      "hidden_costs": [
+        "Renewal prices increase significantly"
+      ],
+      "migration_difficulty": "medium",
+      "best_for": [
+        "Small business websites",
+        "Personal blogs"
+      ],
+      "not_for": [
+        "Large enterprises",
+        "E-commerce platforms"
+      ],
+      "switching_reasons": [
+        "Better performance elsewhere",
+        "More features needed"
+      ],
+      "key_limitations": [
+        "Limited storage options",
+        "No built-in email marketing"
+      ],
+      "confidence": 0.95
+    }
+  },
+  {
+    "slug": "a2-hosting",
+    "name": "A2 Hosting",
+    "tagline": "Speed-focused web hosting",
+    "short_description": "A2 Hosting provides high-speed hosting solutions with a focus on performance and reliability.",
+    "website_url": "https://www.a2hosting.com",
+    "pricing_model_slug": "paid-only",
+    "ai_features": {
+      "tldr": "A2 Hosting offers reliable, fast hosting solutions.",
+      "pros": [
+        "High uptime guarantee",
+        "24/7 customer support",
+        "User-friendly interface"
+      ],
+      "cons": [
+        "Limited advanced features",
+        "Higher renewal rates",
+        "No free tier"
+      ],
+      "pricing_model_type": "Paid Only",
+      "target_audience_size": "Startup",
+      "dealbreakers": [
+        "No monthly billing option"
+      ],
+      "hidden_costs": [
+        "Renewal prices may increase"
+      ],
+      "migration_difficulty": "medium",
+      "best_for": [
+        "Small business websites",
+        "E-commerce platforms"
+      ],
+      "not_for": [
+        "Large enterprises",
+        "Complex web applications"
+      ],
+      "switching_reasons": [
+        "Better performance options",
+        "More flexible pricing"
+      ],
+      "key_limitations": [
+        "Limited data centers",
+        "No free domain"
+      ],
+      "confidence": 0.95
+    }
+  },
+  {
+    "slug": "inmotion-hosting",
+    "name": "InMotion Hosting",
+    "tagline": "Business-class hosting solutions",
+    "short_description": "InMotion Hosting offers a range of hosting services tailored for businesses with excellent support.",
+    "website_url": "https://www.inmotionhosting.com",
+    "pricing_model_slug": "paid-only",
+    "ai_features": {
+      "tldr": "InMotion Hosting offers reliable web hosting solutions.",
+      "pros": [
+        "Fast loading speeds",
+        "24/7 customer support",
+        "Free website migration"
+      ],
+      "cons": [
+        "Higher renewal rates",
+        "Limited storage options",
+        "No free domain after first year"
+      ],
+      "pricing_model_type": "Paid Only",
+      "target_audience_size": "Startup",
+      "dealbreakers": [
+        "No monthly billing option",
+        "Limited data center locations"
+      ],
+      "hidden_costs": [
+        "Renewal prices increase significantly",
+        "Add-ons can be pricey"
+      ],
+      "migration_difficulty": "easy",
+      "best_for": [
+        "Small business websites",
+        "E-commerce platforms"
+      ],
+      "not_for": [
+        "Large enterprise solutions",
+        "Advanced developers needing customization"
+      ],
+      "switching_reasons": [
+        "Better pricing elsewhere",
+        "More features with competitors"
+      ],
+      "key_limitations": [
+        "Limited scalability options",
+        "Basic plans lack advanced features"
+      ],
+      "confidence": 0.95
+    }
+  },
+  {
+    "slug": "wp-engine",
+    "name": "WP Engine",
+    "tagline": "Managed WordPress hosting",
+    "short_description": "WP Engine specializes in managed WordPress hosting with top-notch performance and security.",
+    "website_url": "https://wpengine.com",
+    "pricing_model_slug": "paid-only",
+    "ai_features": {
+      "tldr": "WP Engine offers robust WordPress hosting.",
+      "pros": [
+        "Fast performance",
+        "Excellent support",
+        "Automatic backups"
+      ],
+      "cons": [
+        "Higher pricing",
+        "Limited to WordPress",
+        "No email hosting"
+      ],
+      "pricing_model_type": "Paid Only",
+      "target_audience_size": "Startup",
+      "dealbreakers": [
+        "Cost may exceed budget",
+        "Not suitable for non-WordPress sites"
+      ],
+      "hidden_costs": [
+        "Additional fees for migrations",
+        "Premium for extra storage"
+      ],
+      "migration_difficulty": "medium",
+      "best_for": [
+        "E-commerce WordPress sites",
+        "High-traffic blogs"
+      ],
+      "not_for": [
+        "Static websites",
+        "Non-WordPress users"
+      ],
+      "switching_reasons": [
+        "Need for cheaper alternatives",
+        "Desire for more flexibility"
+      ],
+      "key_limitations": [
+        "Limited to WordPress ecosystem",
+        "No built-in email services"
+      ],
+      "confidence": 0.95
+    }
+  },
+  {
+    "slug": "digitalocean",
+    "name": "DigitalOcean",
+    "tagline": "Cloud infrastructure for developers",
+    "short_description": "DigitalOcean provides scalable cloud computing solutions designed for developers and teams.",
+    "website_url": "https://www.digitalocean.com",
+    "pricing_model_slug": "paid-only",
+    "ai_features": {
+      "tldr": "DigitalOcean simplifies cloud infrastructure management.",
+      "pros": [
+        "User-friendly interface",
+        "Scalable resources",
+        "Strong community support"
+      ],
+      "cons": [
+        "Limited advanced features",
+        "Higher costs for scaling",
+        "Basic support on lower tiers"
+      ],
+      "pricing_model_type": "Paid Only",
+      "target_audience_size": "Startup",
+      "dealbreakers": [
+        "No free tier available",
+        "Complex pricing structure"
+      ],
+      "hidden_costs": [
+        "Data transfer fees apply",
+        "Add-ons increase total cost"
+      ],
+      "migration_difficulty": "medium",
+      "best_for": [
+        "Web app hosting",
+        "Development environments"
+      ],
+      "not_for": [
+        "Large enterprise solutions",
+        "Highly specialized workloads"
+      ],
+      "switching_reasons": [
+        "Need for advanced features",
+        "Lower pricing alternatives"
+      ],
+      "key_limitations": [
+        "Limited global data centers",
+        "No managed database options"
+      ],
+      "confidence": 0.95
+    }
+  },
+  {
+    "slug": "linode",
+    "name": "Linode",
+    "tagline": "Powerful cloud hosting",
+    "short_description": "Linode offers high-performance cloud hosting solutions with a focus on simplicity and reliability.",
+    "website_url": "https://www.linode.com",
+    "pricing_model_slug": "paid-only",
+    "ai_features": {
+      "tldr": "Linode offers powerful cloud hosting solutions.",
+      "pros": [
+        "Affordable pricing",
+        "Scalable resources",
+        "User-friendly interface"
+      ],
+      "cons": [
+        "Limited support options",
+        "No managed services",
+        "Basic documentation"
+      ],
+      "pricing_model_type": "Paid Only",
+      "target_audience_size": "Startup",
+      "dealbreakers": [
+        "No free tier available"
+      ],
+      "hidden_costs": [
+        "Data transfer fees apply"
+      ],
+      "migration_difficulty": "medium",
+      "best_for": [
+        "Web hosting",
+        "App development"
+      ],
+      "not_for": [
+        "Large enterprises",
+        "Non-technical users"
+      ],
+      "switching_reasons": [
+        "Better performance elsewhere",
+        "More support options"
+      ],
+      "key_limitations": [
+        "Limited global data centers",
+        "No built-in backups"
+      ],
+      "confidence": 0.95
+    }
+  },
+  {
+    "slug": "vultr",
+    "name": "Vultr",
+    "tagline": "Cloud compute made simple",
+    "short_description": "Vultr provides cloud infrastructure with a focus on performance and ease of use.",
+    "website_url": "https://www.vultr.com",
+    "pricing_model_slug": "paid-only",
+    "ai_features": {
+      "tldr": "Vultr offers scalable cloud solutions.",
+      "pros": [
+        "Flexible pricing options",
+        "Global data centers",
+        "Easy to deploy"
+      ],
+      "cons": [
+        "Limited support options",
+        "No managed services",
+        "Complex for beginners"
+      ],
+      "pricing_model_type": "Paid Only",
+      "target_audience_size": "Startup",
+      "dealbreakers": [
+        "No free tier available"
+      ],
+      "hidden_costs": [
+        "Data transfer fees apply"
+      ],
+      "migration_difficulty": "medium",
+      "best_for": [
+        "Web hosting",
+        "App development"
+      ],
+      "not_for": [
+        "Small personal projects",
+        "Non-technical users"
+      ],
+      "switching_reasons": [
+        "Better performance elsewhere",
+        "Lower costs available"
+      ],
+      "key_limitations": [
+        "No built-in backups",
+        "Limited customer support"
+      ],
+      "confidence": 0.95
+    }
+  },
+  {
+    "slug": "godaddy",
+    "name": "GoDaddy",
+    "tagline": "Domain registration and hosting",
+    "short_description": "GoDaddy is a leading domain registrar that also offers a variety of hosting services.",
+    "website_url": "https://www.godaddy.com",
+    "pricing_model_slug": "paid-only",
+    "ai_features": {
+      "tldr": "GoDaddy simplifies online presence management.",
+      "pros": [
+        "User-friendly interface",
+        "Comprehensive domain services",
+        "24/7 customer support"
+      ],
+      "cons": [
+        "Higher renewal rates",
+        "Limited advanced features",
+        "Upselling tactics"
+      ],
+      "pricing_model_type": "Paid Only",
+      "target_audience_size": "Any",
+      "dealbreakers": [
+        "Limited customization options",
+        "Not ideal for large businesses"
+      ],
+      "hidden_costs": [
+        "Additional fees for premium features",
+        "Domain transfer costs"
+      ],
+      "migration_difficulty": "medium",
+      "best_for": [
+        "Small business websites",
+        "Personal blogs"
+      ],
+      "not_for": [
+        "Large enterprise solutions",
+        "Advanced e-commerce needs"
+      ],
+      "switching_reasons": [
+        "Better pricing elsewhere",
+        "More features with competitors"
+      ],
+      "key_limitations": [
+        "Limited scalability",
+        "Basic design templates"
+      ],
+      "confidence": 0.95
+    }
+  },
+  {
+    "slug": "hostinger",
+    "name": "Hostinger",
+    "tagline": "Affordable web hosting solutions",
+    "short_description": "Hostinger provides budget-friendly hosting plans with a focus on performance and support.",
+    "website_url": "https://www.hostinger.com",
+    "pricing_model_slug": "paid-only",
+    "ai_features": {
+      "tldr": "Hostinger offers affordable, reliable hosting.",
+      "pros": [
+        "Low pricing plans",
+        "User-friendly interface",
+        "24/7 customer support"
+      ],
+      "cons": [
+        "Limited advanced features",
+        "No free plan",
+        "Uptime issues reported"
+      ],
+      "pricing_model_type": "Paid Only",
+      "target_audience_size": "Startup",
+      "dealbreakers": [
+        "No free tier available"
+      ],
+      "hidden_costs": [
+        "Renewal rates may increase"
+      ],
+      "migration_difficulty": "medium",
+      "best_for": [
+        "Small business websites",
+        "Personal blogs"
+      ],
+      "not_for": [
+        "Large enterprises",
+        "High-traffic sites"
+      ],
+      "switching_reasons": [
+        "Better performance elsewhere",
+        "More features needed"
+      ],
+      "key_limitations": [
+        "Limited storage options",
+        "Basic security features"
+      ],
+      "confidence": 0.95
+    }
+  },
+  {
+    "slug": "green-geeks",
+    "name": "GreenGeeks",
+    "tagline": "Eco-friendly web hosting",
+    "short_description": "GreenGeeks offers environmentally friendly hosting solutions with a commitment to sustainability.",
+    "website_url": "https://www.greengeeks.com",
+    "pricing_model_slug": "paid-only",
+    "ai_features": {
+      "tldr": "GreenGeeks offers eco-friendly hosting solutions.",
+      "pros": [
+        "Green energy commitment",
+        "24/7 customer support",
+        "Easy WordPress installation"
+      ],
+      "cons": [
+        "Higher renewal rates",
+        "Limited data center locations",
+        "No free domain with plans"
+      ],
+      "pricing_model_type": "Paid Only",
+      "target_audience_size": "Startup",
+      "dealbreakers": [
+        "No monthly billing option",
+        "Limited advanced features"
+      ],
+      "hidden_costs": [
+        "Domain registration fees",
+        "Backup service costs"
+      ],
+      "migration_difficulty": "medium",
+      "best_for": [
+        "Eco-conscious businesses",
+        "Small to medium websites"
+      ],
+      "not_for": [
+        "Large enterprises",
+        "High-traffic sites"
+      ],
+      "switching_reasons": [
+        "Need for more features",
+        "Lower pricing options"
+      ],
+      "key_limitations": [
+        "Limited VPS options",
+        "No dedicated servers"
+      ],
+      "confidence": 0.95
+    }
+  },
+  {
+    "slug": "iPage",
+    "name": "iPage",
+    "tagline": "Simple and affordable hosting",
+    "short_description": "iPage provides easy-to-use hosting solutions with a focus on value and customer support.",
+    "website_url": "https://www.ipage.com",
+    "pricing_model_slug": "paid-only",
+    "ai_features": {
+      "tldr": "iPage offers reliable web hosting solutions.",
+      "pros": [
+        "User-friendly interface",
+        "24/7 customer support",
+        "Affordable pricing plans"
+      ],
+      "cons": [
+        "Limited storage options",
+        "No free domain renewal",
+        "Basic security features"
+      ],
+      "pricing_model_type": "Paid Only",
+      "target_audience_size": "Startup",
+      "dealbreakers": [
+        "No monthly billing option"
+      ],
+      "hidden_costs": [
+        "Renewal rates may increase"
+      ],
+      "migration_difficulty": "medium",
+      "best_for": [
+        "Small business websites",
+        "Personal blogs"
+      ],
+      "not_for": [
+        "Large enterprises",
+        "E-commerce platforms"
+      ],
+      "switching_reasons": [
+        "Better performance elsewhere",
+        "More features needed"
+      ],
+      "key_limitations": [
+        "Limited scalability",
+        "Basic website builder"
+      ],
+      "confidence": 0.95
+    }
+  },
+  {
+    "slug": "fatcow",
+    "name": "FatCow",
+    "tagline": "Simple web hosting solutions",
+    "short_description": "FatCow offers straightforward hosting services with a focus on simplicity and customer care.",
+    "website_url": "https://www.fatcow.com",
+    "pricing_model_slug": "paid-only",
+    "ai_features": {
+      "tldr": "FatCow offers reliable web hosting solutions.",
+      "pros": [
+        "Affordable hosting plans",
+        "24/7 customer support",
+        "User-friendly interface"
+      ],
+      "cons": [
+        "Limited storage options",
+        "No free trial available",
+        "Basic features only"
+      ],
+      "pricing_model_type": "Paid Only",
+      "target_audience_size": "Startup",
+      "dealbreakers": [
+        "No advanced features",
+        "Higher renewal rates"
+      ],
+      "hidden_costs": [
+        "Domain registration fees",
+        "Backup service charges"
+      ],
+      "migration_difficulty": "medium",
+      "best_for": [
+        "Small business websites",
+        "Personal blogs"
+      ],
+      "not_for": [
+        "Large enterprises",
+        "E-commerce platforms"
+      ],
+      "switching_reasons": [
+        "Need for more features",
+        "Better performance options"
+      ],
+      "key_limitations": [
+        "Limited scalability",
+        "No VPS options"
+      ],
+      "confidence": 0.95
+    }
+  },
+  {
+    "slug": "justhost",
+    "name": "JustHost",
+    "tagline": "Reliable hosting for everyone",
+    "short_description": "JustHost provides affordable hosting solutions with a focus on customer satisfaction.",
+    "website_url": "https://www.justhost.com",
+    "pricing_model_slug": "paid-only",
+    "ai_features": {
+      "tldr": "JustHost offers reliable web hosting solutions.",
+      "pros": [
+        "Affordable pricing plans",
+        "24/7 customer support",
+        "User-friendly interface"
+      ],
+      "cons": [
+        "Limited storage options",
+        "No free trial available",
+        "Basic features only"
+      ],
+      "pricing_model_type": "Paid Only",
+      "target_audience_size": "Startup",
+      "dealbreakers": [
+        "No advanced features",
+        "Limited scalability options"
+      ],
+      "hidden_costs": [
+        "Renewal rates may increase",
+        "Add-ons can be pricey"
+      ],
+      "migration_difficulty": "medium",
+      "best_for": [
+        "Small business websites",
+        "Personal blogs"
+      ],
+      "not_for": [
+        "Large enterprises",
+        "E-commerce platforms"
+      ],
+      "switching_reasons": [
+        "Need for advanced features",
+        "Better performance options"
+      ],
+      "key_limitations": [
+        "Limited customer support channels",
+        "No dedicated IP options"
+      ],
+      "confidence": 0.95
+    }
+  },
+  {
+    "slug": "namecheap",
+    "name": "Namecheap",
+    "tagline": "Domains and hosting made easy",
+    "short_description": "Namecheap offers domain registration and hosting services with a focus on affordability.",
+    "website_url": "https://www.namecheap.com",
+    "pricing_model_slug": "paid-only",
+    "ai_features": {
+      "tldr": "Namecheap offers affordable domain services.",
+      "pros": [
+        "Affordable domain registration",
+        "User-friendly interface",
+        "24/7 customer support"
+      ],
+      "cons": [
+        "Limited advanced features",
+        "Basic hosting options",
+        "No free SSL certificates"
+      ],
+      "pricing_model_type": "Paid Only",
+      "target_audience_size": "Startup",
+      "dealbreakers": [
+        "No free tier available"
+      ],
+      "hidden_costs": [
+        "Renewal prices may increase"
+      ],
+      "migration_difficulty": "medium",
+      "best_for": [
+        "Domain registration",
+        "Basic web hosting"
+      ],
+      "not_for": [
+        "Large enterprises",
+        "Advanced developers"
+      ],
+      "switching_reasons": [
+        "Better features elsewhere",
+        "Higher performance needs"
+      ],
+      "key_limitations": [
+        "Limited storage options",
+        "Basic security features"
+      ],
+      "confidence": 0.95
+    }
+  },
+  {
+    "slug": "cloudways",
+    "name": "Cloudways",
+    "tagline": "Managed cloud hosting platform",
+    "short_description": "Cloudways provides managed cloud hosting solutions with a focus on flexibility and performance.",
+    "website_url": "https://www.cloudways.com",
+    "pricing_model_slug": "paid-only",
+    "ai_features": {
+      "tldr": "Cloudways simplifies cloud hosting management.",
+      "pros": [
+        "User-friendly interface",
+        "Multiple cloud providers",
+        "Scalable resources"
+      ],
+      "cons": [
+        "Limited support options",
+        "Higher costs for advanced features",
+        "No built-in email hosting"
+      ],
+      "pricing_model_type": "Paid Only",
+      "target_audience_size": "Startup",
+      "dealbreakers": [
+        "No free tier available",
+        "Complex pricing structure"
+      ],
+      "hidden_costs": [
+        "Additional fees for backups",
+        "Costs for premium support"
+      ],
+      "migration_difficulty": "medium",
+      "best_for": [
+        "E-commerce websites",
+        "Web application hosting"
+      ],
+      "not_for": [
+        "Small personal blogs",
+        "Users needing extensive support"
+      ],
+      "switching_reasons": [
+        "Better pricing options elsewhere",
+        "Need for more support"
+      ],
+      "key_limitations": [
+        "Limited customization options",
+        "No built-in CDN"
+      ],
+      "confidence": 0.95
+    }
+  },
+  {
+    "slug": "kinsta",
+    "name": "Kinsta",
+    "tagline": "Premium managed WordPress hosting",
+    "short_description": "Kinsta offers high-performance managed WordPress hosting with a focus on speed and security.",
+    "website_url": "https://kinsta.com",
+    "pricing_model_slug": "paid-only",
+    "ai_features": {
+      "tldr": "Kinsta offers premium managed WordPress hosting.",
+      "pros": [
+        "Fast loading times",
+        "Excellent customer support",
+        "User-friendly dashboard"
+      ],
+      "cons": [
+        "Higher pricing than competitors",
+        "Limited data centers",
+        "No email hosting"
+      ],
+      "pricing_model_type": "Paid Only",
+      "target_audience_size": "Startup",
+      "dealbreakers": [
+        "Not suitable for budget users"
+      ],
+      "hidden_costs": [
+        "Additional fees for backups"
+      ],
+      "migration_difficulty": "medium",
+      "best_for": [
+        "E-commerce websites",
+        "High-traffic blogs"
+      ],
+      "not_for": [
+        "Small personal sites",
+        "Static websites"
+      ],
+      "switching_reasons": [
+        "Need for better performance",
+        "Desire for managed services"
+      ],
+      "key_limitations": [
+        "No shared hosting options",
+        "Limited to WordPress only"
+      ],
+      "confidence": 0.95
+    }
+  },
+  {
+    "slug": "ovh",
+    "name": "OVH",
+    "tagline": "Global cloud services provider",
+    "short_description": "OVH provides a wide range of cloud services and hosting solutions with a global presence.",
+    "website_url": "https://www.ovh.com",
+    "pricing_model_slug": "paid-only",
+    "ai_features": {
+      "tldr": "OVH offers scalable cloud solutions.",
+      "pros": [
+        "Flexible cloud infrastructure",
+        "Global data center network",
+        "Strong security features"
+      ],
+      "cons": [
+        "Complex pricing structure",
+        "Limited customer support",
+        "Steeper learning curve"
+      ],
+      "pricing_model_type": "Paid Only",
+      "target_audience_size": "Any",
+      "dealbreakers": [
+        "Not beginner-friendly",
+        "Requires technical expertise"
+      ],
+      "hidden_costs": [
+        "Data transfer fees",
+        "Additional storage costs"
+      ],
+      "migration_difficulty": "medium",
+      "best_for": [
+        "Web hosting",
+        "Application deployment"
+      ],
+      "not_for": [
+        "Small personal projects",
+        "Non-technical users"
+      ],
+      "switching_reasons": [
+        "Better pricing options",
+        "Simpler interfaces"
+      ],
+      "key_limitations": [
+        "Limited integrations",
+        "Regional service availability"
+      ],
+      "confidence": 0.95
+    }
+  },
+  {
+    "slug": "rackspace",
+    "name": "Rackspace",
+    "tagline": "Managed cloud solutions",
+    "short_description": "Rackspace offers managed cloud services with a focus on customer support and expertise.",
+    "website_url": "https://www.rackspace.com",
+    "pricing_model_slug": "paid-only",
+    "ai_features": {
+      "tldr": "Rackspace offers scalable cloud solutions.",
+      "pros": [
+        "Robust cloud infrastructure",
+        "Excellent customer support",
+        "Flexible pricing options"
+      ],
+      "cons": [
+        "Complex setup process",
+        "Higher costs for small teams",
+        "Limited third-party integrations"
+      ],
+      "pricing_model_type": "Paid Only",
+      "target_audience_size": "Enterprise",
+      "dealbreakers": [
+        "Not ideal for small businesses"
+      ],
+      "hidden_costs": [
+        "Additional fees for data transfer"
+      ],
+      "migration_difficulty": "medium",
+      "best_for": [
+        "Large-scale cloud deployments",
+        "Managed hosting solutions"
+      ],
+      "not_for": [
+        "Small startups",
+        "Basic website hosting"
+      ],
+      "switching_reasons": [
+        "Need for more customization",
+        "Better pricing options elsewhere"
+      ],
+      "key_limitations": [
+        "Limited geographical data centers",
+        "Complex pricing structure"
+      ],
+      "confidence": 0.95
+    }
+  },
+  {
+    "slug": "wpx-hosting",
+    "name": "WPX Hosting",
+    "tagline": "High-speed WordPress hosting",
+    "short_description": "WPX Hosting specializes in fast WordPress hosting with a focus on performance and support.",
+    "website_url": "https://wpxhosting.com",
+    "pricing_model_slug": "paid-only",
+    "ai_features": {
+      "tldr": "WPX Hosting offers fast, reliable hosting.",
+      "pros": [
+        "High-speed performance",
+        "Excellent customer support",
+        "User-friendly interface"
+      ],
+      "cons": [
+        "Higher pricing tiers",
+        "Limited data centers",
+        "No monthly plans"
+      ],
+      "pricing_model_type": "Paid Only",
+      "target_audience_size": "Startup",
+      "dealbreakers": [
+        "No free trial available"
+      ],
+      "hidden_costs": [
+        "Renewal rates may increase"
+      ],
+      "migration_difficulty": "medium",
+      "best_for": [
+        "E-commerce websites",
+        "High-traffic blogs"
+      ],
+      "not_for": [
+        "Budget-conscious users",
+        "Small personal sites"
+      ],
+      "switching_reasons": [
+        "Need for better performance",
+        "Desire for dedicated support"
+      ],
+      "key_limitations": [
+        "No monthly billing options",
+        "Limited advanced features"
+      ],
+      "confidence": 0.95
+    }
+  },
+  {
+    "slug": "scaleway",
+    "name": "Scaleway",
+    "tagline": "Flexible cloud infrastructure",
+    "short_description": "Scaleway provides cloud computing solutions with a focus on flexibility and scalability.",
+    "website_url": "https://www.scaleway.com",
+    "pricing_model_slug": "paid-only",
+    "ai_features": {
+      "tldr": "Scaleway offers flexible cloud solutions.",
+      "pros": [
+        "Scalable infrastructure",
+        "Competitive pricing",
+        "User-friendly interface"
+      ],
+      "cons": [
+        "Limited global data centers",
+        "Support response times",
+        "Complex pricing structure"
+      ],
+      "pricing_model_type": "Paid Only",
+      "target_audience_size": "Startup",
+      "dealbreakers": [
+        "Not ideal for large enterprises"
+      ],
+      "hidden_costs": [
+        "Data transfer fees may apply"
+      ],
+      "migration_difficulty": "medium",
+      "best_for": [
+        "Cloud hosting",
+        "Development environments"
+      ],
+      "not_for": [
+        "Small personal projects",
+        "Non-technical users"
+      ],
+      "switching_reasons": [
+        "Better performance options",
+        "Lower costs elsewhere"
+      ],
+      "key_limitations": [
+        "Limited advanced features",
+        "Less community support"
+      ],
+      "confidence": 0.95
+    }
+  },
+  {
+    "slug": "heroku",
+    "name": "Heroku",
+    "tagline": "Platform as a Service",
+    "short_description": "Heroku offers a platform for building, running, and managing applications in the cloud.",
+    "website_url": "https://www.heroku.com",
+    "pricing_model_slug": "paid-only",
+    "ai_features": {
+      "tldr": "Heroku simplifies app deployment effortlessly.",
+      "pros": [
+        "Easy app deployment",
+        "Scalable infrastructure",
+        "Strong developer community"
+      ],
+      "cons": [
+        "Higher costs at scale",
+        "Limited customization options",
+        "Complex pricing structure"
+      ],
+      "pricing_model_type": "Freemium",
+      "target_audience_size": "Startup",
+      "dealbreakers": [
+        "Costly for large apps"
+      ],
+      "hidden_costs": [
+        "Add-ons can increase expenses"
+      ],
+      "migration_difficulty": "medium",
+      "best_for": [
+        "Web app hosting",
+        "Rapid prototyping"
+      ],
+      "not_for": [
+        "Heavy enterprise applications",
+        "On-premise solutions"
+      ],
+      "switching_reasons": [
+        "Cost management",
+        "Need for more control"
+      ],
+      "key_limitations": [
+        "Limited database options",
+        "Performance can vary"
+      ],
+      "confidence": 0.95
+    }
+  },
+  {
+    "slug": "firebase",
+    "name": "Firebase",
+    "tagline": "Mobile and web app development",
+    "short_description": "Firebase provides a platform for building mobile and web applications with real-time capabilities.",
+    "website_url": "https://firebase.google.com",
+    "pricing_model_slug": "freemium",
+    "ai_features": {
+      "tldr": "Firebase accelerates app development effortlessly.",
+      "pros": [
+        "Real-time database capabilities",
+        "Scalable cloud functions",
+        "Strong community support"
+      ],
+      "cons": [
+        "Complex pricing structure",
+        "Limited offline support",
+        "Vendor lock-in risks"
+      ],
+      "pricing_model_type": "Freemium",
+      "target_audience_size": "Startup",
+      "dealbreakers": [
+        "High costs for scaling",
+        "Limited customization options"
+      ],
+      "hidden_costs": [
+        "Data egress fees",
+        "Additional service charges"
+      ],
+      "migration_difficulty": "medium",
+      "best_for": [
+        "Mobile app development",
+        "Web app backend"
+      ],
+      "not_for": [
+        "Heavy enterprise applications",
+        "Static websites"
+      ],
+      "switching_reasons": [
+        "Need for more control",
+        "Desire for lower costs"
+      ],
+      "key_limitations": [
+        "Vendor lock-in",
+        "Limited query capabilities"
+      ],
+      "confidence": 0.95
+    }
+  },
+  {
+    "slug": "amazon-web-services",
+    "name": "Amazon Web Services",
+    "tagline": "Comprehensive cloud services",
+    "short_description": "AWS offers a wide range of cloud computing services for businesses of all sizes.",
+    "website_url": "https://aws.amazon.com",
+    "pricing_model_slug": "paid-only",
+    "ai_features": {
+      "tldr": "AWS offers unmatched cloud scalability.",
+      "pros": [
+        "Extensive service offerings",
+        "Global infrastructure",
+        "Strong security features"
+      ],
+      "cons": [
+        "Complex pricing structure",
+        "Steep learning curve",
+        "Overwhelming options"
+      ],
+      "pricing_model_type": "Paid Only",
+      "target_audience_size": "Enterprise",
+      "dealbreakers": [
+        "High costs for small projects",
+        "Requires technical expertise"
+      ],
+      "hidden_costs": [
+        "Data transfer fees",
+        "Support costs can add up"
+      ],
+      "migration_difficulty": "hard",
+      "best_for": [
+        "Large-scale applications",
+        "Data-intensive workloads"
+      ],
+      "not_for": [
+        "Small businesses",
+        "Non-technical users"
+      ],
+      "switching_reasons": [
+        "Cost management issues",
+        "Simpler alternatives available"
+      ],
+      "key_limitations": [
+        "Complex setup process",
+        "Limited free tier options"
+      ],
+      "confidence": 0.95
+    }
+  },
+  {
+    "slug": "microsoft-azure",
+    "name": "Microsoft Azure",
+    "tagline": "Cloud computing platform",
+    "short_description": "Microsoft Azure provides a comprehensive cloud services platform for building and managing applications.",
+    "website_url": "https://azure.microsoft.com",
+    "pricing_model_slug": "paid-only",
+    "ai_features": {
+      "tldr": "Microsoft Azure offers robust cloud solutions.",
+      "pros": [
+        "Scalable cloud infrastructure",
+        "Wide range of services",
+        "Strong security features"
+      ],
+      "cons": [
+        "Complex pricing structure",
+        "Steep learning curve",
+        "Support can be slow"
+      ],
+      "pricing_model_type": "Paid Only",
+      "target_audience_size": "Enterprise",
+      "dealbreakers": [
+        "High costs for small projects",
+        "Requires technical expertise"
+      ],
+      "hidden_costs": [
+        "Data transfer fees",
+        "Additional service charges"
+      ],
+      "migration_difficulty": "medium",
+      "best_for": [
+        "Large-scale applications",
+        "Data analytics solutions"
+      ],
+      "not_for": [
+        "Small businesses",
+        "Non-technical users"
+      ],
+      "switching_reasons": [
+        "Need for simpler alternatives",
+        "Cost management issues"
+      ],
+      "key_limitations": [
+        "Limited free tier options",
+        "Regional service availability"
+      ],
+      "confidence": 0.95
+    }
+  },
+  {
+    "slug": "google-cloud-platform",
+    "name": "Google Cloud Platform",
+    "tagline": "Powerful cloud solutions",
+    "short_description": "Google Cloud Platform offers a suite of cloud computing services for businesses and developers.",
+    "website_url": "https://cloud.google.com",
+    "pricing_model_slug": "paid-only",
+    "ai_features": {
+      "tldr": "Google Cloud Platform offers scalable cloud solutions.",
+      "pros": [
+        "Robust infrastructure",
+        "Wide service range",
+        "Strong security features"
+      ],
+      "cons": [
+        "Complex pricing structure",
+        "Steep learning curve",
+        "Limited support for small teams"
+      ],
+      "pricing_model_type": "Paid Only",
+      "target_audience_size": "Enterprise",
+      "dealbreakers": [
+        "High costs for small projects"
+      ],
+      "hidden_costs": [
+        "Data egress fees",
+        "Additional service charges"
+      ],
+      "migration_difficulty": "medium",
+      "best_for": [
+        "Large-scale applications",
+        "Data analytics projects"
+      ],
+      "not_for": [
+        "Small businesses",
+        "Simple web hosting"
+      ],
+      "switching_reasons": [
+        "Need for better performance",
+        "Desire for more features"
+      ],
+      "key_limitations": [
+        "Complex setup process",
+        "Limited free tier options"
+      ],
+      "confidence": 0.95
+    }
+  },
+  {
+    "slug": "site5",
+    "name": "Site5",
+    "tagline": "Web hosting made easy",
+    "short_description": "Site5 provides user-friendly web hosting solutions with a focus on customer support.",
+    "website_url": "https://www.site5.com",
+    "pricing_model_slug": "paid-only",
+    "ai_features": {
+      "tldr": "Site5 offers reliable web hosting solutions.",
+      "pros": [
+        "User-friendly interface",
+        "24/7 customer support",
+        "Scalable hosting plans"
+      ],
+      "cons": [
+        "Limited storage options",
+        "Higher renewal rates",
+        "No free trial available"
+      ],
+      "pricing_model_type": "Paid Only",
+      "target_audience_size": "Startup",
+      "dealbreakers": [
+        "No free tier available",
+        "Limited advanced features"
+      ],
+      "hidden_costs": [
+        "Domain registration fees",
+        "Backup service charges"
+      ],
+      "migration_difficulty": "medium",
+      "best_for": [
+        "Small business websites",
+        "Personal blogs"
+      ],
+      "not_for": [
+        "Large enterprises",
+        "E-commerce platforms"
+      ],
+      "switching_reasons": [
+        "Need for more features",
+        "Better pricing options"
+      ],
+      "key_limitations": [
+        "No dedicated servers",
+        "Limited data centers"
+      ],
+      "confidence": 0.95
+    }
+  },
+  {
+    "slug": "hostpapa",
+    "name": "HostPapa",
+    "tagline": "Green web hosting solutions",
+    "short_description": "HostPapa offers eco-friendly hosting services with a focus on small businesses.",
+    "website_url": "https://www.hostpapa.com",
+    "pricing_model_slug": "paid-only",
+    "ai_features": {
+      "tldr": "HostPapa offers reliable web hosting solutions.",
+      "pros": [
+        "Affordable pricing plans",
+        "24/7 customer support",
+        "User-friendly interface"
+      ],
+      "cons": [
+        "Limited advanced features",
+        "Slower performance at peak times",
+        "No free trial available"
+      ],
+      "pricing_model_type": "Paid Only",
+      "target_audience_size": "Startup",
+      "dealbreakers": [
+        "No free tier options",
+        "Limited server locations"
+      ],
+      "hidden_costs": [
+        "Renewal rates may increase",
+        "Add-ons can be pricey"
+      ],
+      "migration_difficulty": "medium",
+      "best_for": [
+        "Small business websites",
+        "Personal blogs"
+      ],
+      "not_for": [
+        "Large enterprises",
+        "High-traffic e-commerce sites"
+      ],
+      "switching_reasons": [
+        "Need for advanced features",
+        "Better performance options"
+      ],
+      "key_limitations": [
+        "Storage limits on basic plans",
+        "No dedicated IP options"
+      ],
+      "confidence": 0.95
+    }
+  },
+  {
+    "slug": "webhostinghub",
+    "name": "Web Hosting Hub",
+    "tagline": "Affordable hosting for everyone",
+    "short_description": "Web Hosting Hub provides budget-friendly hosting solutions with a focus on customer service.",
+    "website_url": "https://www.webhostinghub.com",
+    "pricing_model_slug": "paid-only",
+    "ai_features": {
+      "tldr": "Web Hosting Hub offers reliable hosting solutions.",
+      "pros": [
+        "Affordable pricing plans",
+        "User-friendly interface",
+        "24/7 customer support"
+      ],
+      "cons": [
+        "Limited advanced features",
+        "No free trial",
+        "Higher renewal rates"
+      ],
+      "pricing_model_type": "Paid Only",
+      "target_audience_size": "Startup",
+      "dealbreakers": [
+        "No monthly billing option"
+      ],
+      "hidden_costs": [
+        "Renewal prices may increase"
+      ],
+      "migration_difficulty": "medium",
+      "best_for": [
+        "Small business websites",
+        "Personal blogs"
+      ],
+      "not_for": [
+        "Large enterprise applications",
+        "High-traffic e-commerce sites"
+      ],
+      "switching_reasons": [
+        "Better performance elsewhere",
+        "More features needed"
+      ],
+      "key_limitations": [
+        "Limited storage options",
+        "Basic security features"
+      ],
+      "confidence": 0.95
+    }
+  },
+  {
+    "slug": "interserver",
+    "name": "InterServer",
+    "tagline": "Reliable web hosting services",
+    "short_description": "InterServer offers a variety of hosting solutions with a focus on affordability and support.",
+    "website_url": "https://www.interserver.net",
+    "pricing_model_slug": "paid-only",
+    "ai_features": {
+      "tldr": "InterServer offers reliable hosting solutions.",
+      "pros": [
+        "Affordable pricing plans",
+        "24/7 customer support",
+        "Scalable resources"
+      ],
+      "cons": [
+        "Limited advanced features",
+        "No free tier",
+        "Basic user interface"
+      ],
+      "pricing_model_type": "Paid Only",
+      "target_audience_size": "Startup",
+      "dealbreakers": [
+        "No free trial available"
+      ],
+      "hidden_costs": [
+        "Renewal rates may increase"
+      ],
+      "migration_difficulty": "medium",
+      "best_for": [
+        "Small business hosting",
+        "Website migration"
+      ],
+      "not_for": [
+        "Large enterprise solutions",
+        "High-traffic websites"
+      ],
+      "switching_reasons": [
+        "Better performance options",
+        "More features elsewhere"
+      ],
+      "key_limitations": [
+        "Limited data centers",
+        "Basic security features"
+      ],
+      "confidence": 0.95
+    }
+  },
+  {
+    "slug": "tsohost",
+    "name": "TSOHost",
+    "tagline": "UK-based web hosting",
+    "short_description": "TSOHost provides reliable web hosting services with a focus on UK customers.",
+    "website_url": "https://www.tsohost.com",
+    "pricing_model_slug": "paid-only",
+    "ai_features": {
+      "tldr": "TSOHost offers reliable hosting solutions.",
+      "pros": [
+        "Affordable pricing plans",
+        "User-friendly interface",
+        "24/7 customer support"
+      ],
+      "cons": [
+        "Limited advanced features",
+        "No free tier",
+        "Basic analytics tools"
+      ],
+      "pricing_model_type": "Paid Only",
+      "target_audience_size": "Startup",
+      "dealbreakers": [
+        "No free trial available"
+      ],
+      "hidden_costs": [
+        "Domain registration fees apply"
+      ],
+      "migration_difficulty": "medium",
+      "best_for": [
+        "Small business hosting",
+        "Website management"
+      ],
+      "not_for": [
+        "Large enterprise solutions",
+        "Complex application hosting"
+      ],
+      "switching_reasons": [
+        "Better performance options",
+        "More comprehensive features"
+      ],
+      "key_limitations": [
+        "Limited scalability",
+        "Basic security features"
+      ],
+      "confidence": 0.95
+    }
+  }
+]

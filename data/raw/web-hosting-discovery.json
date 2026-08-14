@@ -1,0 +1,134 @@
+[
+  {
+    "slug": "bluehost",
+    "name": "Bluehost"
+  },
+  {
+    "slug": "hostgator",
+    "name": "HostGator"
+  },
+  {
+    "slug": "siteground",
+    "name": "SiteGround"
+  },
+  {
+    "slug": "dreamhost",
+    "name": "DreamHost"
+  },
+  {
+    "slug": "a2-hosting",
+    "name": "A2 Hosting"
+  },
+  {
+    "slug": "inmotion-hosting",
+    "name": "InMotion Hosting"
+  },
+  {
+    "slug": "wp-engine",
+    "name": "WP Engine"
+  },
+  {
+    "slug": "digitalocean",
+    "name": "DigitalOcean"
+  },
+  {
+    "slug": "linode",
+    "name": "Linode"
+  },
+  {
+    "slug": "vultr",
+    "name": "Vultr"
+  },
+  {
+    "slug": "godaddy",
+    "name": "GoDaddy"
+  },
+  {
+    "slug": "hostinger",
+    "name": "Hostinger"
+  },
+  {
+    "slug": "green-geeks",
+    "name": "GreenGeeks"
+  },
+  {
+    "slug": "iPage",
+    "name": "iPage"
+  },
+  {
+    "slug": "fatcow",
+    "name": "FatCow"
+  },
+  {
+    "slug": "justhost",
+    "name": "JustHost"
+  },
+  {
+    "slug": "namecheap",
+    "name": "Namecheap"
+  },
+  {
+    "slug": "cloudways",
+    "name": "Cloudways"
+  },
+  {
+    "slug": "kinsta",
+    "name": "Kinsta"
+  },
+  {
+    "slug": "ovh",
+    "name": "OVH"
+  },
+  {
+    "slug": "rackspace",
+    "name": "Rackspace"
+  },
+  {
+    "slug": "wpx-hosting",
+    "name": "WPX Hosting"
+  },
+  {
+    "slug": "scaleway",
+    "name": "Scaleway"
+  },
+  {
+    "slug": "heroku",
+    "name": "Heroku"
+  },
+  {
+    "slug": "firebase",
+    "name": "Firebase"
+  },
+  {
+    "slug": "amazon-web-services",
+    "name": "Amazon Web Services"
+  },
+  {
+    "slug": "microsoft-azure",
+    "name": "Microsoft Azure"
+  },
+  {
+    "slug": "google-cloud-platform",
+    "name": "Google Cloud Platform"
+  },
+  {
+    "slug": "site5",
+    "name": "Site5"
+  },
+  {
+    "slug": "hostpapa",
+    "name": "HostPapa"
+  },
+  {
+    "slug": "webhostinghub",
+    "name": "Web Hosting Hub"
+  },
+  {
+    "slug": "interserver",
+    "name": "InterServer"
+  },
+  {
+    "slug": "tsohost",
+    "name": "TSOHost"
+  }
+]

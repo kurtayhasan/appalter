@@ -21,7 +21,10 @@ export const CATEGORIES = [
   "crm",
   "project-management",
   "email",
-  "design"
+  "design",
+  "vpn",
+  "web-hosting",
+  "ai-tools"
 ];
 
 // Zod schemas for AI Validation

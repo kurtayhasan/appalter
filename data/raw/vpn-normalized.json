@@ -1,0 +1,266 @@
+[
+  {
+    "slug": "nordvpn",
+    "name": "NordVPN",
+    "tagline": "Secure and private browsing",
+    "short_description": "NordVPN offers robust security features and a large server network for safe internet access.",
+    "website_url": "https://nordvpn.com",
+    "pricing_model_slug": "paid-only"
+  },
+  {
+    "slug": "expressvpn",
+    "name": "ExpressVPN",
+    "tagline": "Fast and reliable VPN service",
+    "short_description": "ExpressVPN provides high-speed connections and strong encryption for secure online activities.",
+    "website_url": "https://www.expressvpn.com",
+    "pricing_model_slug": "paid-only"
+  },
+  {
+    "slug": "surfshark",
+    "name": "Surfshark",
+    "tagline": "Unlimited devices, strong privacy",
+    "short_description": "Surfshark allows unlimited device connections with strong privacy features and a user-friendly interface.",
+    "website_url": "https://surfshark.com",
+    "pricing_model_slug": "paid-only"
+  },
+  {
+    "slug": "cyberghost",
+    "name": "CyberGhost",
+    "tagline": "User-friendly VPN solution",
+    "short_description": "CyberGhost offers a simple interface and a wide range of servers for secure browsing.",
+    "website_url": "https://www.cyberghostvpn.com",
+    "pricing_model_slug": "paid-only"
+  },
+  {
+    "slug": "privateinternetaccess",
+    "name": "Private Internet Access",
+    "tagline": "Privacy-focused VPN service",
+    "short_description": "Private Internet Access provides strong privacy features and a no-logs policy for secure internet access.",
+    "website_url": "https://www.privateinternetaccess.com",
+    "pricing_model_slug": "paid-only"
+  },
+  {
+    "slug": "ipvanish",
+    "name": "IPVanish",
+    "tagline": "High-speed VPN with no logs",
+    "short_description": "IPVanish offers fast connections and a strict no-logs policy for secure online activities.",
+    "website_url": "https://www.ipvanish.com",
+    "pricing_model_slug": "paid-only"
+  },
+  {
+    "slug": "protonvpn",
+    "name": "ProtonVPN",
+    "tagline": "Secure and private VPN",
+    "short_description": "ProtonVPN is developed by the creators of ProtonMail, focusing on privacy and security.",
+    "website_url": "https://protonvpn.com",
+    "pricing_model_slug": "freemium"
+  },
+  {
+    "slug": "torguard",
+    "name": "TorGuard",
+    "tagline": "VPN for torrenting",
+    "short_description": "TorGuard specializes in providing secure VPN services for torrenting and privacy.",
+    "website_url": "https://torguard.net",
+    "pricing_model_slug": "paid-only"
+  },
+  {
+    "slug": "mullvad",
+    "name": "Mullvad",
+    "tagline": "Privacy-focused VPN service",
+    "short_description": "Mullvad emphasizes privacy and anonymity, allowing users to pay with cash or cryptocurrency.",
+    "website_url": "https://mullvad.net",
+    "pricing_model_slug": "paid-only"
+  },
+  {
+    "slug": "windscribe",
+    "name": "Windscribe",
+    "tagline": "Free and paid VPN options",
+    "short_description": "Windscribe offers both free and paid plans with strong privacy features and ad-blocking.",
+    "website_url": "https://windscribe.com",
+    "pricing_model_slug": "freemium"
+  },
+  {
+    "slug": "zenmate",
+    "name": "ZenMate",
+    "tagline": "Simple and effective VPN",
+    "short_description": "ZenMate provides a straightforward VPN solution with a focus on ease of use and security.",
+    "website_url": "https://zenmate.com",
+    "pricing_model_slug": "freemium"
+  },
+  {
+    "slug": "hide.me",
+    "name": "hide.me",
+    "tagline": "Secure and anonymous browsing",
+    "short_description": "hide.me offers a free and paid VPN service with a focus on privacy and security.",
+    "website_url": "https://hide.me",
+    "pricing_model_slug": "freemium"
+  },
+  {
+    "slug": "avast-secureline-vpn",
+    "name": "Avast SecureLine VPN",
+    "tagline": "VPN from a trusted antivirus",
+    "short_description": "Avast SecureLine VPN provides secure browsing with the reliability of Avast's security technology.",
+    "website_url": "https://www.avast.com/en-us/secureline-vpn",
+    "pricing_model_slug": "paid-only"
+  },
+  {
+    "slug": "bitdefender-vpn",
+    "name": "Bitdefender VPN",
+    "tagline": "VPN from Bitdefender",
+    "short_description": "Bitdefender VPN offers secure browsing integrated with Bitdefender's security suite.",
+    "website_url": "https://www.bitdefender.com/solutions/vpn.html",
+    "pricing_model_slug": "paid-only"
+  },
+  {
+    "slug": "norton-secure-vpn",
+    "name": "Norton Secure VPN",
+    "tagline": "VPN from Norton Security",
+    "short_description": "Norton Secure VPN provides privacy and security features integrated with Norton’s antivirus.",
+    "website_url": "https://us.norton.com/products/norton-secure-vpn",
+    "pricing_model_slug": "paid-only"
+  },
+  {
+    "slug": "safervpn",
+    "name": "SaferVPN",
+    "tagline": "Easy-to-use VPN service",
+    "short_description": "SaferVPN offers a user-friendly interface and strong encryption for secure internet access.",
+    "website_url": "https://www.safervpn.com",
+    "pricing_model_slug": "paid-only"
+  },
+  {
+    "slug": "strongvpn",
+    "name": "StrongVPN",
+    "tagline": "Robust VPN with no logs",
+    "short_description": "StrongVPN provides strong encryption and a no-logs policy for secure online activities.",
+    "website_url": "https://strongvpn.com",
+    "pricing_model_slug": "paid-only"
+  },
+  {
+    "slug": "vpnunlimited",
+    "name": "VPN Unlimited",
+    "tagline": "Flexible VPN service",
+    "short_description": "VPN Unlimited offers a variety of plans and strong privacy features for secure browsing.",
+    "website_url": "https://www.vpnunlimitedapp.com",
+    "pricing_model_slug": "paid-only"
+  },
+  {
+    "slug": "cactusvpn",
+    "name": "CactusVPN",
+    "tagline": "Simple and secure VPN",
+    "short_description": "CactusVPN provides a straightforward VPN service with a focus on security and ease of use.",
+    "website_url": "https://www.cactusvpn.com",
+    "pricing_model_slug": "paid-only"
+  },
+  {
+    "slug": "hoxx-vpn",
+    "name": "Hoxx VPN",
+    "tagline": "Free and paid VPN options",
+    "short_description": "Hoxx VPN offers both free and paid plans with a focus on privacy and security.",
+    "website_url": "https://hoxx.com",
+    "pricing_model_slug": "freemium"
+  },
+  {
+    "slug": "fastestvpn",
+    "name": "FastestVPN",
+    "tagline": "Speed-focused VPN service",
+    "short_description": "FastestVPN provides high-speed connections with strong security features for online privacy.",
+    "website_url": "https://fastestvpn.com",
+    "pricing_model_slug": "paid-only"
+  },
+  {
+    "slug": "keepsolid-vpn-unlimited",
+    "name": "KeepSolid VPN Unlimited",
+    "tagline": "Unlimited VPN access",
+    "short_description": "KeepSolid VPN Unlimited offers a variety of plans with strong privacy features and unlimited access.",
+    "website_url": "https://www.keepsolid.com/vpn-unlimited",
+    "pricing_model_slug": "paid-only"
+  },
+  {
+    "slug": "tunnelbear",
+    "name": "TunnelBear",
+    "tagline": "User-friendly VPN service",
+    "short_description": "TunnelBear provides a simple and fun VPN experience with strong privacy features.",
+    "website_url": "https://www.tunnelbear.com",
+    "pricing_model_slug": "freemium"
+  },
+  {
+    "slug": "avira-phantom-vpn",
+    "name": "Avira Phantom VPN",
+    "tagline": "VPN from Avira",
+    "short_description": "Avira Phantom VPN offers secure browsing integrated with Avira's security solutions.",
+    "website_url": "https://www.avira.com/en/avira-phantom-vpn",
+    "pricing_model_slug": "freemium"
+  },
+  {
+    "slug": "hola-vpn",
+    "name": "Hola VPN",
+    "tagline": "Free VPN with unique model",
+    "short_description": "Hola VPN offers a free service with a unique peer-to-peer model for secure browsing.",
+    "website_url": "https://hola.org",
+    "pricing_model_slug": "freemium"
+  },
+  {
+    "slug": "vpnhub",
+    "name": "VPNhub",
+    "tagline": "Free VPN service",
+    "short_description": "VPNhub provides a free VPN service with a focus on privacy and security.",
+    "website_url": "https://www.vpnhub.com",
+    "pricing_model_slug": "freemium"
+  },
+  {
+    "slug": "zenvpn",
+    "name": "ZenVPN",
+    "tagline": "Simple and secure VPN",
+    "short_description": "ZenVPN offers a straightforward VPN solution with a focus on privacy and security.",
+    "website_url": "https://zenvpn.com",
+    "pricing_model_slug": "freemium"
+  },
+  {
+    "slug": "browsec",
+    "name": "Browsec",
+    "tagline": "Free VPN for secure browsing",
+    "short_description": "Browsec provides a free VPN service that focuses on secure and private internet access.",
+    "website_url": "https://browsec.com",
+    "pricing_model_slug": "freemium"
+  },
+  {
+    "slug": "socks5-proxy",
+    "name": "Socks5 Proxy",
+    "tagline": "Proxy service for anonymity",
+    "short_description": "Socks5 Proxy offers a proxy service that enhances online anonymity and privacy.",
+    "website_url": "https://socks5proxy.com",
+    "pricing_model_slug": "paid-only"
+  },
+  {
+    "slug": "ivacy",
+    "name": "Ivacy",
+    "tagline": "Affordable VPN service",
+    "short_description": "Ivacy provides a budget-friendly VPN solution with strong privacy features.",
+    "website_url": "https://www.ivacy.com",
+    "pricing_model_slug": "paid-only"
+  },
+  {
+    "slug": "purevpn",
+    "name": "PureVPN",
+    "tagline": "Comprehensive VPN solution",
+    "short_description": "PureVPN offers a wide range of features for secure browsing and online privacy.",
+    "website_url": "https://www.purevpn.com",
+    "pricing_model_slug": "paid-only"
+  },
+  {
+    "slug": "nordlayer",
+    "name": "NordLayer",
+    "tagline": "Business-focused VPN solution",
+    "short_description": "NordLayer provides secure VPN services tailored for businesses and teams.",
+    "website_url": "https://nordlayer.com",
+    "pricing_model_slug": "paid-only"
+  },
+  {
+    "slug": "perimeter-81",
+    "name": "Perimeter 81",
+    "tagline": "Cloud VPN for businesses",
+    "short_description": "Perimeter 81 offers a cloud-based VPN solution designed for business security and remote access.",
+    "website_url": "https://www.perimeter81.com",
+    "pricing_model_slug": "paid-only"
+  }
+]

@@ -1,0 +1,114 @@
+[
+  {
+    "software_slug": "nordvpn",
+    "alternative_slug": "expressvpn",
+    "similarity_score": 0.95,
+    "reason": "Both offer strong privacy and security features.",
+    "core_difference": "NordVPN has a larger server network compared to ExpressVPN."
+  },
+  {
+    "software_slug": "surfshark",
+    "alternative_slug": "cyberghost",
+    "similarity_score": 0.9,
+    "reason": "Both are user-friendly VPN solutions.",
+    "core_difference": "Surfshark allows unlimited devices, while CyberGhost has device limits."
+  },
+  {
+    "software_slug": "privateinternetaccess",
+    "alternative_slug": "mullvad",
+    "similarity_score": 0.88,
+    "reason": "Both focus on privacy and no-logs policies.",
+    "core_difference": "Mullvad uses a unique account system without email registration."
+  },
+  {
+    "software_slug": "ipvanish",
+    "alternative_slug": "strongvpn",
+    "similarity_score": 0.85,
+    "reason": "Both provide high-speed VPN services.",
+    "core_difference": "IPVanish offers more advanced features like split tunneling."
+  },
+  {
+    "software_slug": "protonvpn",
+    "alternative_slug": "avira-phantom-vpn",
+    "similarity_score": 0.8,
+    "reason": "Both emphasize security and privacy.",
+    "core_difference": "ProtonVPN has a free tier with no data limits, unlike Avira."
+  },
+  {
+    "software_slug": "torguard",
+    "alternative_slug": "vpnunlimited",
+    "similarity_score": 0.82,
+    "reason": "Both cater to users looking for flexible VPN options.",
+    "core_difference": "TorGuard specializes in torrenting, while VPN Unlimited focuses on general use."
+  },
+  {
+    "software_slug": "windscribe",
+    "alternative_slug": "hide.me",
+    "similarity_score": 0.78,
+    "reason": "Both offer free and paid VPN options.",
+    "core_difference": "Windscribe has a more generous free plan compared to hide.me."
+  },
+  {
+    "software_slug": "zenmate",
+    "alternative_slug": "browsec",
+    "similarity_score": 0.75,
+    "reason": "Both are simple VPN solutions for secure browsing.",
+    "core_difference": "ZenMate offers a more comprehensive feature set than Browsec."
+  },
+  {
+    "software_slug": "tunnelbear",
+    "alternative_slug": "safervpn",
+    "similarity_score": 0.76,
+    "reason": "Both are user-friendly VPN services.",
+    "core_difference": "TunnelBear has a whimsical design, while SaferVPN is more straightforward."
+  },
+  {
+    "software_slug": "hola-vpn",
+    "alternative_slug": "vpnhub",
+    "similarity_score": 0.74,
+    "reason": "Both offer free VPN services with unique models.",
+    "core_difference": "Hola uses a peer-to-peer model, while VPNhub is more traditional."
+  },
+  {
+    "software_slug": "ivacy",
+    "alternative_slug": "purevpn",
+    "similarity_score": 0.73,
+    "reason": "Both provide affordable VPN solutions.",
+    "core_difference": "PureVPN has a broader range of features compared to Ivacy."
+  },
+  {
+    "software_slug": "nordlayer",
+    "alternative_slug": "perimeter-81",
+    "similarity_score": 0.79,
+    "reason": "Both target business users with VPN solutions.",
+    "core_difference": "Perimeter 81 offers a cloud-based VPN, while NordLayer is more traditional."
+  },
+  {
+    "software_slug": "avast-secureline-vpn",
+    "alternative_slug": "bitdefender-vpn",
+    "similarity_score": 0.72,
+    "reason": "Both are VPNs from well-known antivirus companies.",
+    "core_difference": "Avast SecureLine is more integrated with Avast products than Bitdefender."
+  },
+  {
+    "software_slug": "strongvpn",
+    "alternative_slug": "vpnunlimited",
+    "similarity_score": 0.7,
+    "reason": "Both offer robust VPN services.",
+    "core_difference": "StrongVPN emphasizes no-logs, while VPN Unlimited focuses on flexibility."
+  },
+  {
+    "software_slug": "hoxx-vpn",
+    "alternative_slug": "cactusvpn",
+    "similarity_score": 0.68,
+    "reason": "Both provide free and paid VPN options.",
+    "core_difference": "CactusVPN has a more user-friendly interface than Hoxx."
+  },
+  {
+    "software_slug": "zenvpn",
+    "alternative_slug": "torguard",
+    "similarity_score": 0.67,
+    "reason": "Both are secure VPN services.",
+    "core_difference": "TorGuard is more focused on torrenting than ZenVPN."
+  }
+]

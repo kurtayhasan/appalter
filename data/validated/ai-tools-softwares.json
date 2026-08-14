@@ -1,0 +1,1967 @@
+[
+  {
+    "slug": "chatgpt",
+    "name": "ChatGPT",
+    "tagline": "AI-powered conversational agent",
+    "short_description": "ChatGPT is an AI language model designed to engage in human-like conversations and assist with various tasks.",
+    "website_url": "https://www.openai.com/chatgpt",
+    "pricing_model_slug": "freemium",
+    "ai_features": {
+      "tldr": "ChatGPT excels in conversational AI.",
+      "pros": [
+        "Highly versatile AI capabilities",
+        "User-friendly interface",
+        "Strong community support"
+      ],
+      "cons": [
+        "Limited customization options",
+        "Can generate inaccurate info",
+        "Subscription costs can add up"
+      ],
+      "pricing_model_type": "Freemium",
+      "target_audience_size": "Any",
+      "dealbreakers": [
+        "Requires internet connection"
+      ],
+      "hidden_costs": [
+        "Premium features may incur fees"
+      ],
+      "migration_difficulty": "easy",
+      "best_for": [
+        "Customer support automation",
+        "Content generation"
+      ],
+      "not_for": [
+        "Highly specialized tasks",
+        "Offline usage"
+      ],
+      "switching_reasons": [
+        "Better pricing alternatives",
+        "More specialized tools available"
+      ],
+      "key_limitations": [
+        "Context retention issues",
+        "Limited real-time data access"
+      ],
+      "confidence": 0.95
+    }
+  },
+  {
+    "slug": "claude",
+    "name": "Claude",
+    "tagline": "AI assistant for productivity",
+    "short_description": "Claude is an AI assistant that helps users enhance productivity through intelligent conversation and task management.",
+    "website_url": "https://www.anthropic.com/claude",
+    "pricing_model_slug": "freemium",
+    "ai_features": {
+      "tldr": "Claude offers advanced AI capabilities.",
+      "pros": [
+        "Powerful AI features",
+        "User-friendly interface",
+        "Scalable solutions"
+      ],
+      "cons": [
+        "Limited integrations",
+        "High subscription cost",
+        "Steep learning curve"
+      ],
+      "pricing_model_type": "Paid Only",
+      "target_audience_size": "Enterprise",
+      "dealbreakers": [
+        "Requires robust infrastructure"
+      ],
+      "hidden_costs": [
+        "Additional fees for premium features"
+      ],
+      "migration_difficulty": "medium",
+      "best_for": [
+        "Large-scale AI projects",
+        "Data analysis tasks"
+      ],
+      "not_for": [
+        "Small teams",
+        "Budget-conscious users"
+      ],
+      "switching_reasons": [
+        "Need for better AI tools",
+        "Increased project demands"
+      ],
+      "key_limitations": [
+        "Limited customization options",
+        "Dependency on internet connectivity"
+      ],
+      "confidence": 0.95
+    }
+  },
+  {
+    "slug": "cursor",
+    "name": "Cursor",
+    "tagline": "Code with AI assistance",
+    "short_description": "Cursor is an AI-powered coding assistant that helps developers write code more efficiently and accurately.",
+    "website_url": "https://cursor.so",
+    "pricing_model_slug": "freemium",
+    "ai_features": {
+      "tldr": "Cursor enhances coding efficiency effortlessly.",
+      "pros": [
+        "Intuitive user interface",
+        "Real-time collaboration",
+        "Powerful code suggestions"
+      ],
+      "cons": [
+        "Limited offline functionality",
+        "Steep learning curve",
+        "Occasional performance lags"
+      ],
+      "pricing_model_type": "Freemium",
+      "target_audience_size": "Startup",
+      "dealbreakers": [
+        "Requires stable internet connection"
+      ],
+      "hidden_costs": [
+        "Premium features behind paywall"
+      ],
+      "migration_difficulty": "medium",
+      "best_for": [
+        "Collaborative coding projects",
+        "Learning programming languages"
+      ],
+      "not_for": [
+        "Solo developers",
+        "Non-technical users"
+      ],
+      "switching_reasons": [
+        "Better features in competitors",
+        "Cost concerns"
+      ],
+      "key_limitations": [
+        "Limited integrations",
+        "Not suitable for large teams"
+      ],
+      "confidence": 0.95
+    }
+  },
+  {
+    "slug": "github-copilot",
+    "name": "GitHub Copilot",
+    "tagline": "AI pair programmer",
+    "short_description": "GitHub Copilot is an AI tool that assists developers by suggesting code snippets and functions as they write.",
+    "website_url": "https://github.com/features/copilot",
+    "pricing_model_slug": "paid-only",
+    "ai_features": {
+      "tldr": "Boost coding efficiency with AI assistance.",
+      "pros": [
+        "Intelligent code suggestions",
+        "Supports multiple languages",
+        "Integrates with GitHub"
+      ],
+      "cons": [
+        "Limited offline functionality",
+        "May suggest incorrect code",
+        "Subscription cost can add up"
+      ],
+      "pricing_model_type": "Paid Only",
+      "target_audience_size": "Any",
+      "dealbreakers": [
+        "Requires GitHub account",
+        "Subscription needed for full features"
+      ],
+      "hidden_costs": [
+        "Potential costs for team plans",
+        "API usage fees may apply"
+      ],
+      "migration_difficulty": "easy",
+      "best_for": [
+        "Developers seeking productivity",
+        "Teams collaborating on code"
+      ],
+      "not_for": [
+        "Non-coders",
+        "Users preferring manual coding"
+      ],
+      "switching_reasons": [
+        "Need for AI-driven coding",
+        "Integration with existing GitHub projects"
+      ],
+      "key_limitations": [
+        "Limited to GitHub ecosystem",
+        "Not a full IDE replacement"
+      ],
+      "confidence": 0.95
+    }
+  },
+  {
+    "slug": "gemini",
+    "name": "Gemini",
+    "tagline": "AI for creative tasks",
+    "short_description": "Gemini is an AI platform designed to assist with creative tasks, including writing and design.",
+    "website_url": "https://www.gemini.com",
+    "pricing_model_slug": "freemium",
+    "ai_features": {
+      "tldr": "Gemini streamlines collaboration and productivity.",
+      "pros": [
+        "User-friendly interface",
+        "Robust integration options",
+        "Real-time collaboration features"
+      ],
+      "cons": [
+        "Limited offline capabilities",
+        "Higher learning curve for advanced features",
+        "Occasional performance lags"
+      ],
+      "pricing_model_type": "Freemium",
+      "target_audience_size": "Startup",
+      "dealbreakers": [
+        "No dedicated mobile app"
+      ],
+      "hidden_costs": [
+        "Advanced features require subscription"
+      ],
+      "migration_difficulty": "medium",
+      "best_for": [
+        "Team project management",
+        "Remote collaboration"
+      ],
+      "not_for": [
+        "Solo freelancers",
+        "Small teams with tight budgets"
+      ],
+      "switching_reasons": [
+        "Better features in competitors",
+        "Lower pricing alternatives"
+      ],
+      "key_limitations": [
+        "Limited customization options",
+        "Dependency on internet connectivity"
+      ],
+      "confidence": 0.95
+    }
+  },
+  {
+    "slug": "notion",
+    "name": "Notion",
+    "tagline": "All-in-one workspace",
+    "short_description": "Notion is a versatile workspace that combines notes, tasks, databases, and collaboration tools in one platform.",
+    "website_url": "https://www.notion.so",
+    "pricing_model_slug": "freemium",
+    "ai_features": {
+      "tldr": "Notion streamlines collaboration and organization.",
+      "pros": [
+        "Highly customizable workspace",
+        "Rich integration options",
+        "User-friendly interface"
+      ],
+      "cons": [
+        "Can be overwhelming for beginners",
+        "Limited offline functionality",
+        "Performance issues with large databases"
+      ],
+      "pricing_model_type": "Freemium",
+      "target_audience_size": "Any",
+      "dealbreakers": [
+        "Complex features may confuse users"
+      ],
+      "hidden_costs": [
+        "Advanced features require paid plans"
+      ],
+      "migration_difficulty": "medium",
+      "best_for": [
+        "Project management teams",
+        "Personal productivity tracking"
+      ],
+      "not_for": [
+        "Users needing simple note-taking",
+        "Teams requiring strict data security"
+      ],
+      "switching_reasons": [
+        "Need for simpler alternatives",
+        "Desire for enhanced security features"
+      ],
+      "key_limitations": [
+        "Limited export options",
+        "No built-in time tracking"
+      ],
+      "confidence": 0.95
+    }
+  },
+  {
+    "slug": "midjourney",
+    "name": "Midjourney",
+    "tagline": "AI art generation",
+    "short_description": "Midjourney is an AI tool that generates stunning artwork based on user prompts and preferences.",
+    "website_url": "https://www.midjourney.com",
+    "pricing_model_slug": "paid-only",
+    "ai_features": {
+      "tldr": "Midjourney excels in AI-generated art.",
+      "pros": [
+        "High-quality image generation",
+        "User-friendly interface",
+        "Active community support"
+      ],
+      "cons": [
+        "Limited customization options",
+        "Subscription required for full features",
+        "Slow response times during peak"
+      ],
+      "pricing_model_type": "Paid Only",
+      "target_audience_size": "Any",
+      "dealbreakers": [
+        "No free tier available",
+        "Requires internet connection"
+      ],
+      "hidden_costs": [
+        "Additional fees for commercial use",
+        "Higher tiers for advanced features"
+      ],
+      "migration_difficulty": "easy",
+      "best_for": [
+        "Digital artists",
+        "Content creators"
+      ],
+      "not_for": [
+        "Traditional graphic designers",
+        "Users needing extensive customization"
+      ],
+      "switching_reasons": [
+        "Seeking more control over outputs",
+        "Desire for offline capabilities"
+      ],
+      "key_limitations": [
+        "Limited resolution options",
+        "No direct editing tools"
+      ],
+      "confidence": 0.95
+    }
+  },
+  {
+    "slug": "ahrefs",
+    "name": "Ahrefs",
+    "tagline": "SEO toolset for growth",
+    "short_description": "Ahrefs is a comprehensive SEO toolset that helps users improve their website's search engine rankings and visibility.",
+    "website_url": "https://ahrefs.com",
+    "pricing_model_slug": "paid-only",
+    "ai_features": {
+      "tldr": "Ahrefs excels in SEO analysis.",
+      "pros": [
+        "Comprehensive backlink analysis",
+        "User-friendly interface",
+        "Robust keyword research tools"
+      ],
+      "cons": [
+        "High pricing for small teams",
+        "Limited social media tools",
+        "Steep learning curve for beginners"
+      ],
+      "pricing_model_type": "Paid Only",
+      "target_audience_size": "Startup",
+      "dealbreakers": [
+        "No free tier available"
+      ],
+      "hidden_costs": [
+        "Additional fees for advanced features"
+      ],
+      "migration_difficulty": "medium",
+      "best_for": [
+        "SEO professionals",
+        "Content marketers"
+      ],
+      "not_for": [
+        "Casual bloggers",
+        "Small businesses"
+      ],
+      "switching_reasons": [
+        "Better pricing options elsewhere",
+        "Need for more features"
+      ],
+      "key_limitations": [
+        "Limited integration options",
+        "No mobile app"
+      ],
+      "confidence": 0.95
+    }
+  },
+  {
+    "slug": "todoist",
+    "name": "Todoist",
+    "tagline": "Task management made easy",
+    "short_description": "Todoist is a task management app that helps users organize their tasks and projects efficiently.",
+    "website_url": "https://todoist.com",
+    "pricing_model_slug": "freemium",
+    "ai_features": {
+      "tldr": "Todoist streamlines task management effortlessly.",
+      "pros": [
+        "Intuitive user interface",
+        "Cross-platform availability",
+        "Powerful collaboration features"
+      ],
+      "cons": [
+        "Limited free features",
+        "No time tracking",
+        "Basic reporting tools"
+      ],
+      "pricing_model_type": "Freemium",
+      "target_audience_size": "Any",
+      "dealbreakers": [
+        "Lacks advanced project management"
+      ],
+      "hidden_costs": [
+        "Premium features require subscription"
+      ],
+      "migration_difficulty": "easy",
+      "best_for": [
+        "Personal task management",
+        "Team collaboration"
+      ],
+      "not_for": [
+        "Complex project management",
+        "Heavy-duty resource planning"
+      ],
+      "switching_reasons": [
+        "Better features in competitors",
+        "Need for advanced integrations"
+      ],
+      "key_limitations": [
+        "Limited customization options",
+        "No offline access in free version"
+      ],
+      "confidence": 0.95
+    }
+  },
+  {
+    "slug": "hubspot",
+    "name": "HubSpot",
+    "tagline": "Inbound marketing platform",
+    "short_description": "HubSpot is an all-in-one inbound marketing, sales, and service platform designed to grow businesses.",
+    "website_url": "https://www.hubspot.com",
+    "pricing_model_slug": "freemium",
+    "ai_features": {
+      "tldr": "HubSpot streamlines marketing and sales.",
+      "pros": [
+        "Comprehensive marketing tools",
+        "User-friendly interface",
+        "Strong customer support"
+      ],
+      "cons": [
+        "Can be expensive for startups",
+        "Complex features for beginners",
+        "Limited customization options"
+      ],
+      "pricing_model_type": "Freemium",
+      "target_audience_size": "Any",
+      "dealbreakers": [
+        "High costs for advanced features",
+        "Steep learning curve for some"
+      ],
+      "hidden_costs": [
+        "Add-ons can increase pricing",
+        "Premium support incurs fees"
+      ],
+      "migration_difficulty": "medium",
+      "best_for": [
+        "Inbound marketing campaigns",
+        "Sales pipeline management"
+      ],
+      "not_for": [
+        "Small teams with tight budgets",
+        "Companies needing heavy customization"
+      ],
+      "switching_reasons": [
+        "Cost-effective alternatives available",
+        "Need for specialized tools"
+      ],
+      "key_limitations": [
+        "Limited reporting capabilities",
+        "Integrations can be restrictive"
+      ],
+      "confidence": 0.95
+    }
+  },
+  {
+    "slug": "slack",
+    "name": "Slack",
+    "tagline": "Team communication tool",
+    "short_description": "Slack is a collaboration hub that connects teams through messaging, file sharing, and integrations.",
+    "website_url": "https://slack.com",
+    "pricing_model_slug": "freemium",
+    "ai_features": {
+      "tldr": "Slack enhances team collaboration effortlessly.",
+      "pros": [
+        "Intuitive user interface",
+        "Integrates with many tools",
+        "Strong community support"
+      ],
+      "cons": [
+        "Can be overwhelming for new users",
+        "Limited free plan features",
+        "Search functionality can lag"
+      ],
+      "pricing_model_type": "Freemium",
+      "target_audience_size": "Any",
+      "dealbreakers": [
+        "High cost for premium features",
+        "Limited offline access"
+      ],
+      "hidden_costs": [
+        "Add-ons may increase expenses",
+        "Data storage limits on free plan"
+      ],
+      "migration_difficulty": "medium",
+      "best_for": [
+        "Remote team communication",
+        "Project management collaboration"
+      ],
+      "not_for": [
+        "Small teams with tight budgets",
+        "Users needing extensive offline access"
+      ],
+      "switching_reasons": [
+        "Need for simpler alternatives",
+        "Desire for more customization"
+      ],
+      "key_limitations": [
+        "Message history limits on free plan",
+        "Performance issues with large teams"
+      ],
+      "confidence": 0.95
+    }
+  },
+  {
+    "slug": "zoho-crm",
+    "name": "Zoho CRM",
+    "tagline": "Customer relationship management",
+    "short_description": "Zoho CRM is a cloud-based software that helps businesses manage their customer relationships and sales processes.",
+    "website_url": "https://www.zoho.com/crm",
+    "pricing_model_slug": "freemium",
+    "ai_features": {
+      "tldr": "Zoho CRM streamlines customer management efficiently.",
+      "pros": [
+        "User-friendly interface",
+        "Customizable features",
+        "Affordable pricing options"
+      ],
+      "cons": [
+        "Limited integrations",
+        "Steeper learning curve",
+        "Occasional performance issues"
+      ],
+      "pricing_model_type": "Freemium",
+      "target_audience_size": "Startup",
+      "dealbreakers": [
+        "Limited advanced analytics",
+        "No offline access"
+      ],
+      "hidden_costs": [
+        "Add-ons may increase costs",
+        "Premium support incurs fees"
+      ],
+      "migration_difficulty": "medium",
+      "best_for": [
+        "Small business CRM",
+        "Sales team management"
+      ],
+      "not_for": [
+        "Large enterprises",
+        "Complex project management"
+      ],
+      "switching_reasons": [
+        "Better integration options",
+        "More advanced features"
+      ],
+      "key_limitations": [
+        "Limited mobile functionality",
+        "Basic reporting tools"
+      ],
+      "confidence": 0.95
+    }
+  },
+  {
+    "slug": "microsoft-dynamics-365",
+    "name": "Microsoft Dynamics 365",
+    "tagline": "Business applications suite",
+    "short_description": "Microsoft Dynamics 365 is a suite of intelligent business applications that help organizations manage their operations.",
+    "website_url": "https://dynamics.microsoft.com",
+    "pricing_model_slug": "paid-only",
+    "ai_features": {
+      "tldr": "Comprehensive CRM and ERP solution.",
+      "pros": [
+        "Integrated business applications",
+        "Customizable workflows",
+        "Strong analytics capabilities"
+      ],
+      "cons": [
+        "Steep learning curve",
+        "High implementation costs",
+        "Complex pricing structure"
+      ],
+      "pricing_model_type": "Paid Only",
+      "target_audience_size": "Enterprise",
+      "dealbreakers": [
+        "Requires significant IT resources",
+        "Limited offline functionality"
+      ],
+      "hidden_costs": [
+        "Additional fees for add-ons",
+        "Training costs may apply"
+      ],
+      "migration_difficulty": "hard",
+      "best_for": [
+        "Large-scale business management",
+        "Sales and customer service teams"
+      ],
+      "not_for": [
+        "Small businesses with limited budget",
+        "Companies needing quick setup"
+      ],
+      "switching_reasons": [
+        "Need for advanced features",
+        "Integration with existing tools"
+      ],
+      "key_limitations": [
+        "Can be overwhelming for users",
+        "Requires ongoing maintenance"
+      ],
+      "confidence": 0.95
+    }
+  },
+  {
+    "slug": "salesflare",
+    "name": "Salesflare",
+    "tagline": "Smart CRM for small businesses",
+    "short_description": "Salesflare is a CRM designed for small businesses that automates data entry and helps manage customer relationships.",
+    "website_url": "https://salesflare.com",
+    "pricing_model_slug": "paid-only",
+    "ai_features": {
+      "tldr": "Salesflare automates your sales process.",
+      "pros": [
+        "User-friendly interface",
+        "Strong automation features",
+        "Excellent customer support"
+      ],
+      "cons": [
+        "Limited customization options",
+        "Higher pricing tiers",
+        "Steeper learning curve"
+      ],
+      "pricing_model_type": "Paid Only",
+      "target_audience_size": "Startup",
+      "dealbreakers": [
+        "No free tier available",
+        "Limited integrations"
+      ],
+      "hidden_costs": [
+        "Add-ons may increase costs",
+        "Training sessions extra"
+      ],
+      "migration_difficulty": "medium",
+      "best_for": [
+        "Small to medium sales teams",
+        "Lead management automation"
+      ],
+      "not_for": [
+        "Large enterprises",
+        "Non-sales focused teams"
+      ],
+      "switching_reasons": [
+        "Need for more customization",
+        "Lower pricing alternatives"
+      ],
+      "key_limitations": [
+        "Limited reporting features",
+        "No offline access"
+      ],
+      "confidence": 0.95
+    }
+  },
+  {
+    "slug": "salesmate",
+    "name": "Salesmate",
+    "tagline": "Sales CRM software",
+    "short_description": "Salesmate is a sales CRM that helps teams manage leads, deals, and customer relationships effectively.",
+    "website_url": "https://www.salesmate.io",
+    "pricing_model_slug": "paid-only",
+    "ai_features": {
+      "tldr": "Salesmate streamlines sales processes effectively.",
+      "pros": [
+        "User-friendly interface",
+        "Robust automation features",
+        "Excellent customer support"
+      ],
+      "cons": [
+        "Limited customization options",
+        "Higher pricing tiers",
+        "Steep learning curve for advanced features"
+      ],
+      "pricing_model_type": "Paid Only",
+      "target_audience_size": "Startup",
+      "dealbreakers": [
+        "No free tier available"
+      ],
+      "hidden_costs": [
+        "Add-ons can increase costs"
+      ],
+      "migration_difficulty": "medium",
+      "best_for": [
+        "Small business sales teams",
+        "Lead management"
+      ],
+      "not_for": [
+        "Large enterprises",
+        "Non-sales teams"
+      ],
+      "switching_reasons": [
+        "Better pricing options",
+        "More features in competitors"
+      ],
+      "key_limitations": [
+        "Limited integrations",
+        "Basic reporting tools"
+      ],
+      "confidence": 0.95
+    }
+  },
+  {
+    "slug": "wrike",
+    "name": "Wrike",
+    "tagline": "Project management software",
+    "short_description": "Wrike is a collaborative project management tool that helps teams plan, execute, and track projects efficiently.",
+    "website_url": "https://www.wrike.com",
+    "pricing_model_slug": "freemium",
+    "ai_features": {
+      "tldr": "Wrike streamlines project management effectively.",
+      "pros": [
+        "User-friendly interface",
+        "Robust collaboration tools",
+        "Customizable workflows"
+      ],
+      "cons": [
+        "Can be pricey",
+        "Steep learning curve",
+        "Limited offline access"
+      ],
+      "pricing_model_type": "Paid Only",
+      "target_audience_size": "Enterprise",
+      "dealbreakers": [
+        "High cost for small teams"
+      ],
+      "hidden_costs": [
+        "Add-ons increase total cost"
+      ],
+      "migration_difficulty": "medium",
+      "best_for": [
+        "Large team project management",
+        "Agile workflow tracking"
+      ],
+      "not_for": [
+        "Small businesses",
+        "Simple task management"
+      ],
+      "switching_reasons": [
+        "Better pricing options",
+        "Simpler alternatives available"
+      ],
+      "key_limitations": [
+        "Limited integrations",
+        "Complex setup process"
+      ],
+      "confidence": 0.95
+    }
+  },
+  {
+    "slug": "smartsheet",
+    "name": "Smartsheet",
+    "tagline": "Work management platform",
+    "short_description": "Smartsheet is a work management platform that enables teams to collaborate and manage projects in real-time.",
+    "website_url": "https://www.smartsheet.com",
+    "pricing_model_slug": "paid-only",
+    "ai_features": {
+      "tldr": "Smartsheet streamlines project management effectively.",
+      "pros": [
+        "User-friendly interface",
+        "Robust collaboration tools",
+        "Customizable templates"
+      ],
+      "cons": [
+        "Can be pricey for teams",
+        "Limited offline access",
+        "Steep learning curve"
+      ],
+      "pricing_model_type": "Paid Only",
+      "target_audience_size": "Any",
+      "dealbreakers": [
+        "No free tier available",
+        "High cost for advanced features"
+      ],
+      "hidden_costs": [
+        "Add-ons increase total cost",
+        "Training may incur fees"
+      ],
+      "migration_difficulty": "medium",
+      "best_for": [
+        "Project tracking",
+        "Team collaboration"
+      ],
+      "not_for": [
+        "Small teams on a budget",
+        "Users needing offline access"
+      ],
+      "switching_reasons": [
+        "Need for lower costs",
+        "Desire for simpler tools"
+      ],
+      "key_limitations": [
+        "Limited integrations",
+        "Performance issues with large data"
+      ],
+      "confidence": 0.95
+    }
+  },
+  {
+    "slug": "monday-com",
+    "name": "Monday.com",
+    "tagline": "Work operating system",
+    "short_description": "Monday.com is a work operating system that allows teams to manage projects and workflows in a visual way.",
+    "website_url": "https://monday.com",
+    "pricing_model_slug": "freemium",
+    "ai_features": {
+      "tldr": "Monday.com streamlines team collaboration effortlessly.",
+      "pros": [
+        "Highly customizable workflows",
+        "User-friendly interface",
+        "Strong integration options"
+      ],
+      "cons": [
+        "Can be pricey for larger teams",
+        "Limited offline functionality",
+        "Steep learning curve for advanced features"
+      ],
+      "pricing_model_type": "Paid Only",
+      "target_audience_size": "Any",
+      "dealbreakers": [
+        "No free tier available",
+        "Complex pricing structure"
+      ],
+      "hidden_costs": [
+        "Add-ons increase overall cost",
+        "Premium features require higher plans"
+      ],
+      "migration_difficulty": "medium",
+      "best_for": [
+        "Project management",
+        "Team collaboration"
+      ],
+      "not_for": [
+        "Small teams on a budget",
+        "Users needing offline access"
+      ],
+      "switching_reasons": [
+        "Need for more features",
+        "Better pricing options elsewhere"
+      ],
+      "key_limitations": [
+        "Limited reporting capabilities",
+        "Performance issues with large data"
+      ],
+      "confidence": 0.95
+    }
+  },
+  {
+    "slug": "dreamhost",
+    "name": "DreamHost",
+    "tagline": "Web hosting services",
+    "short_description": "DreamHost provides reliable web hosting services, including shared, VPS, and dedicated hosting solutions.",
+    "website_url": "https://www.dreamhost.com",
+    "pricing_model_slug": "paid-only",
+    "ai_features": {
+      "tldr": "DreamHost offers reliable web hosting solutions.",
+      "pros": [
+        "Affordable pricing plans",
+        "24/7 customer support",
+        "User-friendly interface"
+      ],
+      "cons": [
+        "Limited storage options",
+        "No free tier available",
+        "Higher renewal rates"
+      ],
+      "pricing_model_type": "Paid Only",
+      "target_audience_size": "Startup",
+      "dealbreakers": [
+        "No monthly billing option"
+      ],
+      "hidden_costs": [
+        "Domain registration fees apply"
+      ],
+      "migration_difficulty": "medium",
+      "best_for": [
+        "Small business websites",
+        "Personal blogs"
+      ],
+      "not_for": [
+        "Large enterprise hosting",
+        "Advanced developers"
+      ],
+      "switching_reasons": [
+        "Better performance needed",
+        "More features required"
+      ],
+      "key_limitations": [
+        "Limited data centers",
+        "No Windows hosting"
+      ],
+      "confidence": 0.95
+    }
+  },
+  {
+    "slug": "box",
+    "name": "Box",
+    "tagline": "Cloud content management",
+    "short_description": "Box is a cloud content management platform that enables secure file sharing and collaboration for businesses.",
+    "website_url": "https://www.box.com",
+    "pricing_model_slug": "freemium",
+    "ai_features": {
+      "tldr": "Box offers secure cloud storage solutions.",
+      "pros": [
+        "Robust security features",
+        "User-friendly interface",
+        "Seamless collaboration tools"
+      ],
+      "cons": [
+        "Limited offline access",
+        "Higher pricing tiers",
+        "Complex admin settings"
+      ],
+      "pricing_model_type": "Paid Only",
+      "target_audience_size": "Enterprise",
+      "dealbreakers": [
+        "No free tier available"
+      ],
+      "hidden_costs": [
+        "Additional fees for extra storage"
+      ],
+      "migration_difficulty": "medium",
+      "best_for": [
+        "Large team collaboration",
+        "Document management"
+      ],
+      "not_for": [
+        "Small businesses",
+        "Casual users"
+      ],
+      "switching_reasons": [
+        "Need for better security",
+        "Enhanced collaboration features"
+      ],
+      "key_limitations": [
+        "Storage limits on lower plans",
+        "Limited customization options"
+      ],
+      "confidence": 0.95
+    }
+  },
+  {
+    "slug": "dropbox",
+    "name": "Dropbox",
+    "tagline": "File storage and sharing",
+    "short_description": "Dropbox is a file storage and sharing service that allows users to store files in the cloud and collaborate easily.",
+    "website_url": "https://www.dropbox.com",
+    "pricing_model_slug": "freemium",
+    "ai_features": {
+      "tldr": "Dropbox simplifies file sharing and collaboration.",
+      "pros": [
+        "User-friendly interface",
+        "Robust file syncing",
+        "Strong collaboration tools"
+      ],
+      "cons": [
+        "Limited free storage",
+        "Higher pricing tiers",
+        "Occasional sync issues"
+      ],
+      "pricing_model_type": "Freemium",
+      "target_audience_size": "Any",
+      "dealbreakers": [
+        "Limited offline access",
+        "Privacy concerns"
+      ],
+      "hidden_costs": [
+        "Additional storage fees",
+        "Advanced features require upgrade"
+      ],
+      "migration_difficulty": "medium",
+      "best_for": [
+        "Team collaboration",
+        "File backup solutions"
+      ],
+      "not_for": [
+        "Heavy data users",
+        "Users needing advanced security"
+      ],
+      "switching_reasons": [
+        "Better pricing options",
+        "More storage alternatives"
+      ],
+      "key_limitations": [
+        "Storage limits on free plan",
+        "Limited integration options"
+      ],
+      "confidence": 0.95
+    }
+  },
+  {
+    "slug": "zendesk",
+    "name": "Zendesk",
+    "tagline": "Customer service software",
+    "short_description": "Zendesk is a customer service platform that helps businesses manage support tickets and improve customer satisfaction.",
+    "website_url": "https://www.zendesk.com",
+    "pricing_model_slug": "paid-only",
+    "ai_features": {
+      "tldr": "Zendesk streamlines customer support efficiently.",
+      "pros": [
+        "Robust ticketing system",
+        "Customizable workflows",
+        "Multi-channel support"
+      ],
+      "cons": [
+        "Can be expensive",
+        "Steep learning curve",
+        "Limited offline access"
+      ],
+      "pricing_model_type": "Paid Only",
+      "target_audience_size": "Any",
+      "dealbreakers": [
+        "High cost for small teams",
+        "Complex setup process"
+      ],
+      "hidden_costs": [
+        "Add-ons increase total cost",
+        "Training may incur fees"
+      ],
+      "migration_difficulty": "medium",
+      "best_for": [
+        "Large customer support teams",
+        "Businesses needing multi-channel support"
+      ],
+      "not_for": [
+        "Small businesses on a budget",
+        "Teams needing simple solutions"
+      ],
+      "switching_reasons": [
+        "Need for better integration",
+        "Desire for lower costs"
+      ],
+      "key_limitations": [
+        "Limited customization options",
+        "Performance issues with large data"
+      ],
+      "confidence": 0.95
+    }
+  },
+  {
+    "slug": "linode",
+    "name": "Linode",
+    "tagline": "Cloud hosting solutions",
+    "short_description": "Linode provides cloud hosting solutions that offer scalable and high-performance virtual servers.",
+    "website_url": "https://www.linode.com",
+    "pricing_model_slug": "paid-only",
+    "ai_features": {
+      "tldr": "Linode offers powerful cloud hosting solutions.",
+      "pros": [
+        "Affordable pricing",
+        "Scalable resources",
+        "User-friendly interface"
+      ],
+      "cons": [
+        "Limited support options",
+        "No managed services",
+        "Basic documentation"
+      ],
+      "pricing_model_type": "Paid Only",
+      "target_audience_size": "Startup",
+      "dealbreakers": [
+        "No free tier available"
+      ],
+      "hidden_costs": [
+        "Data transfer fees apply"
+      ],
+      "migration_difficulty": "medium",
+      "best_for": [
+        "Web hosting",
+        "App development"
+      ],
+      "not_for": [
+        "Large enterprises",
+        "Non-technical users"
+      ],
+      "switching_reasons": [
+        "Better performance elsewhere",
+        "More features needed"
+      ],
+      "key_limitations": [
+        "Limited global data centers",
+        "No built-in backups"
+      ],
+      "confidence": 0.95
+    }
+  },
+  {
+    "slug": "ovh",
+    "name": "OVH",
+    "tagline": "Cloud computing services",
+    "short_description": "OVH offers a range of cloud computing services, including VPS, dedicated servers, and web hosting.",
+    "website_url": "https://www.ovh.com",
+    "pricing_model_slug": "paid-only",
+    "ai_features": {
+      "tldr": "OVH offers scalable cloud solutions.",
+      "pros": [
+        "Flexible pricing options",
+        "Robust infrastructure",
+        "Global data centers"
+      ],
+      "cons": [
+        "Complex setup process",
+        "Limited customer support",
+        "Steeper learning curve"
+      ],
+      "pricing_model_type": "Paid Only",
+      "target_audience_size": "Any",
+      "dealbreakers": [
+        "Not beginner-friendly",
+        "Requires technical expertise"
+      ],
+      "hidden_costs": [
+        "Data transfer fees",
+        "Additional storage costs"
+      ],
+      "migration_difficulty": "medium",
+      "best_for": [
+        "Cloud hosting",
+        "Website deployment"
+      ],
+      "not_for": [
+        "Small personal projects",
+        "Non-technical users"
+      ],
+      "switching_reasons": [
+        "Better support options",
+        "Simpler interfaces"
+      ],
+      "key_limitations": [
+        "Limited integrations",
+        "Variable performance"
+      ],
+      "confidence": 0.95
+    }
+  },
+  {
+    "slug": "inmotion-hosting",
+    "name": "InMotion Hosting",
+    "tagline": "Reliable web hosting",
+    "short_description": "InMotion Hosting provides reliable web hosting services with a focus on performance and customer support.",
+    "website_url": "https://www.inmotionhosting.com",
+    "pricing_model_slug": "paid-only",
+    "ai_features": {
+      "tldr": "InMotion Hosting offers reliable web hosting solutions.",
+      "pros": [
+        "Fast loading speeds",
+        "24/7 customer support",
+        "Free website migration"
+      ],
+      "cons": [
+        "Higher renewal rates",
+        "Limited storage options",
+        "No free domain after first year"
+      ],
+      "pricing_model_type": "Paid Only",
+      "target_audience_size": "Startup",
+      "dealbreakers": [
+        "No monthly billing option",
+        "Limited data center locations"
+      ],
+      "hidden_costs": [
+        "Extra fees for backups",
+        "Domain registration costs"
+      ],
+      "migration_difficulty": "medium",
+      "best_for": [
+        "Small business websites",
+        "E-commerce platforms"
+      ],
+      "not_for": [
+        "Large enterprise solutions",
+        "Advanced developers"
+      ],
+      "switching_reasons": [
+        "Better pricing elsewhere",
+        "More features needed"
+      ],
+      "key_limitations": [
+        "No Windows hosting options",
+        "Limited scalability"
+      ],
+      "confidence": 0.95
+    }
+  },
+  {
+    "slug": "hostinger",
+    "name": "Hostinger",
+    "tagline": "Affordable web hosting",
+    "short_description": "Hostinger offers affordable web hosting solutions with a user-friendly interface and excellent performance.",
+    "website_url": "https://www.hostinger.com",
+    "pricing_model_slug": "freemium",
+    "ai_features": {
+      "tldr": "Hostinger offers affordable web hosting solutions.",
+      "pros": [
+        "Low pricing plans available",
+        "User-friendly interface",
+        "24/7 customer support"
+      ],
+      "cons": [
+        "Limited advanced features",
+        "No free domain with basic plan",
+        "Performance varies with traffic"
+      ],
+      "pricing_model_type": "Paid Only",
+      "target_audience_size": "Startup",
+      "dealbreakers": [
+        "No free tier available",
+        "Limited storage on basic plans"
+      ],
+      "hidden_costs": [
+        "Renewal prices may increase",
+        "Add-ons can add up"
+      ],
+      "migration_difficulty": "medium",
+      "best_for": [
+        "Small business websites",
+        "Personal blogs"
+      ],
+      "not_for": [
+        "Large enterprise applications",
+        "High-traffic e-commerce sites"
+      ],
+      "switching_reasons": [
+        "Need for advanced features",
+        "Better performance options"
+      ],
+      "key_limitations": [
+        "Limited scalability options",
+        "Basic security features"
+      ],
+      "confidence": 0.95
+    }
+  },
+  {
+    "slug": "kixie",
+    "name": "Kixie",
+    "tagline": "Sales automation software",
+    "short_description": "Kixie is a sales automation platform that integrates with CRM systems to enhance sales productivity.",
+    "website_url": "https://www.kixie.com",
+    "pricing_model_slug": "paid-only",
+    "ai_features": {
+      "tldr": "Kixie enhances sales with smart calling.",
+      "pros": [
+        "AI-powered call tracking",
+        "Seamless CRM integration",
+        "Robust analytics dashboard"
+      ],
+      "cons": [
+        "Limited customization options",
+        "Higher pricing tiers",
+        "Steep learning curve"
+      ],
+      "pricing_model_type": "Paid Only",
+      "target_audience_size": "Startup",
+      "dealbreakers": [
+        "No free tier available"
+      ],
+      "hidden_costs": [
+        "Additional fees for premium features"
+      ],
+      "migration_difficulty": "medium",
+      "best_for": [
+        "Sales teams",
+        "Remote workforce"
+      ],
+      "not_for": [
+        "Small businesses",
+        "Non-sales teams"
+      ],
+      "switching_reasons": [
+        "Better features elsewhere",
+        "Lower costs available"
+      ],
+      "key_limitations": [
+        "Limited international support",
+        "Dependence on internet connectivity"
+      ],
+      "confidence": 0.95
+    }
+  },
+  {
+    "slug": "keap",
+    "name": "Keap",
+    "tagline": "CRM and marketing automation",
+    "short_description": "Keap is a CRM and marketing automation platform designed for small businesses to manage customer relationships.",
+    "website_url": "https://www.keap.com",
+    "pricing_model_slug": "paid-only",
+    "ai_features": {
+      "tldr": "Keap streamlines small business automation.",
+      "pros": [
+        "User-friendly interface",
+        "Robust CRM features",
+        "Effective marketing automation"
+      ],
+      "cons": [
+        "Limited customization options",
+        "Higher pricing tiers",
+        "Steep learning curve for advanced features"
+      ],
+      "pricing_model_type": "Paid Only",
+      "target_audience_size": "Startup",
+      "dealbreakers": [
+        "No free tier available"
+      ],
+      "hidden_costs": [
+        "Add-ons can increase costs"
+      ],
+      "migration_difficulty": "medium",
+      "best_for": [
+        "Small business automation",
+        "Lead management"
+      ],
+      "not_for": [
+        "Large enterprises",
+        "Complex project management"
+      ],
+      "switching_reasons": [
+        "Better pricing options",
+        "More customization flexibility"
+      ],
+      "key_limitations": [
+        "Limited integrations",
+        "Basic reporting features"
+      ],
+      "confidence": 0.95
+    }
+  },
+  {
+    "slug": "copper",
+    "name": "Copper",
+    "tagline": "CRM for Google Workspace",
+    "short_description": "Copper is a CRM built for Google Workspace that helps teams manage customer relationships seamlessly.",
+    "website_url": "https://www.copper.com",
+    "pricing_model_slug": "paid-only",
+    "ai_features": {
+      "tldr": "Copper integrates seamlessly with Google Workspace.",
+      "pros": [
+        "Strong Google integration",
+        "Customizable workflows",
+        "User-friendly interface"
+      ],
+      "cons": [
+        "Limited offline capabilities",
+        "Higher pricing tiers",
+        "Learning curve for new users"
+      ],
+      "pricing_model_type": "Paid Only",
+      "target_audience_size": "Startup",
+      "dealbreakers": [
+        "Not suitable for non-Google users"
+      ],
+      "hidden_costs": [
+        "Add-ons may increase costs"
+      ],
+      "migration_difficulty": "medium",
+      "best_for": [
+        "Sales teams",
+        "Project management"
+      ],
+      "not_for": [
+        "Small teams on a budget",
+        "Non-Google Workspace users"
+      ],
+      "switching_reasons": [
+        "Need for better CRM integration",
+        "Desire for enhanced collaboration tools"
+      ],
+      "key_limitations": [
+        "Limited third-party integrations",
+        "Performance issues with large datasets"
+      ],
+      "confidence": 0.95
+    }
+  },
+  {
+    "slug": "really-simple-systems",
+    "name": "Really Simple Systems",
+    "tagline": "Easy-to-use CRM",
+    "short_description": "Really Simple Systems is a user-friendly CRM designed for small businesses to manage customer interactions.",
+    "website_url": "https://www.reallysimplesystems.com",
+    "pricing_model_slug": "freemium",
+    "ai_features": {
+      "tldr": "Streamlined CRM for small businesses.",
+      "pros": [
+        "User-friendly interface",
+        "Affordable pricing plans",
+        "Good customer support"
+      ],
+      "cons": [
+        "Limited advanced features",
+        "Customization options lacking",
+        "No mobile app"
+      ],
+      "pricing_model_type": "Paid Only",
+      "target_audience_size": "Startup",
+      "dealbreakers": [
+        "No free tier available",
+        "Limited integrations"
+      ],
+      "hidden_costs": [
+        "Additional fees for extra users",
+        "Paid add-ons for features"
+      ],
+      "migration_difficulty": "medium",
+      "best_for": [
+        "Small business CRM needs",
+        "Sales pipeline management"
+      ],
+      "not_for": [
+        "Large enterprises",
+        "Complex project management"
+      ],
+      "switching_reasons": [
+        "Need for advanced features",
+        "Better integration options"
+      ],
+      "key_limitations": [
+        "Lacks robust reporting tools",
+        "Limited third-party integrations"
+      ],
+      "confidence": 0.95
+    }
+  },
+  {
+    "slug": "basecamp",
+    "name": "Basecamp",
+    "tagline": "Project management made simple",
+    "short_description": "Basecamp is a project management tool that simplifies team collaboration and project tracking.",
+    "website_url": "https://basecamp.com",
+    "pricing_model_slug": "paid-only",
+    "ai_features": {
+      "tldr": "Basecamp simplifies team collaboration.",
+      "pros": [
+        "User-friendly interface",
+        "Strong project management tools",
+        "Effective communication features"
+      ],
+      "cons": [
+        "Limited customization options",
+        "No time tracking",
+        "Higher cost for larger teams"
+      ],
+      "pricing_model_type": "Paid Only",
+      "target_audience_size": "Startup",
+      "dealbreakers": [
+        "Not suitable for large enterprises"
+      ],
+      "hidden_costs": [
+        "Additional fees for extra users"
+      ],
+      "migration_difficulty": "medium",
+      "best_for": [
+        "Remote team collaboration",
+        "Project management"
+      ],
+      "not_for": [
+        "Freelancers needing flexibility",
+        "Companies requiring extensive integrations"
+      ],
+      "switching_reasons": [
+        "Better features elsewhere",
+        "Lower pricing options available"
+      ],
+      "key_limitations": [
+        "Limited third-party integrations",
+        "No built-in time tracking"
+      ],
+      "confidence": 0.95
+    }
+  },
+  {
+    "slug": "trello",
+    "name": "Trello",
+    "tagline": "Visual project management",
+    "short_description": "Trello is a visual project management tool that uses boards and cards to organize tasks and projects.",
+    "website_url": "https://trello.com",
+    "pricing_model_slug": "freemium",
+    "ai_features": {
+      "tldr": "Trello simplifies project management visually.",
+      "pros": [
+        "User-friendly interface",
+        "Flexible board system",
+        "Integrates with many tools"
+      ],
+      "cons": [
+        "Limited features in free plan",
+        "Can become cluttered",
+        "Not ideal for complex projects"
+      ],
+      "pricing_model_type": "Freemium",
+      "target_audience_size": "Any",
+      "dealbreakers": [
+        "Limited automation in free version"
+      ],
+      "hidden_costs": [
+        "Power-ups may incur fees"
+      ],
+      "migration_difficulty": "easy",
+      "best_for": [
+        "Team collaboration",
+        "Task tracking"
+      ],
+      "not_for": [
+        "Large enterprise projects",
+        "Detailed reporting needs"
+      ],
+      "switching_reasons": [
+        "Need for advanced features",
+        "Prefer different UI"
+      ],
+      "key_limitations": [
+        "Limited offline access",
+        "No time tracking built-in"
+      ],
+      "confidence": 0.95
+    }
+  },
+  {
+    "slug": "google-meet",
+    "name": "Google Meet",
+    "tagline": "Video conferencing tool",
+    "short_description": "Google Meet is a video conferencing tool that allows users to host and join virtual meetings easily.",
+    "website_url": "https://meet.google.com",
+    "pricing_model_slug": "freemium",
+    "ai_features": {
+      "tldr": "Seamless video conferencing for teams.",
+      "pros": [
+        "High-quality video calls",
+        "Easy calendar integration",
+        "User-friendly interface"
+      ],
+      "cons": [
+        "Limited features on free plan",
+        "Requires stable internet",
+        "Occasional connectivity issues"
+      ],
+      "pricing_model_type": "Freemium",
+      "target_audience_size": "Any",
+      "dealbreakers": [
+        "No offline access",
+        "Limited recording options"
+      ],
+      "hidden_costs": [
+        "Storage fees for recordings",
+        "Add-ons for advanced features"
+      ],
+      "migration_difficulty": "easy",
+      "best_for": [
+        "Remote team meetings",
+        "Virtual events"
+      ],
+      "not_for": [
+        "In-person collaboration",
+        "Low-bandwidth environments"
+      ],
+      "switching_reasons": [
+        "Better features elsewhere",
+        "Cost-effective alternatives"
+      ],
+      "key_limitations": [
+        "No breakout rooms in free plan",
+        "Limited participant capacity"
+      ],
+      "confidence": 0.95
+    }
+  },
+  {
+    "slug": "one-drive",
+    "name": "OneDrive",
+    "tagline": "Cloud storage solution",
+    "short_description": "OneDrive is a cloud storage service that allows users to store files and access them from anywhere.",
+    "website_url": "https://onedrive.live.com",
+    "pricing_model_slug": "freemium",
+    "ai_features": {
+      "tldr": "OneDrive offers seamless cloud storage integration.",
+      "pros": [
+        "Strong Microsoft ecosystem integration",
+        "Generous free storage options",
+        "User-friendly interface"
+      ],
+      "cons": [
+        "Limited offline access features",
+        "Sync issues reported occasionally",
+        "Less third-party app support"
+      ],
+      "pricing_model_type": "Freemium",
+      "target_audience_size": "Any",
+      "dealbreakers": [
+        "Requires Microsoft account",
+        "Limited advanced features"
+      ],
+      "hidden_costs": [
+        "Additional storage incurs fees",
+        "Premium features require subscription"
+      ],
+      "migration_difficulty": "easy",
+      "best_for": [
+        "Personal file storage",
+        "Team collaboration on documents"
+      ],
+      "not_for": [
+        "Users needing advanced features",
+        "Those avoiding Microsoft products"
+      ],
+      "switching_reasons": [
+        "Need for more storage options",
+        "Desire for better third-party support"
+      ],
+      "key_limitations": [
+        "File size upload limits",
+        "Limited customization options"
+      ],
+      "confidence": 0.95
+    }
+  },
+  {
+    "slug": "vultr",
+    "name": "Vultr",
+    "tagline": "Cloud infrastructure provider",
+    "short_description": "Vultr provides cloud infrastructure solutions with high-performance virtual servers and global data centers.",
+    "website_url": "https://www.vultr.com",
+    "pricing_model_slug": "paid-only",
+    "ai_features": {
+      "tldr": "Vultr offers scalable cloud solutions.",
+      "pros": [
+        "Flexible pricing options",
+        "Global data centers",
+        "Easy to deploy"
+      ],
+      "cons": [
+        "Limited support options",
+        "Complex for beginners",
+        "No managed services"
+      ],
+      "pricing_model_type": "Paid Only",
+      "target_audience_size": "Startup",
+      "dealbreakers": [
+        "No free tier available"
+      ],
+      "hidden_costs": [
+        "Data transfer fees apply"
+      ],
+      "migration_difficulty": "medium",
+      "best_for": [
+        "Web hosting",
+        "App development"
+      ],
+      "not_for": [
+        "Small personal projects",
+        "Non-technical users"
+      ],
+      "switching_reasons": [
+        "Better performance elsewhere",
+        "More support needed"
+      ],
+      "key_limitations": [
+        "No built-in backups",
+        "Limited customer support"
+      ],
+      "confidence": 0.95
+    }
+  },
+  {
+    "slug": "a2-hosting",
+    "name": "A2 Hosting",
+    "tagline": "High-performance web hosting",
+    "short_description": "A2 Hosting offers high-performance web hosting solutions with a focus on speed and reliability.",
+    "website_url": "https://www.a2hosting.com",
+    "pricing_model_slug": "paid-only",
+    "ai_features": {
+      "tldr": "A2 Hosting offers reliable, fast hosting solutions.",
+      "pros": [
+        "High uptime guarantee",
+        "24/7 customer support",
+        "User-friendly interface"
+      ],
+      "cons": [
+        "Limited advanced features",
+        "Higher renewal rates",
+        "No free tier"
+      ],
+      "pricing_model_type": "Paid Only",
+      "target_audience_size": "Startup",
+      "dealbreakers": [
+        "No monthly billing option"
+      ],
+      "hidden_costs": [
+        "Domain registration fees apply"
+      ],
+      "migration_difficulty": "medium",
+      "best_for": [
+        "Small business websites",
+        "E-commerce platforms"
+      ],
+      "not_for": [
+        "Large enterprises",
+        "High-traffic sites"
+      ],
+      "switching_reasons": [
+        "Better performance options",
+        "More flexible pricing"
+      ],
+      "key_limitations": [
+        "Limited data centers",
+        "No Windows hosting"
+      ],
+      "confidence": 0.95
+    }
+  },
+  {
+    "slug": "hatchbuck",
+    "name": "Hatchbuck",
+    "tagline": "CRM and marketing software",
+    "short_description": "Hatchbuck is a CRM and marketing automation software designed for small businesses to manage customer relationships.",
+    "website_url": "https://www.hatchbuck.com",
+    "pricing_model_slug": "paid-only",
+    "ai_features": {
+      "tldr": "Hatchbuck streamlines marketing automation effortlessly.",
+      "pros": [
+        "User-friendly interface",
+        "Robust CRM features",
+        "Effective email marketing"
+      ],
+      "cons": [
+        "Limited integrations",
+        "Higher pricing tiers",
+        "Steep learning curve"
+      ],
+      "pricing_model_type": "Paid Only",
+      "target_audience_size": "Startup",
+      "dealbreakers": [
+        "No free tier available"
+      ],
+      "hidden_costs": [
+        "Additional fees for premium features"
+      ],
+      "migration_difficulty": "medium",
+      "best_for": [
+        "Small business marketing",
+        "Lead management"
+      ],
+      "not_for": [
+        "Large enterprises",
+        "Complex marketing needs"
+      ],
+      "switching_reasons": [
+        "Better pricing options",
+        "More integrations available"
+      ],
+      "key_limitations": [
+        "Limited customization options",
+        "Basic reporting features"
+      ],
+      "confidence": 0.95
+    }
+  },
+  {
+    "slug": "interserver",
+    "name": "InterServer",
+    "tagline": "Affordable web hosting",
+    "short_description": "InterServer provides affordable web hosting solutions with a focus on customer support and reliability.",
+    "website_url": "https://www.interserver.net",
+    "pricing_model_slug": "paid-only",
+    "ai_features": {
+      "tldr": "InterServer offers reliable hosting solutions.",
+      "pros": [
+        "Affordable pricing plans",
+        "24/7 customer support",
+        "Scalable resources"
+      ],
+      "cons": [
+        "Limited advanced features",
+        "No free tier",
+        "Basic UI design"
+      ],
+      "pricing_model_type": "Paid Only",
+      "target_audience_size": "Startup",
+      "dealbreakers": [
+        "No free trial available"
+      ],
+      "hidden_costs": [
+        "Renewal rates may increase"
+      ],
+      "migration_difficulty": "medium",
+      "best_for": [
+        "Web hosting",
+        "Small business websites"
+      ],
+      "not_for": [
+        "Large enterprises",
+        "High-traffic sites"
+      ],
+      "switching_reasons": [
+        "Better performance options",
+        "More features elsewhere"
+      ],
+      "key_limitations": [
+        "Limited data centers",
+        "Basic security features"
+      ],
+      "confidence": 0.95
+    }
+  },
+  {
+    "slug": "hostgator",
+    "name": "HostGator",
+    "tagline": "Web hosting services",
+    "short_description": "HostGator offers a variety of web hosting services, including shared, VPS, and dedicated hosting.",
+    "website_url": "https://www.hostgator.com",
+    "pricing_model_slug": "paid-only",
+    "ai_features": {
+      "tldr": "HostGator offers reliable web hosting solutions.",
+      "pros": [
+        "Affordable pricing plans",
+        "User-friendly interface",
+        "24/7 customer support"
+      ],
+      "cons": [
+        "Limited storage options",
+        "Higher renewal rates",
+        "Basic features only"
+      ],
+      "pricing_model_type": "Paid Only",
+      "target_audience_size": "Startup",
+      "dealbreakers": [
+        "No free trial available"
+      ],
+      "hidden_costs": [
+        "Renewal prices may increase"
+      ],
+      "migration_difficulty": "medium",
+      "best_for": [
+        "Small business websites",
+        "Personal blogs"
+      ],
+      "not_for": [
+        "Large enterprise hosting",
+        "Advanced developers"
+      ],
+      "switching_reasons": [
+        "Better performance elsewhere",
+        "More features needed"
+      ],
+      "key_limitations": [
+        "Limited scalability",
+        "Basic security features"
+      ],
+      "confidence": 0.95
+    }
+  },
+  {
+    "slug": "justhost",
+    "name": "JustHost",
+    "tagline": "Reliable web hosting",
+    "short_description": "JustHost provides reliable web hosting services with a focus on customer satisfaction and support.",
+    "website_url": "https://www.justhost.com",
+    "pricing_model_slug": "paid-only",
+    "ai_features": {
+      "tldr": "JustHost offers reliable web hosting solutions.",
+      "pros": [
+        "Affordable hosting plans",
+        "24/7 customer support",
+        "User-friendly interface"
+      ],
+      "cons": [
+        "Limited storage options",
+        "No free domain renewal",
+        "Higher renewal rates"
+      ],
+      "pricing_model_type": "Paid Only",
+      "target_audience_size": "Startup",
+      "dealbreakers": [
+        "No free trial available",
+        "Limited advanced features"
+      ],
+      "hidden_costs": [
+        "Additional fees for backups",
+        "Migration costs may apply"
+      ],
+      "migration_difficulty": "medium",
+      "best_for": [
+        "Small business websites",
+        "Personal blogs"
+      ],
+      "not_for": [
+        "Large enterprises",
+        "High-traffic e-commerce sites"
+      ],
+      "switching_reasons": [
+        "Need for better performance",
+        "Desire for more features"
+      ],
+      "key_limitations": [
+        "Limited scalability options",
+        "Basic security features"
+      ],
+      "confidence": 0.95
+    }
+  },
+  {
+    "slug": "microsoft-project",
+    "name": "Microsoft Project",
+    "tagline": "Project management software",
+    "short_description": "Microsoft Project is a project management software that helps teams plan, execute, and manage projects effectively.",
+    "website_url": "https://www.microsoft.com/project",
+    "pricing_model_slug": "paid-only",
+    "ai_features": {
+      "tldr": "Streamline project management effortlessly.",
+      "pros": [
+        "Robust scheduling features",
+        "Integration with Microsoft tools",
+        "User-friendly interface"
+      ],
+      "cons": [
+        "High learning curve",
+        "Limited offline access",
+        "Expensive for small teams"
+      ],
+      "pricing_model_type": "Paid Only",
+      "target_audience_size": "Enterprise",
+      "dealbreakers": [
+        "No free tier available",
+        "Complex pricing structure"
+      ],
+      "hidden_costs": [
+        "Add-ons may increase costs",
+        "Training sessions can be pricey"
+      ],
+      "migration_difficulty": "medium",
+      "best_for": [
+        "Large project management teams",
+        "Complex project tracking"
+      ],
+      "not_for": [
+        "Small businesses",
+        "Simple project needs"
+      ],
+      "switching_reasons": [
+        "Need for better collaboration tools",
+        "Desire for lower costs"
+      ],
+      "key_limitations": [
+        "Limited customization options",
+        "Requires Microsoft ecosystem"
+      ],
+      "confidence": 0.95
+    }
+  }
+]

@@ -1,0 +1,128 @@
+[
+  {
+    "software_slug": "chatgpt",
+    "alternative_slug": "claude",
+    "similarity_score": 0.92,
+    "reason": "Both are AI-powered conversational agents.",
+    "core_difference": "ChatGPT focuses on general conversation, while Claude emphasizes productivity."
+  },
+  {
+    "software_slug": "github-copilot",
+    "alternative_slug": "cursor",
+    "similarity_score": 0.88,
+    "reason": "Both provide AI assistance for coding.",
+    "core_difference": "GitHub Copilot integrates directly with GitHub, while Cursor offers a broader coding environment."
+  },
+  {
+    "software_slug": "midjourney",
+    "alternative_slug": "gemini",
+    "similarity_score": 0.85,
+    "reason": "Both are AI tools for creative tasks.",
+    "core_difference": "Midjourney specializes in art generation, while Gemini covers a wider range of creative applications."
+  },
+  {
+    "software_slug": "notion",
+    "alternative_slug": "wrike",
+    "similarity_score": 0.8,
+    "reason": "Both are used for project and task management.",
+    "core_difference": "Notion is an all-in-one workspace, while Wrike focuses specifically on project management."
+  },
+  {
+    "software_slug": "hubspot",
+    "alternative_slug": "zoho-crm",
+    "similarity_score": 0.87,
+    "reason": "Both are CRM platforms for managing customer relationships.",
+    "core_difference": "HubSpot is more focused on inbound marketing, while Zoho CRM offers a broader suite of business tools."
+  },
+  {
+    "software_slug": "salesflare",
+    "alternative_slug": "salesmate",
+    "similarity_score": 0.9,
+    "reason": "Both are CRM solutions aimed at sales teams.",
+    "core_difference": "Salesflare emphasizes automation, while Salesmate focuses on sales pipeline management."
+  },
+  {
+    "software_slug": "smartsheet",
+    "alternative_slug": "monday-com",
+    "similarity_score": 0.82,
+    "reason": "Both are work management platforms.",
+    "core_difference": "Smartsheet is spreadsheet-based, while Monday.com uses a more visual approach."
+  },
+  {
+    "software_slug": "dropbox",
+    "alternative_slug": "box",
+    "similarity_score": 0.85,
+    "reason": "Both provide cloud content management solutions.",
+    "core_difference": "Dropbox focuses on file sharing, while Box emphasizes enterprise-level content management."
+  },
+  {
+    "software_slug": "zendesk",
+    "alternative_slug": "hubspot",
+    "similarity_score": 0.8,
+    "reason": "Both offer customer service and support solutions.",
+    "core_difference": "Zendesk specializes in support tickets, while HubSpot integrates marketing and sales."
+  },
+  {
+    "software_slug": "google-meet",
+    "alternative_slug": "slack",
+    "similarity_score": 0.78,
+    "reason": "Both facilitate team communication.",
+    "core_difference": "Google Meet focuses on video conferencing, while Slack is primarily a messaging platform."
+  },
+  {
+    "software_slug": "microsoft-dynamics-365",
+    "alternative_slug": "keap",
+    "similarity_score": 0.75,
+    "reason": "Both are CRM and business management tools.",
+    "core_difference": "Microsoft Dynamics 365 is a comprehensive suite, while Keap targets small businesses."
+  },
+  {
+    "software_slug": "basecamp",
+    "alternative_slug": "trello",
+    "similarity_score": 0.8,
+    "reason": "Both are project management tools.",
+    "core_difference": "Basecamp offers a more structured approach, while Trello uses a card-based system."
+  },
+  {
+    "software_slug": "todoist",
+    "alternative_slug": "monday-com",
+    "similarity_score": 0.77,
+    "reason": "Both assist with task management.",
+    "core_difference": "Todoist is focused on personal task lists, while Monday.com is more team-oriented."
+  },
+  {
+    "software_slug": "dreamhost",
+    "alternative_slug": "hostgator",
+    "similarity_score": 0.85,
+    "reason": "Both provide web hosting services.",
+    "core_difference": "DreamHost emphasizes reliability, while HostGator focuses on affordability."
+  },
+  {
+    "software_slug": "linode",
+    "alternative_slug": "vultr",
+    "similarity_score": 0.88,
+    "reason": "Both are cloud infrastructure providers.",
+    "core_difference": "Linode is known for simplicity, while Vultr offers a wider range of server locations."
+  },
+  {
+    "software_slug": "inmotion-hosting",
+    "alternative_slug": "hostinger",
+    "similarity_score": 0.8,
+    "reason": "Both offer affordable web hosting solutions.",
+    "core_difference": "InMotion Hosting focuses on performance, while Hostinger emphasizes low pricing."
+  },
+  {
+    "software_slug": "a2-hosting",
+    "alternative_slug": "dreamhost",
+    "similarity_score": 0.82,
+    "reason": "Both are known for web hosting services.",
+    "core_difference": "A2 Hosting is optimized for speed, while DreamHost focuses on reliability."
+  },
+  {
+    "software_slug": "microsoft-project",
+    "alternative_slug": "wrike",
+    "similarity_score": 0.79,
+    "reason": "Both are project management software.",
+    "core_difference": "Microsoft Project is more traditional, while Wrike offers modern collaboration features."
+  }
+]

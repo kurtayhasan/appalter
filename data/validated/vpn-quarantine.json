@@ -1,0 +1,12 @@
+{
+  "softwares": [],
+  "relations": [
+    {
+      "software_slug": "fastestvpn",
+      "alternative_slug": "keepolid-vpn-unlimited",
+      "similarity_score": 0.77,
+      "reason": "Both focus on speed and performance.",
+      "core_difference": "FastestVPN is more budget-friendly than KeepSolid."
+    }
+  ]
+}

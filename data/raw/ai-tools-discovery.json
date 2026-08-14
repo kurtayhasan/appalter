@@ -1,0 +1,166 @@
+[
+  {
+    "slug": "chatgpt",
+    "name": "ChatGPT"
+  },
+  {
+    "slug": "claude",
+    "name": "Claude"
+  },
+  {
+    "slug": "cursor",
+    "name": "Cursor"
+  },
+  {
+    "slug": "github-copilot",
+    "name": "GitHub Copilot"
+  },
+  {
+    "slug": "gemini",
+    "name": "Gemini"
+  },
+  {
+    "slug": "notion",
+    "name": "Notion"
+  },
+  {
+    "slug": "midjourney",
+    "name": "Midjourney"
+  },
+  {
+    "slug": "ahrefs",
+    "name": "Ahrefs"
+  },
+  {
+    "slug": "todoist",
+    "name": "Todoist"
+  },
+  {
+    "slug": "hubspot",
+    "name": "HubSpot"
+  },
+  {
+    "slug": "slack",
+    "name": "Slack"
+  },
+  {
+    "slug": "zoho-crm",
+    "name": "Zoho CRM"
+  },
+  {
+    "slug": "microsoft-dynamics-365",
+    "name": "Microsoft Dynamics 365"
+  },
+  {
+    "slug": "salesflare",
+    "name": "Salesflare"
+  },
+  {
+    "slug": "salesmate",
+    "name": "Salesmate"
+  },
+  {
+    "slug": "wrike",
+    "name": "Wrike"
+  },
+  {
+    "slug": "smartsheet",
+    "name": "Smartsheet"
+  },
+  {
+    "slug": "monday-com",
+    "name": "Monday.com"
+  },
+  {
+    "slug": "dreamhost",
+    "name": "DreamHost"
+  },
+  {
+    "slug": "box",
+    "name": "Box"
+  },
+  {
+    "slug": "dropbox",
+    "name": "Dropbox"
+  },
+  {
+    "slug": "zendesk",
+    "name": "Zendesk"
+  },
+  {
+    "slug": "linode",
+    "name": "Linode"
+  },
+  {
+    "slug": "ovh",
+    "name": "OVH"
+  },
+  {
+    "slug": "inmotion-hosting",
+    "name": "InMotion Hosting"
+  },
+  {
+    "slug": "hostinger",
+    "name": "Hostinger"
+  },
+  {
+    "slug": "kixie",
+    "name": "Kixie"
+  },
+  {
+    "slug": "keap",
+    "name": "Keap"
+  },
+  {
+    "slug": "copper",
+    "name": "Copper"
+  },
+  {
+    "slug": "really-simple-systems",
+    "name": "Really Simple Systems"
+  },
+  {
+    "slug": "basecamp",
+    "name": "Basecamp"
+  },
+  {
+    "slug": "trello",
+    "name": "Trello"
+  },
+  {
+    "slug": "google-meet",
+    "name": "Google Meet"
+  },
+  {
+    "slug": "one-drive",
+    "name": "OneDrive"
+  },
+  {
+    "slug": "vultr",
+    "name": "Vultr"
+  },
+  {
+    "slug": "a2-hosting",
+    "name": "A2 Hosting"
+  },
+  {
+    "slug": "hatchbuck",
+    "name": "Hatchbuck"
+  },
+  {
+    "slug": "interserver",
+    "name": "InterServer"
+  },
+  {
+    "slug": "hostgator",
+    "name": "HostGator"
+  },
+  {
+    "slug": "justhost",
+    "name": "JustHost"
+  },
+  {
+    "slug": "microsoft-project",
+    "name": "Microsoft Project"
+  }
+]

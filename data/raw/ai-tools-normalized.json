@@ -1,0 +1,330 @@
+[
+  {
+    "slug": "chatgpt",
+    "name": "ChatGPT",
+    "tagline": "AI-powered conversational agent",
+    "short_description": "ChatGPT is an AI language model designed to engage in human-like conversations and assist with various tasks.",
+    "website_url": "https://www.openai.com/chatgpt",
+    "pricing_model_slug": "freemium"
+  },
+  {
+    "slug": "claude",
+    "name": "Claude",
+    "tagline": "AI assistant for productivity",
+    "short_description": "Claude is an AI assistant that helps users enhance productivity through intelligent conversation and task management.",
+    "website_url": "https://www.anthropic.com/claude",
+    "pricing_model_slug": "freemium"
+  },
+  {
+    "slug": "cursor",
+    "name": "Cursor",
+    "tagline": "Code with AI assistance",
+    "short_description": "Cursor is an AI-powered coding assistant that helps developers write code more efficiently and accurately.",
+    "website_url": "https://cursor.so",
+    "pricing_model_slug": "freemium"
+  },
+  {
+    "slug": "github-copilot",
+    "name": "GitHub Copilot",
+    "tagline": "AI pair programmer",
+    "short_description": "GitHub Copilot is an AI tool that assists developers by suggesting code snippets and functions as they write.",
+    "website_url": "https://github.com/features/copilot",
+    "pricing_model_slug": "paid-only"
+  },
+  {
+    "slug": "gemini",
+    "name": "Gemini",
+    "tagline": "AI for creative tasks",
+    "short_description": "Gemini is an AI platform designed to assist with creative tasks, including writing and design.",
+    "website_url": "https://www.gemini.com",
+    "pricing_model_slug": "freemium"
+  },
+  {
+    "slug": "notion",
+    "name": "Notion",
+    "tagline": "All-in-one workspace",
+    "short_description": "Notion is a versatile workspace that combines notes, tasks, databases, and collaboration tools in one platform.",
+    "website_url": "https://www.notion.so",
+    "pricing_model_slug": "freemium"
+  },
+  {
+    "slug": "midjourney",
+    "name": "Midjourney",
+    "tagline": "AI art generation",
+    "short_description": "Midjourney is an AI tool that generates stunning artwork based on user prompts and preferences.",
+    "website_url": "https://www.midjourney.com",
+    "pricing_model_slug": "paid-only"
+  },
+  {
+    "slug": "ahrefs",
+    "name": "Ahrefs",
+    "tagline": "SEO toolset for growth",
+    "short_description": "Ahrefs is a comprehensive SEO toolset that helps users improve their website's search engine rankings and visibility.",
+    "website_url": "https://ahrefs.com",
+    "pricing_model_slug": "paid-only"
+  },
+  {
+    "slug": "todoist",
+    "name": "Todoist",
+    "tagline": "Task management made easy",
+    "short_description": "Todoist is a task management app that helps users organize their tasks and projects efficiently.",
+    "website_url": "https://todoist.com",
+    "pricing_model_slug": "freemium"
+  },
+  {
+    "slug": "hubspot",
+    "name": "HubSpot",
+    "tagline": "Inbound marketing platform",
+    "short_description": "HubSpot is an all-in-one inbound marketing, sales, and service platform designed to grow businesses.",
+    "website_url": "https://www.hubspot.com",
+    "pricing_model_slug": "freemium"
+  },
+  {
+    "slug": "slack",
+    "name": "Slack",
+    "tagline": "Team communication tool",
+    "short_description": "Slack is a collaboration hub that connects teams through messaging, file sharing, and integrations.",
+    "website_url": "https://slack.com",
+    "pricing_model_slug": "freemium"
+  },
+  {
+    "slug": "zoho-crm",
+    "name": "Zoho CRM",
+    "tagline": "Customer relationship management",
+    "short_description": "Zoho CRM is a cloud-based software that helps businesses manage their customer relationships and sales processes.",
+    "website_url": "https://www.zoho.com/crm",
+    "pricing_model_slug": "freemium"
+  },
+  {
+    "slug": "microsoft-dynamics-365",
+    "name": "Microsoft Dynamics 365",
+    "tagline": "Business applications suite",
+    "short_description": "Microsoft Dynamics 365 is a suite of intelligent business applications that help organizations manage their operations.",
+    "website_url": "https://dynamics.microsoft.com",
+    "pricing_model_slug": "paid-only"
+  },
+  {
+    "slug": "salesflare",
+    "name": "Salesflare",
+    "tagline": "Smart CRM for small businesses",
+    "short_description": "Salesflare is a CRM designed for small businesses that automates data entry and helps manage customer relationships.",
+    "website_url": "https://salesflare.com",
+    "pricing_model_slug": "paid-only"
+  },
+  {
+    "slug": "salesmate",
+    "name": "Salesmate",
+    "tagline": "Sales CRM software",
+    "short_description": "Salesmate is a sales CRM that helps teams manage leads, deals, and customer relationships effectively.",
+    "website_url": "https://www.salesmate.io",
+    "pricing_model_slug": "paid-only"
+  },
+  {
+    "slug": "wrike",
+    "name": "Wrike",
+    "tagline": "Project management software",
+    "short_description": "Wrike is a collaborative project management tool that helps teams plan, execute, and track projects efficiently.",
+    "website_url": "https://www.wrike.com",
+    "pricing_model_slug": "freemium"
+  },
+  {
+    "slug": "smartsheet",
+    "name": "Smartsheet",
+    "tagline": "Work management platform",
+    "short_description": "Smartsheet is a work management platform that enables teams to collaborate and manage projects in real-time.",
+    "website_url": "https://www.smartsheet.com",
+    "pricing_model_slug": "paid-only"
+  },
+  {
+    "slug": "monday-com",
+    "name": "Monday.com",
+    "tagline": "Work operating system",
+    "short_description": "Monday.com is a work operating system that allows teams to manage projects and workflows in a visual way.",
+    "website_url": "https://monday.com",
+    "pricing_model_slug": "freemium"
+  },
+  {
+    "slug": "dreamhost",
+    "name": "DreamHost",
+    "tagline": "Web hosting services",
+    "short_description": "DreamHost provides reliable web hosting services, including shared, VPS, and dedicated hosting solutions.",
+    "website_url": "https://www.dreamhost.com",
+    "pricing_model_slug": "paid-only"
+  },
+  {
+    "slug": "box",
+    "name": "Box",
+    "tagline": "Cloud content management",
+    "short_description": "Box is a cloud content management platform that enables secure file sharing and collaboration for businesses.",
+    "website_url": "https://www.box.com",
+    "pricing_model_slug": "freemium"
+  },
+  {
+    "slug": "dropbox",
+    "name": "Dropbox",
+    "tagline": "File storage and sharing",
+    "short_description": "Dropbox is a file storage and sharing service that allows users to store files in the cloud and collaborate easily.",
+    "website_url": "https://www.dropbox.com",
+    "pricing_model_slug": "freemium"
+  },
+  {
+    "slug": "zendesk",
+    "name": "Zendesk",
+    "tagline": "Customer service software",
+    "short_description": "Zendesk is a customer service platform that helps businesses manage support tickets and improve customer satisfaction.",
+    "website_url": "https://www.zendesk.com",
+    "pricing_model_slug": "paid-only"
+  },
+  {
+    "slug": "linode",
+    "name": "Linode",
+    "tagline": "Cloud hosting solutions",
+    "short_description": "Linode provides cloud hosting solutions that offer scalable and high-performance virtual servers.",
+    "website_url": "https://www.linode.com",
+    "pricing_model_slug": "paid-only"
+  },
+  {
+    "slug": "ovh",
+    "name": "OVH",
+    "tagline": "Cloud computing services",
+    "short_description": "OVH offers a range of cloud computing services, including VPS, dedicated servers, and web hosting.",
+    "website_url": "https://www.ovh.com",
+    "pricing_model_slug": "paid-only"
+  },
+  {
+    "slug": "inmotion-hosting",
+    "name": "InMotion Hosting",
+    "tagline": "Reliable web hosting",
+    "short_description": "InMotion Hosting provides reliable web hosting services with a focus on performance and customer support.",
+    "website_url": "https://www.inmotionhosting.com",
+    "pricing_model_slug": "paid-only"
+  },
+  {
+    "slug": "hostinger",
+    "name": "Hostinger",
+    "tagline": "Affordable web hosting",
+    "short_description": "Hostinger offers affordable web hosting solutions with a user-friendly interface and excellent performance.",
+    "website_url": "https://www.hostinger.com",
+    "pricing_model_slug": "freemium"
+  },
+  {
+    "slug": "kixie",
+    "name": "Kixie",
+    "tagline": "Sales automation software",
+    "short_description": "Kixie is a sales automation platform that integrates with CRM systems to enhance sales productivity.",
+    "website_url": "https://www.kixie.com",
+    "pricing_model_slug": "paid-only"
+  },
+  {
+    "slug": "keap",
+    "name": "Keap",
+    "tagline": "CRM and marketing automation",
+    "short_description": "Keap is a CRM and marketing automation platform designed for small businesses to manage customer relationships.",
+    "website_url": "https://www.keap.com",
+    "pricing_model_slug": "paid-only"
+  },
+  {
+    "slug": "copper",
+    "name": "Copper",
+    "tagline": "CRM for Google Workspace",
+    "short_description": "Copper is a CRM built for Google Workspace that helps teams manage customer relationships seamlessly.",
+    "website_url": "https://www.copper.com",
+    "pricing_model_slug": "paid-only"
+  },
+  {
+    "slug": "really-simple-systems",
+    "name": "Really Simple Systems",
+    "tagline": "Easy-to-use CRM",
+    "short_description": "Really Simple Systems is a user-friendly CRM designed for small businesses to manage customer interactions.",
+    "website_url": "https://www.reallysimplesystems.com",
+    "pricing_model_slug": "freemium"
+  },
+  {
+    "slug": "basecamp",
+    "name": "Basecamp",
+    "tagline": "Project management made simple",
+    "short_description": "Basecamp is a project management tool that simplifies team collaboration and project tracking.",
+    "website_url": "https://basecamp.com",
+    "pricing_model_slug": "paid-only"
+  },
+  {
+    "slug": "trello",
+    "name": "Trello",
+    "tagline": "Visual project management",
+    "short_description": "Trello is a visual project management tool that uses boards and cards to organize tasks and projects.",
+    "website_url": "https://trello.com",
+    "pricing_model_slug": "freemium"
+  },
+  {
+    "slug": "google-meet",
+    "name": "Google Meet",
+    "tagline": "Video conferencing tool",
+    "short_description": "Google Meet is a video conferencing tool that allows users to host and join virtual meetings easily.",
+    "website_url": "https://meet.google.com",
+    "pricing_model_slug": "freemium"
+  },
+  {
+    "slug": "one-drive",
+    "name": "OneDrive",
+    "tagline": "Cloud storage solution",
+    "short_description": "OneDrive is a cloud storage service that allows users to store files and access them from anywhere.",
+    "website_url": "https://onedrive.live.com",
+    "pricing_model_slug": "freemium"
+  },
+  {
+    "slug": "vultr",
+    "name": "Vultr",
+    "tagline": "Cloud infrastructure provider",
+    "short_description": "Vultr provides cloud infrastructure solutions with high-performance virtual servers and global data centers.",
+    "website_url": "https://www.vultr.com",
+    "pricing_model_slug": "paid-only"
+  },
+  {
+    "slug": "a2-hosting",
+    "name": "A2 Hosting",
+    "tagline": "High-performance web hosting",
+    "short_description": "A2 Hosting offers high-performance web hosting solutions with a focus on speed and reliability.",
+    "website_url": "https://www.a2hosting.com",
+    "pricing_model_slug": "paid-only"
+  },
+  {
+    "slug": "hatchbuck",
+    "name": "Hatchbuck",
+    "tagline": "CRM and marketing software",
+    "short_description": "Hatchbuck is a CRM and marketing automation software designed for small businesses to manage customer relationships.",
+    "website_url": "https://www.hatchbuck.com",
+    "pricing_model_slug": "paid-only"
+  },
+  {
+    "slug": "interserver",
+    "name": "InterServer",
+    "tagline": "Affordable web hosting",
+    "short_description": "InterServer provides affordable web hosting solutions with a focus on customer support and reliability.",
+    "website_url": "https://www.interserver.net",
+    "pricing_model_slug": "paid-only"
+  },
+  {
+    "slug": "hostgator",
+    "name": "HostGator",
+    "tagline": "Web hosting services",
+    "short_description": "HostGator offers a variety of web hosting services, including shared, VPS, and dedicated hosting.",
+    "website_url": "https://www.hostgator.com",
+    "pricing_model_slug": "paid-only"
+  },
+  {
+    "slug": "justhost",
+    "name": "JustHost",
+    "tagline": "Reliable web hosting",
+    "short_description": "JustHost provides reliable web hosting services with a focus on customer satisfaction and support.",
+    "website_url": "https://www.justhost.com",
+    "pricing_model_slug": "paid-only"
+  },
+  {
+    "slug": "microsoft-project",
+    "name": "Microsoft Project",
+    "tagline": "Project management software",
+    "short_description": "Microsoft Project is a project management software that helps teams plan, execute, and manage projects effectively.",
+    "website_url": "https://www.microsoft.com/project",
+    "pricing_model_slug": "paid-only"
+  }
+]

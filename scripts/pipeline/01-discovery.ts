@@ -1,13 +1,22 @@
 import * as fs from "fs";
 import * as path from "path";
-import { openai, CATEGORIES, discoverySchema, parseJsonSafely } from "./config";
+import { openai, supabase, CATEGORIES, discoverySchema, parseJsonSafely } from "./config";
 
-async function runDiscovery(category: string, count: number = 30) {
+async function runDiscovery(category: string, count: number = 35) {
   console.log(`Starting discovery for category: ${category} (Target: ${count} items)`);
   
+  // Fetch existing softwares to prevent duplicate or conflicting slugs
+  const { data: existingSoftwares } = await supabase.from("softwares").select("slug, name");
+  const existingList = (existingSoftwares || []).map(s => `${s.name} (slug: ${s.slug})`).join(", ");
+
   const prompt = `
     You are an expert software directory builder. I need to discover exactly ${count} popular, widely-used real SaaS applications in the "${category}" category.
     Do NOT invent any software. Only return real, verifiable softwares.
+    
+    IMPORTANT: Here are some already existing softwares in our database:
+    ${existingList.slice(0, 1500)}
+
+    If any of these existing softwares belong to "${category}" (e.g. ChatGPT, Claude, Cursor for AI tools), USE THE EXACT SAME SLUG as listed above so they update correctly without creating duplicate records.
     
     Return the response as a pure JSON array matching this schema:
     [{ "slug": "software-name-slug", "name": "Software Name" }]
