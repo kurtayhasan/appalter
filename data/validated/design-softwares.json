@@ -1,0 +1,1581 @@
+[
+  {
+    "slug": "adobe-creative-cloud",
+    "name": "Adobe Creative Cloud",
+    "tagline": "All-in-one design suite",
+    "short_description": "A comprehensive suite of creative tools for graphic design, video editing, and web development.",
+    "website_url": "https://www.adobe.com/creativecloud.html",
+    "pricing_model_slug": "paid-only",
+    "ai_features": {
+      "tldr": "Adobe Creative Cloud offers comprehensive creative tools.",
+      "pros": [
+        "Wide range of applications",
+        "Cloud storage included",
+        "Regular updates and features"
+      ],
+      "cons": [
+        "High subscription cost",
+        "Steep learning curve",
+        "Requires powerful hardware"
+      ],
+      "pricing_model_type": "Paid Only",
+      "target_audience_size": "Any",
+      "dealbreakers": [
+        "Subscription model may deter users",
+        "Limited offline functionality"
+      ],
+      "hidden_costs": [
+        "Add-ons increase overall cost",
+        "Storage overages may apply"
+      ],
+      "migration_difficulty": "medium",
+      "best_for": [
+        "Professional graphic design",
+        "Video editing projects"
+      ],
+      "not_for": [
+        "Casual users",
+        "Budget-conscious individuals"
+      ],
+      "switching_reasons": [
+        "Need for more affordable options",
+        "Preference for simpler tools"
+      ],
+      "key_limitations": [
+        "Complex interface for beginners",
+        "Resource-intensive applications"
+      ],
+      "confidence": 0.95
+    }
+  },
+  {
+    "slug": "canva",
+    "name": "Canva",
+    "tagline": "Easy graphic design tool",
+    "short_description": "A user-friendly platform for creating stunning graphics, presentations, and social media posts.",
+    "website_url": "https://www.canva.com",
+    "pricing_model_slug": "freemium",
+    "ai_features": {
+      "tldr": "Canva simplifies design for everyone.",
+      "pros": [
+        "User-friendly interface",
+        "Extensive template library",
+        "Collaboration features"
+      ],
+      "cons": [
+        "Limited advanced features",
+        "Storage limits on free plan",
+        "Occasional performance issues"
+      ],
+      "pricing_model_type": "Freemium",
+      "target_audience_size": "Any",
+      "dealbreakers": [
+        "Not suitable for complex designs"
+      ],
+      "hidden_costs": [
+        "Premium assets require payment"
+      ],
+      "migration_difficulty": "easy",
+      "best_for": [
+        "Social media graphics",
+        "Marketing materials"
+      ],
+      "not_for": [
+        "Professional graphic designers",
+        "Complex project management"
+      ],
+      "switching_reasons": [
+        "Better features elsewhere",
+        "Higher customization needs"
+      ],
+      "key_limitations": [
+        "Limited offline capabilities",
+        "Export options can be restrictive"
+      ],
+      "confidence": 0.95
+    }
+  },
+  {
+    "slug": "figma",
+    "name": "Figma",
+    "tagline": "Collaborative design tool",
+    "short_description": "A web-based interface design tool that allows for real-time collaboration among teams.",
+    "website_url": "https://www.figma.com",
+    "pricing_model_slug": "freemium",
+    "ai_features": {
+      "tldr": "Figma streamlines collaborative design processes.",
+      "pros": [
+        "Real-time collaboration",
+        "Intuitive interface",
+        "Extensive plugin ecosystem"
+      ],
+      "cons": [
+        "Limited offline capabilities",
+        "Performance issues with large files",
+        "Steep learning curve for beginners"
+      ],
+      "pricing_model_type": "Freemium",
+      "target_audience_size": "Any",
+      "dealbreakers": [
+        "Requires internet connection"
+      ],
+      "hidden_costs": [
+        "Advanced features in paid plans"
+      ],
+      "migration_difficulty": "medium",
+      "best_for": [
+        "UI/UX design teams",
+        "Prototyping and wireframing"
+      ],
+      "not_for": [
+        "Heavy CAD users",
+        "Non-design focused teams"
+      ],
+      "switching_reasons": [
+        "Better collaboration tools",
+        "More design features"
+      ],
+      "key_limitations": [
+        "Limited vector editing",
+        "No built-in asset management"
+      ],
+      "confidence": 0.95
+    }
+  },
+  {
+    "slug": "sketch",
+    "name": "Sketch",
+    "tagline": "Design for digital products",
+    "short_description": "A vector graphics editor tailored for designing user interfaces and user experiences.",
+    "website_url": "https://www.sketch.com",
+    "pricing_model_slug": "paid-only",
+    "ai_features": {
+      "tldr": "Sketch is ideal for vector design.",
+      "pros": [
+        "Intuitive interface",
+        "Strong collaboration tools",
+        "Extensive plugin ecosystem"
+      ],
+      "cons": [
+        "Mac only",
+        "Limited offline capabilities",
+        "Steep learning curve"
+      ],
+      "pricing_model_type": "Paid Only",
+      "target_audience_size": "Startup",
+      "dealbreakers": [
+        "Requires MacOS",
+        "Subscription model"
+      ],
+      "hidden_costs": [
+        "Additional costs for plugins",
+        "Team plan pricing varies"
+      ],
+      "migration_difficulty": "medium",
+      "best_for": [
+        "UI/UX design",
+        "Prototyping"
+      ],
+      "not_for": [
+        "Windows users",
+        "Non-designers"
+      ],
+      "switching_reasons": [
+        "Better collaboration tools",
+        "More design features"
+      ],
+      "key_limitations": [
+        "MacOS exclusivity",
+        "No built-in version control"
+      ],
+      "confidence": 0.95
+    }
+  },
+  {
+    "slug": "invision",
+    "name": "InVision",
+    "tagline": "Prototyping and collaboration",
+    "short_description": "A digital product design platform that helps teams create interactive prototypes and collaborate.",
+    "website_url": "https://www.invisionapp.com",
+    "pricing_model_slug": "freemium",
+    "ai_features": {
+      "tldr": "InVision streamlines design collaboration effortlessly.",
+      "pros": [
+        "Intuitive design prototyping tools",
+        "Real-time collaboration features",
+        "Robust feedback and commenting system"
+      ],
+      "cons": [
+        "Limited offline capabilities",
+        "Can be pricey for teams",
+        "Steep learning curve for beginners"
+      ],
+      "pricing_model_type": "Paid Only",
+      "target_audience_size": "Startup",
+      "dealbreakers": [
+        "No free tier available",
+        "High cost for larger teams"
+      ],
+      "hidden_costs": [
+        "Add-ons may increase pricing",
+        "Storage fees for large projects"
+      ],
+      "migration_difficulty": "medium",
+      "best_for": [
+        "Design team collaboration",
+        "User experience testing"
+      ],
+      "not_for": [
+        "Non-design focused teams",
+        "Budget-constrained startups"
+      ],
+      "switching_reasons": [
+        "Need for more features",
+        "Better pricing options available"
+      ],
+      "key_limitations": [
+        "Limited integrations",
+        "Performance issues with large files"
+      ],
+      "confidence": 0.95
+    }
+  },
+  {
+    "slug": "adobe-xd",
+    "name": "Adobe XD",
+    "tagline": "Design and prototype",
+    "short_description": "A powerful tool for designing and prototyping user experiences for web and mobile apps.",
+    "website_url": "https://www.adobe.com/products/xd.html",
+    "pricing_model_slug": "freemium",
+    "ai_features": {
+      "tldr": "Adobe XD excels in collaborative design.",
+      "pros": [
+        "Intuitive user interface",
+        "Strong prototyping tools",
+        "Seamless integration with Adobe"
+      ],
+      "cons": [
+        "Limited offline capabilities",
+        "Steep learning curve",
+        "Subscription costs can add up"
+      ],
+      "pricing_model_type": "Freemium",
+      "target_audience_size": "Startup",
+      "dealbreakers": [
+        "Requires Adobe ecosystem",
+        "Subscription model may deter users"
+      ],
+      "hidden_costs": [
+        "Advanced features behind paywall",
+        "Storage limits on free plan"
+      ],
+      "migration_difficulty": "medium",
+      "best_for": [
+        "UI/UX design projects",
+        "Collaborative design teams"
+      ],
+      "not_for": [
+        "Non-design professionals",
+        "Single-user projects"
+      ],
+      "switching_reasons": [
+        "Better pricing options elsewhere",
+        "More robust offline tools"
+      ],
+      "key_limitations": [
+        "Limited third-party integrations",
+        "Performance issues with large files"
+      ],
+      "confidence": 0.95
+    }
+  },
+  {
+    "slug": "coreldraw",
+    "name": "CorelDRAW",
+    "tagline": "Graphic design software",
+    "short_description": "A vector graphic design software used for creating logos, brochures, and web graphics.",
+    "website_url": "https://www.coreldraw.com",
+    "pricing_model_slug": "paid-only",
+    "ai_features": {
+      "tldr": "CorelDRAW excels in vector graphic design.",
+      "pros": [
+        "Intuitive user interface",
+        "Powerful design tools",
+        "Strong community support"
+      ],
+      "cons": [
+        "High learning curve",
+        "Limited collaboration features",
+        "Resource-intensive"
+      ],
+      "pricing_model_type": "Paid Only",
+      "target_audience_size": "Any",
+      "dealbreakers": [
+        "No free tier available"
+      ],
+      "hidden_costs": [
+        "Add-ons may incur extra fees"
+      ],
+      "migration_difficulty": "medium",
+      "best_for": [
+        "Graphic design projects",
+        "Illustration work"
+      ],
+      "not_for": [
+        "Basic photo editing",
+        "Non-design professionals"
+      ],
+      "switching_reasons": [
+        "Advanced features needed",
+        "Better performance alternatives"
+      ],
+      "key_limitations": [
+        "Limited file format support",
+        "Less frequent updates"
+      ],
+      "confidence": 0.95
+    }
+  },
+  {
+    "slug": "affinity-designer",
+    "name": "Affinity Designer",
+    "tagline": "Professional graphic design",
+    "short_description": "A vector graphic design software that offers precision and speed for creative professionals.",
+    "website_url": "https://affinity.serif.com/en-us/designer/",
+    "pricing_model_slug": "paid-only",
+    "ai_features": {
+      "tldr": "Affinity Designer excels in vector graphics.",
+      "pros": [
+        "Intuitive user interface",
+        "Powerful design tools",
+        "Affordable one-time purchase"
+      ],
+      "cons": [
+        "Limited collaboration features",
+        "No cloud storage",
+        "Steeper learning curve"
+      ],
+      "pricing_model_type": "Paid Only",
+      "target_audience_size": "Any",
+      "dealbreakers": [
+        "No subscription model",
+        "Lacks real-time collaboration"
+      ],
+      "hidden_costs": [
+        "Additional assets may cost extra",
+        "No free trial available"
+      ],
+      "migration_difficulty": "medium",
+      "best_for": [
+        "Graphic design projects",
+        "Illustration work"
+      ],
+      "not_for": [
+        "Team-based projects",
+        "Users needing cloud access"
+      ],
+      "switching_reasons": [
+        "Need for collaboration tools",
+        "Preference for subscription services"
+      ],
+      "key_limitations": [
+        "No mobile version",
+        "Limited export options"
+      ],
+      "confidence": 0.95
+    }
+  },
+  {
+    "slug": "gravit-designer",
+    "name": "Gravit Designer",
+    "tagline": "Free vector design app",
+    "short_description": "A full-featured vector design application that works on all platforms, online and offline.",
+    "website_url": "https://www.gravit.io",
+    "pricing_model_slug": "freemium",
+    "ai_features": {
+      "tldr": "Gravit Designer offers powerful vector design tools.",
+      "pros": [
+        "Intuitive user interface",
+        "Cross-platform compatibility",
+        "Robust design features"
+      ],
+      "cons": [
+        "Limited offline functionality",
+        "Steeper learning curve",
+        "Occasional performance lags"
+      ],
+      "pricing_model_type": "Freemium",
+      "target_audience_size": "Any",
+      "dealbreakers": [
+        "Requires internet for full features"
+      ],
+      "hidden_costs": [
+        "Premium features behind paywall"
+      ],
+      "migration_difficulty": "medium",
+      "best_for": [
+        "Graphic design projects",
+        "UI/UX design"
+      ],
+      "not_for": [
+        "3D modeling",
+        "Heavy animation tasks"
+      ],
+      "switching_reasons": [
+        "Better collaboration tools",
+        "More advanced features"
+      ],
+      "key_limitations": [
+        "Limited export options",
+        "No native mobile app"
+      ],
+      "confidence": 0.95
+    }
+  },
+  {
+    "slug": "crello",
+    "name": "Crello",
+    "tagline": "Design made easy",
+    "short_description": "An online design tool that allows users to create stunning visuals for social media and marketing.",
+    "website_url": "https://crello.com",
+    "pricing_model_slug": "freemium",
+    "ai_features": {
+      "tldr": "Crello simplifies graphic design for everyone.",
+      "pros": [
+        "User-friendly interface",
+        "Extensive template library",
+        "Affordable pricing options"
+      ],
+      "cons": [
+        "Limited advanced features",
+        "Occasional performance issues",
+        "Less customization flexibility"
+      ],
+      "pricing_model_type": "Freemium",
+      "target_audience_size": "Any",
+      "dealbreakers": [
+        "Requires internet connection",
+        "Limited offline capabilities"
+      ],
+      "hidden_costs": [
+        "Premium assets may incur fees",
+        "Subscription for advanced features"
+      ],
+      "migration_difficulty": "easy",
+      "best_for": [
+        "Social media graphics",
+        "Marketing materials creation"
+      ],
+      "not_for": [
+        "Professional graphic designers",
+        "Complex design projects"
+      ],
+      "switching_reasons": [
+        "Need for advanced design tools",
+        "Preference for offline software"
+      ],
+      "key_limitations": [
+        "Limited export options",
+        "Basic animation features only"
+      ],
+      "confidence": 0.95
+    }
+  },
+  {
+    "slug": "snappa",
+    "name": "Snappa",
+    "tagline": "Quick graphic design tool",
+    "short_description": "A simple online tool for creating graphics for social media, blogs, and ads in minutes.",
+    "website_url": "https://snappa.com",
+    "pricing_model_slug": "freemium",
+    "ai_features": {
+      "tldr": "Snappa simplifies graphic design for everyone.",
+      "pros": [
+        "User-friendly interface",
+        "Wide template selection",
+        "Fast design creation"
+      ],
+      "cons": [
+        "Limited advanced features",
+        "Basic animation options",
+        "No offline access"
+      ],
+      "pricing_model_type": "Freemium",
+      "target_audience_size": "Startup",
+      "dealbreakers": [
+        "Limited export formats"
+      ],
+      "hidden_costs": [
+        "Premium features require subscription"
+      ],
+      "migration_difficulty": "easy",
+      "best_for": [
+        "Social media graphics",
+        "Marketing materials"
+      ],
+      "not_for": [
+        "Professional graphic designers",
+        "Complex design projects"
+      ],
+      "switching_reasons": [
+        "Better features elsewhere",
+        "Higher customization needs"
+      ],
+      "key_limitations": [
+        "Limited stock photo access",
+        "No team collaboration tools"
+      ],
+      "confidence": 0.95
+    }
+  },
+  {
+    "slug": "vectr",
+    "name": "Vectr",
+    "tagline": "Free vector graphics editor",
+    "short_description": "A free graphics software used to create vector graphics easily and intuitively.",
+    "website_url": "https://vectr.com",
+    "pricing_model_slug": "free",
+    "ai_features": {
+      "tldr": "Vectr simplifies vector graphic design.",
+      "pros": [
+        "User-friendly interface",
+        "Real-time collaboration",
+        "Cross-platform accessibility"
+      ],
+      "cons": [
+        "Limited advanced features",
+        "Basic export options",
+        "Occasional performance lags"
+      ],
+      "pricing_model_type": "Freemium",
+      "target_audience_size": "Startup",
+      "dealbreakers": [
+        "Lacks extensive design tools"
+      ],
+      "hidden_costs": [
+        "Premium features require subscription"
+      ],
+      "migration_difficulty": "easy",
+      "best_for": [
+        "Creating simple graphics",
+        "Collaborative design projects"
+      ],
+      "not_for": [
+        "Professional graphic designers",
+        "Complex design tasks"
+      ],
+      "switching_reasons": [
+        "Need for advanced features",
+        "Better performance alternatives"
+      ],
+      "key_limitations": [
+        "Limited template options",
+        "No offline access"
+      ],
+      "confidence": 0.95
+    }
+  },
+  {
+    "slug": "marvelapp",
+    "name": "Marvel App",
+    "tagline": "Design, prototype, collaborate",
+    "short_description": "A design platform that allows users to create prototypes and collaborate with teams seamlessly.",
+    "website_url": "https://marvelapp.com",
+    "pricing_model_slug": "freemium",
+    "ai_features": {
+      "tldr": "Marvel App simplifies design collaboration.",
+      "pros": [
+        "User-friendly interface",
+        "Real-time collaboration",
+        "Extensive prototyping tools"
+      ],
+      "cons": [
+        "Limited advanced features",
+        "Performance issues on large projects",
+        "Export options can be restrictive"
+      ],
+      "pricing_model_type": "Freemium",
+      "target_audience_size": "Startup",
+      "dealbreakers": [
+        "Lacks offline functionality"
+      ],
+      "hidden_costs": [
+        "Premium features require subscription"
+      ],
+      "migration_difficulty": "easy",
+      "best_for": [
+        "Prototyping mobile apps",
+        "Collaborative design projects"
+      ],
+      "not_for": [
+        "Complex software development",
+        "Large enterprise teams"
+      ],
+      "switching_reasons": [
+        "Better features in competitors",
+        "Cost-effective alternatives"
+      ],
+      "key_limitations": [
+        "Limited integrations",
+        "Basic analytics tools"
+      ],
+      "confidence": 0.95
+    }
+  },
+  {
+    "slug": "lunacy",
+    "name": "Lunacy",
+    "tagline": "Free design software",
+    "short_description": "A free graphic design software that works offline and supports Sketch files.",
+    "website_url": "https://icons8.com/lunacy",
+    "pricing_model_slug": "free",
+    "ai_features": {
+      "tldr": "Lunacy offers powerful design tools for free.",
+      "pros": [
+        "Free design software",
+        "Cross-platform compatibility",
+        "Rich feature set"
+      ],
+      "cons": [
+        "Limited collaboration features",
+        "Occasional performance issues",
+        "Learning curve for beginners"
+      ],
+      "pricing_model_type": "Freemium",
+      "target_audience_size": "Startup",
+      "dealbreakers": [
+        "Not ideal for large teams"
+      ],
+      "hidden_costs": [
+        "Premium features require payment"
+      ],
+      "migration_difficulty": "medium",
+      "best_for": [
+        "UI/UX design",
+        "Prototyping"
+      ],
+      "not_for": [
+        "Heavy coding projects",
+        "Large enterprise solutions"
+      ],
+      "switching_reasons": [
+        "Cost-effective alternative",
+        "User-friendly interface"
+      ],
+      "key_limitations": [
+        "Limited integrations",
+        "Less support for plugins"
+      ],
+      "confidence": 0.95
+    }
+  },
+  {
+    "slug": "mockplus",
+    "name": "Mockplus",
+    "tagline": "Rapid prototyping tool",
+    "short_description": "A design tool that helps teams create prototypes and wireframes quickly and efficiently.",
+    "website_url": "https://www.mockplus.com",
+    "pricing_model_slug": "freemium",
+    "ai_features": {
+      "tldr": "Mockplus streamlines design collaboration effortlessly.",
+      "pros": [
+        "User-friendly interface",
+        "Rapid prototyping tools",
+        "Collaboration features"
+      ],
+      "cons": [
+        "Limited integrations",
+        "Basic design features",
+        "Steep learning curve"
+      ],
+      "pricing_model_type": "Freemium",
+      "target_audience_size": "Startup",
+      "dealbreakers": [
+        "Not suitable for large teams",
+        "Limited offline capabilities"
+      ],
+      "hidden_costs": [
+        "Advanced features require payment",
+        "Storage limits on free plan"
+      ],
+      "migration_difficulty": "medium",
+      "best_for": [
+        "UI/UX design teams",
+        "Rapid prototyping projects"
+      ],
+      "not_for": [
+        "Large enterprise solutions",
+        "Complex project management"
+      ],
+      "switching_reasons": [
+        "Need for advanced features",
+        "Better integration options"
+      ],
+      "key_limitations": [
+        "Limited export options",
+        "Basic analytics tools"
+      ],
+      "confidence": 0.95
+    }
+  },
+  {
+    "slug": "balsamiq",
+    "name": "Balsamiq",
+    "tagline": "Wireframing made simple",
+    "short_description": "A rapid wireframing tool that helps you work faster and smarter.",
+    "website_url": "https://balsamiq.com",
+    "pricing_model_slug": "paid-only",
+    "ai_features": {
+      "tldr": "Balsamiq simplifies wireframing with ease.",
+      "pros": [
+        "User-friendly interface",
+        "Rapid prototyping",
+        "Collaboration features"
+      ],
+      "cons": [
+        "Limited design flexibility",
+        "No high-fidelity mockups",
+        "Steeper learning curve for advanced features"
+      ],
+      "pricing_model_type": "Paid Only",
+      "target_audience_size": "Startup",
+      "dealbreakers": [
+        "No free tier available"
+      ],
+      "hidden_costs": [
+        "Add-ons may incur extra fees"
+      ],
+      "migration_difficulty": "medium",
+      "best_for": [
+        "Wireframing applications",
+        "Team collaboration projects"
+      ],
+      "not_for": [
+        "High-fidelity design needs",
+        "Solo users seeking free tools"
+      ],
+      "switching_reasons": [
+        "Need for advanced design tools",
+        "Preference for free alternatives"
+      ],
+      "key_limitations": [
+        "Limited export options",
+        "Basic interactivity features"
+      ],
+      "confidence": 0.95
+    }
+  },
+  {
+    "slug": "uxpin",
+    "name": "UXPin",
+    "tagline": "Design and prototype",
+    "short_description": "A collaborative design platform that allows for prototyping and user testing.",
+    "website_url": "https://www.uxpin.com",
+    "pricing_model_slug": "freemium",
+    "ai_features": {
+      "tldr": "UXPin streamlines design collaboration effectively.",
+      "pros": [
+        "Intuitive design interface",
+        "Real-time collaboration features",
+        "Extensive integrations available"
+      ],
+      "cons": [
+        "Steep learning curve",
+        "Limited offline capabilities",
+        "Higher pricing tiers"
+      ],
+      "pricing_model_type": "Paid Only",
+      "target_audience_size": "Startup",
+      "dealbreakers": [
+        "No free tier available",
+        "Complex pricing structure"
+      ],
+      "hidden_costs": [
+        "Add-ons may increase costs",
+        "Team size affects pricing"
+      ],
+      "migration_difficulty": "medium",
+      "best_for": [
+        "UX/UI design teams",
+        "Prototyping and testing"
+      ],
+      "not_for": [
+        "Non-design focused teams",
+        "Budget-constrained startups"
+      ],
+      "switching_reasons": [
+        "Need for better collaboration tools",
+        "Desire for more design features"
+      ],
+      "key_limitations": [
+        "Limited mobile functionality",
+        "Performance issues with large files"
+      ],
+      "confidence": 0.95
+    }
+  },
+  {
+    "slug": "zeplin",
+    "name": "Zeplin",
+    "tagline": "Design handoff tool",
+    "short_description": "A collaboration tool for designers and developers to streamline the design handoff process.",
+    "website_url": "https://zeplin.io",
+    "pricing_model_slug": "freemium",
+    "ai_features": {
+      "tldr": "Streamline design handoff with Zeplin.",
+      "pros": [
+        "Intuitive design collaboration",
+        "Supports multiple design tools",
+        "Automated style guide generation"
+      ],
+      "cons": [
+        "Limited offline access",
+        "No built-in version control",
+        "Can be pricey for teams"
+      ],
+      "pricing_model_type": "Paid Only",
+      "target_audience_size": "Startup",
+      "dealbreakers": [
+        "No free tier available"
+      ],
+      "hidden_costs": [
+        "Additional fees for extra users"
+      ],
+      "migration_difficulty": "medium",
+      "best_for": [
+        "Design handoff to developers",
+        "Collaborative design reviews"
+      ],
+      "not_for": [
+        "Solo designers",
+        "Non-design teams"
+      ],
+      "switching_reasons": [
+        "Better integration with tools",
+        "More affordable alternatives"
+      ],
+      "key_limitations": [
+        "Limited customization options",
+        "Dependency on internet access"
+      ],
+      "confidence": 0.95
+    }
+  },
+  {
+    "slug": "designbold",
+    "name": "DesignBold",
+    "tagline": "Create stunning designs",
+    "short_description": "An online graphic design tool that helps users create beautiful designs easily.",
+    "website_url": "https://www.designbold.com",
+    "pricing_model_slug": "freemium",
+    "ai_features": {
+      "tldr": "DesignBold simplifies graphic design for all.",
+      "pros": [
+        "User-friendly interface",
+        "Wide template selection",
+        "Collaboration features"
+      ],
+      "cons": [
+        "Limited free features",
+        "Occasional performance issues",
+        "No offline access"
+      ],
+      "pricing_model_type": "Freemium",
+      "target_audience_size": "Startup",
+      "dealbreakers": [
+        "Limited customization options"
+      ],
+      "hidden_costs": [
+        "Premium templates cost extra"
+      ],
+      "migration_difficulty": "easy",
+      "best_for": [
+        "Social media graphics",
+        "Marketing materials"
+      ],
+      "not_for": [
+        "Advanced graphic designers",
+        "Complex design projects"
+      ],
+      "switching_reasons": [
+        "Better features elsewhere",
+        "Lower pricing options"
+      ],
+      "key_limitations": [
+        "Export quality may vary",
+        "Limited vector support"
+      ],
+      "confidence": 0.95
+    }
+  },
+  {
+    "slug": "placeit",
+    "name": "Placeit",
+    "tagline": "Mockups and designs",
+    "short_description": "A platform for creating mockups, designs, and videos with ease.",
+    "website_url": "https://placeit.net",
+    "pricing_model_slug": "freemium",
+    "ai_features": {
+      "tldr": "Create stunning designs effortlessly.",
+      "pros": [
+        "User-friendly interface",
+        "Wide template selection",
+        "Quick design generation"
+      ],
+      "cons": [
+        "Limited customization options",
+        "Subscription can be pricey",
+        "Internet required for use"
+      ],
+      "pricing_model_type": "Paid Only",
+      "target_audience_size": "Startup",
+      "dealbreakers": [
+        "No free tier available"
+      ],
+      "hidden_costs": [
+        "Additional fees for premium assets"
+      ],
+      "migration_difficulty": "easy",
+      "best_for": [
+        "Social media graphics",
+        "Marketing materials"
+      ],
+      "not_for": [
+        "Advanced graphic designers",
+        "Complex design projects"
+      ],
+      "switching_reasons": [
+        "Better pricing options",
+        "More customization features"
+      ],
+      "key_limitations": [
+        "Limited export formats",
+        "No offline access"
+      ],
+      "confidence": 0.95
+    }
+  },
+  {
+    "slug": "stencil",
+    "name": "Stencil",
+    "tagline": "Quick graphic design tool",
+    "short_description": "A simple tool for creating graphics for social media, ads, and blogs quickly.",
+    "website_url": "https://getstencil.com",
+    "pricing_model_slug": "freemium",
+    "ai_features": {
+      "tldr": "Stencil simplifies design workflows effortlessly.",
+      "pros": [
+        "User-friendly interface",
+        "Customizable templates",
+        "Collaboration features"
+      ],
+      "cons": [
+        "Limited integrations",
+        "Steep learning curve",
+        "Occasional performance issues"
+      ],
+      "pricing_model_type": "Freemium",
+      "target_audience_size": "Startup",
+      "dealbreakers": [
+        "Lacks advanced analytics features"
+      ],
+      "hidden_costs": [
+        "Premium features require subscription"
+      ],
+      "migration_difficulty": "medium",
+      "best_for": [
+        "Design teams",
+        "Content creators"
+      ],
+      "not_for": [
+        "Large enterprises",
+        "Non-design users"
+      ],
+      "switching_reasons": [
+        "Better features elsewhere",
+        "Cost concerns"
+      ],
+      "key_limitations": [
+        "Limited offline capabilities",
+        "Basic support options"
+      ],
+      "confidence": 0.95
+    }
+  },
+  {
+    "slug": "picmonkey",
+    "name": "PicMonkey",
+    "tagline": "Photo editing made easy",
+    "short_description": "An online photo editing and design tool that simplifies the creative process.",
+    "website_url": "https://www.picmonkey.com",
+    "pricing_model_slug": "freemium",
+    "ai_features": {
+      "tldr": "PicMonkey simplifies graphic design tasks.",
+      "pros": [
+        "User-friendly interface",
+        "Extensive template library",
+        "Strong collaboration features"
+      ],
+      "cons": [
+        "Limited free features",
+        "Occasional performance issues",
+        "Higher pricing tiers"
+      ],
+      "pricing_model_type": "Freemium",
+      "target_audience_size": "Startup",
+      "dealbreakers": [
+        "Limited offline capabilities"
+      ],
+      "hidden_costs": [
+        "Add-ons can increase costs"
+      ],
+      "migration_difficulty": "easy",
+      "best_for": [
+        "Social media graphics",
+        "Marketing materials"
+      ],
+      "not_for": [
+        "Advanced graphic designers",
+        "Complex design projects"
+      ],
+      "switching_reasons": [
+        "Better features elsewhere",
+        "Lower pricing options"
+      ],
+      "key_limitations": [
+        "Limited customization options",
+        "No advanced editing tools"
+      ],
+      "confidence": 0.95
+    }
+  },
+  {
+    "slug": "easil",
+    "name": "Easil",
+    "tagline": "Drag-and-drop design tool",
+    "short_description": "A design tool that allows users to create stunning graphics with a drag-and-drop interface.",
+    "website_url": "https://www.easil.com",
+    "pricing_model_slug": "freemium",
+    "ai_features": {
+      "tldr": "Easil simplifies design for non-designers.",
+      "pros": [
+        "User-friendly interface",
+        "Wide template selection",
+        "Collaboration features"
+      ],
+      "cons": [
+        "Limited customization options",
+        "Basic analytics tools",
+        "No offline access"
+      ],
+      "pricing_model_type": "Freemium",
+      "target_audience_size": "Startup",
+      "dealbreakers": [
+        "Not suitable for advanced designers"
+      ],
+      "hidden_costs": [
+        "Premium features require subscription"
+      ],
+      "migration_difficulty": "easy",
+      "best_for": [
+        "Social media graphics",
+        "Marketing materials"
+      ],
+      "not_for": [
+        "Complex graphic design projects",
+        "Large enterprise teams"
+      ],
+      "switching_reasons": [
+        "Need for advanced features",
+        "Better pricing options"
+      ],
+      "key_limitations": [
+        "Limited export formats",
+        "No API access"
+      ],
+      "confidence": 0.95
+    }
+  },
+  {
+    "slug": "designhill",
+    "name": "Designhill",
+    "tagline": "Design marketplace",
+    "short_description": "A platform connecting businesses with freelance designers for custom design projects.",
+    "website_url": "https://www.designhill.com",
+    "pricing_model_slug": "freemium",
+    "ai_features": {
+      "tldr": "Designhill simplifies custom design creation.",
+      "pros": [
+        "User-friendly design tools",
+        "Diverse design templates",
+        "Affordable pricing options"
+      ],
+      "cons": [
+        "Limited advanced features",
+        "Occasional design quality variance",
+        "Customer support delays"
+      ],
+      "pricing_model_type": "Freemium",
+      "target_audience_size": "Startup",
+      "dealbreakers": [
+        "Limited free features",
+        "Subscription required for premium tools"
+      ],
+      "hidden_costs": [
+        "Additional fees for custom designs",
+        "Upcharges for premium assets"
+      ],
+      "migration_difficulty": "easy",
+      "best_for": [
+        "Small business branding",
+        "Freelance design projects"
+      ],
+      "not_for": [
+        "Large enterprise solutions",
+        "Complex design needs"
+      ],
+      "switching_reasons": [
+        "Need for advanced features",
+        "Better customer support options"
+      ],
+      "key_limitations": [
+        "Not suitable for large teams",
+        "Limited integration options"
+      ],
+      "confidence": 0.95
+    }
+  },
+  {
+    "slug": "creativemarket",
+    "name": "Creative Market",
+    "tagline": "Marketplace for creatives",
+    "short_description": "An online marketplace for design assets, including graphics, templates, and fonts.",
+    "website_url": "https://creativemarket.com",
+    "pricing_model_slug": "freemium",
+    "ai_features": {
+      "tldr": "Creative Market offers unique design assets.",
+      "pros": [
+        "Diverse asset marketplace",
+        "User-friendly interface",
+        "Strong community support"
+      ],
+      "cons": [
+        "Limited free resources",
+        "Higher asset costs",
+        "Variable quality control"
+      ],
+      "pricing_model_type": "Paid Only",
+      "target_audience_size": "Any",
+      "dealbreakers": [
+        "No subscription model",
+        "Asset licensing complexity"
+      ],
+      "hidden_costs": [
+        "Transaction fees apply",
+        "Premium assets can be pricey"
+      ],
+      "migration_difficulty": "easy",
+      "best_for": [
+        "Graphic designers",
+        "Small business branding"
+      ],
+      "not_for": [
+        "Large enterprise solutions",
+        "Free asset seekers"
+      ],
+      "switching_reasons": [
+        "Better pricing elsewhere",
+        "More comprehensive features"
+      ],
+      "key_limitations": [
+        "Limited customization options",
+        "Asset exclusivity issues"
+      ],
+      "confidence": 0.95
+    }
+  },
+  {
+    "slug": "artboardstudio",
+    "name": "Artboard Studio",
+    "tagline": "Mockup and design tool",
+    "short_description": "A design tool for creating mockups and visual content for marketing.",
+    "website_url": "https://artboard.studio",
+    "pricing_model_slug": "freemium",
+    "ai_features": {
+      "tldr": "Create stunning mockups effortlessly.",
+      "pros": [
+        "User-friendly interface",
+        "Extensive template library",
+        "Collaborative features"
+      ],
+      "cons": [
+        "Limited offline functionality",
+        "Occasional performance lags",
+        "Pricing can escalate quickly"
+      ],
+      "pricing_model_type": "Freemium",
+      "target_audience_size": "Startup",
+      "dealbreakers": [
+        "No mobile app available",
+        "Limited integrations"
+      ],
+      "hidden_costs": [
+        "Advanced features require subscription",
+        "Storage limits on free plan"
+      ],
+      "migration_difficulty": "medium",
+      "best_for": [
+        "Designing marketing materials",
+        "Creating product mockups"
+      ],
+      "not_for": [
+        "Advanced graphic design needs",
+        "Heavy data analysis tasks"
+      ],
+      "switching_reasons": [
+        "Need for more features",
+        "Better pricing options elsewhere"
+      ],
+      "key_limitations": [
+        "Limited customization options",
+        "No support for 3D designs"
+      ],
+      "confidence": 0.95
+    }
+  },
+  {
+    "slug": "designmodo",
+    "name": "Designmodo",
+    "tagline": "Web design tools",
+    "short_description": "A platform offering tools and resources for web design and development.",
+    "website_url": "https://designmodo.com",
+    "pricing_model_slug": "freemium",
+    "ai_features": {
+      "tldr": "Designmodo simplifies web design effortlessly.",
+      "pros": [
+        "User-friendly interface",
+        "Customizable templates",
+        "Responsive design options"
+      ],
+      "cons": [
+        "Limited integrations",
+        "Basic analytics features",
+        "Steep learning curve for advanced"
+      ],
+      "pricing_model_type": "Paid Only",
+      "target_audience_size": "Startup",
+      "dealbreakers": [
+        "No free tier available"
+      ],
+      "hidden_costs": [
+        "Additional fees for premium templates"
+      ],
+      "migration_difficulty": "medium",
+      "best_for": [
+        "Creating landing pages",
+        "Building portfolios"
+      ],
+      "not_for": [
+        "Large enterprise solutions",
+        "Complex web applications"
+      ],
+      "switching_reasons": [
+        "Better features elsewhere",
+        "Lower pricing options"
+      ],
+      "key_limitations": [
+        "Limited customer support",
+        "Few advanced design tools"
+      ],
+      "confidence": 0.95
+    }
+  },
+  {
+    "slug": "tinkercad",
+    "name": "Tinkercad",
+    "tagline": "3D design made easy",
+    "short_description": "An easy-to-use 3D design and modeling tool for beginners and educators.",
+    "website_url": "https://www.tinkercad.com",
+    "pricing_model_slug": "free",
+    "ai_features": {
+      "tldr": "Tinkercad simplifies 3D design for everyone.",
+      "pros": [
+        "User-friendly interface",
+        "Free to use",
+        "Great for beginners"
+      ],
+      "cons": [
+        "Limited advanced features",
+        "Internet required",
+        "Basic export options"
+      ],
+      "pricing_model_type": "Freemium",
+      "target_audience_size": "Any",
+      "dealbreakers": [
+        "Not suitable for professional use"
+      ],
+      "hidden_costs": [
+        "Premium features may cost extra"
+      ],
+      "migration_difficulty": "easy",
+      "best_for": [
+        "3D modeling for education",
+        "Prototyping simple designs"
+      ],
+      "not_for": [
+        "Complex engineering projects",
+        "High-end 3D rendering"
+      ],
+      "switching_reasons": [
+        "Need for advanced tools",
+        "Better collaboration features"
+      ],
+      "key_limitations": [
+        "Limited file format support",
+        "No offline access"
+      ],
+      "confidence": 0.95
+    }
+  },
+  {
+    "slug": "canva-for-education",
+    "name": "Canva for Education",
+    "tagline": "Design tool for educators",
+    "short_description": "A free version of Canva tailored for teachers and students to create educational materials.",
+    "website_url": "https://www.canva.com/education",
+    "pricing_model_slug": "free",
+    "ai_features": {
+      "tldr": "Canva for Education empowers creative learning.",
+      "pros": [
+        "User-friendly interface",
+        "Extensive template library",
+        "Collaboration features"
+      ],
+      "cons": [
+        "Limited advanced features",
+        "Internet required",
+        "Storage limits"
+      ],
+      "pricing_model_type": "Freemium",
+      "target_audience_size": "Any",
+      "dealbreakers": [
+        "Not suitable for complex designs",
+        "Limited offline capabilities"
+      ],
+      "hidden_costs": [
+        "Premium features require payment",
+        "Additional storage costs"
+      ],
+      "migration_difficulty": "easy",
+      "best_for": [
+        "Classroom projects",
+        "Creative presentations"
+      ],
+      "not_for": [
+        "Professional graphic designers",
+        "Advanced video editing"
+      ],
+      "switching_reasons": [
+        "Need for advanced tools",
+        "Preference for offline access"
+      ],
+      "key_limitations": [
+        "Basic animation options",
+        "Limited export formats"
+      ],
+      "confidence": 0.95
+    }
+  },
+  {
+    "slug": "pencilproject",
+    "name": "Pencil Project",
+    "tagline": "Open-source prototyping tool",
+    "short_description": "A free and open-source tool for creating mockups and prototypes.",
+    "website_url": "https://pencil.evolus.vn",
+    "pricing_model_slug": "open-source",
+    "ai_features": {
+      "tldr": "Pencil Project simplifies wireframing and prototyping.",
+      "pros": [
+        "User-friendly interface",
+        "Open source flexibility",
+        "Cross-platform compatibility"
+      ],
+      "cons": [
+        "Limited advanced features",
+        "Occasional bugs",
+        "Steeper learning curve"
+      ],
+      "pricing_model_type": "Open Source",
+      "target_audience_size": "Startup",
+      "dealbreakers": [
+        "Lacks premium support options"
+      ],
+      "hidden_costs": [
+        "Potential costs for plugins"
+      ],
+      "migration_difficulty": "medium",
+      "best_for": [
+        "Wireframing projects",
+        "Rapid prototyping"
+      ],
+      "not_for": [
+        "Large enterprise teams",
+        "Complex project management"
+      ],
+      "switching_reasons": [
+        "Need for advanced features",
+        "Better support options"
+      ],
+      "key_limitations": [
+        "Limited collaboration tools",
+        "Basic export options"
+      ],
+      "confidence": 0.95
+    }
+  },
+  {
+    "slug": "squarespace",
+    "name": "Squarespace",
+    "tagline": "Website building platform",
+    "short_description": "A website builder that provides templates and tools for creating beautiful websites.",
+    "website_url": "https://www.squarespace.com",
+    "pricing_model_slug": "paid-only",
+    "ai_features": {
+      "tldr": "Squarespace simplifies website creation.",
+      "pros": [
+        "User-friendly interface",
+        "Beautiful templates",
+        "Integrated e-commerce features"
+      ],
+      "cons": [
+        "Limited customization options",
+        "Higher pricing tiers",
+        "Less flexibility than competitors"
+      ],
+      "pricing_model_type": "Paid Only",
+      "target_audience_size": "Startup",
+      "dealbreakers": [
+        "No free tier available",
+        "Limited third-party integrations"
+      ],
+      "hidden_costs": [
+        "Transaction fees on sales",
+        "Premium features cost extra"
+      ],
+      "migration_difficulty": "medium",
+      "best_for": [
+        "Small business websites",
+        "Portfolio showcases"
+      ],
+      "not_for": [
+        "Large enterprise solutions",
+        "Highly customized sites"
+      ],
+      "switching_reasons": [
+        "Need for advanced features",
+        "Lower pricing alternatives"
+      ],
+      "key_limitations": [
+        "SEO capabilities limited",
+        "No multi-language support"
+      ],
+      "confidence": 0.95
+    }
+  },
+  {
+    "slug": "weebly",
+    "name": "Weebly",
+    "tagline": "Build a website easily",
+    "short_description": "A drag-and-drop website builder that allows users to create websites without coding.",
+    "website_url": "https://www.weebly.com",
+    "pricing_model_slug": "freemium",
+    "ai_features": {
+      "tldr": "Weebly simplifies website creation effortlessly.",
+      "pros": [
+        "User-friendly drag-and-drop",
+        "Responsive templates available",
+        "Integrated e-commerce features"
+      ],
+      "cons": [
+        "Limited customization options",
+        "Basic SEO tools",
+        "Transaction fees on sales"
+      ],
+      "pricing_model_type": "Freemium",
+      "target_audience_size": "Startup",
+      "dealbreakers": [
+        "E-commerce fees may deter users"
+      ],
+      "hidden_costs": [
+        "Premium features require payment"
+      ],
+      "migration_difficulty": "medium",
+      "best_for": [
+        "Small business websites",
+        "Personal portfolios"
+      ],
+      "not_for": [
+        "Large enterprise solutions",
+        "Complex web applications"
+      ],
+      "switching_reasons": [
+        "Need for advanced features",
+        "Better SEO capabilities"
+      ],
+      "key_limitations": [
+        "Limited third-party integrations",
+        "Basic analytics tools"
+      ],
+      "confidence": 0.95
+    }
+  },
+  {
+    "slug": "wix",
+    "name": "Wix",
+    "tagline": "Create stunning websites",
+    "short_description": "A cloud-based web development platform that allows users to create HTML5 websites.",
+    "website_url": "https://www.wix.com",
+    "pricing_model_slug": "freemium",
+    "ai_features": {
+      "tldr": "Wix simplifies website creation effortlessly.",
+      "pros": [
+        "User-friendly drag-and-drop editor",
+        "Extensive template library",
+        "Strong SEO tools"
+      ],
+      "cons": [
+        "Limited customization options",
+        "Higher costs for advanced features",
+        "Performance issues on complex sites"
+      ],
+      "pricing_model_type": "Freemium",
+      "target_audience_size": "Startup",
+      "dealbreakers": [
+        "Not suitable for large businesses",
+        "Limited e-commerce capabilities"
+      ],
+      "hidden_costs": [
+        "Premium features require subscriptions",
+        "Domain registration fees apply"
+      ],
+      "migration_difficulty": "medium",
+      "best_for": [
+        "Small business websites",
+        "Personal portfolios"
+      ],
+      "not_for": [
+        "Large enterprise solutions",
+        "Complex web applications"
+      ],
+      "switching_reasons": [
+        "Need for advanced customization",
+        "Better performance options available"
+      ],
+      "key_limitations": [
+        "Limited scalability",
+        "Dependence on Wix infrastructure"
+      ],
+      "confidence": 0.95
+    }
+  }
+]

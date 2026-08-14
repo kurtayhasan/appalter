@@ -1,0 +1,266 @@
+[
+  {
+    "slug": "adobe-creative-cloud",
+    "name": "Adobe Creative Cloud",
+    "tagline": "All-in-one design suite",
+    "short_description": "A comprehensive suite of creative tools for graphic design, video editing, and web development.",
+    "website_url": "https://www.adobe.com/creativecloud.html",
+    "pricing_model_slug": "paid-only"
+  },
+  {
+    "slug": "canva",
+    "name": "Canva",
+    "tagline": "Easy graphic design tool",
+    "short_description": "A user-friendly platform for creating stunning graphics, presentations, and social media posts.",
+    "website_url": "https://www.canva.com",
+    "pricing_model_slug": "freemium"
+  },
+  {
+    "slug": "figma",
+    "name": "Figma",
+    "tagline": "Collaborative design tool",
+    "short_description": "A web-based interface design tool that allows for real-time collaboration among teams.",
+    "website_url": "https://www.figma.com",
+    "pricing_model_slug": "freemium"
+  },
+  {
+    "slug": "sketch",
+    "name": "Sketch",
+    "tagline": "Design for digital products",
+    "short_description": "A vector graphics editor tailored for designing user interfaces and user experiences.",
+    "website_url": "https://www.sketch.com",
+    "pricing_model_slug": "paid-only"
+  },
+  {
+    "slug": "invision",
+    "name": "InVision",
+    "tagline": "Prototyping and collaboration",
+    "short_description": "A digital product design platform that helps teams create interactive prototypes and collaborate.",
+    "website_url": "https://www.invisionapp.com",
+    "pricing_model_slug": "freemium"
+  },
+  {
+    "slug": "adobe-xd",
+    "name": "Adobe XD",
+    "tagline": "Design and prototype",
+    "short_description": "A powerful tool for designing and prototyping user experiences for web and mobile apps.",
+    "website_url": "https://www.adobe.com/products/xd.html",
+    "pricing_model_slug": "freemium"
+  },
+  {
+    "slug": "coreldraw",
+    "name": "CorelDRAW",
+    "tagline": "Graphic design software",
+    "short_description": "A vector graphic design software used for creating logos, brochures, and web graphics.",
+    "website_url": "https://www.coreldraw.com",
+    "pricing_model_slug": "paid-only"
+  },
+  {
+    "slug": "affinity-designer",
+    "name": "Affinity Designer",
+    "tagline": "Professional graphic design",
+    "short_description": "A vector graphic design software that offers precision and speed for creative professionals.",
+    "website_url": "https://affinity.serif.com/en-us/designer/",
+    "pricing_model_slug": "paid-only"
+  },
+  {
+    "slug": "gravit-designer",
+    "name": "Gravit Designer",
+    "tagline": "Free vector design app",
+    "short_description": "A full-featured vector design application that works on all platforms, online and offline.",
+    "website_url": "https://www.gravit.io",
+    "pricing_model_slug": "freemium"
+  },
+  {
+    "slug": "crello",
+    "name": "Crello",
+    "tagline": "Design made easy",
+    "short_description": "An online design tool that allows users to create stunning visuals for social media and marketing.",
+    "website_url": "https://crello.com",
+    "pricing_model_slug": "freemium"
+  },
+  {
+    "slug": "snappa",
+    "name": "Snappa",
+    "tagline": "Quick graphic design tool",
+    "short_description": "A simple online tool for creating graphics for social media, blogs, and ads in minutes.",
+    "website_url": "https://snappa.com",
+    "pricing_model_slug": "freemium"
+  },
+  {
+    "slug": "vectr",
+    "name": "Vectr",
+    "tagline": "Free vector graphics editor",
+    "short_description": "A free graphics software used to create vector graphics easily and intuitively.",
+    "website_url": "https://vectr.com",
+    "pricing_model_slug": "free"
+  },
+  {
+    "slug": "marvelapp",
+    "name": "Marvel App",
+    "tagline": "Design, prototype, collaborate",
+    "short_description": "A design platform that allows users to create prototypes and collaborate with teams seamlessly.",
+    "website_url": "https://marvelapp.com",
+    "pricing_model_slug": "freemium"
+  },
+  {
+    "slug": "lunacy",
+    "name": "Lunacy",
+    "tagline": "Free design software",
+    "short_description": "A free graphic design software that works offline and supports Sketch files.",
+    "website_url": "https://icons8.com/lunacy",
+    "pricing_model_slug": "free"
+  },
+  {
+    "slug": "mockplus",
+    "name": "Mockplus",
+    "tagline": "Rapid prototyping tool",
+    "short_description": "A design tool that helps teams create prototypes and wireframes quickly and efficiently.",
+    "website_url": "https://www.mockplus.com",
+    "pricing_model_slug": "freemium"
+  },
+  {
+    "slug": "balsamiq",
+    "name": "Balsamiq",
+    "tagline": "Wireframing made simple",
+    "short_description": "A rapid wireframing tool that helps you work faster and smarter.",
+    "website_url": "https://balsamiq.com",
+    "pricing_model_slug": "paid-only"
+  },
+  {
+    "slug": "uxpin",
+    "name": "UXPin",
+    "tagline": "Design and prototype",
+    "short_description": "A collaborative design platform that allows for prototyping and user testing.",
+    "website_url": "https://www.uxpin.com",
+    "pricing_model_slug": "freemium"
+  },
+  {
+    "slug": "zeplin",
+    "name": "Zeplin",
+    "tagline": "Design handoff tool",
+    "short_description": "A collaboration tool for designers and developers to streamline the design handoff process.",
+    "website_url": "https://zeplin.io",
+    "pricing_model_slug": "freemium"
+  },
+  {
+    "slug": "designbold",
+    "name": "DesignBold",
+    "tagline": "Create stunning designs",
+    "short_description": "An online graphic design tool that helps users create beautiful designs easily.",
+    "website_url": "https://www.designbold.com",
+    "pricing_model_slug": "freemium"
+  },
+  {
+    "slug": "placeit",
+    "name": "Placeit",
+    "tagline": "Mockups and designs",
+    "short_description": "A platform for creating mockups, designs, and videos with ease.",
+    "website_url": "https://placeit.net",
+    "pricing_model_slug": "freemium"
+  },
+  {
+    "slug": "stencil",
+    "name": "Stencil",
+    "tagline": "Quick graphic design tool",
+    "short_description": "A simple tool for creating graphics for social media, ads, and blogs quickly.",
+    "website_url": "https://getstencil.com",
+    "pricing_model_slug": "freemium"
+  },
+  {
+    "slug": "picmonkey",
+    "name": "PicMonkey",
+    "tagline": "Photo editing made easy",
+    "short_description": "An online photo editing and design tool that simplifies the creative process.",
+    "website_url": "https://www.picmonkey.com",
+    "pricing_model_slug": "freemium"
+  },
+  {
+    "slug": "easil",
+    "name": "Easil",
+    "tagline": "Drag-and-drop design tool",
+    "short_description": "A design tool that allows users to create stunning graphics with a drag-and-drop interface.",
+    "website_url": "https://www.easil.com",
+    "pricing_model_slug": "freemium"
+  },
+  {
+    "slug": "designhill",
+    "name": "Designhill",
+    "tagline": "Design marketplace",
+    "short_description": "A platform connecting businesses with freelance designers for custom design projects.",
+    "website_url": "https://www.designhill.com",
+    "pricing_model_slug": "freemium"
+  },
+  {
+    "slug": "creativemarket",
+    "name": "Creative Market",
+    "tagline": "Marketplace for creatives",
+    "short_description": "An online marketplace for design assets, including graphics, templates, and fonts.",
+    "website_url": "https://creativemarket.com",
+    "pricing_model_slug": "freemium"
+  },
+  {
+    "slug": "artboardstudio",
+    "name": "Artboard Studio",
+    "tagline": "Mockup and design tool",
+    "short_description": "A design tool for creating mockups and visual content for marketing.",
+    "website_url": "https://artboard.studio",
+    "pricing_model_slug": "freemium"
+  },
+  {
+    "slug": "designmodo",
+    "name": "Designmodo",
+    "tagline": "Web design tools",
+    "short_description": "A platform offering tools and resources for web design and development.",
+    "website_url": "https://designmodo.com",
+    "pricing_model_slug": "freemium"
+  },
+  {
+    "slug": "tinkercad",
+    "name": "Tinkercad",
+    "tagline": "3D design made easy",
+    "short_description": "An easy-to-use 3D design and modeling tool for beginners and educators.",
+    "website_url": "https://www.tinkercad.com",
+    "pricing_model_slug": "free"
+  },
+  {
+    "slug": "canva-for-education",
+    "name": "Canva for Education",
+    "tagline": "Design tool for educators",
+    "short_description": "A free version of Canva tailored for teachers and students to create educational materials.",
+    "website_url": "https://www.canva.com/education",
+    "pricing_model_slug": "free"
+  },
+  {
+    "slug": "pencilproject",
+    "name": "Pencil Project",
+    "tagline": "Open-source prototyping tool",
+    "short_description": "A free and open-source tool for creating mockups and prototypes.",
+    "website_url": "https://pencil.evolus.vn",
+    "pricing_model_slug": "open-source"
+  },
+  {
+    "slug": "squarespace",
+    "name": "Squarespace",
+    "tagline": "Website building platform",
+    "short_description": "A website builder that provides templates and tools for creating beautiful websites.",
+    "website_url": "https://www.squarespace.com",
+    "pricing_model_slug": "paid-only"
+  },
+  {
+    "slug": "weebly",
+    "name": "Weebly",
+    "tagline": "Build a website easily",
+    "short_description": "A drag-and-drop website builder that allows users to create websites without coding.",
+    "website_url": "https://www.weebly.com",
+    "pricing_model_slug": "freemium"
+  },
+  {
+    "slug": "wix",
+    "name": "Wix",
+    "tagline": "Create stunning websites",
+    "short_description": "A cloud-based web development platform that allows users to create HTML5 websites.",
+    "website_url": "https://www.wix.com",
+    "pricing_model_slug": "freemium"
+  }
+]

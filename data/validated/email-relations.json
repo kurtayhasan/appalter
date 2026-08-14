@@ -1,0 +1,128 @@
+[
+  {
+    "software_slug": "gmail",
+    "alternative_slug": "outlook",
+    "similarity_score": 0.85,
+    "reason": "Both are popular email services.",
+    "core_difference": "Gmail focuses on integration with Google services, while Outlook combines email with calendar features."
+  },
+  {
+    "software_slug": "yahoo-mail",
+    "alternative_slug": "gmx",
+    "similarity_score": 0.8,
+    "reason": "Both offer free email services.",
+    "core_difference": "Yahoo Mail has more features, while GMX emphasizes simplicity."
+  },
+  {
+    "software_slug": "zoho-mail",
+    "alternative_slug": "protonmail",
+    "similarity_score": 0.75,
+    "reason": "Both provide email services with a focus on privacy.",
+    "core_difference": "Zoho Mail is ad-free but not end-to-end encrypted like ProtonMail."
+  },
+  {
+    "software_slug": "mailchimp",
+    "alternative_slug": "constant-contact",
+    "similarity_score": 0.9,
+    "reason": "Both are leading email marketing platforms.",
+    "core_difference": "Mailchimp offers more automation features, while Constant Contact focuses on simplicity."
+  },
+  {
+    "software_slug": "sendinblue",
+    "alternative_slug": "hubspot-email-marketing",
+    "similarity_score": 0.85,
+    "reason": "Both provide comprehensive marketing solutions.",
+    "core_difference": "Sendinblue is more focused on email marketing, while HubSpot integrates CRM functionalities."
+  },
+  {
+    "software_slug": "aweber",
+    "alternative_slug": "getresponse",
+    "similarity_score": 0.8,
+    "reason": "Both target small to medium businesses for email marketing.",
+    "core_difference": "GetResponse includes advanced automation features that AWeber lacks."
+  },
+  {
+    "software_slug": "mailgun",
+    "alternative_slug": "sendgrid",
+    "similarity_score": 0.9,
+    "reason": "Both are email delivery services for developers.",
+    "core_difference": "Mailgun focuses on API capabilities, while SendGrid emphasizes cloud-based delivery."
+  },
+  {
+    "software_slug": "activecampaign",
+    "alternative_slug": "drip",
+    "similarity_score": 0.85,
+    "reason": "Both offer email marketing with automation.",
+    "core_difference": "Drip is tailored for ecommerce, while ActiveCampaign serves a broader audience."
+  },
+  {
+    "software_slug": "convertkit",
+    "alternative_slug": "mailerlite",
+    "similarity_score": 0.8,
+    "reason": "Both cater to creators and small businesses.",
+    "core_difference": "ConvertKit focuses on creators, while MailerLite offers more design flexibility."
+  },
+  {
+    "software_slug": "mailjet",
+    "alternative_slug": "sparkpost",
+    "similarity_score": 0.75,
+    "reason": "Both provide email delivery solutions.",
+    "core_difference": "Mailjet emphasizes collaboration, while SparkPost focuses on analytics."
+  },
+  {
+    "software_slug": "klaviyo",
+    "alternative_slug": "moonsend",
+    "similarity_score": 0.8,
+    "reason": "Both target ecommerce email marketing.",
+    "core_difference": "Klaviyo offers advanced segmentation, while Moonsend focuses on automation."
+  },
+  {
+    "software_slug": "freshmail",
+    "alternative_slug": "emailoctopus",
+    "similarity_score": 0.75,
+    "reason": "Both are user-friendly email marketing tools.",
+    "core_difference": "FreshMail offers more templates, while EmailOctopus is simpler and cost-effective."
+  },
+  {
+    "software_slug": "sendpulse",
+    "alternative_slug": "mailchimp-transactional",
+    "similarity_score": 0.7,
+    "reason": "Both provide transactional email services.",
+    "core_difference": "SendPulse offers multichannel marketing, while Mailchimp Transactional focuses solely on email."
+  },
+  {
+    "software_slug": "fastmail",
+    "alternative_slug": "tutanota",
+    "similarity_score": 0.75,
+    "reason": "Both emphasize secure email services.",
+    "core_difference": "FastMail offers more features, while Tutanota is fully encrypted."
+  },
+  {
+    "software_slug": "hushmail",
+    "alternative_slug": "protonmail",
+    "similarity_score": 0.8,
+    "reason": "Both focus on secure email communication.",
+    "core_difference": "ProtonMail is fully encrypted, while Hushmail offers additional features."
+  },
+  {
+    "software_slug": "yandex-mail",
+    "alternative_slug": "yahoo-mail",
+    "similarity_score": 0.75,
+    "reason": "Both are free email services with large user bases.",
+    "core_difference": "Yandex Mail offers additional cloud storage features, while Yahoo Mail has more integrated services."
+  },
+  {
+    "software_slug": "outreach",
+    "alternative_slug": "hubspot-email-marketing",
+    "similarity_score": 0.7,
+    "reason": "Both are used for sales engagement.",
+    "core_difference": "Outreach focuses on sales automation, while HubSpot integrates marketing and CRM."
+  },
+  {
+    "software_slug": "campaign-monitor",
+    "alternative_slug": "mailchimp",
+    "similarity_score": 0.85,
+    "reason": "Both are popular for email marketing campaigns.",
+    "core_difference": "Campaign Monitor emphasizes design, while Mailchimp offers broader automation."
+  }
+]

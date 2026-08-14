@@ -1,0 +1,1589 @@
+[
+  {
+    "slug": "gmail",
+    "name": "Gmail",
+    "tagline": "Email for everyone",
+    "short_description": "Gmail is a free email service developed by Google. It offers a user-friendly interface and powerful search capabilities.",
+    "website_url": "https://www.gmail.com",
+    "pricing_model_slug": "free",
+    "ai_features": {
+      "tldr": "Gmail offers seamless email management.",
+      "pros": [
+        "User-friendly interface",
+        "Robust spam filtering",
+        "Integration with Google Workspace"
+      ],
+      "cons": [
+        "Limited offline access",
+        "Storage limits on free plan",
+        "Ads in free version"
+      ],
+      "pricing_model_type": "Freemium",
+      "target_audience_size": "Any",
+      "dealbreakers": [
+        "Privacy concerns with data usage"
+      ],
+      "hidden_costs": [
+        "Paid plans for extra storage"
+      ],
+      "migration_difficulty": "easy",
+      "best_for": [
+        "Personal email management",
+        "Team collaboration"
+      ],
+      "not_for": [
+        "Users needing advanced features",
+        "Privacy-focused individuals"
+      ],
+      "switching_reasons": [
+        "Better privacy options",
+        "Advanced email features"
+      ],
+      "key_limitations": [
+        "Limited customization options",
+        "Dependence on internet access"
+      ],
+      "confidence": 0.95
+    }
+  },
+  {
+    "slug": "outlook",
+    "name": "Outlook",
+    "tagline": "Email and calendar in one",
+    "short_description": "Outlook is a personal information manager from Microsoft, featuring email, calendar, task management, and contact management.",
+    "website_url": "https://outlook.live.com",
+    "pricing_model_slug": "freemium",
+    "ai_features": {
+      "tldr": "Outlook streamlines email and scheduling.",
+      "pros": [
+        "Robust email management",
+        "Integrated calendar features",
+        "Strong collaboration tools"
+      ],
+      "cons": [
+        "Can be complex for beginners",
+        "Limited customization options",
+        "Higher cost than competitors"
+      ],
+      "pricing_model_type": "Paid Only",
+      "target_audience_size": "Any",
+      "dealbreakers": [
+        "Requires Microsoft 365 subscription"
+      ],
+      "hidden_costs": [
+        "Add-ons may incur extra fees"
+      ],
+      "migration_difficulty": "medium",
+      "best_for": [
+        "Corporate email management",
+        "Team scheduling coordination"
+      ],
+      "not_for": [
+        "Casual users",
+        "Small teams with tight budgets"
+      ],
+      "switching_reasons": [
+        "Need for simpler interfaces",
+        "Lower-cost alternatives available"
+      ],
+      "key_limitations": [
+        "Limited offline functionality",
+        "Integration issues with non-Microsoft apps"
+      ],
+      "confidence": 0.95
+    }
+  },
+  {
+    "slug": "yahoo-mail",
+    "name": "Yahoo Mail",
+    "tagline": "Free email service",
+    "short_description": "Yahoo Mail is a free email service provided by Yahoo, offering a large storage capacity and various organizational features.",
+    "website_url": "https://mail.yahoo.com",
+    "pricing_model_slug": "free",
+    "ai_features": {
+      "tldr": "Yahoo Mail offers robust email features.",
+      "pros": [
+        "User-friendly interface",
+        "Generous storage space",
+        "Integrated calendar"
+      ],
+      "cons": [
+        "Ads in free version",
+        "Limited customization options",
+        "Occasional spam issues"
+      ],
+      "pricing_model_type": "Freemium",
+      "target_audience_size": "Any",
+      "dealbreakers": [
+        "Ads can be intrusive"
+      ],
+      "hidden_costs": [
+        "Premium features require subscription"
+      ],
+      "migration_difficulty": "easy",
+      "best_for": [
+        "Personal email management",
+        "Basic business communication"
+      ],
+      "not_for": [
+        "Advanced email marketing",
+        "Heavy data analytics"
+      ],
+      "switching_reasons": [
+        "Better privacy options",
+        "More storage alternatives"
+      ],
+      "key_limitations": [
+        "Limited third-party integrations",
+        "Basic security features"
+      ],
+      "confidence": 0.95
+    }
+  },
+  {
+    "slug": "zoho-mail",
+    "name": "Zoho Mail",
+    "tagline": "Ad-free email service",
+    "short_description": "Zoho Mail is a secure email service designed for businesses, offering a clean interface and no ads.",
+    "website_url": "https://www.zoho.com/mail",
+    "pricing_model_slug": "freemium",
+    "ai_features": {
+      "tldr": "Zoho Mail offers robust email solutions.",
+      "pros": [
+        "Affordable pricing plans",
+        "Strong security features",
+        "User-friendly interface"
+      ],
+      "cons": [
+        "Limited storage on free plan",
+        "Occasional performance issues",
+        "Less integration options"
+      ],
+      "pricing_model_type": "Freemium",
+      "target_audience_size": "Any",
+      "dealbreakers": [
+        "No phone support",
+        "Limited offline access"
+      ],
+      "hidden_costs": [
+        "Extra for additional storage",
+        "Advanced features require upgrade"
+      ],
+      "migration_difficulty": "medium",
+      "best_for": [
+        "Small business email management",
+        "Team collaboration tools"
+      ],
+      "not_for": [
+        "Large enterprises needing scalability",
+        "Users requiring extensive integrations"
+      ],
+      "switching_reasons": [
+        "Cost-effective alternatives available",
+        "Need for better integrations"
+      ],
+      "key_limitations": [
+        "Storage limits on free tier",
+        "Limited customization options"
+      ],
+      "confidence": 0.95
+    }
+  },
+  {
+    "slug": "protonmail",
+    "name": "ProtonMail",
+    "tagline": "Secure email for privacy",
+    "short_description": "ProtonMail is an encrypted email service that prioritizes user privacy and security, based in Switzerland.",
+    "website_url": "https://protonmail.com",
+    "pricing_model_slug": "freemium",
+    "ai_features": {
+      "tldr": "ProtonMail offers secure email communication.",
+      "pros": [
+        "End-to-end encryption",
+        "User-friendly interface",
+        "Strong privacy features"
+      ],
+      "cons": [
+        "Limited storage on free plan",
+        "No calendar integration",
+        "Higher cost for premium"
+      ],
+      "pricing_model_type": "Freemium",
+      "target_audience_size": "Any",
+      "dealbreakers": [
+        "Not suitable for large attachments"
+      ],
+      "hidden_costs": [
+        "Premium features require subscription"
+      ],
+      "migration_difficulty": "medium",
+      "best_for": [
+        "Privacy-focused users",
+        "Secure business communications"
+      ],
+      "not_for": [
+        "Casual email users",
+        "Users needing extensive integrations"
+      ],
+      "switching_reasons": [
+        "Desire for better privacy",
+        "Frustration with ads"
+      ],
+      "key_limitations": [
+        "Limited third-party integrations",
+        "Storage caps on free tier"
+      ],
+      "confidence": 0.95
+    }
+  },
+  {
+    "slug": "mailchimp",
+    "name": "Mailchimp",
+    "tagline": "Email marketing made easy",
+    "short_description": "Mailchimp is a marketing automation platform and an email marketing service that helps businesses manage their campaigns.",
+    "website_url": "https://mailchimp.com",
+    "pricing_model_slug": "freemium",
+    "ai_features": {
+      "tldr": "Mailchimp streamlines email marketing effortlessly.",
+      "pros": [
+        "User-friendly interface",
+        "Robust automation features",
+        "Comprehensive analytics tools"
+      ],
+      "cons": [
+        "Limited customization options",
+        "Higher costs for advanced features",
+        "Learning curve for new users"
+      ],
+      "pricing_model_type": "Freemium",
+      "target_audience_size": "Startup",
+      "dealbreakers": [
+        "Expensive for large lists",
+        "Limited support on free tier"
+      ],
+      "hidden_costs": [
+        "Extra fees for advanced features",
+        "Costs increase with list size"
+      ],
+      "migration_difficulty": "medium",
+      "best_for": [
+        "Small business marketing",
+        "Event promotion campaigns"
+      ],
+      "not_for": [
+        "Large enterprise solutions",
+        "Highly technical users"
+      ],
+      "switching_reasons": [
+        "Need for advanced features",
+        "Better pricing options available"
+      ],
+      "key_limitations": [
+        "Email sending limits on free tier",
+        "Limited integrations with other tools"
+      ],
+      "confidence": 0.95
+    }
+  },
+  {
+    "slug": "constant-contact",
+    "name": "Constant Contact",
+    "tagline": "Email marketing simplified",
+    "short_description": "Constant Contact is an email marketing service that helps small businesses create effective email campaigns.",
+    "website_url": "https://www.constantcontact.com",
+    "pricing_model_slug": "paid-only",
+    "ai_features": {
+      "tldr": "Constant Contact simplifies email marketing.",
+      "pros": [
+        "User-friendly interface",
+        "Robust automation features",
+        "Excellent customer support"
+      ],
+      "cons": [
+        "Limited design flexibility",
+        "Higher pricing tiers",
+        "Basic reporting tools"
+      ],
+      "pricing_model_type": "Paid Only",
+      "target_audience_size": "Startup",
+      "dealbreakers": [
+        "No free tier available",
+        "Limited integrations"
+      ],
+      "hidden_costs": [
+        "Additional fees for premium features",
+        "Increased costs for larger lists"
+      ],
+      "migration_difficulty": "medium",
+      "best_for": [
+        "Small business marketing",
+        "Event promotion campaigns"
+      ],
+      "not_for": [
+        "Large enterprise solutions",
+        "Advanced marketing analytics"
+      ],
+      "switching_reasons": [
+        "Need for advanced features",
+        "Better pricing options"
+      ],
+      "key_limitations": [
+        "Limited template options",
+        "No SMS marketing support"
+      ],
+      "confidence": 0.95
+    }
+  },
+  {
+    "slug": "sendinblue",
+    "name": "Sendinblue",
+    "tagline": "All-in-one marketing platform",
+    "short_description": "Sendinblue offers email marketing, SMS marketing, and marketing automation tools for businesses of all sizes.",
+    "website_url": "https://www.sendinblue.com",
+    "pricing_model_slug": "freemium",
+    "ai_features": {
+      "tldr": "Sendinblue offers powerful marketing automation.",
+      "pros": [
+        "User-friendly interface",
+        "Robust email marketing tools",
+        "Affordable pricing plans"
+      ],
+      "cons": [
+        "Limited advanced features",
+        "Occasional deliverability issues",
+        "Support response times vary"
+      ],
+      "pricing_model_type": "Freemium",
+      "target_audience_size": "Startup",
+      "dealbreakers": [
+        "Limited integrations with other tools"
+      ],
+      "hidden_costs": [
+        "Additional fees for SMS marketing"
+      ],
+      "migration_difficulty": "medium",
+      "best_for": [
+        "Email marketing campaigns",
+        "Small business automation"
+      ],
+      "not_for": [
+        "Large enterprises",
+        "Complex marketing needs"
+      ],
+      "switching_reasons": [
+        "Better features elsewhere",
+        "Higher deliverability rates"
+      ],
+      "key_limitations": [
+        "Limited reporting capabilities",
+        "Basic CRM features"
+      ],
+      "confidence": 0.95
+    }
+  },
+  {
+    "slug": "hubspot-email-marketing",
+    "name": "HubSpot Email Marketing",
+    "tagline": "Email marketing with CRM",
+    "short_description": "HubSpot Email Marketing is part of HubSpot's CRM platform, allowing users to create, send, and analyze email campaigns.",
+    "website_url": "https://www.hubspot.com/email-marketing",
+    "pricing_model_slug": "freemium",
+    "ai_features": {
+      "tldr": "HubSpot Email Marketing simplifies campaigns.",
+      "pros": [
+        "User-friendly interface",
+        "Robust automation features",
+        "Comprehensive analytics tools"
+      ],
+      "cons": [
+        "Limited customization options",
+        "Higher pricing tiers",
+        "Steep learning curve"
+      ],
+      "pricing_model_type": "Freemium",
+      "target_audience_size": "Startup",
+      "dealbreakers": [
+        "Costly for small businesses",
+        "Limited integrations on free plan"
+      ],
+      "hidden_costs": [
+        "Add-ons increase overall cost",
+        "Premium features require upgrade"
+      ],
+      "migration_difficulty": "medium",
+      "best_for": [
+        "Small to medium businesses",
+        "Marketing teams seeking automation"
+      ],
+      "not_for": [
+        "Large enterprises needing customization",
+        "Users preferring simple tools"
+      ],
+      "switching_reasons": [
+        "Need for advanced features",
+        "Better pricing options available"
+      ],
+      "key_limitations": [
+        "Email limits on free plan",
+        "Basic templates only"
+      ],
+      "confidence": 0.95
+    }
+  },
+  {
+    "slug": "aweber",
+    "name": "AWeber",
+    "tagline": "Email marketing for small businesses",
+    "short_description": "AWeber is an email marketing and automation platform designed for small businesses to engage their audience.",
+    "website_url": "https://www.aweber.com",
+    "pricing_model_slug": "paid-only",
+    "ai_features": {
+      "tldr": "AWeber simplifies email marketing automation.",
+      "pros": [
+        "User-friendly interface",
+        "Robust automation features",
+        "Excellent customer support"
+      ],
+      "cons": [
+        "Limited design templates",
+        "Higher pricing tiers",
+        "Steeper learning curve for advanced features"
+      ],
+      "pricing_model_type": "Paid Only",
+      "target_audience_size": "Startup",
+      "dealbreakers": [
+        "No free tier available"
+      ],
+      "hidden_costs": [
+        "Additional fees for premium features"
+      ],
+      "migration_difficulty": "medium",
+      "best_for": [
+        "Email marketing campaigns",
+        "Lead generation"
+      ],
+      "not_for": [
+        "Large enterprises",
+        "Complex CRM integrations"
+      ],
+      "switching_reasons": [
+        "Better pricing options",
+        "More advanced features elsewhere"
+      ],
+      "key_limitations": [
+        "Limited integrations",
+        "Basic analytics tools"
+      ],
+      "confidence": 0.95
+    }
+  },
+  {
+    "slug": "getresponse",
+    "name": "GetResponse",
+    "tagline": "Email marketing and automation",
+    "short_description": "GetResponse is an online marketing platform that offers email marketing, landing pages, and marketing automation.",
+    "website_url": "https://www.getresponse.com",
+    "pricing_model_slug": "freemium",
+    "ai_features": {
+      "tldr": "GetResponse streamlines email marketing effortlessly.",
+      "pros": [
+        "User-friendly interface",
+        "Comprehensive automation tools",
+        "Affordable pricing plans"
+      ],
+      "cons": [
+        "Limited design flexibility",
+        "Basic reporting features",
+        "No free tier available"
+      ],
+      "pricing_model_type": "Paid Only",
+      "target_audience_size": "Startup",
+      "dealbreakers": [
+        "No free tier for testing",
+        "Limited integrations with some tools"
+      ],
+      "hidden_costs": [
+        "Extra fees for advanced features",
+        "Higher costs for larger lists"
+      ],
+      "migration_difficulty": "medium",
+      "best_for": [
+        "Small business email campaigns",
+        "Automated marketing workflows"
+      ],
+      "not_for": [
+        "Large enterprises needing complex solutions",
+        "Users requiring extensive customization"
+      ],
+      "switching_reasons": [
+        "Better features in competitors",
+        "Lower pricing options available"
+      ],
+      "key_limitations": [
+        "Limited template options",
+        "Basic analytics capabilities"
+      ],
+      "confidence": 0.95
+    }
+  },
+  {
+    "slug": "campaign-monitor",
+    "name": "Campaign Monitor",
+    "tagline": "Beautiful email marketing",
+    "short_description": "Campaign Monitor is an email marketing platform that allows users to create and send visually appealing email campaigns.",
+    "website_url": "https://www.campaignmonitor.com",
+    "pricing_model_slug": "paid-only",
+    "ai_features": {
+      "tldr": "Campaign Monitor simplifies email marketing.",
+      "pros": [
+        "User-friendly interface",
+        "Strong automation features",
+        "Excellent analytics tools"
+      ],
+      "cons": [
+        "Limited template customization",
+        "Higher pricing tiers",
+        "No free plan available"
+      ],
+      "pricing_model_type": "Paid Only",
+      "target_audience_size": "Startup",
+      "dealbreakers": [
+        "No free tier available",
+        "Expensive for larger lists"
+      ],
+      "hidden_costs": [
+        "Additional fees for premium features",
+        "Costs increase with list size"
+      ],
+      "migration_difficulty": "medium",
+      "best_for": [
+        "Small business email campaigns",
+        "Automated marketing workflows"
+      ],
+      "not_for": [
+        "Large enterprises needing customization",
+        "Users seeking free solutions"
+      ],
+      "switching_reasons": [
+        "Better pricing options elsewhere",
+        "More advanced features needed"
+      ],
+      "key_limitations": [
+        "Limited integrations",
+        "No SMS marketing support"
+      ],
+      "confidence": 0.95
+    }
+  },
+  {
+    "slug": "mailgun",
+    "name": "Mailgun",
+    "tagline": "Email API for developers",
+    "short_description": "Mailgun is an email automation service for developers, providing powerful APIs for sending, receiving, and tracking emails.",
+    "website_url": "https://www.mailgun.com",
+    "pricing_model_slug": "paid-only",
+    "ai_features": {
+      "tldr": "Mailgun excels in email automation.",
+      "pros": [
+        "Robust email API",
+        "Scalable infrastructure",
+        "Excellent deliverability rates"
+      ],
+      "cons": [
+        "Complex pricing structure",
+        "Limited support options",
+        "Learning curve for beginners"
+      ],
+      "pricing_model_type": "Paid Only",
+      "target_audience_size": "Startup",
+      "dealbreakers": [
+        "High volume can get costly"
+      ],
+      "hidden_costs": [
+        "Additional fees for extra features"
+      ],
+      "migration_difficulty": "medium",
+      "best_for": [
+        "Transactional email services",
+        "Email marketing campaigns"
+      ],
+      "not_for": [
+        "Small volume users",
+        "Non-technical teams"
+      ],
+      "switching_reasons": [
+        "Better pricing options",
+        "Simpler user interface"
+      ],
+      "key_limitations": [
+        "Limited integrations",
+        "No built-in analytics"
+      ],
+      "confidence": 0.95
+    }
+  },
+  {
+    "slug": "sendgrid",
+    "name": "SendGrid",
+    "tagline": "Cloud-based email delivery",
+    "short_description": "SendGrid is a cloud-based email delivery service that provides reliable email delivery and marketing solutions.",
+    "website_url": "https://sendgrid.com",
+    "pricing_model_slug": "freemium",
+    "ai_features": {
+      "tldr": "SendGrid excels in email delivery.",
+      "pros": [
+        "Reliable email delivery",
+        "Scalable infrastructure",
+        "Comprehensive analytics"
+      ],
+      "cons": [
+        "Complex pricing tiers",
+        "Limited template customization",
+        "Support response times vary"
+      ],
+      "pricing_model_type": "Freemium",
+      "target_audience_size": "Any",
+      "dealbreakers": [
+        "High volume can be costly"
+      ],
+      "hidden_costs": [
+        "Additional fees for advanced features"
+      ],
+      "migration_difficulty": "medium",
+      "best_for": [
+        "Transactional email services",
+        "Marketing email campaigns"
+      ],
+      "not_for": [
+        "Small volume users",
+        "Non-email communication needs"
+      ],
+      "switching_reasons": [
+        "Better pricing options",
+        "More user-friendly interfaces"
+      ],
+      "key_limitations": [
+        "Limited integrations",
+        "Basic automation features"
+      ],
+      "confidence": 0.95
+    }
+  },
+  {
+    "slug": "activecampaign",
+    "name": "ActiveCampaign",
+    "tagline": "Email marketing and CRM",
+    "short_description": "ActiveCampaign combines email marketing, marketing automation, and CRM tools to help businesses grow.",
+    "website_url": "https://www.activecampaign.com",
+    "pricing_model_slug": "paid-only",
+    "ai_features": {
+      "tldr": "ActiveCampaign excels in marketing automation.",
+      "pros": [
+        "Robust email marketing features",
+        "Advanced automation capabilities",
+        "User-friendly interface"
+      ],
+      "cons": [
+        "Pricing can be high",
+        "Limited reporting options",
+        "Steep learning curve"
+      ],
+      "pricing_model_type": "Paid Only",
+      "target_audience_size": "Startup",
+      "dealbreakers": [
+        "No free tier available",
+        "High cost for advanced features"
+      ],
+      "hidden_costs": [
+        "Add-ons increase overall price",
+        "Extra fees for premium support"
+      ],
+      "migration_difficulty": "medium",
+      "best_for": [
+        "Email marketing campaigns",
+        "Customer relationship management"
+      ],
+      "not_for": [
+        "Small businesses on a budget",
+        "Users needing simple solutions"
+      ],
+      "switching_reasons": [
+        "Need for more affordable options",
+        "Desire for simpler interfaces"
+      ],
+      "key_limitations": [
+        "Limited integrations with some tools",
+        "Complexity for basic users"
+      ],
+      "confidence": 0.95
+    }
+  },
+  {
+    "slug": "drip",
+    "name": "Drip",
+    "tagline": "Ecommerce email marketing",
+    "short_description": "Drip is an email marketing platform designed specifically for ecommerce businesses to engage customers effectively.",
+    "website_url": "https://www.drip.com",
+    "pricing_model_slug": "paid-only",
+    "ai_features": {
+      "tldr": "Drip excels in automated email marketing.",
+      "pros": [
+        "User-friendly interface",
+        "Powerful automation features",
+        "Robust analytics tools"
+      ],
+      "cons": [
+        "Limited integrations",
+        "Higher pricing tiers",
+        "Steep learning curve"
+      ],
+      "pricing_model_type": "Paid Only",
+      "target_audience_size": "Startup",
+      "dealbreakers": [
+        "No free tier available",
+        "Limited customer support options"
+      ],
+      "hidden_costs": [
+        "Add-ons increase total cost",
+        "Higher fees for advanced features"
+      ],
+      "migration_difficulty": "medium",
+      "best_for": [
+        "E-commerce email campaigns",
+        "Lead nurturing automation"
+      ],
+      "not_for": [
+        "Small businesses on a budget",
+        "Non-email marketing users"
+      ],
+      "switching_reasons": [
+        "Need for more integrations",
+        "Lower-cost alternatives available"
+      ],
+      "key_limitations": [
+        "Limited customization options",
+        "No SMS marketing features"
+      ],
+      "confidence": 0.95
+    }
+  },
+  {
+    "slug": "convertkit",
+    "name": "ConvertKit",
+    "tagline": "Email marketing for creators",
+    "short_description": "ConvertKit is an email marketing tool designed for creators, offering features to grow and engage their audience.",
+    "website_url": "https://convertkit.com",
+    "pricing_model_slug": "freemium",
+    "ai_features": {
+      "tldr": "ConvertKit simplifies email marketing automation.",
+      "pros": [
+        "User-friendly interface",
+        "Powerful automation features",
+        "Excellent customer support"
+      ],
+      "cons": [
+        "Limited design options",
+        "Higher pricing tiers",
+        "No built-in CRM"
+      ],
+      "pricing_model_type": "Paid Only",
+      "target_audience_size": "Startup",
+      "dealbreakers": [
+        "No free tier available",
+        "Limited integrations"
+      ],
+      "hidden_costs": [
+        "Additional fees for advanced features",
+        "Higher costs for larger lists"
+      ],
+      "migration_difficulty": "medium",
+      "best_for": [
+        "Content creators",
+        "Small businesses"
+      ],
+      "not_for": [
+        "Large enterprises",
+        "Advanced marketers"
+      ],
+      "switching_reasons": [
+        "Need for more features",
+        "Better pricing options"
+      ],
+      "key_limitations": [
+        "Limited template customization",
+        "No SMS marketing"
+      ],
+      "confidence": 0.95
+    }
+  },
+  {
+    "slug": "mailjet",
+    "name": "Mailjet",
+    "tagline": "Collaborative email marketing",
+    "short_description": "Mailjet is an email service provider that allows teams to collaborate on email marketing campaigns in real-time.",
+    "website_url": "https://www.mailjet.com",
+    "pricing_model_slug": "freemium",
+    "ai_features": {
+      "tldr": "Mailjet simplifies email marketing automation.",
+      "pros": [
+        "User-friendly interface",
+        "Robust API integration",
+        "Real-time analytics"
+      ],
+      "cons": [
+        "Limited template customization",
+        "Higher tiers can be pricey",
+        "Support response times vary"
+      ],
+      "pricing_model_type": "Freemium",
+      "target_audience_size": "Startup",
+      "dealbreakers": [
+        "Limited free tier features",
+        "No phone support"
+      ],
+      "hidden_costs": [
+        "Extra fees for advanced features",
+        "Overage charges on emails"
+      ],
+      "migration_difficulty": "medium",
+      "best_for": [
+        "Small business email campaigns",
+        "Transactional email services"
+      ],
+      "not_for": [
+        "Large enterprise solutions",
+        "Complex marketing automation"
+      ],
+      "switching_reasons": [
+        "Need for advanced features",
+        "Better customer support options"
+      ],
+      "key_limitations": [
+        "Email volume caps on plans",
+        "Limited automation workflows"
+      ],
+      "confidence": 0.95
+    }
+  },
+  {
+    "slug": "postmark",
+    "name": "Postmark",
+    "tagline": "Fast email delivery",
+    "short_description": "Postmark is an email delivery service focused on transactional emails, ensuring fast and reliable delivery.",
+    "website_url": "https://postmarkapp.com",
+    "pricing_model_slug": "paid-only",
+    "ai_features": {
+      "tldr": "Postmark excels in reliable email delivery.",
+      "pros": [
+        "Fast email delivery",
+        "Excellent analytics",
+        "User-friendly interface"
+      ],
+      "cons": [
+        "Limited template options",
+        "No built-in CRM",
+        "Higher pricing tiers"
+      ],
+      "pricing_model_type": "Paid Only",
+      "target_audience_size": "Startup",
+      "dealbreakers": [
+        "No free tier available"
+      ],
+      "hidden_costs": [
+        "Additional fees for overages"
+      ],
+      "migration_difficulty": "medium",
+      "best_for": [
+        "Transactional email services",
+        "Email performance tracking"
+      ],
+      "not_for": [
+        "Bulk marketing emails",
+        "Small personal projects"
+      ],
+      "switching_reasons": [
+        "Need for better deliverability",
+        "Advanced analytics requirements"
+      ],
+      "key_limitations": [
+        "Limited integrations",
+        "No A/B testing features"
+      ],
+      "confidence": 0.95
+    }
+  },
+  {
+    "slug": "sparkpost",
+    "name": "SparkPost",
+    "tagline": "Email delivery made easy",
+    "short_description": "SparkPost is an email delivery service that provides analytics and insights to improve email performance.",
+    "website_url": "https://www.sparkpost.com",
+    "pricing_model_slug": "paid-only",
+    "ai_features": {
+      "tldr": "SparkPost excels in email delivery.",
+      "pros": [
+        "High email deliverability rates",
+        "Robust analytics features",
+        "Scalable for growing businesses"
+      ],
+      "cons": [
+        "Complex setup for beginners",
+        "Limited free tier features",
+        "Support response times vary"
+      ],
+      "pricing_model_type": "Paid Only",
+      "target_audience_size": "Startup",
+      "dealbreakers": [
+        "No free plan for extensive use"
+      ],
+      "hidden_costs": [
+        "Additional fees for high volume"
+      ],
+      "migration_difficulty": "medium",
+      "best_for": [
+        "Transactional email services",
+        "Marketing email campaigns"
+      ],
+      "not_for": [
+        "Small personal projects",
+        "Users needing extensive free options"
+      ],
+      "switching_reasons": [
+        "Better pricing elsewhere",
+        "Simpler alternatives available"
+      ],
+      "key_limitations": [
+        "Steep learning curve",
+        "Limited integrations compared to others"
+      ],
+      "confidence": 0.95
+    }
+  },
+  {
+    "slug": "outreach",
+    "name": "Outreach",
+    "tagline": "Sales engagement platform",
+    "short_description": "Outreach is a sales engagement platform that helps teams improve their communication and outreach efforts.",
+    "website_url": "https://www.outreach.io",
+    "pricing_model_slug": "paid-only",
+    "ai_features": {
+      "tldr": "Outreach streamlines sales engagement effectively.",
+      "pros": [
+        "Automated outreach sequences",
+        "Robust analytics and reporting",
+        "Integrates with major CRMs"
+      ],
+      "cons": [
+        "Steep learning curve",
+        "High pricing tiers",
+        "Limited customization options"
+      ],
+      "pricing_model_type": "Paid Only",
+      "target_audience_size": "Enterprise",
+      "dealbreakers": [
+        "Requires extensive training",
+        "Not budget-friendly for small teams"
+      ],
+      "hidden_costs": [
+        "Add-ons increase overall cost",
+        "Premium support incurs extra fees"
+      ],
+      "migration_difficulty": "medium",
+      "best_for": [
+        "Large sales teams",
+        "Complex sales processes"
+      ],
+      "not_for": [
+        "Small businesses",
+        "Simple sales workflows"
+      ],
+      "switching_reasons": [
+        "Need for better integration",
+        "Desire for lower costs"
+      ],
+      "key_limitations": [
+        "Limited mobile functionality",
+        "Can be overwhelming for new users"
+      ],
+      "confidence": 0.95
+    }
+  },
+  {
+    "slug": "klaviyo",
+    "name": "Klaviyo",
+    "tagline": "Email marketing for ecommerce",
+    "short_description": "Klaviyo is an email marketing platform designed for ecommerce businesses, offering powerful segmentation and automation.",
+    "website_url": "https://www.klaviyo.com",
+    "pricing_model_slug": "freemium",
+    "ai_features": {
+      "tldr": "Klaviyo excels in email marketing automation.",
+      "pros": [
+        "Powerful segmentation tools",
+        "User-friendly interface",
+        "Robust analytics features"
+      ],
+      "cons": [
+        "Steep learning curve",
+        "Higher pricing tiers",
+        "Limited free plan"
+      ],
+      "pricing_model_type": "Paid Only",
+      "target_audience_size": "Startup",
+      "dealbreakers": [
+        "No free tier for advanced features"
+      ],
+      "hidden_costs": [
+        "Additional fees for extra contacts"
+      ],
+      "migration_difficulty": "medium",
+      "best_for": [
+        "E-commerce email campaigns",
+        "Customer retention strategies"
+      ],
+      "not_for": [
+        "Small businesses on a budget",
+        "Non-e-commerce businesses"
+      ],
+      "switching_reasons": [
+        "Better pricing options elsewhere",
+        "Simpler alternatives available"
+      ],
+      "key_limitations": [
+        "Limited integrations",
+        "Complex setup for beginners"
+      ],
+      "confidence": 0.95
+    }
+  },
+  {
+    "slug": "freshmail",
+    "name": "FreshMail",
+    "tagline": "Email marketing made simple",
+    "short_description": "FreshMail is an email marketing platform that provides tools for creating and managing email campaigns easily.",
+    "website_url": "https://freshmail.com",
+    "pricing_model_slug": "freemium",
+    "ai_features": {
+      "tldr": "FreshMail simplifies email marketing campaigns.",
+      "pros": [
+        "User-friendly interface",
+        "Robust analytics tools",
+        "Customizable templates"
+      ],
+      "cons": [
+        "Limited automation features",
+        "Higher pricing tiers",
+        "Basic customer support"
+      ],
+      "pricing_model_type": "Freemium",
+      "target_audience_size": "Startup",
+      "dealbreakers": [
+        "Lacks advanced segmentation",
+        "No phone support"
+      ],
+      "hidden_costs": [
+        "Additional fees for premium features",
+        "Overage charges for emails sent"
+      ],
+      "migration_difficulty": "medium",
+      "best_for": [
+        "Small business email campaigns",
+        "Newsletter management"
+      ],
+      "not_for": [
+        "Large enterprise solutions",
+        "Complex marketing automation"
+      ],
+      "switching_reasons": [
+        "Better pricing options",
+        "More advanced features elsewhere"
+      ],
+      "key_limitations": [
+        "Limited integrations",
+        "Basic reporting capabilities"
+      ],
+      "confidence": 0.95
+    }
+  },
+  {
+    "slug": "emailoctopus",
+    "name": "EmailOctopus",
+    "tagline": "Simple email marketing",
+    "short_description": "EmailOctopus is an email marketing service that offers a simple and cost-effective way to send email campaigns.",
+    "website_url": "https://emailoctopus.com",
+    "pricing_model_slug": "freemium",
+    "ai_features": {
+      "tldr": "EmailOctopus simplifies email marketing.",
+      "pros": [
+        "User-friendly interface",
+        "Affordable pricing plans",
+        "Strong automation features"
+      ],
+      "cons": [
+        "Limited integrations",
+        "Basic analytics",
+        "No advanced segmentation"
+      ],
+      "pricing_model_type": "Freemium",
+      "target_audience_size": "Startup",
+      "dealbreakers": [
+        "Lacks advanced features",
+        "Limited customer support"
+      ],
+      "hidden_costs": [
+        "Extra fees for premium features",
+        "Overage charges apply"
+      ],
+      "migration_difficulty": "medium",
+      "best_for": [
+        "Small business email campaigns",
+        "Nonprofit fundraising emails"
+      ],
+      "not_for": [
+        "Large enterprises",
+        "Complex marketing needs"
+      ],
+      "switching_reasons": [
+        "Cost-effective alternatives",
+        "More robust features elsewhere"
+      ],
+      "key_limitations": [
+        "Limited template options",
+        "Basic reporting tools"
+      ],
+      "confidence": 0.95
+    }
+  },
+  {
+    "slug": "moonsend",
+    "name": "Moonsend",
+    "tagline": "Email marketing automation",
+    "short_description": "Moonsend is an email marketing automation platform that helps businesses create personalized email campaigns.",
+    "website_url": "https://moonsend.com",
+    "pricing_model_slug": "freemium",
+    "ai_features": {
+      "tldr": "Moonsend simplifies email marketing automation.",
+      "pros": [
+        "User-friendly interface",
+        "Advanced automation features",
+        "Affordable pricing plans"
+      ],
+      "cons": [
+        "Limited integrations",
+        "Basic reporting tools",
+        "No phone support"
+      ],
+      "pricing_model_type": "Freemium",
+      "target_audience_size": "Startup",
+      "dealbreakers": [
+        "Lacks advanced analytics",
+        "Limited template customization"
+      ],
+      "hidden_costs": [
+        "Extra for premium templates",
+        "Fees for additional users"
+      ],
+      "migration_difficulty": "medium",
+      "best_for": [
+        "Small business email campaigns",
+        "E-commerce marketing automation"
+      ],
+      "not_for": [
+        "Large enterprises",
+        "Users needing extensive integrations"
+      ],
+      "switching_reasons": [
+        "Better features elsewhere",
+        "More robust support options"
+      ],
+      "key_limitations": [
+        "Limited A/B testing options",
+        "No SMS marketing features"
+      ],
+      "confidence": 0.95
+    }
+  },
+  {
+    "slug": "mailerlite",
+    "name": "MailerLite",
+    "tagline": "Email marketing made easy",
+    "short_description": "MailerLite is an email marketing platform that offers a user-friendly interface and powerful automation features.",
+    "website_url": "https://www.mailerlite.com",
+    "pricing_model_slug": "freemium",
+    "ai_features": {
+      "tldr": "MailerLite simplifies email marketing.",
+      "pros": [
+        "User-friendly interface",
+        "Affordable pricing plans",
+        "Strong automation features"
+      ],
+      "cons": [
+        "Limited advanced features",
+        "Basic reporting tools",
+        "Less integrations than competitors"
+      ],
+      "pricing_model_type": "Freemium",
+      "target_audience_size": "Startup",
+      "dealbreakers": [
+        "Limited customization options"
+      ],
+      "hidden_costs": [
+        "Additional fees for premium features"
+      ],
+      "migration_difficulty": "medium",
+      "best_for": [
+        "Small business email campaigns",
+        "Newsletter management"
+      ],
+      "not_for": [
+        "Large enterprise solutions",
+        "Complex marketing automation"
+      ],
+      "switching_reasons": [
+        "Cost-effective alternative",
+        "Simpler user experience"
+      ],
+      "key_limitations": [
+        "Limited template designs",
+        "Basic customer support"
+      ],
+      "confidence": 0.95
+    }
+  },
+  {
+    "slug": "sendpulse",
+    "name": "SendPulse",
+    "tagline": "Multichannel marketing platform",
+    "short_description": "SendPulse is a multichannel marketing platform that combines email, SMS, and web push notifications.",
+    "website_url": "https://sendpulse.com",
+    "pricing_model_slug": "freemium",
+    "ai_features": {
+      "tldr": "SendPulse streamlines multi-channel marketing.",
+      "pros": [
+        "Integrated email and SMS marketing",
+        "User-friendly interface",
+        "Affordable pricing plans"
+      ],
+      "cons": [
+        "Limited advanced analytics",
+        "Occasional deliverability issues",
+        "Basic automation features"
+      ],
+      "pricing_model_type": "Freemium",
+      "target_audience_size": "Startup",
+      "dealbreakers": [
+        "Lacks advanced CRM features",
+        "Limited third-party integrations"
+      ],
+      "hidden_costs": [
+        "Charges for premium features",
+        "SMS costs may vary"
+      ],
+      "migration_difficulty": "easy",
+      "best_for": [
+        "Small business marketing",
+        "Email campaign management"
+      ],
+      "not_for": [
+        "Large enterprises",
+        "Complex marketing needs"
+      ],
+      "switching_reasons": [
+        "Need for advanced features",
+        "Better integration options"
+      ],
+      "key_limitations": [
+        "Limited customization options",
+        "Basic reporting tools"
+      ],
+      "confidence": 0.95
+    }
+  },
+  {
+    "slug": "mailchimp-transactional",
+    "name": "Mailchimp Transactional",
+    "tagline": "Transactional email service",
+    "short_description": "Mailchimp Transactional is a service for sending transactional emails, ensuring reliable delivery and tracking.",
+    "website_url": "https://mailchimp.com/transactional-email",
+    "pricing_model_slug": "paid-only",
+    "ai_features": {
+      "tldr": "Mailchimp Transactional simplifies email automation.",
+      "pros": [
+        "User-friendly interface",
+        "Robust analytics features",
+        "Strong deliverability rates"
+      ],
+      "cons": [
+        "Limited customization options",
+        "Higher pricing tiers",
+        "Basic support for free users"
+      ],
+      "pricing_model_type": "Paid Only",
+      "target_audience_size": "Startup",
+      "dealbreakers": [
+        "No free tier available",
+        "Complex pricing structure"
+      ],
+      "hidden_costs": [
+        "Additional fees for extra emails",
+        "Costs for premium features"
+      ],
+      "migration_difficulty": "medium",
+      "best_for": [
+        "E-commerce email campaigns",
+        "Transactional email notifications"
+      ],
+      "not_for": [
+        "Large-scale marketing teams",
+        "Users needing extensive integrations"
+      ],
+      "switching_reasons": [
+        "Need for advanced features",
+        "Better pricing options elsewhere"
+      ],
+      "key_limitations": [
+        "Limited template options",
+        "No built-in CRM features"
+      ],
+      "confidence": 0.95
+    }
+  },
+  {
+    "slug": "gmx",
+    "name": "GMX",
+    "tagline": "Free email service",
+    "short_description": "GMX is a free email service that offers unlimited storage and various features for personal and business use.",
+    "website_url": "https://www.gmx.com",
+    "pricing_model_slug": "free",
+    "ai_features": {
+      "tldr": "GMX offers efficient decentralized trading.",
+      "pros": [
+        "User-friendly interface",
+        "Low trading fees",
+        "High liquidity"
+      ],
+      "cons": [
+        "Limited asset selection",
+        "Steep learning curve",
+        "Occasional downtime"
+      ],
+      "pricing_model_type": "Paid Only",
+      "target_audience_size": "Any",
+      "dealbreakers": [
+        "Requires crypto knowledge"
+      ],
+      "hidden_costs": [
+        "Transaction fees apply"
+      ],
+      "migration_difficulty": "medium",
+      "best_for": [
+        "Crypto trading enthusiasts",
+        "Decentralized finance users"
+      ],
+      "not_for": [
+        "Traditional investors",
+        "Risk-averse users"
+      ],
+      "switching_reasons": [
+        "Better features elsewhere",
+        "Lower fees available"
+      ],
+      "key_limitations": [
+        "Limited customer support",
+        "Not beginner-friendly"
+      ],
+      "confidence": 0.95
+    }
+  },
+  {
+    "slug": "fastmail",
+    "name": "FastMail",
+    "tagline": "Fast and secure email",
+    "short_description": "FastMail is a paid email service that focuses on speed, privacy, and security for its users.",
+    "website_url": "https://www.fastmail.com",
+    "pricing_model_slug": "paid-only",
+    "ai_features": {
+      "tldr": "FastMail offers secure, private email.",
+      "pros": [
+        "Strong privacy features",
+        "Custom domain support",
+        "User-friendly interface"
+      ],
+      "cons": [
+        "No free tier",
+        "Limited integrations",
+        "Higher pricing than competitors"
+      ],
+      "pricing_model_type": "Paid Only",
+      "target_audience_size": "Any",
+      "dealbreakers": [
+        "No free plan available",
+        "Limited customer support hours"
+      ],
+      "hidden_costs": [
+        "Additional fees for extra storage",
+        "Custom domain costs"
+      ],
+      "migration_difficulty": "medium",
+      "best_for": [
+        "Privacy-focused users",
+        "Businesses needing custom domains"
+      ],
+      "not_for": [
+        "Users needing extensive integrations",
+        "Budget-conscious individuals"
+      ],
+      "switching_reasons": [
+        "Desire for better privacy",
+        "Need for custom email domains"
+      ],
+      "key_limitations": [
+        "No built-in calendar",
+        "Limited collaboration tools"
+      ],
+      "confidence": 0.95
+    }
+  },
+  {
+    "slug": "tutanota",
+    "name": "Tutanota",
+    "tagline": "Secure email for everyone",
+    "short_description": "Tutanota is a secure email service that offers end-to-end encryption and a focus on privacy.",
+    "website_url": "https://tutanota.com",
+    "pricing_model_slug": "freemium",
+    "ai_features": {
+      "tldr": "Secure email with end-to-end encryption.",
+      "pros": [
+        "Strong privacy features",
+        "User-friendly interface",
+        "Affordable premium plans"
+      ],
+      "cons": [
+        "Limited integrations",
+        "No calendar features",
+        "Storage caps on free plan"
+      ],
+      "pricing_model_type": "Freemium",
+      "target_audience_size": "Any",
+      "dealbreakers": [
+        "No support for third-party apps",
+        "Limited customization options"
+      ],
+      "hidden_costs": [
+        "Premium features require subscription",
+        "Additional storage incurs fees"
+      ],
+      "migration_difficulty": "medium",
+      "best_for": [
+        "Privacy-focused individuals",
+        "Small businesses needing secure email"
+      ],
+      "not_for": [
+        "Users needing extensive integrations",
+        "Large enterprises with complex needs"
+      ],
+      "switching_reasons": [
+        "Desire for enhanced security",
+        "Frustration with existing email providers"
+      ],
+      "key_limitations": [
+        "No built-in chat features",
+        "Limited offline access"
+      ],
+      "confidence": 0.95
+    }
+  },
+  {
+    "slug": "hushmail",
+    "name": "Hushmail",
+    "tagline": "Secure email service",
+    "short_description": "Hushmail is an encrypted email service that provides secure communication for personal and business use.",
+    "website_url": "https://www.hushmail.com",
+    "pricing_model_slug": "paid-only",
+    "ai_features": {
+      "tldr": "Secure email solution for privacy.",
+      "pros": [
+        "Strong encryption features",
+        "User-friendly interface",
+        "Mobile app available"
+      ],
+      "cons": [
+        "Limited storage options",
+        "Higher pricing tiers",
+        "No free tier"
+      ],
+      "pricing_model_type": "Paid Only",
+      "target_audience_size": "Any",
+      "dealbreakers": [
+        "No free version available"
+      ],
+      "hidden_costs": [
+        "Additional fees for extra storage"
+      ],
+      "migration_difficulty": "medium",
+      "best_for": [
+        "Privacy-focused individuals",
+        "Small businesses needing secure communication"
+      ],
+      "not_for": [
+        "Large enterprises with complex needs",
+        "Users seeking free solutions"
+      ],
+      "switching_reasons": [
+        "Need for better security",
+        "Desire for user-friendly design"
+      ],
+      "key_limitations": [
+        "Limited integrations",
+        "No advanced collaboration tools"
+      ],
+      "confidence": 0.95
+    }
+  },
+  {
+    "slug": "yandex-mail",
+    "name": "Yandex Mail",
+    "tagline": "Free email service",
+    "short_description": "Yandex Mail is a free email service from Yandex, offering a range of features and a user-friendly interface.",
+    "website_url": "https://mail.yandex.com",
+    "pricing_model_slug": "free",
+    "ai_features": {
+      "tldr": "Yandex Mail offers robust email features.",
+      "pros": [
+        "Generous storage options",
+        "Strong spam protection",
+        "User-friendly interface"
+      ],
+      "cons": [
+        "Limited third-party integrations",
+        "Less popular outside Russia",
+        "Occasional performance issues"
+      ],
+      "pricing_model_type": "Freemium",
+      "target_audience_size": "Any",
+      "dealbreakers": [
+        "Privacy concerns for some users"
+      ],
+      "hidden_costs": [
+        "Premium features may incur fees"
+      ],
+      "migration_difficulty": "medium",
+      "best_for": [
+        "Personal email management",
+        "Small business communication"
+      ],
+      "not_for": [
+        "Large enterprise solutions",
+        "Advanced email marketing"
+      ],
+      "switching_reasons": [
+        "Desire for better privacy",
+        "Need for more integrations"
+      ],
+      "key_limitations": [
+        "Limited customization options",
+        "Less support for non-Russian languages"
+      ],
+      "confidence": 0.95
+    }
+  }
+]

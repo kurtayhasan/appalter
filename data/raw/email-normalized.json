@@ -1,0 +1,266 @@
+[
+  {
+    "slug": "gmail",
+    "name": "Gmail",
+    "tagline": "Email for everyone",
+    "short_description": "Gmail is a free email service developed by Google. It offers a user-friendly interface and powerful search capabilities.",
+    "website_url": "https://www.gmail.com",
+    "pricing_model_slug": "free"
+  },
+  {
+    "slug": "outlook",
+    "name": "Outlook",
+    "tagline": "Email and calendar in one",
+    "short_description": "Outlook is a personal information manager from Microsoft, featuring email, calendar, task management, and contact management.",
+    "website_url": "https://outlook.live.com",
+    "pricing_model_slug": "freemium"
+  },
+  {
+    "slug": "yahoo-mail",
+    "name": "Yahoo Mail",
+    "tagline": "Free email service",
+    "short_description": "Yahoo Mail is a free email service provided by Yahoo, offering a large storage capacity and various organizational features.",
+    "website_url": "https://mail.yahoo.com",
+    "pricing_model_slug": "free"
+  },
+  {
+    "slug": "zoho-mail",
+    "name": "Zoho Mail",
+    "tagline": "Ad-free email service",
+    "short_description": "Zoho Mail is a secure email service designed for businesses, offering a clean interface and no ads.",
+    "website_url": "https://www.zoho.com/mail",
+    "pricing_model_slug": "freemium"
+  },
+  {
+    "slug": "protonmail",
+    "name": "ProtonMail",
+    "tagline": "Secure email for privacy",
+    "short_description": "ProtonMail is an encrypted email service that prioritizes user privacy and security, based in Switzerland.",
+    "website_url": "https://protonmail.com",
+    "pricing_model_slug": "freemium"
+  },
+  {
+    "slug": "mailchimp",
+    "name": "Mailchimp",
+    "tagline": "Email marketing made easy",
+    "short_description": "Mailchimp is a marketing automation platform and an email marketing service that helps businesses manage their campaigns.",
+    "website_url": "https://mailchimp.com",
+    "pricing_model_slug": "freemium"
+  },
+  {
+    "slug": "constant-contact",
+    "name": "Constant Contact",
+    "tagline": "Email marketing simplified",
+    "short_description": "Constant Contact is an email marketing service that helps small businesses create effective email campaigns.",
+    "website_url": "https://www.constantcontact.com",
+    "pricing_model_slug": "paid-only"
+  },
+  {
+    "slug": "sendinblue",
+    "name": "Sendinblue",
+    "tagline": "All-in-one marketing platform",
+    "short_description": "Sendinblue offers email marketing, SMS marketing, and marketing automation tools for businesses of all sizes.",
+    "website_url": "https://www.sendinblue.com",
+    "pricing_model_slug": "freemium"
+  },
+  {
+    "slug": "hubspot-email-marketing",
+    "name": "HubSpot Email Marketing",
+    "tagline": "Email marketing with CRM",
+    "short_description": "HubSpot Email Marketing is part of HubSpot's CRM platform, allowing users to create, send, and analyze email campaigns.",
+    "website_url": "https://www.hubspot.com/email-marketing",
+    "pricing_model_slug": "freemium"
+  },
+  {
+    "slug": "aweber",
+    "name": "AWeber",
+    "tagline": "Email marketing for small businesses",
+    "short_description": "AWeber is an email marketing and automation platform designed for small businesses to engage their audience.",
+    "website_url": "https://www.aweber.com",
+    "pricing_model_slug": "paid-only"
+  },
+  {
+    "slug": "getresponse",
+    "name": "GetResponse",
+    "tagline": "Email marketing and automation",
+    "short_description": "GetResponse is an online marketing platform that offers email marketing, landing pages, and marketing automation.",
+    "website_url": "https://www.getresponse.com",
+    "pricing_model_slug": "freemium"
+  },
+  {
+    "slug": "campaign-monitor",
+    "name": "Campaign Monitor",
+    "tagline": "Beautiful email marketing",
+    "short_description": "Campaign Monitor is an email marketing platform that allows users to create and send visually appealing email campaigns.",
+    "website_url": "https://www.campaignmonitor.com",
+    "pricing_model_slug": "paid-only"
+  },
+  {
+    "slug": "mailgun",
+    "name": "Mailgun",
+    "tagline": "Email API for developers",
+    "short_description": "Mailgun is an email automation service for developers, providing powerful APIs for sending, receiving, and tracking emails.",
+    "website_url": "https://www.mailgun.com",
+    "pricing_model_slug": "paid-only"
+  },
+  {
+    "slug": "sendgrid",
+    "name": "SendGrid",
+    "tagline": "Cloud-based email delivery",
+    "short_description": "SendGrid is a cloud-based email delivery service that provides reliable email delivery and marketing solutions.",
+    "website_url": "https://sendgrid.com",
+    "pricing_model_slug": "freemium"
+  },
+  {
+    "slug": "activecampaign",
+    "name": "ActiveCampaign",
+    "tagline": "Email marketing and CRM",
+    "short_description": "ActiveCampaign combines email marketing, marketing automation, and CRM tools to help businesses grow.",
+    "website_url": "https://www.activecampaign.com",
+    "pricing_model_slug": "paid-only"
+  },
+  {
+    "slug": "drip",
+    "name": "Drip",
+    "tagline": "Ecommerce email marketing",
+    "short_description": "Drip is an email marketing platform designed specifically for ecommerce businesses to engage customers effectively.",
+    "website_url": "https://www.drip.com",
+    "pricing_model_slug": "paid-only"
+  },
+  {
+    "slug": "convertkit",
+    "name": "ConvertKit",
+    "tagline": "Email marketing for creators",
+    "short_description": "ConvertKit is an email marketing tool designed for creators, offering features to grow and engage their audience.",
+    "website_url": "https://convertkit.com",
+    "pricing_model_slug": "freemium"
+  },
+  {
+    "slug": "mailjet",
+    "name": "Mailjet",
+    "tagline": "Collaborative email marketing",
+    "short_description": "Mailjet is an email service provider that allows teams to collaborate on email marketing campaigns in real-time.",
+    "website_url": "https://www.mailjet.com",
+    "pricing_model_slug": "freemium"
+  },
+  {
+    "slug": "postmark",
+    "name": "Postmark",
+    "tagline": "Fast email delivery",
+    "short_description": "Postmark is an email delivery service focused on transactional emails, ensuring fast and reliable delivery.",
+    "website_url": "https://postmarkapp.com",
+    "pricing_model_slug": "paid-only"
+  },
+  {
+    "slug": "sparkpost",
+    "name": "SparkPost",
+    "tagline": "Email delivery made easy",
+    "short_description": "SparkPost is an email delivery service that provides analytics and insights to improve email performance.",
+    "website_url": "https://www.sparkpost.com",
+    "pricing_model_slug": "paid-only"
+  },
+  {
+    "slug": "outreach",
+    "name": "Outreach",
+    "tagline": "Sales engagement platform",
+    "short_description": "Outreach is a sales engagement platform that helps teams improve their communication and outreach efforts.",
+    "website_url": "https://www.outreach.io",
+    "pricing_model_slug": "paid-only"
+  },
+  {
+    "slug": "klaviyo",
+    "name": "Klaviyo",
+    "tagline": "Email marketing for ecommerce",
+    "short_description": "Klaviyo is an email marketing platform designed for ecommerce businesses, offering powerful segmentation and automation.",
+    "website_url": "https://www.klaviyo.com",
+    "pricing_model_slug": "freemium"
+  },
+  {
+    "slug": "freshmail",
+    "name": "FreshMail",
+    "tagline": "Email marketing made simple",
+    "short_description": "FreshMail is an email marketing platform that provides tools for creating and managing email campaigns easily.",
+    "website_url": "https://freshmail.com",
+    "pricing_model_slug": "freemium"
+  },
+  {
+    "slug": "emailoctopus",
+    "name": "EmailOctopus",
+    "tagline": "Simple email marketing",
+    "short_description": "EmailOctopus is an email marketing service that offers a simple and cost-effective way to send email campaigns.",
+    "website_url": "https://emailoctopus.com",
+    "pricing_model_slug": "freemium"
+  },
+  {
+    "slug": "moonsend",
+    "name": "Moonsend",
+    "tagline": "Email marketing automation",
+    "short_description": "Moonsend is an email marketing automation platform that helps businesses create personalized email campaigns.",
+    "website_url": "https://moonsend.com",
+    "pricing_model_slug": "freemium"
+  },
+  {
+    "slug": "mailerlite",
+    "name": "MailerLite",
+    "tagline": "Email marketing made easy",
+    "short_description": "MailerLite is an email marketing platform that offers a user-friendly interface and powerful automation features.",
+    "website_url": "https://www.mailerlite.com",
+    "pricing_model_slug": "freemium"
+  },
+  {
+    "slug": "sendpulse",
+    "name": "SendPulse",
+    "tagline": "Multichannel marketing platform",
+    "short_description": "SendPulse is a multichannel marketing platform that combines email, SMS, and web push notifications.",
+    "website_url": "https://sendpulse.com",
+    "pricing_model_slug": "freemium"
+  },
+  {
+    "slug": "mailchimp-transactional",
+    "name": "Mailchimp Transactional",
+    "tagline": "Transactional email service",
+    "short_description": "Mailchimp Transactional is a service for sending transactional emails, ensuring reliable delivery and tracking.",
+    "website_url": "https://mailchimp.com/transactional-email",
+    "pricing_model_slug": "paid-only"
+  },
+  {
+    "slug": "gmx",
+    "name": "GMX",
+    "tagline": "Free email service",
+    "short_description": "GMX is a free email service that offers unlimited storage and various features for personal and business use.",
+    "website_url": "https://www.gmx.com",
+    "pricing_model_slug": "free"
+  },
+  {
+    "slug": "fastmail",
+    "name": "FastMail",
+    "tagline": "Fast and secure email",
+    "short_description": "FastMail is a paid email service that focuses on speed, privacy, and security for its users.",
+    "website_url": "https://www.fastmail.com",
+    "pricing_model_slug": "paid-only"
+  },
+  {
+    "slug": "tutanota",
+    "name": "Tutanota",
+    "tagline": "Secure email for everyone",
+    "short_description": "Tutanota is a secure email service that offers end-to-end encryption and a focus on privacy.",
+    "website_url": "https://tutanota.com",
+    "pricing_model_slug": "freemium"
+  },
+  {
+    "slug": "hushmail",
+    "name": "Hushmail",
+    "tagline": "Secure email service",
+    "short_description": "Hushmail is an encrypted email service that provides secure communication for personal and business use.",
+    "website_url": "https://www.hushmail.com",
+    "pricing_model_slug": "paid-only"
+  },
+  {
+    "slug": "yandex-mail",
+    "name": "Yandex Mail",
+    "tagline": "Free email service",
+    "short_description": "Yandex Mail is a free email service from Yandex, offering a range of features and a user-friendly interface.",
+    "website_url": "https://mail.yandex.com",
+    "pricing_model_slug": "free"
+  }
+]

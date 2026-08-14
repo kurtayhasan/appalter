@@ -1,0 +1,134 @@
+[
+  {
+    "slug": "gmail",
+    "name": "Gmail"
+  },
+  {
+    "slug": "outlook",
+    "name": "Outlook"
+  },
+  {
+    "slug": "yahoo-mail",
+    "name": "Yahoo Mail"
+  },
+  {
+    "slug": "zoho-mail",
+    "name": "Zoho Mail"
+  },
+  {
+    "slug": "protonmail",
+    "name": "ProtonMail"
+  },
+  {
+    "slug": "mailchimp",
+    "name": "Mailchimp"
+  },
+  {
+    "slug": "constant-contact",
+    "name": "Constant Contact"
+  },
+  {
+    "slug": "sendinblue",
+    "name": "Sendinblue"
+  },
+  {
+    "slug": "hubspot-email-marketing",
+    "name": "HubSpot Email Marketing"
+  },
+  {
+    "slug": "aweber",
+    "name": "AWeber"
+  },
+  {
+    "slug": "getresponse",
+    "name": "GetResponse"
+  },
+  {
+    "slug": "campaign-monitor",
+    "name": "Campaign Monitor"
+  },
+  {
+    "slug": "mailgun",
+    "name": "Mailgun"
+  },
+  {
+    "slug": "sendgrid",
+    "name": "SendGrid"
+  },
+  {
+    "slug": "activecampaign",
+    "name": "ActiveCampaign"
+  },
+  {
+    "slug": "drip",
+    "name": "Drip"
+  },
+  {
+    "slug": "convertkit",
+    "name": "ConvertKit"
+  },
+  {
+    "slug": "mailjet",
+    "name": "Mailjet"
+  },
+  {
+    "slug": "postmark",
+    "name": "Postmark"
+  },
+  {
+    "slug": "sparkpost",
+    "name": "SparkPost"
+  },
+  {
+    "slug": "outreach",
+    "name": "Outreach"
+  },
+  {
+    "slug": "klaviyo",
+    "name": "Klaviyo"
+  },
+  {
+    "slug": "freshmail",
+    "name": "FreshMail"
+  },
+  {
+    "slug": "emailoctopus",
+    "name": "EmailOctopus"
+  },
+  {
+    "slug": "moonsend",
+    "name": "Moonsend"
+  },
+  {
+    "slug": "mailerlite",
+    "name": "MailerLite"
+  },
+  {
+    "slug": "sendpulse",
+    "name": "SendPulse"
+  },
+  {
+    "slug": "mailchimp-transactional",
+    "name": "Mailchimp Transactional"
+  },
+  {
+    "slug": "gmx",
+    "name": "GMX"
+  },
+  {
+    "slug": "fastmail",
+    "name": "FastMail"
+  },
+  {
+    "slug": "tutanota",
+    "name": "Tutanota"
+  },
+  {
+    "slug": "hushmail",
+    "name": "Hushmail"
+  },
+  {
+    "slug": "yandex-mail",
+    "name": "Yandex Mail"
+  }
+]

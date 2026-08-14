@@ -1,0 +1,134 @@
+[
+  {
+    "slug": "adobe-creative-cloud",
+    "name": "Adobe Creative Cloud"
+  },
+  {
+    "slug": "canva",
+    "name": "Canva"
+  },
+  {
+    "slug": "figma",
+    "name": "Figma"
+  },
+  {
+    "slug": "sketch",
+    "name": "Sketch"
+  },
+  {
+    "slug": "invision",
+    "name": "InVision"
+  },
+  {
+    "slug": "adobe-xd",
+    "name": "Adobe XD"
+  },
+  {
+    "slug": "coreldraw",
+    "name": "CorelDRAW"
+  },
+  {
+    "slug": "affinity-designer",
+    "name": "Affinity Designer"
+  },
+  {
+    "slug": "gravit-designer",
+    "name": "Gravit Designer"
+  },
+  {
+    "slug": "crello",
+    "name": "Crello"
+  },
+  {
+    "slug": "snappa",
+    "name": "Snappa"
+  },
+  {
+    "slug": "vectr",
+    "name": "Vectr"
+  },
+  {
+    "slug": "marvelapp",
+    "name": "Marvel App"
+  },
+  {
+    "slug": "lunacy",
+    "name": "Lunacy"
+  },
+  {
+    "slug": "mockplus",
+    "name": "Mockplus"
+  },
+  {
+    "slug": "balsamiq",
+    "name": "Balsamiq"
+  },
+  {
+    "slug": "uxpin",
+    "name": "UXPin"
+  },
+  {
+    "slug": "zeplin",
+    "name": "Zeplin"
+  },
+  {
+    "slug": "designbold",
+    "name": "DesignBold"
+  },
+  {
+    "slug": "placeit",
+    "name": "Placeit"
+  },
+  {
+    "slug": "stencil",
+    "name": "Stencil"
+  },
+  {
+    "slug": "picmonkey",
+    "name": "PicMonkey"
+  },
+  {
+    "slug": "easil",
+    "name": "Easil"
+  },
+  {
+    "slug": "designhill",
+    "name": "Designhill"
+  },
+  {
+    "slug": "creativemarket",
+    "name": "Creative Market"
+  },
+  {
+    "slug": "artboardstudio",
+    "name": "Artboard Studio"
+  },
+  {
+    "slug": "designmodo",
+    "name": "Designmodo"
+  },
+  {
+    "slug": "tinkercad",
+    "name": "Tinkercad"
+  },
+  {
+    "slug": "canva-for-education",
+    "name": "Canva for Education"
+  },
+  {
+    "slug": "pencilproject",
+    "name": "Pencil Project"
+  },
+  {
+    "slug": "squarespace",
+    "name": "Squarespace"
+  },
+  {
+    "slug": "weebly",
+    "name": "Weebly"
+  },
+  {
+    "slug": "wix",
+    "name": "Wix"
+  }
+]

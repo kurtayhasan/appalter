@@ -1,0 +1,135 @@
+[
+  {
+    "software_slug": "adobe-creative-cloud",
+    "alternative_slug": "canva",
+    "similarity_score": 0.85,
+    "reason": "Both offer design tools for various creative projects.",
+    "core_difference": "Adobe Creative Cloud is a comprehensive suite, while Canva focuses on simplicity and ease of use."
+  },
+  {
+    "software_slug": "adobe-creative-cloud",
+    "alternative_slug": "coreldraw",
+    "similarity_score": 0.8,
+    "reason": "Both are powerful graphic design software.",
+    "core_difference": "Adobe Creative Cloud includes multiple applications, whereas CorelDRAW is primarily focused on vector graphics."
+  },
+  {
+    "software_slug": "canva",
+    "alternative_slug": "crello",
+    "similarity_score": 0.9,
+    "reason": "Both are user-friendly graphic design tools.",
+    "core_difference": "Canva offers a broader range of templates compared to Crello."
+  },
+  {
+    "software_slug": "canva",
+    "alternative_slug": "snappa",
+    "similarity_score": 0.85,
+    "reason": "Both provide quick and easy graphic design solutions.",
+    "core_difference": "Snappa is more focused on social media graphics, while Canva covers a wider range of design needs."
+  },
+  {
+    "software_slug": "figma",
+    "alternative_slug": "sketch",
+    "similarity_score": 0.9,
+    "reason": "Both are popular tools for UI/UX design.",
+    "core_difference": "Figma is cloud-based for collaboration, while Sketch is primarily desktop-based."
+  },
+  {
+    "software_slug": "figma",
+    "alternative_slug": "adobe-xd",
+    "similarity_score": 0.85,
+    "reason": "Both are used for designing and prototyping user interfaces.",
+    "core_difference": "Figma emphasizes real-time collaboration, whereas Adobe XD integrates more with other Adobe products."
+  },
+  {
+    "software_slug": "sketch",
+    "alternative_slug": "adobe-xd",
+    "similarity_score": 0.8,
+    "reason": "Both are tools for designing digital products.",
+    "core_difference": "Sketch is Mac-only, while Adobe XD is available on both Mac and Windows."
+  },
+  {
+    "software_slug": "invision",
+    "alternative_slug": "marvelapp",
+    "similarity_score": 0.85,
+    "reason": "Both focus on prototyping and collaboration.",
+    "core_difference": "InVision offers more advanced features for design handoff compared to Marvel App."
+  },
+  {
+    "software_slug": "adobe-xd",
+    "alternative_slug": "uxpin",
+    "similarity_score": 0.8,
+    "reason": "Both are used for design and prototyping.",
+    "core_difference": "UXPin includes more advanced prototyping features than Adobe XD."
+  },
+  {
+    "software_slug": "coreldraw",
+    "alternative_slug": "affinity-designer",
+    "similarity_score": 0.85,
+    "reason": "Both are professional graphic design software.",
+    "core_difference": "Affinity Designer is often seen as a more affordable alternative to CorelDRAW."
+  },
+  {
+    "software_slug": "affinity-designer",
+    "alternative_slug": "gravit-designer",
+    "similarity_score": 0.8,
+    "reason": "Both are vector design tools.",
+    "core_difference": "Affinity Designer is a paid software, while Gravit Designer offers a free version."
+  },
+  {
+    "software_slug": "gravit-designer",
+    "alternative_slug": "vectr",
+    "similarity_score": 0.75,
+    "reason": "Both are free vector design applications.",
+    "core_difference": "Gravit Designer offers more advanced features compared to Vectr."
+  },
+  {
+    "software_slug": "crello",
+    "alternative_slug": "designbold",
+    "similarity_score": 0.8,
+    "reason": "Both are easy-to-use design platforms.",
+    "core_difference": "DesignBold focuses more on social media graphics than Crello."
+  },
+  {
+    "software_slug": "snappa",
+    "alternative_slug": "stencil",
+    "similarity_score": 0.85,
+    "reason": "Both are quick graphic design tools.",
+    "core_difference": "Stencil is more focused on creating images for social media."
+  },
+  {
+    "software_slug": "balsamiq",
+    "alternative_slug": "mockplus",
+    "similarity_score": 0.8,
+    "reason": "Both are tools for wireframing and prototyping.",
+    "core_difference": "Balsamiq emphasizes low-fidelity wireframes, while Mockplus supports high-fidelity prototypes."
+  },
+  {
+    "software_slug": "uxpin",
+    "alternative_slug": "zeplin",
+    "similarity_score": 0.75,
+    "reason": "Both assist in the design handoff process.",
+    "core_difference": "UXPin focuses more on prototyping, while Zeplin is primarily for design handoff."
+  },
+  {
+    "software_slug": "designbold",
+    "alternative_slug": "easil",
+    "similarity_score": 0.8,
+    "reason": "Both are user-friendly design tools.",
+    "core_difference": "Easil offers more branding features compared to DesignBold."
+  },
+  {
+    "software_slug": "placeit",
+    "alternative_slug": "artboardstudio",
+    "similarity_score": 0.75,
+    "reason": "Both provide mockup and design tools.",
+    "core_difference": "Placeit focuses more on mockups, while Artboard Studio offers more design features."
+  },
+  {
+    "software_slug": "tinkercad",
+    "alternative_slug": "pencilproject",
+    "similarity_score": 0.7,
+    "reason": "Both are tools for design and prototyping.",
+    "core_difference": "Tinkercad specializes in 3D design, while Pencil Project is for 2D prototyping."
+  }
+]
