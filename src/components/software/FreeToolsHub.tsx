@@ -113,15 +113,15 @@ export async function FreeToolsHub({ locale }: FreeToolsHubProps) {
                 <div key={sw.id} className="software-card" style={{ display: "flex", flexDirection: "column", justifyContent: "space-between" }}>
                   <div>
                     <div style={{ display: "flex", alignItems: "flex-start", gap: "0.875rem", marginBottom: "1rem" }}>
-                      <div style={{ width: "48px", height: "48px", borderRadius: "10px", background: "var(--bg-secondary)", display: "flex", alignItems: "center", justifyContent: "center", overflow: "hidden", flexShrink: 0 }}>
+                      <div style={{ width: "48px", height: "48px", borderRadius: "10px", background: "#ffffff", border: "1px solid var(--border-subtle)", display: "flex", alignItems: "center", justifyContent: "center", overflow: "hidden", flexShrink: 0, padding: "4px" }}>
                         {sw.logo_url ? (
-                          <Image src={sw.logo_url} alt={sw.name} width={48} height={48} style={{ objectFit: "contain" }} />
+                          <Image src={sw.logo_url} alt={sw.name} width={40} height={40} style={{ objectFit: "contain" }} />
                         ) : (
                           <img
                             src={`https://ui-avatars.com/api/?name=${encodeURIComponent(sw.name)}&background=random&color=fff&size=96&rounded=true`}
                             alt={sw.name}
-                            width={48}
-                            height={48}
+                            width={40}
+                            height={40}
                           />
                         )}
                       </div>
@@ -131,7 +131,7 @@ export async function FreeToolsHub({ locale }: FreeToolsHubProps) {
                             {sw.name}
                           </Link>
                         </h3>
-                        <span className="badge badge-featured" style={{ background: "rgba(52, 211, 153, 0.12)", color: "#34d399", fontSize: "0.75rem", marginTop: "0.25rem", display: "inline-block" }}>
+                        <span className="badge badge-oss" style={{ fontSize: "0.65rem", marginTop: "0.25rem", display: "inline-block" }}>
                           Free Tier Available
                         </span>
                       </div>
