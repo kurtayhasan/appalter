@@ -42,7 +42,7 @@ const antivirusData: AntivirusSeed[] = [
     website_url: "https://www.bitdefender.com",
     logo_url: "https://icon.horse/icon/bitdefender.com",
     pricing_model_id: PRICING_SUBSCRIPTION,
-    starting_price: 29.99,
+    starting_price: 49.99,
     price_currency: "USD",
     has_free_trial: true,
     free_trial_days: 30,

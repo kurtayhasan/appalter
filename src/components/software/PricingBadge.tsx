@@ -5,6 +5,7 @@ interface PricingBadgeProps {
   pricingModelSlug: string | null | undefined;
   startingPrice: number | null | undefined;
   currency?: string;
+  billingPeriod?: string;
   hasFreeTrial?: boolean;
   size?: "xs" | "sm" | "md";
 }
@@ -36,6 +37,7 @@ export function PricingBadge({
   pricingModelSlug,
   startingPrice,
   currency = "USD",
+  billingPeriod,
   hasFreeTrial = false,
   size = "sm",
 }: PricingBadgeProps) {
@@ -44,9 +46,12 @@ export function PricingBadge({
   const colorClass = MODEL_COLORS[slug] ?? "badge-paid";
   const sizeClass = `badge-${size}`;
 
+  // Smart period determination if not specified
+  const period = billingPeriod ?? (startingPrice && startingPrice >= 25 ? "/yr" : "/mo");
+
   const priceText =
     startingPrice !== null && startingPrice !== undefined && startingPrice > 0
-      ? `from $${startingPrice}/mo`
+      ? `from $${startingPrice}${period}`
       : null;
 
   return (
