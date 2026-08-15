@@ -3,10 +3,46 @@ import { createAdminClient } from "@/lib/supabase/admin";
 import { revalidateTag } from "next/cache";
 import crypto from "crypto";
 
+// In-memory sliding window rate limiter for voting protection
+const ipVoteTracker = new Map<string, number[]>();
+const RATE_LIMIT_WINDOW_MS = 60 * 1000; // 1 minute
+const MAX_VOTES_PER_MINUTE = 10;
+
+function isRateLimited(ip: string): boolean {
+  const now = Date.now();
+  const timestamps = ipVoteTracker.get(ip) || [];
+
+  // Filter out timestamps older than window
+  const validTimestamps = timestamps.filter((t) => now - t < RATE_LIMIT_WINDOW_MS);
+
+  if (validTimestamps.length >= MAX_VOTES_PER_MINUTE) {
+    return true;
+  }
+
+  validTimestamps.push(now);
+  ipVoteTracker.set(ip, validTimestamps);
+  return false;
+}
+
 export async function POST(req: Request) {
   try {
     const body = await req.json();
-    const { alternative_record_id, software_slug, vote_type = 1 } = body;
+    const { alternative_record_id, software_slug, vote_type = 1, _hp, _ts } = body;
+
+    // 1. Layer 1: Honeypot Trap check (automated spam bots fill this field)
+    if (_hp && String(_hp).trim() !== "") {
+      // Silently return success to waste bot compute without writing to DB
+      return NextResponse.json({ success: true, fake: true });
+    }
+
+    // 2. Layer 2: Velocity / Interaction Timing Check (humans take at least 500ms to vote)
+    if (_ts) {
+      const elapsed = Date.now() - Number(_ts);
+      if (elapsed < 500) {
+        // Sub-500ms automated script
+        return NextResponse.json({ success: true, fake: true });
+      }
+    }
 
     if (!alternative_record_id || !software_slug) {
       return NextResponse.json({ error: "Missing required fields" }, { status: 400 });
@@ -16,13 +52,21 @@ export async function POST(req: Request) {
       return NextResponse.json({ error: "Invalid vote type" }, { status: 400 });
     }
 
-    // Hash the IP address for GDPR compliance
+    // 3. Layer 3: IP Rate Limiting & SHA-256 Fingerprint
     const ip = req.headers.get("x-forwarded-for") || req.headers.get("x-real-ip") || "unknown";
+    
+    if (isRateLimited(ip)) {
+      return NextResponse.json(
+        { error: "Too many votes. Please wait a moment." },
+        { status: 429 }
+      );
+    }
+
     const ipHash = crypto.createHash("sha256").update(ip).digest("hex");
 
     const supabase = createAdminClient();
 
-    // 1. Insert vote (bypassing strict types since they are not generated yet)
+    // 4. Layer 4: Insert vote with DB Unique constraint on (alternative_record_id, ip_hash)
     const { error: insertError } = await (supabase as any)
       .from("alternative_votes")
       .insert({
@@ -39,7 +83,7 @@ export async function POST(req: Request) {
       return NextResponse.json({ error: "Failed to record vote" }, { status: 500 });
     }
 
-    // 2. Increment upvotes/downvotes atomically (bypassing strict types)
+    // 5. Increment upvotes/downvotes atomically
     const { error: updateError } = await (supabase as any).rpc("vote_alternative", {
       p_id: alternative_record_id,
       p_vote_type: vote_type,

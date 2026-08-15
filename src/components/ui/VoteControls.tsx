@@ -14,6 +14,7 @@ export function VoteControls({ alternativeRecordId, softwareSlug, initialUpvotes
   const [downvotes, setDownvotes] = useState(initialDownvotes || 0);
   const [votedType, setVotedType] = useState<1 | -1 | null>(null);
   const [isLoading, setIsLoading] = useState(false);
+  const [mountedAt] = useState<number>(() => Date.now());
 
   const handleVote = async (type: 1 | -1) => {
     if (votedType !== null || isLoading) return;
@@ -34,6 +35,8 @@ export function VoteControls({ alternativeRecordId, softwareSlug, initialUpvotes
           alternative_record_id: alternativeRecordId,
           software_slug: softwareSlug,
           vote_type: type,
+          _ts: mountedAt,
+          _hp: "", // Honeypot trap: must remain strictly empty
         }),
       });
       
