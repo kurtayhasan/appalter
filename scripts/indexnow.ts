@@ -7,7 +7,7 @@ config({ path: resolve(process.cwd(), ".env") });
 
 const supabaseUrl = process.env.NEXT_PUBLIC_SUPABASE_URL;
 const supabaseKey = process.env.SUPABASE_SERVICE_ROLE_KEY || process.env.NEXT_PUBLIC_SUPABASE_ANON_KEY;
-const host = "www.appalter.com";
+const host = "appalter.com";
 const key = "appalter2026indexnowkey889";
 const keyLocation = `https://${host}/${key}.txt`;
 const locales = ["en", "tr", "de", "es"];
@@ -19,6 +19,13 @@ if (!supabaseUrl || !supabaseKey) {
 
 const supabase = createClient(supabaseUrl, supabaseKey);
 
+function getUrl(loc: string, path: string = "") {
+  const cleanPath = path ? (path.startsWith("/") ? path : `/${path}`) : "";
+  return loc === "en"
+    ? `https://${host}${cleanPath}`
+    : `https://${host}/${loc}${cleanPath}`;
+}
+
 async function submitIndexNow() {
   console.log("🚀 Starting IndexNow submission for Bing, Yandex, Seznam & Naver...");
 
@@ -26,8 +33,8 @@ async function submitIndexNow() {
 
   // 1. Static Home & Categories
   for (const loc of locales) {
-    urlList.push(`https://${host}/${loc}`);
-    urlList.push(`https://${host}/${loc}/categories`);
+    urlList.push(getUrl(loc, ""));
+    urlList.push(getUrl(loc, "/categories"));
   }
 
   // 2. Active Categories
@@ -38,7 +45,7 @@ async function submitIndexNow() {
 
   for (const cat of categories || []) {
     for (const loc of locales) {
-      urlList.push(`https://${host}/${loc}/category/${cat.slug}`);
+      urlList.push(getUrl(loc, `/category/${cat.slug}`));
     }
   }
 
@@ -50,8 +57,8 @@ async function submitIndexNow() {
 
   for (const sw of softwares || []) {
     for (const loc of locales) {
-      urlList.push(`https://${host}/${loc}/${sw.slug}`);
-      urlList.push(`https://${host}/${loc}/${sw.slug}/alternatives`);
+      urlList.push(getUrl(loc, `/${sw.slug}`));
+      urlList.push(getUrl(loc, `/${sw.slug}/alternatives`));
     }
   }
 
@@ -68,7 +75,7 @@ async function submitIndexNow() {
   for (const alt of (alternatives as any[]) || []) {
     if (alt.software?.slug && alt.alternative?.slug) {
       for (const loc of locales) {
-        urlList.push(`https://${host}/${loc}/${alt.software.slug}/vs/${alt.alternative.slug}`);
+        urlList.push(getUrl(loc, `/${alt.software.slug}/vs/${alt.alternative.slug}`));
       }
     }
   }
