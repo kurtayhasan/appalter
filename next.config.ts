@@ -35,6 +35,22 @@ const nextConfig: NextConfig = {
         hostname: "storage.appalter.com",
         pathname: "/**",
       },
+      {
+        protocol: "https",
+        hostname: "cdn.simpleicons.org",
+      },
+      {
+        protocol: "https",
+        hostname: "icon.horse",
+      },
+      {
+        protocol: "https",
+        hostname: "assets.stickpng.com",
+      },
+      {
+        protocol: "https",
+        hostname: "raw.githubusercontent.com",
+      },
       // Clearbit Logos
       {
         protocol: "https",
@@ -54,10 +70,6 @@ const nextConfig: NextConfig = {
       },
       {
         protocol: "https",
-        hostname: "logo.clearbit.com",
-      },
-      {
-        protocol: "https",
         hostname: "**.cdnlogo.com",
       },
       {
@@ -67,10 +79,6 @@ const nextConfig: NextConfig = {
       {
         protocol: "https",
         hostname: "ui-avatars.com",
-      },
-      {
-        protocol: "https",
-        hostname: "logo.clearbit.com",
       },
       {
         protocol: "https",
@@ -104,8 +112,8 @@ const nextConfig: NextConfig = {
           // Fonts
           "font-src 'self' https://fonts.gstatic.com",
           // Images: self + data URIs + Supabase + known CDNs
-          "img-src 'self' data: blob: https: *.supabase.co logo.clearbit.com",
-          "connect-src 'self' https://*.supabase.co https://app.posthog.com https://us.i.posthog.com https://eu.i.posthog.com https://*.sentry.io wss://*.supabase.co https://www.google-analytics.com https://www.google.com https://ep1.adtrafficquality.google https://pagead2.googlesyndication.com",
+          "img-src 'self' data: blob: https: *.supabase.co logo.clearbit.com cdn.simpleicons.org icon.horse",
+          "connect-src 'self' https://*.supabase.co https://app.posthog.com https://us.i.posthog.com https://us-assets.i.posthog.com https://eu.i.posthog.com https://eu-assets.i.posthog.com https://*.posthog.com https://*.sentry.io wss://*.supabase.co https://www.google-analytics.com https://www.google.com https://ep1.adtrafficquality.google https://pagead2.googlesyndication.com",
           "media-src 'self'",
           // Frames
           "frame-src 'self' https://googleads.g.doubleclick.net https://www.google.com https://ep1.adtrafficquality.google https://ep2.adtrafficquality.google",

@@ -116,6 +116,7 @@ export function SoftwareCard({
               width={64}
               height={64}
               className="card-logo"
+              unoptimized={true}
             />
           ) : (
             <img
@@ -147,7 +148,10 @@ export function SoftwareCard({
 
           {/* Rating */}
           {avg_rating && review_count > 0 ? (
-            <div className="card-rating">
+            <div
+              className="card-rating"
+              title={`Aggregated verified user rating (${formatRating(avg_rating)}/5 from ${formatCount(review_count)} reviews on G2 & Trustpilot)`}
+            >
               <StarRating rating={avg_rating} size="xs" />
               <span className="card-rating-value">{formatRating(avg_rating)}</span>
               <span className="card-rating-count">
