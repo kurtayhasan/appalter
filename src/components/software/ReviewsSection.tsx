@@ -5,6 +5,7 @@ import type { Locale } from "@/i18n/routing";
 import { getReviewsCached } from "@/lib/cache/queries";
 import { formatDate, formatCount, getInitials } from "@/lib/utils";
 import { StarRating } from "@/components/ui/StarRating";
+import { ReviewForm } from "@/components/software/ReviewForm";
 
 interface ReviewsSectionProps {
   softwareId: string;
@@ -28,11 +29,12 @@ export async function ReviewsSection({
     return (
       <section className="reviews-section" aria-labelledby="reviews-heading">
         <h2 id="reviews-heading" className="section-title">
-          Reviews
+          User Reviews
         </h2>
         <p className="empty-state">
-          No reviews yet. Be the first to review this software!
+          No reviews yet. Be the first to share your experience with this software!
         </p>
+        <ReviewForm softwareId={softwareId} locale={locale} />
       </section>
     );
   }
@@ -180,6 +182,9 @@ export async function ReviewsSection({
           </article>
         ))}
       </div>
+
+      {/* Review Form CTA */}
+      <ReviewForm softwareId={softwareId} locale={locale} />
     </section>
   );
 }
