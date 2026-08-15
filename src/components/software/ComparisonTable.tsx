@@ -213,6 +213,34 @@ export async function ComparisonTable({
               a={software.category_name ?? "—"}
               b={alternative.category_name ?? "—"}
             />
+            {/* Verified Lab Benchmark Rows */}
+            {((software.ai_features as any)?.benchmarks?.metrics?.protection_rate_pct !== undefined || (alternative.ai_features as any)?.benchmarks?.metrics?.protection_rate_pct !== undefined) && (
+              <ComparisonRow
+                label="Protection Rate (Lab %)"
+                a={(software.ai_features as any)?.benchmarks?.metrics?.protection_rate_pct ? `${(software.ai_features as any).benchmarks.metrics.protection_rate_pct}%` : "—"}
+                b={(alternative.ai_features as any)?.benchmarks?.metrics?.protection_rate_pct ? `${(alternative.ai_features as any).benchmarks.metrics.protection_rate_pct}%` : "—"}
+                aHighlight={((software.ai_features as any)?.benchmarks?.metrics?.protection_rate_pct ?? 0) >= ((alternative.ai_features as any)?.benchmarks?.metrics?.protection_rate_pct ?? 0)}
+                bHighlight={((alternative.ai_features as any)?.benchmarks?.metrics?.protection_rate_pct ?? 0) > ((software.ai_features as any)?.benchmarks?.metrics?.protection_rate_pct ?? 0)}
+              />
+            )}
+            {((software.ai_features as any)?.benchmarks?.metrics?.false_positives !== undefined || (alternative.ai_features as any)?.benchmarks?.metrics?.false_positives !== undefined) && (
+              <ComparisonRow
+                label="False Positives (Lab)"
+                a={(software.ai_features as any)?.benchmarks?.metrics?.false_positives !== undefined ? `${(software.ai_features as any).benchmarks.metrics.false_positives}` : "—"}
+                b={(alternative.ai_features as any)?.benchmarks?.metrics?.false_positives !== undefined ? `${(alternative.ai_features as any).benchmarks.metrics.false_positives}` : "—"}
+                aHighlight={((software.ai_features as any)?.benchmarks?.metrics?.false_positives ?? 999) <= ((alternative.ai_features as any)?.benchmarks?.metrics?.false_positives ?? 999)}
+                bHighlight={((alternative.ai_features as any)?.benchmarks?.metrics?.false_positives ?? 999) < ((software.ai_features as any)?.benchmarks?.metrics?.false_positives ?? 999)}
+              />
+            )}
+            {((software.ai_features as any)?.benchmarks?.metrics?.ram_idle_mb !== undefined || (alternative.ai_features as any)?.benchmarks?.metrics?.ram_idle_mb !== undefined) && (
+              <ComparisonRow
+                label="Idle RAM Usage"
+                a={(software.ai_features as any)?.benchmarks?.metrics?.ram_idle_mb ? `${(software.ai_features as any).benchmarks.metrics.ram_idle_mb} MB` : "—"}
+                b={(alternative.ai_features as any)?.benchmarks?.metrics?.ram_idle_mb ? `${(alternative.ai_features as any).benchmarks.metrics.ram_idle_mb} MB` : "—"}
+                aHighlight={((software.ai_features as any)?.benchmarks?.metrics?.ram_idle_mb ?? 9999) <= ((alternative.ai_features as any)?.benchmarks?.metrics?.ram_idle_mb ?? 9999)}
+                bHighlight={((alternative.ai_features as any)?.benchmarks?.metrics?.ram_idle_mb ?? 9999) < ((software.ai_features as any)?.benchmarks?.metrics?.ram_idle_mb ?? 9999)}
+              />
+            )}
             {relation?.difficulty && (
               <ComparisonRow
                 label="Migration Difficulty"

@@ -46,6 +46,79 @@ export function AIDecisionCard({ software, locale }: AIDecisionCardProps) {
           </span>
         </div>
 
+        {/* Verified Independent Lab Benchmarks (Ground Truth) */}
+        {aiFeatures.benchmarks && (
+          <div
+            className="benchmark-box"
+            style={{
+              marginBottom: "1.5rem",
+              padding: "1rem 1.25rem",
+              borderRadius: "var(--radius-md)",
+              background: "var(--bg-secondary)",
+              border: "1px solid var(--border-subtle)",
+              display: "flex",
+              flexDirection: "column",
+              gap: "0.75rem",
+            }}
+          >
+            <div style={{ display: "flex", alignItems: "center", justifyContent: "space-between", flexWrap: "wrap", gap: "0.5rem" }}>
+              <div style={{ display: "flex", alignItems: "center", gap: "0.5rem" }}>
+                <span className="badge badge-verified" style={{ fontSize: "0.75rem" }}>
+                  ✓ Verified Lab Benchmark
+                </span>
+                <span style={{ fontSize: "0.85rem", fontWeight: 600, color: "var(--text-primary)" }}>
+                  {aiFeatures.benchmarks.source?.name || "Independent Lab"} ({aiFeatures.benchmarks.tested_at})
+                </span>
+              </div>
+              {aiFeatures.benchmarks.source?.url && (
+                <a
+                  href={aiFeatures.benchmarks.source.url}
+                  target="_blank"
+                  rel="noopener noreferrer nofollow"
+                  style={{ fontSize: "0.8rem", color: "var(--accent-secondary)", textDecoration: "underline" }}
+                >
+                  View official lab report ↗
+                </a>
+              )}
+            </div>
+
+            <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(130px, 1fr))", gap: "0.75rem" }}>
+              {aiFeatures.benchmarks.metrics?.protection_rate_pct !== undefined && (
+                <div style={{ padding: "0.5rem 0.75rem", background: "var(--bg-tertiary)", borderRadius: "6px", border: "1px solid var(--border-subtle)" }}>
+                  <div style={{ fontSize: "0.75rem", color: "var(--text-muted)", textTransform: "uppercase" }}>Protection Rate</div>
+                  <div style={{ fontSize: "1.1rem", fontWeight: 700, color: "var(--success)" }}>
+                    {aiFeatures.benchmarks.metrics.protection_rate_pct}%
+                  </div>
+                </div>
+              )}
+              {aiFeatures.benchmarks.metrics?.false_positives !== undefined && (
+                <div style={{ padding: "0.5rem 0.75rem", background: "var(--bg-tertiary)", borderRadius: "6px", border: "1px solid var(--border-subtle)" }}>
+                  <div style={{ fontSize: "0.75rem", color: "var(--text-muted)", textTransform: "uppercase" }}>False Positives</div>
+                  <div style={{ fontSize: "1.1rem", fontWeight: 700, color: aiFeatures.benchmarks.metrics.false_positives === 0 ? "var(--success)" : "var(--text-primary)" }}>
+                    {aiFeatures.benchmarks.metrics.false_positives}
+                  </div>
+                </div>
+              )}
+              {aiFeatures.benchmarks.metrics?.performance_score !== undefined && (
+                <div style={{ padding: "0.5rem 0.75rem", background: "var(--bg-tertiary)", borderRadius: "6px", border: "1px solid var(--border-subtle)" }}>
+                  <div style={{ fontSize: "0.75rem", color: "var(--text-muted)", textTransform: "uppercase" }}>Performance</div>
+                  <div style={{ fontSize: "1.1rem", fontWeight: 700, color: "var(--text-primary)" }}>
+                    {aiFeatures.benchmarks.metrics.performance_score}/6.0
+                  </div>
+                </div>
+              )}
+              {aiFeatures.benchmarks.metrics?.ram_idle_mb !== undefined && (
+                <div style={{ padding: "0.5rem 0.75rem", background: "var(--bg-tertiary)", borderRadius: "6px", border: "1px solid var(--border-subtle)" }}>
+                  <div style={{ fontSize: "0.75rem", color: "var(--text-muted)", textTransform: "uppercase" }}>Idle Memory</div>
+                  <div style={{ fontSize: "1.1rem", fontWeight: 700, color: "var(--text-primary)" }}>
+                    {aiFeatures.benchmarks.metrics.ram_idle_mb} MB
+                  </div>
+                </div>
+              )}
+            </div>
+          </div>
+        )}
+
         {/* TL;DR Summary */}
         {tldr && (
           <div style={{ marginBottom: "1.5rem", fontSize: "1.05rem", lineHeight: 1.6, color: "var(--text-primary)" }}>
