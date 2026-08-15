@@ -102,6 +102,7 @@ export function SoftwareHero({ software, locale }: SoftwareHeroProps) {
                 height={96}
                 className="hero-logo"
                 priority
+                unoptimized={true}
               />
             ) : (
               <img
