@@ -5,6 +5,7 @@ import Link from "next/link";
 import { getTranslations } from "next-intl/server";
 import { routing, type Locale } from "@/i18n/routing";
 import { LanguageSwitcher } from "@/components/ui/LanguageSwitcher";
+import { ThemeToggle } from "@/components/ui/ThemeToggle";
 import { LiveSearchModal } from "@/components/search/LiveSearchModal";
 
 export async function Header({ locale }: { locale: Locale }) {
@@ -45,9 +46,12 @@ export async function Header({ locale }: { locale: Locale }) {
           </ul>
         </nav>
 
-        {/* Locale Switcher (Client Component) */}
-        <div className="header-locale">
-          <LanguageSwitcher currentLocale={locale} locales={[...routing.locales]} />
+        {/* Header Actions: Theme Toggle + Locale Switcher */}
+        <div className="header-actions">
+          <ThemeToggle />
+          <div className="header-locale">
+            <LanguageSwitcher currentLocale={locale} locales={[...routing.locales]} />
+          </div>
         </div>
       </div>
     </header>
