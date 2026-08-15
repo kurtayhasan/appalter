@@ -148,9 +148,56 @@ export async function ComparisonTable({
             </div>
 
             {relation?.core_difference && (
-              <div style={{ marginBottom: "1.25rem", padding: "0.875rem 1rem", background: "rgba(255,255,255,0.05)", borderRadius: "var(--radius-md)", borderLeft: "3px solid var(--accent-primary)" }}>
+              <div style={{ marginBottom: "1.25rem", padding: "0.875rem 1rem", background: "var(--bg-tertiary)", borderRadius: "var(--radius-md)", borderLeft: "3px solid var(--accent-primary)" }}>
                 <strong style={{ color: "var(--text-primary)" }}>The Core Difference: </strong>
                 <span style={{ color: "var(--text-secondary)" }}>{relation.core_difference}</span>
+              </div>
+            )}
+
+            {/* Cost Savings Estimator Banner */}
+            {((software.starting_price && software.starting_price > 0 && (!alternative.starting_price || alternative.starting_price === 0)) ||
+              (alternative.starting_price && alternative.starting_price > 0 && (!software.starting_price || software.starting_price === 0))) && (
+              <div
+                style={{
+                  marginBottom: "1.25rem",
+                  padding: "0.85rem 1.15rem",
+                  background: "rgba(16, 185, 129, 0.08)",
+                  border: "1px solid rgba(16, 185, 129, 0.25)",
+                  borderRadius: "var(--radius-md)",
+                  display: "flex",
+                  alignItems: "center",
+                  justifyContent: "space-between",
+                  flexWrap: "wrap",
+                  gap: "0.5rem",
+                }}
+              >
+                <div style={{ display: "flex", alignItems: "center", gap: "0.5rem" }}>
+                  <span style={{ fontSize: "1.2rem" }}>💰</span>
+                  <div>
+                    <strong style={{ color: "var(--success)", fontSize: "0.95rem" }}>
+                      Estimated Annual Cost Savings
+                    </strong>
+                    <p style={{ margin: 0, fontSize: "0.85rem", color: "var(--text-secondary)" }}>
+                      {software.starting_price && software.starting_price > 0 && (!alternative.starting_price || alternative.starting_price === 0) ? (
+                        <>Switching to <strong>{alternative.name}</strong> can save you up to <strong style={{ color: "var(--text-primary)" }}>${Math.round(software.starting_price > 25 ? software.starting_price : software.starting_price * 12)}/year</strong> per user.</>
+                      ) : (
+                        <>Switching to <strong>{software.name}</strong> can save you up to <strong style={{ color: "var(--text-primary)" }}>${Math.round((alternative.starting_price ?? 0) > 25 ? (alternative.starting_price ?? 0) : (alternative.starting_price ?? 0) * 12)}/year</strong> per user.</>
+                      )}
+                    </p>
+                  </div>
+                </div>
+                <span
+                  style={{
+                    fontSize: "0.75rem",
+                    fontWeight: 700,
+                    color: "var(--success)",
+                    background: "rgba(16, 185, 129, 0.15)",
+                    padding: "0.2rem 0.5rem",
+                    borderRadius: "9999px",
+                  }}
+                >
+                  100% Free / Open Source
+                </span>
               </div>
             )}
 
