@@ -1,4 +1,3 @@
-// category/[category_slug]/page.tsx
 import { notFound } from "next/navigation";
 import { Suspense } from "react";
 import type { Metadata } from "next";
@@ -8,8 +7,8 @@ import { getCategoryCached, getCategorySoftwaresCached } from "@/lib/cache/queri
 import { SoftwareCard } from "@/components/software/SoftwareCard";
 import { BreadcrumbJsonLd } from "@/components/seo/BreadcrumbJsonLd";
 import { CategoryFilterBar } from "@/components/category/CategoryFilterBar";
+import { CategoryTopPicks } from "@/components/category/CategoryTopPicks";
 import Link from "next/link";
-
 
 type SortOption = "relevance" | "rating" | "reviews" | "newest" | undefined;
 
@@ -103,6 +102,30 @@ export default async function CategoryPage({ params, searchParams }: Props) {
 
   const siteUrl = process.env.NEXT_PUBLIC_SITE_URL ?? "https://appalter.com";
 
+  // Category FAQ structured data for Google SEO
+  const faqSchema = {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": `What is the best ${category.name} software in 2026?`,
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": `Based on independent lab benchmarks, verified audits, and aggregated user ratings, AppAlter provides head-to-head comparison and verified metrics for the top ${category.name} tools in 2026.`
+        }
+      },
+      {
+        "@type": "Question",
+        "name": `Are there free alternatives available in the ${category.name} category?`,
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": `Yes, you can filter this category by Free and Open Source pricing models using our filter bar to discover completely free tools.`
+        }
+      }
+    ]
+  };
+
   return (
     <>
       <BreadcrumbJsonLd
@@ -111,6 +134,11 @@ export default async function CategoryPage({ params, searchParams }: Props) {
           { name: "Categories", url: `${siteUrl}/${locale}/categories` },
           { name: category.name, url: `${siteUrl}/${locale}/category/${category.slug}` },
         ]}
+      />
+
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }}
       />
 
       <main className="category-page">
@@ -134,10 +162,10 @@ export default async function CategoryPage({ params, searchParams }: Props) {
 
         {/* Dynamic software list — streamed */}
         <section className="container" style={{ padding: "2rem 1.5rem 4rem" }}>
-          <CategoryFilterBar />
           <Suspense fallback={<CategorySkeleton />}>
             <CategorySoftwareList
               categorySlug={category_slug}
+              categoryName={category.name}
               locale={locale as Locale}
               searchParamsPromise={searchParams}
             />
@@ -150,10 +178,12 @@ export default async function CategoryPage({ params, searchParams }: Props) {
 
 async function CategorySoftwareList({
   categorySlug,
+  categoryName,
   locale,
   searchParamsPromise,
 }: {
   categorySlug: string;
+  categoryName: string;
   locale: Locale;
   searchParamsPromise: Promise<any>;
 }) {
@@ -182,11 +212,25 @@ async function CategorySoftwareList({
   }
 
   return (
-    <div className="grid-cards">
-      {softwares.map((sw: any) => (
-        <SoftwareCard key={sw.id} software={sw} locale={locale} />
-      ))}
-    </div>
+    <>
+      {/* Top 3 Spotlight Banner (only on page 1 with no filters) */}
+      {(!page || page === "1") && !pricing && !platform && (
+        <CategoryTopPicks
+          categoryName={categoryName}
+          categorySlug={categorySlug}
+          softwares={softwares}
+          locale={locale}
+        />
+      )}
+
+      <CategoryFilterBar />
+
+      <div className="grid-cards" style={{ marginTop: "1.5rem" }}>
+        {softwares.map((sw: any) => (
+          <SoftwareCard key={sw.id} software={sw} locale={locale} />
+        ))}
+      </div>
+    </>
   );
 }
 
