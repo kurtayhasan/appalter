@@ -15,35 +15,6 @@ export function AdBanner({
   fullWidthResponsive = true,
   className = "",
 }: AdBannerProps) {
-  const adRef = useRef<HTMLModElement>(null);
-
-  useEffect(() => {
-    let timeoutId: ReturnType<typeof setTimeout>;
-    try {
-      if (adRef.current && !adRef.current.hasAttribute("data-adsbygoogle-status")) {
-        timeoutId = setTimeout(() => {
-          // @ts-ignore
-          (window.adsbygoogle = window.adsbygoogle || []).push({});
-        }, 150);
-      }
-    } catch (e) {
-      console.error("AdSense error:", e);
-    }
-    return () => clearTimeout(timeoutId);
-  }, []);
-
-  return (
-    <div className={`ad-container ${className}`} aria-label="Advertisement">
-      <span className="ad-label">Advertisement</span>
-      <ins
-        ref={adRef}
-        className="adsbygoogle"
-        style={{ display: "block", minWidth: "250px", width: "100%", minHeight: "100px" }}
-        data-ad-client="ca-pub-5280507999154958"
-        data-ad-slot={adSlot}
-        data-ad-format={adFormat}
-        data-full-width-responsive={fullWidthResponsive ? "true" : "false"}
-      />
-    </div>
-  );
+  // Ads disabled for ultra-clean, high-trust UX and affiliate focus
+  return null;
 }

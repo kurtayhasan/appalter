@@ -12,13 +12,14 @@ interface CommunityPollProps {
 export function CommunityPoll({ softwareA, softwareB, slugA, slugB }: CommunityPollProps) {
   const pollKey = `poll_${slugA}_vs_${slugB}`;
   const [votedChoice, setVotedChoice] = useState<string | null>(null);
-  const [counts, setCounts] = useState<{ a: number; b: number }>({ a: 18, b: 12 });
+  const [counts, setCounts] = useState<{ a: number; b: number }>({ a: 0, b: 0 });
 
   useEffect(() => {
     try {
       const saved = localStorage.getItem(pollKey);
       if (saved) {
         setVotedChoice(saved);
+        setCounts(saved === "a" ? { a: 1, b: 0 } : { a: 0, b: 1 });
       }
     } catch {
       // LocalStorage unavailable
@@ -42,13 +43,13 @@ export function CommunityPoll({ softwareA, softwareB, slugA, slugB }: CommunityP
   };
 
   const total = counts.a + counts.b;
-  const pctA = Math.round((counts.a / total) * 100);
-  const pctB = 100 - pctA;
+  const pctA = total > 0 ? Math.round((counts.a / total) * 100) : 0;
+  const pctB = total > 0 ? 100 - pctA : 0;
 
   return (
     <div className="community-poll-card" aria-label="Community Poll">
       <h3 className="poll-title">
-        Community Sentiment: Which one do you recommend?
+        Community Recommendation: Which one do you prefer?
       </h3>
       <div className="poll-buttons">
         <button
@@ -57,7 +58,7 @@ export function CommunityPoll({ softwareA, softwareB, slugA, slugB }: CommunityP
           onClick={() => handleVote("a")}
         >
           <span>{softwareA}</span>
-          <span className="poll-pct">{pctA}% ({counts.a} votes)</span>
+          {total > 0 && <span className="poll-pct">{pctA}%</span>}
         </button>
 
         <button
@@ -66,7 +67,7 @@ export function CommunityPoll({ softwareA, softwareB, slugA, slugB }: CommunityP
           onClick={() => handleVote("b")}
         >
           <span>{softwareB}</span>
-          <span className="poll-pct">{pctB}% ({counts.b} votes)</span>
+          {total > 0 && <span className="poll-pct">{pctB}%</span>}
         </button>
       </div>
       {votedChoice && (

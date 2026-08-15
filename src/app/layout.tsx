@@ -54,14 +54,6 @@ export default async function GlobalLayout({
             `,
           }}
         />
-
-        {/* Google AdSense */}
-        <Script
-          id="google-adsense"
-          strategy="lazyOnload"
-          crossOrigin="anonymous"
-          src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5280507999154958"
-        />
       </body>
     </html>
   );
