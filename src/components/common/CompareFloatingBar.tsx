@@ -31,11 +31,11 @@ export function CompareFloatingBar() {
         left: "50%",
         transform: "translateX(-50%)",
         zIndex: 999,
-        background: "rgba(18, 18, 24, 0.88)",
+        background: "var(--bg-card)",
         backdropFilter: "blur(16px)",
         WebkitBackdropFilter: "blur(16px)",
-        border: "1px solid rgba(255, 255, 255, 0.15)",
-        boxShadow: "0 20px 40px -10px rgba(0,0,0,0.6), 0 0 25px rgba(139, 92, 246, 0.2)",
+        border: "1px solid var(--border-subtle)",
+        boxShadow: "var(--shadow-lg), 0 10px 35px rgba(0,0,0,0.15)",
         borderRadius: "9999px",
         padding: "0.5rem 0.75rem 0.5rem 1.25rem",
         display: "flex",
@@ -59,7 +59,8 @@ export function CompareFloatingBar() {
               display: "flex",
               alignItems: "center",
               gap: "0.4rem",
-              background: "rgba(255,255,255,0.08)",
+              background: "var(--bg-tertiary)",
+              border: "1px solid var(--border-subtle)",
               padding: "0.25rem 0.6rem 0.25rem 0.4rem",
               borderRadius: "9999px",
               fontSize: "0.825rem",
@@ -70,7 +71,7 @@ export function CompareFloatingBar() {
             {item1.logo_url ? (
               <Image src={item1.logo_url} alt={item1.name} width={20} height={20} style={{ borderRadius: "4px", objectFit: "contain" }} />
             ) : (
-              <div style={{ width: 20, height: 20, borderRadius: 4, background: "#3b82f6", display: "flex", alignItems: "center", justifyContent: "center", fontSize: 10 }}>
+              <div style={{ width: 20, height: 20, borderRadius: 4, background: "var(--accent-primary)", color: "#fff", display: "flex", alignItems: "center", justifyContent: "center", fontSize: 10, fontWeight: 700 }}>
                 {item1.name.slice(0, 1)}
               </div>
             )}
@@ -93,7 +94,8 @@ export function CompareFloatingBar() {
                 display: "flex",
                 alignItems: "center",
                 gap: "0.4rem",
-                background: "rgba(255,255,255,0.08)",
+                background: "var(--bg-tertiary)",
+                border: "1px solid var(--border-subtle)",
                 padding: "0.25rem 0.6rem 0.25rem 0.4rem",
                 borderRadius: "9999px",
                 fontSize: "0.825rem",
@@ -104,7 +106,7 @@ export function CompareFloatingBar() {
               {item2.logo_url ? (
                 <Image src={item2.logo_url} alt={item2.name} width={20} height={20} style={{ borderRadius: "4px", objectFit: "contain" }} />
               ) : (
-                <div style={{ width: 20, height: 20, borderRadius: 4, background: "#10b981", display: "flex", alignItems: "center", justifyContent: "center", fontSize: 10 }}>
+                <div style={{ width: 20, height: 20, borderRadius: 4, background: "var(--success)", color: "#fff", display: "flex", alignItems: "center", justifyContent: "center", fontSize: 10, fontWeight: 700 }}>
                   {item2.name.slice(0, 1)}
                 </div>
               )}
@@ -122,7 +124,8 @@ export function CompareFloatingBar() {
               style={{
                 padding: "0.25rem 0.75rem",
                 borderRadius: "9999px",
-                border: "1px dashed rgba(255,255,255,0.25)",
+                border: "1px dashed var(--border-subtle)",
+                background: "var(--bg-secondary)",
                 fontSize: "0.75rem",
                 color: "var(--text-muted)",
               }}
@@ -145,7 +148,6 @@ export function CompareFloatingBar() {
               borderRadius: "9999px",
               fontWeight: 700,
               whiteSpace: "nowrap",
-              boxShadow: "0 0 15px rgba(99, 102, 241, 0.5)",
             }}
           >
             Compare Now →
@@ -159,9 +161,9 @@ export function CompareFloatingBar() {
               borderRadius: "9999px",
               fontWeight: 600,
               whiteSpace: "nowrap",
-              background: "rgba(255,255,255,0.06)",
+              background: "var(--bg-tertiary)",
               color: "var(--text-muted)",
-              border: "1px solid rgba(255,255,255,0.1)",
+              border: "1px solid var(--border-subtle)",
               cursor: "not-allowed",
             }}
           >

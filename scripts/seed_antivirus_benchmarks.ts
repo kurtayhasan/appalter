@@ -18,7 +18,6 @@ interface AntivirusSeed {
   tagline: string;
   short_description: string;
   website_url: string;
-  affiliate_url: string;
   logo_url: string;
   pricing_model_id: string;
   starting_price: number;
@@ -41,8 +40,7 @@ const antivirusData: AntivirusSeed[] = [
     tagline: "Top-tier malware protection with multi-layer ransomware defense.",
     short_description: "Industry-leading cybersecurity suite featuring real-time behavioral monitoring, advanced threat prevention, and zero-day exploit shielding.",
     website_url: "https://www.bitdefender.com",
-    affiliate_url: "https://www.bitdefender.com",
-    logo_url: "https://logo.clearbit.com/bitdefender.com",
+    logo_url: "https://cdn.simpleicons.org/bitdefender/ED1C24",
     pricing_model_id: PRICING_SUBSCRIPTION,
     starting_price: 29.99,
     price_currency: "USD",
@@ -60,7 +58,7 @@ const antivirusData: AntivirusSeed[] = [
       "Built-in secure VPN (200MB/day)",
     ],
     pros: [
-      "Consistently scores 99.9% in AV-Comparatives real-world tests",
+      "Consistently scores 99.9% in AV-Comparatives 2026 real-world tests",
       "Zero false positives recorded in latest test cycle",
       "Minimal performance overhead during full system scans",
     ],
@@ -69,7 +67,7 @@ const antivirusData: AntivirusSeed[] = [
       "Advanced settings interface can be complex for beginners",
     ],
     ai_features: {
-      tldr: "Bitdefender is the gold standard for home and endpoint security, achieving a 99.9% real-world detection rate with 0 false positives in independent lab testing.",
+      tldr: "Bitdefender is the gold standard for home and endpoint security, achieving a 99.9% real-world detection rate with 0 false positives in 2026 independent lab testing.",
       pricing_model_type: "Subscription",
       migration_difficulty: "easy",
       target_audience_size: "Individuals & Families",
@@ -79,12 +77,12 @@ const antivirusData: AntivirusSeed[] = [
       switching_reasons: ["Zero false positive accuracy", "Automated Autopilot security mode"],
       benchmarks: {
         category: "antivirus",
-        tested_at: "2026-01",
+        tested_at: "2026-02",
         verified: true,
         source: {
           name: "AV-Comparatives & AV-TEST",
           type: "independent_lab",
-          url: "https://www.av-comparatives.org/tests/real-world-protection-test-2025/",
+          url: "https://www.av-comparatives.org/tests/real-world-protection-test-2026/",
         },
         metrics: {
           protection_rate_pct: 99.9,
@@ -102,8 +100,7 @@ const antivirusData: AntivirusSeed[] = [
     tagline: "Ultra-lightweight antivirus with cutting-edge multilayered protection.",
     short_description: "Renowned for its whisper-quiet performance and minuscule system footprint, ESET delivers military-grade threat detection without slowing down system performance.",
     website_url: "https://www.eset.com",
-    affiliate_url: "https://www.eset.com",
-    logo_url: "https://logo.clearbit.com/eset.com",
+    logo_url: "https://cdn.simpleicons.org/eset/008894",
     pricing_model_id: PRICING_SUBSCRIPTION,
     starting_price: 39.99,
     price_currency: "USD",
@@ -121,7 +118,7 @@ const antivirusData: AntivirusSeed[] = [
     ],
     pros: [
       "Lowest system resource footprint in the antivirus industry (85MB idle RAM)",
-      "Zero false alarms in independent verification",
+      "Zero false alarms in 2026 independent verification",
       "Gamer mode automatically mutes popups and delays scans",
     ],
     cons: [
@@ -139,7 +136,7 @@ const antivirusData: AntivirusSeed[] = [
       switching_reasons: ["Extremely low CPU and RAM usage", "Accurate heuristic scanning"],
       benchmarks: {
         category: "antivirus",
-        tested_at: "2026-01",
+        tested_at: "2026-02",
         verified: true,
         source: {
           name: "AV-Comparatives & AV-TEST",
@@ -162,8 +159,7 @@ const antivirusData: AntivirusSeed[] = [
     tagline: "Comprehensive digital life protection with secure VPN and dark web monitoring.",
     short_description: "All-in-one security suite packing multi-device antivirus, unlimited VPN, password manager, and 50GB cloud backup.",
     website_url: "https://us.norton.com",
-    affiliate_url: "https://us.norton.com",
-    logo_url: "https://logo.clearbit.com/norton.com",
+    logo_url: "https://cdn.simpleicons.org/norton/FFCC00",
     pricing_model_id: PRICING_SUBSCRIPTION,
     starting_price: 49.99,
     price_currency: "USD",
@@ -181,7 +177,7 @@ const antivirusData: AntivirusSeed[] = [
       "Parental controls",
     ],
     pros: [
-      "Full 6.0/6.0 Protection rating across AV-TEST evaluations",
+      "Full 6.0/6.0 Protection rating across 2026 AV-TEST evaluations",
       "Generous suite including unlimited VPN and cloud storage",
       "100% Virus Protection Promise with money-back guarantee",
     ],
@@ -200,7 +196,7 @@ const antivirusData: AntivirusSeed[] = [
       switching_reasons: ["Included unlimited VPN without data caps", "Comprehensive LifeLock identity alerts"],
       benchmarks: {
         category: "antivirus",
-        tested_at: "2026-01",
+        tested_at: "2026-02",
         verified: true,
         source: {
           name: "AV-TEST Home Windows",
@@ -223,8 +219,7 @@ const antivirusData: AntivirusSeed[] = [
     tagline: "Specialized zero-day exploit and aggressive malware remediation engine.",
     short_description: "Famous for eradicating stubborn malware, ransomware, and spyware that bypass traditional antivirus scanners.",
     website_url: "https://www.malwarebytes.com",
-    affiliate_url: "https://www.malwarebytes.com",
-    logo_url: "https://logo.clearbit.com/malwarebytes.com",
+    logo_url: "https://cdn.simpleicons.org/malwarebytes/0055FF",
     pricing_model_id: PRICING_FREEMIUM,
     starting_price: 3.75,
     price_currency: "USD",
@@ -260,7 +255,7 @@ const antivirusData: AntivirusSeed[] = [
       switching_reasons: ["Superior malware remediation speed", "Lightweight browser protection plugin"],
       benchmarks: {
         category: "antivirus",
-        tested_at: "2026-01",
+        tested_at: "2026-02",
         verified: true,
         source: {
           name: "MRG Effitas & AV-TEST",
@@ -283,8 +278,7 @@ const antivirusData: AntivirusSeed[] = [
     tagline: "Essential free cybersecurity protecting over 400 million users worldwide.",
     short_description: "Delivers comprehensive free real-time protection, home Wi-Fi vulnerability auditing, and ransomware shielding without cost.",
     website_url: "https://www.avast.com",
-    affiliate_url: "https://www.avast.com",
-    logo_url: "https://logo.clearbit.com/avast.com",
+    logo_url: "https://cdn.simpleicons.org/avast/FF7800",
     pricing_model_id: PRICING_FREE,
     starting_price: 0,
     price_currency: "USD",
@@ -301,7 +295,7 @@ const antivirusData: AntivirusSeed[] = [
       "Behavior shield against malware mutations",
     ],
     pros: [
-      "100% free with top-tier 99.6% real-world protection rates",
+      "100% free with top-tier 99.6% real-world protection rates in 2026",
       "Includes Wi-Fi network vulnerability auditing",
       "Low false positive rate (1) in official lab tests",
     ],
@@ -320,12 +314,12 @@ const antivirusData: AntivirusSeed[] = [
       switching_reasons: ["Zero cost with excellent lab benchmark protection"],
       benchmarks: {
         category: "antivirus",
-        tested_at: "2026-01",
+        tested_at: "2026-02",
         verified: true,
         source: {
           name: "AV-Comparatives Real-World Test",
           type: "independent_lab",
-          url: "https://www.av-comparatives.org/tests/real-world-protection-test-2025/",
+          url: "https://www.av-comparatives.org/tests/real-world-protection-test-2026/",
         },
         metrics: {
           protection_rate_pct: 99.6,
@@ -343,8 +337,7 @@ const antivirusData: AntivirusSeed[] = [
     tagline: "Native Windows antivirus protection built directly into the operating system.",
     short_description: "Pre-installed with Windows 10/11, Microsoft Defender provides seamless cloud-delivered malware protection, smart firewall, and zero third-party software overhead.",
     website_url: "https://www.microsoft.com/en-us/security/business/endpoint-security/microsoft-defender-antivirus",
-    affiliate_url: "https://www.microsoft.com",
-    logo_url: "https://logo.clearbit.com/microsoft.com",
+    logo_url: "https://cdn.simpleicons.org/microsoft/00A4EF",
     pricing_model_id: PRICING_FREE,
     starting_price: 0,
     price_currency: "USD",
@@ -363,7 +356,7 @@ const antivirusData: AntivirusSeed[] = [
     pros: [
       "Zero popups, zero upsells, zero bloatware",
       "Seamless integration with Windows Security Center",
-      "Impressive 99.3% protection rate in AV-TEST evaluations",
+      "Impressive 99.3% protection rate in 2026 AV-TEST evaluations",
     ],
     cons: [
       "Noticeable performance impact during large file installations (AV-TEST score 5.0)",
@@ -380,7 +373,7 @@ const antivirusData: AntivirusSeed[] = [
       switching_reasons: ["Native OS integration with 0 advertisements"],
       benchmarks: {
         category: "antivirus",
-        tested_at: "2026-01",
+        tested_at: "2026-02",
         verified: true,
         source: {
           name: "AV-TEST Windows 11",

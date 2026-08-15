@@ -535,6 +535,22 @@ svg {
   font-weight: 500;
 }
 
+.star-rating {
+  display: inline-flex !important;
+  flex-direction: row !important;
+  align-items: center;
+  gap: 2px;
+  color: #f59e0b;
+  flex-shrink: 0;
+  line-height: 1;
+  white-space: nowrap;
+}
+
+.star-rating svg {
+  display: inline-block;
+  flex-shrink: 0;
+}
+
 .card-rating {
   display: flex;
   align-items: center;
@@ -545,6 +561,10 @@ svg {
 .card-rating-value {
   color: var(--text-primary);
   font-weight: 700;
+}
+
+.card-rating-count {
+  color: var(--text-muted);
 }
 
 .card-pricing {
