@@ -6,9 +6,11 @@ import { NextResponse, type NextRequest } from "next/server";
 // Örnek: /sitemap-softwares-0.xml, /sitemap-softwares-1.xml
 // ---------------------------------------------------------------------------
 
+import { routing } from "@/i18n/routing";
+
 const LIMIT = 40000;
-const LOCALES = ["en", "tr", "de", "fr", "es", "ja", "pt", "zh", "ar", "ko"];
-const DEFAULT_LOCALE = "en";
+const LOCALES = routing.locales;
+const DEFAULT_LOCALE = routing.defaultLocale;
 
 
 export async function GET(

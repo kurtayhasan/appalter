@@ -8,18 +8,25 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
   const supabaseUrl = process.env.NEXT_PUBLIC_SUPABASE_URL;
   const anonKey = process.env.NEXT_PUBLIC_SUPABASE_ANON_KEY;
 
+  const getUrl = (locale: string, path: string = "") => {
+    const cleanPath = path ? (path.startsWith("/") ? path : `/${path}`) : "";
+    return locale === routing.defaultLocale
+      ? `${baseUrl}${cleanPath}`
+      : `${baseUrl}/${locale}${cleanPath}`;
+  };
+
   const routes: MetadataRoute.Sitemap = [];
 
   // 1. Static Routes (Home & Categories Index)
   for (const locale of routing.locales) {
     routes.push({
-      url: `${baseUrl}/${locale}`,
+      url: getUrl(locale, ""),
       lastModified: new Date(),
       changeFrequency: "daily",
       priority: 1,
     });
     routes.push({
-      url: `${baseUrl}/${locale}/categories`,
+      url: getUrl(locale, "/categories"),
       lastModified: new Date(),
       changeFrequency: "weekly",
       priority: 0.8,
@@ -38,7 +45,7 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
       for (const cat of categories) {
         for (const locale of routing.locales) {
           routes.push({
-            url: `${baseUrl}/${locale}/category/${cat.slug}`,
+            url: getUrl(locale, `/category/${cat.slug}`),
             lastModified: new Date(),
             changeFrequency: "weekly",
             priority: 0.8,
@@ -58,14 +65,14 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
         for (const locale of routing.locales) {
           // Software Detail Page
           routes.push({
-            url: `${baseUrl}/${locale}/${sw.slug}`,
+            url: getUrl(locale, `/${sw.slug}`),
             lastModified: lastMod,
             changeFrequency: "weekly",
             priority: 0.9,
           });
           // Alternatives List Page
           routes.push({
-            url: `${baseUrl}/${locale}/${sw.slug}/alternatives`,
+            url: getUrl(locale, `/${sw.slug}/alternatives`),
             lastModified: lastMod,
             changeFrequency: "weekly",
             priority: 0.7,
@@ -88,7 +95,7 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
         if (swSlug && altSlug) {
           for (const locale of routing.locales) {
             routes.push({
-              url: `${baseUrl}/${locale}/${swSlug}/vs/${altSlug}`,
+              url: getUrl(locale, `/${swSlug}/vs/${altSlug}`),
               lastModified: new Date(),
               changeFrequency: "monthly",
               priority: 0.6,

@@ -24,8 +24,8 @@ export async function GET() {
       return `
     <item>
       <title><![CDATA[${sw.name} Alternatives & Review (2026)]]></title>
-      <link>${baseUrl}/en/${sw.slug}</link>
-      <guid isPermaLink="true">${baseUrl}/en/${sw.slug}</guid>
+      <link>${baseUrl}/${sw.slug}</link>
+      <guid isPermaLink="true">${baseUrl}/${sw.slug}</guid>
       <pubDate>${pubDate}</pubDate>
       <description><![CDATA[${description}]]></description>
     </item>`;
