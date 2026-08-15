@@ -39,15 +39,15 @@ export function AlternativesMatrix({ software, alternatives, locale }: Alternati
         </div>
 
         {/* Matrix Table */}
-        <div className="matrix-table-wrapper" style={{ overflowX: "auto", borderRadius: "var(--radius-md)", border: "1px solid var(--border-subtle)", background: "rgba(0,0,0,0.25)" }}>
+        <div className="matrix-table-wrapper" style={{ overflowX: "auto", borderRadius: "var(--radius-md)", border: "1px solid var(--border-subtle)", background: "var(--bg-card)", boxShadow: "var(--shadow-sm)" }}>
           <table style={{ width: "100%", borderCollapse: "collapse", textAlign: "left", fontSize: "0.9rem" }}>
             <thead>
-              <tr style={{ background: "rgba(255, 255, 255, 0.04)", borderBottom: "1px solid var(--border-subtle)" }}>
-                <th style={{ padding: "0.875rem 1rem", color: "var(--text-muted)", fontWeight: 600 }}>{t("alternative")}</th>
-                <th style={{ padding: "0.875rem 1rem", color: "var(--text-muted)", fontWeight: 600 }}>{t("bestFor")}</th>
-                <th style={{ padding: "0.875rem 1rem", color: "var(--text-muted)", fontWeight: 600 }}>{t("startingPrice")}</th>
-                <th style={{ padding: "0.875rem 1rem", color: "var(--text-muted)", fontWeight: 600 }}>{t("keyAdvantage", { name: software.name })}</th>
-                <th style={{ padding: "0.875rem 1rem", color: "var(--text-muted)", fontWeight: 600, textAlign: "right" }}>{t("action")}</th>
+              <tr style={{ background: "var(--bg-tertiary)", borderBottom: "1px solid var(--border-subtle)" }}>
+                <th style={{ padding: "0.875rem 1rem", color: "var(--text-secondary)", fontWeight: 700, fontSize: "0.8rem", textTransform: "uppercase", letterSpacing: "0.04em" }}>{t("alternative")}</th>
+                <th style={{ padding: "0.875rem 1rem", color: "var(--text-secondary)", fontWeight: 700, fontSize: "0.8rem", textTransform: "uppercase", letterSpacing: "0.04em" }}>{t("bestFor")}</th>
+                <th style={{ padding: "0.875rem 1rem", color: "var(--text-secondary)", fontWeight: 700, fontSize: "0.8rem", textTransform: "uppercase", letterSpacing: "0.04em" }}>{t("startingPrice")}</th>
+                <th style={{ padding: "0.875rem 1rem", color: "var(--text-secondary)", fontWeight: 700, fontSize: "0.8rem", textTransform: "uppercase", letterSpacing: "0.04em" }}>{t("keyAdvantage", { name: software.name })}</th>
+                <th style={{ padding: "0.875rem 1rem", color: "var(--text-secondary)", fontWeight: 700, fontSize: "0.8rem", textTransform: "uppercase", letterSpacing: "0.04em", textAlign: "right" }}>{t("action")}</th>
               </tr>
             </thead>
             <tbody>
@@ -63,15 +63,15 @@ export function AlternativesMatrix({ software, alternatives, locale }: Alternati
                     {/* Alternative Info */}
                     <td style={{ padding: "1rem", whiteSpace: "nowrap" }}>
                       <div style={{ display: "flex", alignItems: "center", gap: "0.75rem" }}>
-                        <div style={{ width: "32px", height: "32px", borderRadius: "6px", overflow: "hidden", background: "#18181b", flexShrink: 0 }}>
+                        <div style={{ width: "36px", height: "36px", borderRadius: "8px", overflow: "hidden", background: "#ffffff", border: "1px solid var(--border-subtle)", padding: "3px", display: "flex", alignItems: "center", justifyContent: "center", flexShrink: 0 }}>
                           {alt.alternative_logo ? (
-                            <Image src={alt.alternative_logo} alt={altName} width={32} height={32} style={{ objectFit: "contain" }} />
+                            <Image src={alt.alternative_logo} alt={altName} width={30} height={30} style={{ objectFit: "contain" }} unoptimized={true} />
                           ) : (
                             <img
                               src={`https://ui-avatars.com/api/?name=${encodeURIComponent(altName)}&background=random&color=fff&size=64&rounded=true`}
                               alt={altName}
-                              width={32}
-                              height={32}
+                              width={30}
+                              height={30}
                             />
                           )}
                         </div>
@@ -82,19 +82,19 @@ export function AlternativesMatrix({ software, alternatives, locale }: Alternati
                     </td>
 
                     {/* Best For */}
-                    <td style={{ padding: "1rem", color: "var(--text-primary)" }}>
-                      <span className="decision-tag best-for" style={{ fontSize: "0.8rem", padding: "0.2rem 0.5rem" }}>
+                    <td style={{ padding: "1rem" }}>
+                      <span className="decision-tag best-for" style={{ fontSize: "0.8rem", padding: "0.25rem 0.6rem" }}>
                         {bestFor}
                       </span>
                     </td>
 
                     {/* Pricing */}
-                    <td style={{ padding: "1rem", color: "var(--text-secondary)", fontWeight: 600, whiteSpace: "nowrap" }}>
+                    <td style={{ padding: "1rem", color: "var(--text-primary)", fontWeight: 700, whiteSpace: "nowrap" }}>
                       {price}
                     </td>
 
                     {/* Key Advantage */}
-                    <td style={{ padding: "1rem", color: "var(--text-secondary)", lineHeight: 1.4, minWidth: "240px" }}>
+                    <td style={{ padding: "1rem", color: "var(--text-secondary)", lineHeight: 1.5, minWidth: "240px" }}>
                       {advantage}
                     </td>
 
@@ -103,7 +103,7 @@ export function AlternativesMatrix({ software, alternatives, locale }: Alternati
                       <Link
                         href={`/${locale}/${software.slug}/vs/${altSlug}`}
                         className="btn btn-secondary btn-sm"
-                        style={{ fontSize: "0.8rem", padding: "0.35rem 0.75rem" }}
+                        style={{ fontSize: "0.8125rem", padding: "0.35rem 0.75rem", fontWeight: 600 }}
                       >
                         {t("compare")}
                       </Link>

@@ -83,6 +83,7 @@ export function AIDecisionCard({ software, locale }: AIDecisionCardProps) {
             </div>
 
             <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(130px, 1fr))", gap: "0.75rem" }}>
+              {/* Antivirus */}
               {aiFeatures.benchmarks.metrics?.protection_rate_pct !== undefined && (
                 <div style={{ padding: "0.5rem 0.75rem", background: "var(--bg-tertiary)", borderRadius: "6px", border: "1px solid var(--border-subtle)" }}>
                   <div style={{ fontSize: "0.75rem", color: "var(--text-muted)", textTransform: "uppercase" }}>Protection Rate</div>
@@ -112,6 +113,78 @@ export function AIDecisionCard({ software, locale }: AIDecisionCardProps) {
                   <div style={{ fontSize: "0.75rem", color: "var(--text-muted)", textTransform: "uppercase" }}>Idle Memory</div>
                   <div style={{ fontSize: "1.1rem", fontWeight: 700, color: "var(--text-primary)" }}>
                     {aiFeatures.benchmarks.metrics.ram_idle_mb} MB
+                  </div>
+                </div>
+              )}
+
+              {/* VPN */}
+              {aiFeatures.benchmarks.metrics?.no_logs_verified !== undefined && (
+                <div style={{ padding: "0.5rem 0.75rem", background: "var(--bg-tertiary)", borderRadius: "6px", border: "1px solid var(--border-subtle)" }}>
+                  <div style={{ fontSize: "0.75rem", color: "var(--text-muted)", textTransform: "uppercase" }}>No-Logs Audit</div>
+                  <div style={{ fontSize: "1.05rem", fontWeight: 700, color: "var(--success)" }}>
+                    ✓ Verified
+                  </div>
+                </div>
+              )}
+              {aiFeatures.benchmarks.metrics?.speed_loss_pct !== undefined && (
+                <div style={{ padding: "0.5rem 0.75rem", background: "var(--bg-tertiary)", borderRadius: "6px", border: "1px solid var(--border-subtle)" }}>
+                  <div style={{ fontSize: "0.75rem", color: "var(--text-muted)", textTransform: "uppercase" }}>Speed Loss</div>
+                  <div style={{ fontSize: "1.05rem", fontWeight: 700, color: aiFeatures.benchmarks.metrics.speed_loss_pct < 12 ? "var(--success)" : "var(--text-primary)" }}>
+                    {aiFeatures.benchmarks.metrics.speed_loss_pct}%
+                  </div>
+                </div>
+              )}
+
+              {/* Web Hosting */}
+              {aiFeatures.benchmarks.metrics?.ttfb_p50_ms !== undefined && (
+                <div style={{ padding: "0.5rem 0.75rem", background: "var(--bg-tertiary)", borderRadius: "6px", border: "1px solid var(--border-subtle)" }}>
+                  <div style={{ fontSize: "0.75rem", color: "var(--text-muted)", textTransform: "uppercase" }}>Median TTFB</div>
+                  <div style={{ fontSize: "1.05rem", fontWeight: 700, color: aiFeatures.benchmarks.metrics.ttfb_p50_ms < 200 ? "var(--success)" : "var(--text-primary)" }}>
+                    {aiFeatures.benchmarks.metrics.ttfb_p50_ms} ms
+                  </div>
+                </div>
+              )}
+              {aiFeatures.benchmarks.metrics?.uptime_12m_pct !== undefined && (
+                <div style={{ padding: "0.5rem 0.75rem", background: "var(--bg-tertiary)", borderRadius: "6px", border: "1px solid var(--border-subtle)" }}>
+                  <div style={{ fontSize: "0.75rem", color: "var(--text-muted)", textTransform: "uppercase" }}>12M Uptime</div>
+                  <div style={{ fontSize: "1.05rem", fontWeight: 700, color: "var(--success)" }}>
+                    {aiFeatures.benchmarks.metrics.uptime_12m_pct}%
+                  </div>
+                </div>
+              )}
+
+              {/* CRM / Project Management */}
+              {aiFeatures.benchmarks.metrics?.free_plan_users !== undefined && (
+                <div style={{ padding: "0.5rem 0.75rem", background: "var(--bg-tertiary)", borderRadius: "6px", border: "1px solid var(--border-subtle)" }}>
+                  <div style={{ fontSize: "0.75rem", color: "var(--text-muted)", textTransform: "uppercase" }}>Free Plan Seats</div>
+                  <div style={{ fontSize: "1.05rem", fontWeight: 700, color: "var(--text-primary)" }}>
+                    {aiFeatures.benchmarks.metrics.free_plan_users > 0 ? `${aiFeatures.benchmarks.metrics.free_plan_users} Users` : "None"}
+                  </div>
+                </div>
+              )}
+              {aiFeatures.benchmarks.metrics?.api_rate_limit !== undefined && (
+                <div style={{ padding: "0.5rem 0.75rem", background: "var(--bg-tertiary)", borderRadius: "6px", border: "1px solid var(--border-subtle)" }}>
+                  <div style={{ fontSize: "0.75rem", color: "var(--text-muted)", textTransform: "uppercase" }}>API Rate Limit</div>
+                  <div style={{ fontSize: "1.05rem", fontWeight: 700, color: "var(--text-primary)" }}>
+                    {aiFeatures.benchmarks.metrics.api_rate_limit}
+                  </div>
+                </div>
+              )}
+
+              {/* AI Tools */}
+              {aiFeatures.benchmarks.metrics?.context_window_k !== undefined && (
+                <div style={{ padding: "0.5rem 0.75rem", background: "var(--bg-tertiary)", borderRadius: "6px", border: "1px solid var(--border-subtle)" }}>
+                  <div style={{ fontSize: "0.75rem", color: "var(--text-muted)", textTransform: "uppercase" }}>Context Window</div>
+                  <div style={{ fontSize: "1.05rem", fontWeight: 700, color: "var(--accent-secondary)" }}>
+                    {aiFeatures.benchmarks.metrics.context_window_k}K tokens
+                  </div>
+                </div>
+              )}
+              {aiFeatures.benchmarks.metrics?.code_benchmark_pct !== undefined && (
+                <div style={{ padding: "0.5rem 0.75rem", background: "var(--bg-tertiary)", borderRadius: "6px", border: "1px solid var(--border-subtle)" }}>
+                  <div style={{ fontSize: "0.75rem", color: "var(--text-muted)", textTransform: "uppercase" }}>SWE-bench Score</div>
+                  <div style={{ fontSize: "1.05rem", fontWeight: 700, color: "var(--success)" }}>
+                    {aiFeatures.benchmarks.metrics.code_benchmark_pct}%
                   </div>
                 </div>
               )}

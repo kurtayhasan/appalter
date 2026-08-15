@@ -213,7 +213,7 @@ export async function ComparisonTable({
               a={software.category_name ?? "—"}
               b={alternative.category_name ?? "—"}
             />
-            {/* Verified Lab Benchmark Rows */}
+            {/* Antivirus Benchmark Rows */}
             {((software.ai_features as any)?.benchmarks?.metrics?.protection_rate_pct !== undefined || (alternative.ai_features as any)?.benchmarks?.metrics?.protection_rate_pct !== undefined) && (
               <ComparisonRow
                 label="Protection Rate (Lab %)"
@@ -232,15 +232,67 @@ export async function ComparisonTable({
                 bHighlight={((alternative.ai_features as any)?.benchmarks?.metrics?.false_positives ?? 999) < ((software.ai_features as any)?.benchmarks?.metrics?.false_positives ?? 999)}
               />
             )}
-            {((software.ai_features as any)?.benchmarks?.metrics?.ram_idle_mb !== undefined || (alternative.ai_features as any)?.benchmarks?.metrics?.ram_idle_mb !== undefined) && (
+
+            {/* VPN Benchmark Rows */}
+            {((software.ai_features as any)?.benchmarks?.metrics?.speed_loss_pct !== undefined || (alternative.ai_features as any)?.benchmarks?.metrics?.speed_loss_pct !== undefined) && (
               <ComparisonRow
-                label="Idle RAM Usage"
-                a={(software.ai_features as any)?.benchmarks?.metrics?.ram_idle_mb ? `${(software.ai_features as any).benchmarks.metrics.ram_idle_mb} MB` : "—"}
-                b={(alternative.ai_features as any)?.benchmarks?.metrics?.ram_idle_mb ? `${(alternative.ai_features as any).benchmarks.metrics.ram_idle_mb} MB` : "—"}
-                aHighlight={((software.ai_features as any)?.benchmarks?.metrics?.ram_idle_mb ?? 9999) <= ((alternative.ai_features as any)?.benchmarks?.metrics?.ram_idle_mb ?? 9999)}
-                bHighlight={((alternative.ai_features as any)?.benchmarks?.metrics?.ram_idle_mb ?? 9999) < ((software.ai_features as any)?.benchmarks?.metrics?.ram_idle_mb ?? 9999)}
+                label="Speed Loss (Test %)"
+                a={(software.ai_features as any)?.benchmarks?.metrics?.speed_loss_pct ? `${(software.ai_features as any).benchmarks.metrics.speed_loss_pct}%` : "—"}
+                b={(alternative.ai_features as any)?.benchmarks?.metrics?.speed_loss_pct ? `${(alternative.ai_features as any).benchmarks.metrics.speed_loss_pct}%` : "—"}
+                aHighlight={((software.ai_features as any)?.benchmarks?.metrics?.speed_loss_pct ?? 99) <= ((alternative.ai_features as any)?.benchmarks?.metrics?.speed_loss_pct ?? 99)}
+                bHighlight={((alternative.ai_features as any)?.benchmarks?.metrics?.speed_loss_pct ?? 99) < ((software.ai_features as any)?.benchmarks?.metrics?.speed_loss_pct ?? 99)}
               />
             )}
+            {((software.ai_features as any)?.benchmarks?.metrics?.no_logs_verified !== undefined || (alternative.ai_features as any)?.benchmarks?.metrics?.no_logs_verified !== undefined) && (
+              <ComparisonRow
+                label="No-Logs Audit"
+                a={(software.ai_features as any)?.benchmarks?.metrics?.no_logs_verified ? "✓ Verified" : "—"}
+                b={(alternative.ai_features as any)?.benchmarks?.metrics?.no_logs_verified ? "✓ Verified" : "—"}
+                aHighlight={!!(software.ai_features as any)?.benchmarks?.metrics?.no_logs_verified}
+                bHighlight={!!(alternative.ai_features as any)?.benchmarks?.metrics?.no_logs_verified}
+              />
+            )}
+
+            {/* Web Hosting Benchmark Rows */}
+            {((software.ai_features as any)?.benchmarks?.metrics?.ttfb_p50_ms !== undefined || (alternative.ai_features as any)?.benchmarks?.metrics?.ttfb_p50_ms !== undefined) && (
+              <ComparisonRow
+                label="Median TTFB (Speed)"
+                a={(software.ai_features as any)?.benchmarks?.metrics?.ttfb_p50_ms ? `${(software.ai_features as any).benchmarks.metrics.ttfb_p50_ms} ms` : "—"}
+                b={(alternative.ai_features as any)?.benchmarks?.metrics?.ttfb_p50_ms ? `${(alternative.ai_features as any).benchmarks.metrics.ttfb_p50_ms} ms` : "—"}
+                aHighlight={((software.ai_features as any)?.benchmarks?.metrics?.ttfb_p50_ms ?? 9999) <= ((alternative.ai_features as any)?.benchmarks?.metrics?.ttfb_p50_ms ?? 9999)}
+                bHighlight={((alternative.ai_features as any)?.benchmarks?.metrics?.ttfb_p50_ms ?? 9999) < ((software.ai_features as any)?.benchmarks?.metrics?.ttfb_p50_ms ?? 9999)}
+              />
+            )}
+            {((software.ai_features as any)?.benchmarks?.metrics?.uptime_12m_pct !== undefined || (alternative.ai_features as any)?.benchmarks?.metrics?.uptime_12m_pct !== undefined) && (
+              <ComparisonRow
+                label="12-Month Uptime"
+                a={(software.ai_features as any)?.benchmarks?.metrics?.uptime_12m_pct ? `${(software.ai_features as any).benchmarks.metrics.uptime_12m_pct}%` : "—"}
+                b={(alternative.ai_features as any)?.benchmarks?.metrics?.uptime_12m_pct ? `${(alternative.ai_features as any).benchmarks.metrics.uptime_12m_pct}%` : "—"}
+                aHighlight={((software.ai_features as any)?.benchmarks?.metrics?.uptime_12m_pct ?? 0) >= ((alternative.ai_features as any)?.benchmarks?.metrics?.uptime_12m_pct ?? 0)}
+                bHighlight={((alternative.ai_features as any)?.benchmarks?.metrics?.uptime_12m_pct ?? 0) > ((software.ai_features as any)?.benchmarks?.metrics?.uptime_12m_pct ?? 0)}
+              />
+            )}
+
+            {/* AI Benchmark Rows */}
+            {((software.ai_features as any)?.benchmarks?.metrics?.context_window_k !== undefined || (alternative.ai_features as any)?.benchmarks?.metrics?.context_window_k !== undefined) && (
+              <ComparisonRow
+                label="Context Window"
+                a={(software.ai_features as any)?.benchmarks?.metrics?.context_window_k ? `${(software.ai_features as any).benchmarks.metrics.context_window_k}K tokens` : "—"}
+                b={(alternative.ai_features as any)?.benchmarks?.metrics?.context_window_k ? `${(alternative.ai_features as any).benchmarks.metrics.context_window_k}K tokens` : "—"}
+                aHighlight={((software.ai_features as any)?.benchmarks?.metrics?.context_window_k ?? 0) >= ((alternative.ai_features as any)?.benchmarks?.metrics?.context_window_k ?? 0)}
+                bHighlight={((alternative.ai_features as any)?.benchmarks?.metrics?.context_window_k ?? 0) > ((software.ai_features as any)?.benchmarks?.metrics?.context_window_k ?? 0)}
+              />
+            )}
+            {((software.ai_features as any)?.benchmarks?.metrics?.code_benchmark_pct !== undefined || (alternative.ai_features as any)?.benchmarks?.metrics?.code_benchmark_pct !== undefined) && (
+              <ComparisonRow
+                label="SWE-bench Code Score"
+                a={(software.ai_features as any)?.benchmarks?.metrics?.code_benchmark_pct ? `${(software.ai_features as any).benchmarks.metrics.code_benchmark_pct}%` : "—"}
+                b={(alternative.ai_features as any)?.benchmarks?.metrics?.code_benchmark_pct ? `${(alternative.ai_features as any).benchmarks.metrics.code_benchmark_pct}%` : "—"}
+                aHighlight={((software.ai_features as any)?.benchmarks?.metrics?.code_benchmark_pct ?? 0) >= ((alternative.ai_features as any)?.benchmarks?.metrics?.code_benchmark_pct ?? 0)}
+                bHighlight={((alternative.ai_features as any)?.benchmarks?.metrics?.code_benchmark_pct ?? 0) > ((software.ai_features as any)?.benchmarks?.metrics?.code_benchmark_pct ?? 0)}
+              />
+            )}
+
             {relation?.difficulty && (
               <ComparisonRow
                 label="Migration Difficulty"
