@@ -6,7 +6,7 @@ import Image from "next/image";
 import Link from "next/link";
 import type { Locale } from "@/i18n/routing";
 import { getAlternativesCached } from "@/lib/cache/queries";
-import { formatPrice, formatRating, formatCount, difficultyColor } from "@/lib/utils";
+import { formatPrice, formatRating, formatCount, difficultyColor, getLocalizedPath } from "@/lib/utils";
 import { StarRating } from "@/components/ui/StarRating";
 import { PricingBadge } from "@/components/software/PricingBadge";
 import { AlternativesListJsonLd } from "@/components/seo/JsonLd";
@@ -34,7 +34,7 @@ export async function AlternativesList({
     return (
       <div className="empty-state" role="status">
         <p>No alternatives found yet.</p>
-        <Link href={`/${locale}/${softwareSlug}`} className="btn btn-ghost">
+        <Link href={getLocalizedPath(`/${softwareSlug}`, locale)} className="btn btn-ghost">
           Back to overview
         </Link>
       </div>
@@ -51,7 +51,7 @@ export async function AlternativesList({
         alternatives={items.map((alt: any) => ({
           name: alt.alternative_name,
           slug: alt.alternative_slug,
-          url: `${baseUrl}/${alt.alternative_slug}`,
+          url: `${baseUrl}${getLocalizedPath(`/${alt.alternative_slug}`, locale)}`,
           description: alt.tagline,
           logoUrl: alt.alternative_logo,
           rating: alt.avg_rating,
@@ -93,7 +93,7 @@ export async function AlternativesList({
 
               {/* Logo */}
               <Link
-                href={`/${locale}/${alt.alternative_slug}`}
+                href={getLocalizedPath(`/${alt.alternative_slug}`, locale)}
                 className="alt-logo-link"
                 aria-hidden="true"
                 tabIndex={-1}
@@ -122,7 +122,7 @@ export async function AlternativesList({
               <div className="alt-content">
                 <div className="alt-header">
                   <h3 className="alt-name">
-                    <Link href={`/${locale}/${alt.alternative_slug}`} className="alt-link">
+                    <Link href={getLocalizedPath(`/${alt.alternative_slug}`, locale)} className="alt-link">
                       {alt.alternative_name}
                     </Link>
                   </h3>
@@ -205,39 +205,41 @@ export async function AlternativesList({
                 )}
 
                 {/* Pros and Cons (AI Generated) */}
-                <div className="alt-pros-cons" style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '1rem', marginTop: '1rem' }}>
-                  {alt.pros && alt.pros.length > 0 && (
-                    <div className="alt-pros-section">
-                      <h4 style={{ fontSize: '0.875rem', color: 'var(--success)', marginBottom: '0.5rem', display: 'flex', alignItems: 'center', gap: '0.25rem' }}>
-                        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path><polyline points="22 4 12 14.01 9 11.01"></polyline></svg>
-                        Pros
-                      </h4>
-                      <ul className="alt-pros" aria-label="Pros" style={{ listStyle: 'none', padding: 0, margin: 0 }}>
-                        {alt.pros.slice(0, 3).map((pro: any, i: number) => (
-                          <li key={i} className="alt-pro" style={{ fontSize: '0.875rem', marginBottom: '0.25rem', color: 'var(--text-secondary)' }}>
-                            • {pro}
-                          </li>
-                        ))}
-                      </ul>
-                    </div>
-                  )}
+                {(alt.pros?.length > 0 || alt.cons?.length > 0) && (
+                  <div className="alt-pros-cons" style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '1rem', marginTop: '1rem' }}>
+                    {alt.pros && alt.pros.length > 0 && (
+                      <div className="alt-pros-section">
+                        <h4 style={{ fontSize: '0.875rem', color: 'var(--success)', marginBottom: '0.5rem', display: 'flex', alignItems: 'center', gap: '0.25rem' }}>
+                          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path><polyline points="22 4 12 14.01 9 11.01"></polyline></svg>
+                          Pros
+                        </h4>
+                        <ul className="alt-pros" aria-label="Pros" style={{ listStyle: 'none', padding: 0, margin: 0 }}>
+                          {alt.pros.slice(0, 3).map((pro: any, i: number) => (
+                            <li key={i} className="alt-pro" style={{ fontSize: '0.875rem', marginBottom: '0.25rem', color: 'var(--text-secondary)' }}>
+                              • {pro}
+                            </li>
+                          ))}
+                        </ul>
+                      </div>
+                    )}
 
-                  {alt.cons && alt.cons.length > 0 && (
-                    <div className="alt-cons-section">
-                      <h4 style={{ fontSize: '0.875rem', color: 'var(--danger)', marginBottom: '0.5rem', display: 'flex', alignItems: 'center', gap: '0.25rem' }}>
-                        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><circle cx="12" cy="12" r="10"></circle><line x1="15" y1="9" x2="9" y2="15"></line><line x1="9" y1="9" x2="15" y2="15"></line></svg>
-                        Cons
-                      </h4>
-                      <ul className="alt-cons" aria-label="Cons" style={{ listStyle: 'none', padding: 0, margin: 0 }}>
-                        {alt.cons.slice(0, 3).map((con: any, i: number) => (
-                          <li key={i} className="alt-con" style={{ fontSize: '0.875rem', marginBottom: '0.25rem', color: 'var(--text-secondary)' }}>
-                            • {con}
-                          </li>
-                        ))}
-                      </ul>
-                    </div>
-                  )}
-                </div>
+                    {alt.cons && alt.cons.length > 0 && (
+                      <div className="alt-cons-section">
+                        <h4 style={{ fontSize: '0.875rem', color: 'var(--danger)', marginBottom: '0.5rem', display: 'flex', alignItems: 'center', gap: '0.25rem' }}>
+                          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><circle cx="12" cy="12" r="10"></circle><line x1="15" y1="9" x2="9" y2="15"></line><line x1="9" y1="9" x2="15" y2="15"></line></svg>
+                          Cons
+                        </h4>
+                        <ul className="alt-cons" aria-label="Cons" style={{ listStyle: 'none', padding: 0, margin: 0 }}>
+                          {alt.cons.slice(0, 3).map((con: any, i: number) => (
+                            <li key={i} className="alt-con" style={{ fontSize: '0.875rem', marginBottom: '0.25rem', color: 'var(--text-secondary)' }}>
+                              • {con}
+                            </li>
+                          ))}
+                        </ul>
+                      </div>
+                    )}
+                  </div>
+                )}
               </div>
 
               {/* Actions */}
@@ -250,14 +252,14 @@ export async function AlternativesList({
                 />
                 
                 <Link
-                  href={`/${locale}/${alt.alternative_slug}`}
+                  href={getLocalizedPath(`/${alt.alternative_slug}`, locale)}
                   className="btn btn-secondary btn-sm"
                 >
                   View
                 </Link>
                 
                 <Link
-                  href={`/${locale}/${softwareSlug}/vs/${alt.alternative_slug}`}
+                  href={getLocalizedPath(`/${softwareSlug}/vs/${alt.alternative_slug}`, locale)}
                   className="btn btn-ghost btn-sm"
                 >
                   Compare
@@ -299,7 +301,7 @@ export async function AlternativesList({
           >
             {page > 1 && (
               <Link
-                href={`/${locale}/${softwareSlug}/alternatives?page=${page - 1}`}
+                href={getLocalizedPath(`/${softwareSlug}/alternatives?page=${page - 1}`, locale)}
                 className="pagination-btn"
                 rel="prev"
               >
@@ -313,7 +315,7 @@ export async function AlternativesList({
 
             {page < totalPages && (
               <Link
-                href={`/${locale}/${softwareSlug}/alternatives?page=${page + 1}`}
+                href={getLocalizedPath(`/${softwareSlug}/alternatives?page=${page + 1}`, locale)}
                 className="pagination-btn"
                 rel="next"
               >

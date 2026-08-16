@@ -3,7 +3,7 @@ import Image from "next/image";
 import Link from "next/link";
 import type { Locale } from "@/i18n/routing";
 import { StarRating } from "@/components/ui/StarRating";
-import { formatRating, formatPrice } from "@/lib/utils";
+import { formatRating, formatPrice, getLocalizedPath } from "@/lib/utils";
 
 interface CategoryTopPicksProps {
   categoryName: string;
@@ -21,109 +21,86 @@ export function CategoryTopPicks({
   if (!softwares || softwares.length < 2) return null;
 
   const topThree = softwares.slice(0, 3);
+  const defaultBadge = { label: "🏆 #1 Editor's Choice 2026", color: "var(--accent-primary)", bg: "rgba(99, 102, 241, 0.1)" };
   const badges = [
-    { label: "🏆 #1 Editor's Choice 2026", color: "var(--accent-primary)", bg: "rgba(99, 102, 241, 0.1)" },
-    { label: "⚡ Best Performance / Speed", color: "var(--success)", bg: "rgba(16, 185, 129, 0.1)" },
-    { label: "💎 Best Value / Features", color: "#f59e0b", bg: "rgba(245, 158, 11, 0.1)" },
+    defaultBadge,
+    { label: "⚡ Best Value & Performance", color: "var(--success)", bg: "rgba(16, 185, 129, 0.1)" },
+    { label: "🚀 High Growth Popular Pick", color: "#f59e0b", bg: "rgba(245, 158, 11, 0.1)" }
   ];
 
   return (
-    <div
-      style={{
-        marginBottom: "2.5rem",
-        padding: "1.75rem 2rem",
-        background: "var(--bg-card)",
-        border: "1px solid var(--border-subtle)",
-        borderRadius: "var(--radius-lg)",
-        boxShadow: "var(--shadow-sm)",
-      }}
-    >
-      <div style={{ marginBottom: "1.25rem" }}>
-        <span
-          style={{
-            display: "inline-block",
-            fontSize: "0.75rem",
-            fontWeight: 700,
-            textTransform: "uppercase",
-            letterSpacing: "0.05em",
-            color: "var(--accent-secondary)",
-            marginBottom: "0.25rem",
-          }}
-        >
-          2026 Verified Benchmark Leaders
-        </span>
-        <h2 style={{ fontSize: "1.4rem", fontWeight: 800, color: "var(--text-primary)", margin: 0 }}>
-          Top Rated {categoryName} Solutions
+    <section className="top-picks-section" style={{ marginBottom: "3rem" }}>
+      <div style={{ display: "flex", alignItems: "center", gap: "0.5rem", marginBottom: "1.25rem" }}>
+        <span style={{ fontSize: "1.25rem" }}>🎯</span>
+        <h2 style={{ fontSize: "1.35rem", fontWeight: 800, color: "var(--text-primary)", margin: 0 }}>
+          Top Rated {categoryName} Solutions for 2026
         </h2>
       </div>
 
       <div
         style={{
           display: "grid",
-          gridTemplateColumns: "repeat(auto-fit, minmax(260px, 1fr))",
-          gap: "1.25rem",
+          gridTemplateColumns: "repeat(auto-fit, minmax(280px, 1fr))",
+          gap: "1.5rem",
         }}
       >
-        {topThree.map((sw, idx) => {
-          const badge = badges[idx] ?? {
-            label: "⭐ Featured Choice",
-            color: "var(--accent-primary)",
-            bg: "rgba(99, 102, 241, 0.1)",
-          };
-          const benchmark = sw.ai_features?.benchmarks?.metrics;
+        {topThree.map((sw, index) => {
+          const badge = badges[index] ?? defaultBadge;
 
           return (
             <div
-              key={sw.id}
+              key={sw.id || sw.slug}
+              className="top-pick-card"
               style={{
+                background: "var(--bg-surface)",
+                border: "1px solid var(--border-subtle)",
+                borderRadius: "12px",
+                padding: "1.25rem",
                 display: "flex",
                 flexDirection: "column",
                 justifyContent: "space-between",
-                padding: "1.25rem",
-                background: "var(--bg-secondary)",
-                border: "1px solid var(--border-subtle)",
-                borderRadius: "var(--radius-md)",
-                transition: "transform 0.15s ease, border-color 0.15s ease",
+                position: "relative",
+                transition: "transform 0.2s ease, box-shadow 0.2s ease",
               }}
             >
               <div>
-                {/* Badge */}
+                {/* Custom Badge */}
                 <div
                   style={{
                     display: "inline-block",
+                    padding: "0.25rem 0.6rem",
+                    borderRadius: "9999px",
                     fontSize: "0.75rem",
                     fontWeight: 700,
                     color: badge.color,
                     background: badge.bg,
-                    border: `1px solid ${badge.color}30`,
-                    padding: "0.2rem 0.55rem",
-                    borderRadius: "9999px",
-                    marginBottom: "0.85rem",
+                    marginBottom: "1rem",
                   }}
                 >
                   {badge.label}
                 </div>
 
-                {/* Software Header */}
-                <div style={{ display: "flex", alignItems: "center", gap: "0.75rem", marginBottom: "0.75rem" }}>
+                {/* Header: Logo & Title */}
+                <div style={{ display: "flex", alignItems: "center", gap: "0.75rem", marginBottom: "0.85rem" }}>
                   <div
                     style={{
-                      width: "44px",
-                      height: "44px",
-                      borderRadius: "10px",
+                      width: "42px",
+                      height: "42px",
+                      borderRadius: "8px",
                       background: "#ffffff",
                       border: "1px solid var(--border-subtle)",
-                      padding: "4px",
                       display: "flex",
                       alignItems: "center",
                       justifyContent: "center",
+                      overflow: "hidden",
+                      padding: "4px",
                       flexShrink: 0,
                     }}
                   >
                     {sw.logo_url ? (
                       <Image
                         src={sw.logo_url}
-                        alt={`${sw.name} logo`}
+                        alt={sw.name}
                         width={36}
                         height={36}
                         style={{ objectFit: "contain" }}
@@ -140,7 +117,7 @@ export function CategoryTopPicks({
                   </div>
                   <div>
                     <h3 style={{ fontSize: "1.05rem", fontWeight: 700, margin: 0 }}>
-                      <Link href={`/${locale}/${sw.slug}`} style={{ color: "var(--text-primary)", textDecoration: "none" }}>
+                      <Link href={getLocalizedPath(`/${sw.slug}`, locale)} style={{ color: "var(--text-primary)", textDecoration: "none" }}>
                         {sw.name}
                       </Link>
                     </h3>
@@ -173,7 +150,7 @@ export function CategoryTopPicks({
                   {formatPrice(sw.starting_price, sw.price_currency || "USD")}
                 </div>
                 <Link
-                  href={`/${locale}/${sw.slug}`}
+                  href={getLocalizedPath(`/${sw.slug}`, locale)}
                   className="btn btn-secondary btn-sm"
                   style={{ fontSize: "0.8rem", padding: "0.35rem 0.75rem" }}
                 >
@@ -184,6 +161,6 @@ export function CategoryTopPicks({
           );
         })}
       </div>
-    </div>
+    </section>
   );
 }

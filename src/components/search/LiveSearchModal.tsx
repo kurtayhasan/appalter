@@ -1,10 +1,11 @@
 "use client";
 
-import React, { useState, useEffect, useRef, useCallback } from "react";
+import React, { useState, useEffect, useRef } from "react";
 import { useRouter } from "next/navigation";
 import Image from "next/image";
 import Link from "next/link";
 import type { Locale } from "@/i18n/routing";
+import { getLocalizedPath } from "@/lib/utils";
 
 interface LiveSoftware {
   id: string;
@@ -26,72 +27,91 @@ interface LiveCategory {
   software_count?: number;
 }
 
-interface LiveSearchResult {
-  softwares: LiveSoftware[];
-  categories: LiveCategory[];
+interface LiveSearchProps {
+  locale: Locale;
 }
 
-export function LiveSearchModal({ locale }: { locale: Locale }) {
+export function LiveSearchModal({ locale }: LiveSearchProps) {
   const [isOpen, setIsOpen] = useState(false);
   const [query, setQuery] = useState("");
-  const [results, setResults] = useState<LiveSearchResult>({ softwares: [], categories: [] });
+  const [results, setResults] = useState<{
+    categories: LiveCategory[];
+    softwares: LiveSoftware[];
+  }>({ categories: [], softwares: [] });
   const [isLoading, setIsLoading] = useState(false);
-  const [selectedIndex, setSelectedIndex] = useState(0);
+  const [selectedIndex, setSelectedIndex] = useState(-1);
+
   const router = useRouter();
   const inputRef = useRef<HTMLInputElement>(null);
   const modalRef = useRef<HTMLDivElement>(null);
+  const debounceTimerRef = useRef<NodeJS.Timeout | null>(null);
 
-  // Global Cmd+K / Ctrl+K listener
+  // Global hotkey: Cmd+K / Ctrl+K or "/"
   useEffect(() => {
     const handleKeyDown = (e: KeyboardEvent) => {
       if ((e.metaKey || e.ctrlKey) && e.key === "k") {
         e.preventDefault();
         setIsOpen((prev) => !prev);
+      } else if (e.key === "/" && !["INPUT", "TEXTAREA"].includes((e.target as HTMLElement)?.tagName)) {
+        e.preventDefault();
+        setIsOpen(true);
       } else if (e.key === "Escape" && isOpen) {
         setIsOpen(false);
       }
     };
-
     window.addEventListener("keydown", handleKeyDown);
     return () => window.removeEventListener("keydown", handleKeyDown);
   }, [isOpen]);
 
-  // Focus input when modal opens
+  // Focus input when opened
   useEffect(() => {
     if (isOpen) {
       setTimeout(() => inputRef.current?.focus(), 50);
-      fetchResults(""); // Initial suggestions
+      fetchInitialSuggestions();
     } else {
       setQuery("");
-      setSelectedIndex(0);
+      setSelectedIndex(-1);
     }
   }, [isOpen]);
 
-  // Debounced search
-  const fetchResults = useCallback(async (searchQuery: string) => {
-    setIsLoading(true);
+  const fetchInitialSuggestions = async () => {
     try {
-      const res = await fetch(`/api/search/live?q=${encodeURIComponent(searchQuery)}&locale=${locale}`);
+      setIsLoading(true);
+      const res = await fetch(`/api/search/live?locale=${locale}`);
       if (res.ok) {
         const data = await res.json();
         setResults(data);
       }
     } catch (err) {
-      console.error("Failed to fetch live search results:", err);
+      console.error("Failed to load search suggestions:", err);
     } finally {
       setIsLoading(false);
     }
-  }, [locale]);
+  };
 
-  useEffect(() => {
-    if (!isOpen) return;
-    const timer = setTimeout(() => {
-      fetchResults(query);
+  const handleSearchChange = (e: React.ChangeEvent<HTMLInputElement>) => {
+    const val = e.target.value;
+    setQuery(val);
+    setSelectedIndex(-1);
+
+    if (debounceTimerRef.current) clearTimeout(debounceTimerRef.current);
+
+    debounceTimerRef.current = setTimeout(async () => {
+      try {
+        setIsLoading(true);
+        const res = await fetch(`/api/search/live?q=${encodeURIComponent(val)}&locale=${locale}`);
+        if (res.ok) {
+          const data = await res.json();
+          setResults(data);
+        }
+      } catch (err) {
+        console.error("Live search failed:", err);
+      } finally {
+        setIsLoading(false);
+      }
     }, 180);
-    return () => clearTimeout(timer);
-  }, [query, isOpen, fetchResults]);
+  };
 
-  // Flattened items for keyboard navigation
   const allItems = [
     ...results.categories.map((c) => ({ type: "category" as const, data: c })),
     ...results.softwares.map((s) => ({ type: "software" as const, data: s })),
@@ -100,7 +120,7 @@ export function LiveSearchModal({ locale }: { locale: Locale }) {
   const handleSelect = (index: number) => {
     if (index < 0 || index >= allItems.length) {
       if (query.trim()) {
-        router.push(`/${locale}/search?q=${encodeURIComponent(query.trim())}`);
+        router.push(getLocalizedPath(`/search?q=${encodeURIComponent(query.trim())}`, locale));
         setIsOpen(false);
       }
       return;
@@ -108,15 +128,15 @@ export function LiveSearchModal({ locale }: { locale: Locale }) {
     const item = allItems[index];
     if (!item) {
       if (query.trim()) {
-        router.push(`/${locale}/search?q=${encodeURIComponent(query.trim())}`);
+        router.push(getLocalizedPath(`/search?q=${encodeURIComponent(query.trim())}`, locale));
         setIsOpen(false);
       }
       return;
     }
     if (item.type === "category") {
-      router.push(`/${locale}/category/${item.data.slug}`);
+      router.push(getLocalizedPath(`/category/${item.data.slug}`, locale));
     } else {
-      router.push(`/${locale}/${item.data.slug}`);
+      router.push(getLocalizedPath(`/${item.data.slug}`, locale));
     }
     setIsOpen(false);
   };
@@ -224,7 +244,7 @@ export function LiveSearchModal({ locale }: { locale: Locale }) {
                           key={cat.id}
                           className={`live-search-item ${isSelected ? "selected" : ""}`}
                           onClick={() => {
-                            router.push(`/${locale}/category/${cat.slug}`);
+                            router.push(getLocalizedPath(`/category/${cat.slug}`, locale));
                             setIsOpen(false);
                           }}
                           onMouseEnter={() => setSelectedIndex(itemIndex)}
@@ -259,7 +279,7 @@ export function LiveSearchModal({ locale }: { locale: Locale }) {
                           key={sw.id}
                           className={`live-search-item ${isSelected ? "selected" : ""}`}
                           onClick={() => {
-                            router.push(`/${locale}/${sw.slug}`);
+                            router.push(getLocalizedPath(`/${sw.slug}`, locale));
                             setIsOpen(false);
                           }}
                           onMouseEnter={() => setSelectedIndex(itemIndex)}
@@ -312,7 +332,7 @@ export function LiveSearchModal({ locale }: { locale: Locale }) {
                     type="button"
                     className="btn btn-secondary btn-sm"
                     onClick={() => {
-                      router.push(`/${locale}/search?q=${encodeURIComponent(query)}`);
+                      router.push(getLocalizedPath(`/search?q=${encodeURIComponent(query)}`, locale));
                       setIsOpen(false);
                     }}
                   >
@@ -331,7 +351,7 @@ export function LiveSearchModal({ locale }: { locale: Locale }) {
               </div>
               {query && (
                 <Link
-                  href={`/${locale}/search?q=${encodeURIComponent(query)}`}
+                  href={getLocalizedPath(`/search?q=${encodeURIComponent(query)}`, locale)}
                   className="all-results-link"
                   onClick={() => setIsOpen(false)}
                 >

@@ -6,7 +6,7 @@ import Image from "next/image";
 import Link from "next/link";
 import type { Locale } from "@/i18n/routing";
 import { getComparisonDataCached, getFeaturesCached, getProsConsCached } from "@/lib/cache/queries";
-import { formatPrice, formatRating, formatCount } from "@/lib/utils";
+import { formatPrice, formatRating, formatCount, getLocalizedPath } from "@/lib/utils";
 import { StarRating } from "@/components/ui/StarRating";
 import { ComparisonJsonLd } from "@/components/seo/JsonLd";
 import { CommunityPoll } from "@/components/software/CommunityPoll";
@@ -61,17 +61,17 @@ export async function ComparisonTable({
       <ComparisonJsonLd
         software={{
           name: software.name,
-          url: `${baseUrl}/${softwareSlug}`,
+          url: `${baseUrl}${getLocalizedPath(`/${softwareSlug}`, locale)}`,
           logo: software.logo_url,
           rating: software.avg_rating,
         }}
         alternative={{
           name: alternative.name,
-          url: `${baseUrl}/${alternativeSlug}`,
+          url: `${baseUrl}${getLocalizedPath(`/${alternativeSlug}`, locale)}`,
           logo: alternative.logo_url,
           rating: alternative.avg_rating,
         }}
-        comparisonUrl={`${baseUrl}/${softwareSlug}/vs/${alternativeSlug}`}
+        comparisonUrl={`${baseUrl}${getLocalizedPath(`/${softwareSlug}/vs/${alternativeSlug}`, locale)}`}
       />
 
       <div className="comparison-table-wrapper">
@@ -80,7 +80,7 @@ export async function ComparisonTable({
           <div className="comparison-header-label" />
           {/* Software A */}
           <div className="comparison-col-header" role="columnheader">
-            <Link href={`/${locale}/${softwareSlug}`} className="comparison-col-name-link" style={{ display: "flex", flexDirection: "column", alignItems: "center", textDecoration: "none" }}>
+            <Link href={getLocalizedPath(`/${softwareSlug}`, locale)} className="comparison-col-name-link" style={{ display: "flex", flexDirection: "column", alignItems: "center", textDecoration: "none" }}>
               {software.logo_url && (
                 <Image
                   src={software.logo_url}
@@ -103,7 +103,7 @@ export async function ComparisonTable({
           </div>
           {/* Software B */}
           <div className="comparison-col-header" role="columnheader">
-            <Link href={`/${locale}/${alternativeSlug}`} className="comparison-col-name-link" style={{ display: "flex", flexDirection: "column", alignItems: "center", textDecoration: "none" }}>
+            <Link href={getLocalizedPath(`/${alternativeSlug}`, locale)} className="comparison-col-name-link" style={{ display: "flex", flexDirection: "column", alignItems: "center", textDecoration: "none" }}>
               {alternative.logo_url && (
                 <Image
                   src={alternative.logo_url}
@@ -495,10 +495,10 @@ export async function ComparisonTable({
 
         {/* CTA */}
         <div className="comparison-cta">
-          <Link href={`/${locale}/${softwareSlug}`} className="btn btn-primary">
+          <Link href={getLocalizedPath(`/${softwareSlug}`, locale)} className="btn btn-primary">
             Learn more about {software.name}
           </Link>
-          <Link href={`/${locale}/${alternativeSlug}`} className="btn btn-secondary">
+          <Link href={getLocalizedPath(`/${alternativeSlug}`, locale)} className="btn btn-secondary">
             Learn more about {alternative.name}
           </Link>
         </div>

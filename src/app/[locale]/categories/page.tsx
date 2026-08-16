@@ -6,6 +6,8 @@ import { BreadcrumbJsonLd } from "@/components/seo/BreadcrumbJsonLd";
 import type { Metadata } from "next";
 import { routing } from "@/i18n/routing";
 
+import { getLocalizedPath } from "@/lib/utils";
+
 export async function generateMetadata({ params }: { params: Promise<{ locale: string }> }): Promise<Metadata> {
   const { locale } = await params;
   
@@ -53,8 +55,8 @@ export default async function CategoriesPage({
     <>
       <BreadcrumbJsonLd
         items={[
-          { name: "Home", url: `${baseUrl}/${locale}` },
-          { name: "Categories", url: `${baseUrl}/${locale}/categories` },
+          { name: "Home", url: `${baseUrl}${getLocalizedPath("/", locale)}` },
+          { name: "Categories", url: `${baseUrl}${getLocalizedPath("/categories", locale)}` },
         ]}
       />
       <main className="category-page" style={{ padding: "4rem 0" }}>
@@ -72,7 +74,7 @@ export default async function CategoriesPage({
             {activeCategories.map((cat) => (
               <Link
                 key={cat.id}
-                href={`/${locale}/category/${cat.slug}`}
+                href={getLocalizedPath(`/category/${cat.slug}`, locale)}
                 className="category-card"
               >
                 <div

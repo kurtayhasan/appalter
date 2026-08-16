@@ -8,6 +8,7 @@ import { SoftwareCard } from "@/components/software/SoftwareCard";
 import { BreadcrumbJsonLd } from "@/components/seo/BreadcrumbJsonLd";
 import { CategoryFilterBar } from "@/components/category/CategoryFilterBar";
 import { CategoryTopPicks } from "@/components/category/CategoryTopPicks";
+import { getLocalizedPath } from "@/lib/utils";
 import Link from "next/link";
 
 type SortOption = "relevance" | "rating" | "reviews" | "newest" | undefined;
@@ -72,19 +73,27 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
     }
   }
 
+  const siteUrl = process.env.NEXT_PUBLIC_SITE_URL ?? "https://appalter.com";
+  const canonicalUrl =
+    locale === routing.defaultLocale
+      ? `${siteUrl}/category/${category_slug}`
+      : `${siteUrl}/${locale}/category/${category_slug}`;
+
   return {
     title,
     description,
     alternates: {
-      canonical: `/category/${category_slug}`,
+      canonical: canonicalUrl,
       languages: Object.fromEntries(
         routing.locales.map((loc) => [
           loc,
-          `/${loc}/category/${category_slug}`,
+          loc === routing.defaultLocale
+            ? `${siteUrl}/category/${category_slug}`
+            : `${siteUrl}/${loc}/category/${category_slug}`,
         ])
       ),
     },
-    openGraph: { title, description, type: "website" },
+    openGraph: { title, description, type: "website", url: canonicalUrl },
     twitter: {
       card: "summary_large_image",
       title,
@@ -101,6 +110,10 @@ export default async function CategoryPage({ params, searchParams }: Props) {
   if (!category) notFound();
 
   const siteUrl = process.env.NEXT_PUBLIC_SITE_URL ?? "https://appalter.com";
+  const canonicalUrl =
+    locale === routing.defaultLocale
+      ? `${siteUrl}/category/${category_slug}`
+      : `${siteUrl}/${locale}/category/${category_slug}`;
 
   // Category FAQ structured data for Google SEO
   const faqSchema = {
@@ -130,9 +143,9 @@ export default async function CategoryPage({ params, searchParams }: Props) {
     <>
       <BreadcrumbJsonLd
         items={[
-          { name: "Home", url: siteUrl },
-          { name: "Categories", url: `${siteUrl}/${locale}/categories` },
-          { name: category.name, url: `${siteUrl}/${locale}/category/${category.slug}` },
+          { name: "Home", url: `${siteUrl}${getLocalizedPath("/", locale)}` },
+          { name: "Categories", url: `${siteUrl}${getLocalizedPath("/categories", locale)}` },
+          { name: category.name, url: canonicalUrl },
         ]}
       />
 
@@ -204,7 +217,7 @@ async function CategorySoftwareList({
           <path strokeLinecap="round" strokeLinejoin="round" d="M21 21l-5.197-5.197m0 0A7.5 7.5 0 105.196 5.196a7.5 7.5 0 0010.607 10.607z" />
         </svg>
         <p>No tools available yet. We're currently reviewing software for this category.</p>
-        <Link href={`/${locale}/search`} className="btn btn-secondary btn-sm" style={{ marginTop: '0.5rem' }}>
+        <Link href={getLocalizedPath("/search", locale)} className="btn btn-secondary btn-sm" style={{ marginTop: '0.5rem' }}>
           Explore all software
         </Link>
       </div>

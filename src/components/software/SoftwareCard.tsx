@@ -6,7 +6,7 @@ import Image from "next/image";
 import Link from "next/link";
 import type { SoftwareBasic } from "@/types";
 import type { Locale } from "@/i18n/routing";
-import { formatPrice, formatCount, formatRating } from "@/lib/utils";
+import { formatPrice, formatCount, formatRating, getLocalizedPath } from "@/lib/utils";
 import { StarRating } from "@/components/ui/StarRating";
 import { PricingBadge } from "@/components/software/PricingBadge";
 import { CompareButton } from "@/components/software/CompareButton";
@@ -42,7 +42,7 @@ export function SoftwareCard({
     pricing_model_slug,
   } = software;
 
-  const href = `/${locale}/${slug}`;
+  const href = getLocalizedPath(`/${slug}`, locale);
 
   if (variant === "compact") {
     return (
@@ -139,7 +139,7 @@ export function SoftwareCard({
 
           {showCategory && category_name && category_slug && (
             <Link
-              href={`/${locale}/category/${category_slug}`}
+              href={getLocalizedPath(`/category/${category_slug}`, locale)}
               className="card-category"
             >
               {category_name}

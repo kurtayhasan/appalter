@@ -6,7 +6,7 @@ import Image from "next/image";
 import Link from "next/link";
 import type { SoftwareDetail } from "@/types";
 import type { Locale } from "@/i18n/routing";
-import { formatPrice, formatCount, formatRating } from "@/lib/utils";
+import { formatPrice, formatCount, formatRating, getLocalizedPath } from "@/lib/utils";
 import { StarRating } from "@/components/ui/StarRating";
 import { PricingBadge } from "@/components/software/PricingBadge";
 import { VerifiedBadge } from "@/components/ui/VerifiedBadge";
@@ -66,7 +66,7 @@ export function SoftwareHero({ software, locale }: SoftwareHeroProps) {
         <nav className="hero-breadcrumb" aria-label="Breadcrumb">
           <ol className="breadcrumb-list">
             <li>
-              <Link href={`/${locale}`} className="breadcrumb-link">
+              <Link href={getLocalizedPath("/", locale)} className="breadcrumb-link">
                 Home
               </Link>
             </li>
@@ -74,7 +74,7 @@ export function SoftwareHero({ software, locale }: SoftwareHeroProps) {
               <li>
                 <span className="breadcrumb-separator" aria-hidden="true">›</span>
                 <Link
-                  href={`/${locale}/category/${category_slug}`}
+                  href={getLocalizedPath(`/category/${category_slug}`, locale)}
                   className="breadcrumb-link"
                 >
                   {category_name}
@@ -193,7 +193,7 @@ export function SoftwareHero({ software, locale }: SoftwareHeroProps) {
               {category_name && (
                 <span className="hero-meta-item">
                   <Link
-                    href={`/${locale}/category/${category_slug}`}
+                    href={getLocalizedPath(`/category/${category_slug}`, locale)}
                     className="hero-category-link"
                   >
                     {category_name}
@@ -295,7 +295,7 @@ export function SoftwareHero({ software, locale }: SoftwareHeroProps) {
           )}
 
           <Link
-            href={`/${locale}/${slug}/alternatives`}
+            href={getLocalizedPath(`/${slug}/alternatives`, locale)}
             className="btn btn-secondary btn-lg"
             id="view-alternatives-btn"
           >
@@ -339,7 +339,7 @@ export function SoftwareHero({ software, locale }: SoftwareHeroProps) {
           <a href="#faqs" className="hero-tab">
             FAQs
           </a>
-          <Link href={`/${locale}/${slug}/alternatives`} className="hero-tab">
+          <Link href={getLocalizedPath(`/${slug}/alternatives`, locale)} className="hero-tab">
             All Alternatives →
           </Link>
         </nav>

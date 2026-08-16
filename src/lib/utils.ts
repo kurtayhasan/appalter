@@ -133,3 +133,16 @@ export function difficultyColor(
     default: return "text-slate-400";
   }
 }
+
+// ---------------------------------------------------------------------------
+// getLocalizedPath — localePrefix as-needed standardizer
+// en (default) -> /path, other locales -> /locale/path
+// ---------------------------------------------------------------------------
+export function getLocalizedPath(path: string, locale: string = "en"): string {
+  const cleanPath = path ? (path.startsWith("/") ? path : `/${path}`) : "";
+  if (locale === "en" || !locale) {
+    return cleanPath || "/";
+  }
+  return `/${locale}${cleanPath}`;
+}
+

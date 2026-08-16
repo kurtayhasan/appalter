@@ -4,12 +4,15 @@ import { useState, useEffect } from "react";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 
+import { getLocalizedPath } from "@/lib/utils";
+
 export function CookieConsent() {
   const [showConsent, setShowConsent] = useState(false);
   const pathname = usePathname();
   
   // Extract locale from pathname, default to 'en'
-  const locale = pathname?.split('/')[1] || "en";
+  const firstSegment = pathname?.split('/')[1];
+  const locale = ["tr", "es", "de"].includes(firstSegment || "") ? firstSegment : "en";
 
   useEffect(() => {
     // Check if the user has already consented
@@ -24,21 +27,24 @@ export function CookieConsent() {
     setShowConsent(false);
   };
 
-  if (!showConsent) {
-    return null;
-  }
+  const declineCookies = () => {
+    localStorage.setItem("cookie_consent", "false");
+    setShowConsent(false);
+  };
+
+  if (!showConsent) return null;
 
   return (
     <div 
-      className="cookie-consent-banner" 
+      className="cookie-consent-banner"
       style={{
         position: "fixed",
         bottom: 0,
         left: 0,
         right: 0,
-        backgroundColor: "var(--bg-card)",
+        background: "var(--bg-secondary)",
         borderTop: "1px solid var(--border-color)",
-        padding: "1rem",
+        padding: "1rem 2rem",
         zIndex: 9999,
         display: "flex",
         justifyContent: "space-between",
@@ -52,7 +58,7 @@ export function CookieConsent() {
         <p style={{ margin: 0, fontSize: "0.875rem", color: "var(--text-secondary)" }}>
           We use cookies to enhance your browsing experience, serve personalized ads or content, and analyze our traffic. 
           By clicking "Accept", you consent to our use of cookies. 
-          Read our <Link href={`/${locale}/privacy`} style={{ color: "var(--primary-color)", textDecoration: "underline" }}>Privacy Policy</Link> for more information.
+          Read our <Link href={getLocalizedPath("/privacy", locale)} style={{ color: "var(--primary-color)", textDecoration: "underline" }}>Privacy Policy</Link> for more information.
         </p>
       </div>
       <div style={{ display: "flex", gap: "1rem" }}>

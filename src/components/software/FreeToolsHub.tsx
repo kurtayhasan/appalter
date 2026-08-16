@@ -8,7 +8,7 @@ import { getTranslations } from "next-intl/server";
 import type { Locale } from "@/i18n/routing";
 import { createStaticClient } from "@/lib/supabase/server";
 import { StarRating } from "@/components/ui/StarRating";
-import { formatRating, formatCount } from "@/lib/utils";
+import { formatRating, formatCount, getLocalizedPath } from "@/lib/utils";
 
 interface FreeToolsHubProps {
   locale: Locale;
@@ -63,34 +63,33 @@ export async function FreeToolsHub({ locale }: FreeToolsHubProps) {
         };
       }
 
-      if (categoryGroups[catSlug].items.length < 8) {
+      if (categoryGroups[catSlug].items.length < 6) {
         categoryGroups[catSlug].items.push(sw);
       }
     }
   }
 
   const activeGroups = Object.values(categoryGroups).filter((g) => g.items.length > 0);
+  if (activeGroups.length === 0) return null;
 
   return (
-    <div className="free-tools-hub" aria-label={t("title", { year: "2026" })}>
-      {/* Hero Header */}
-      <header className="free-tools-header" style={{ textAlign: "center", marginBottom: "3rem", padding: "2rem 0" }}>
-        <div style={{ display: "inline-flex", alignItems: "center", gap: "0.5rem", background: "rgba(52, 211, 153, 0.1)", border: "1px solid rgba(52, 211, 153, 0.25)", color: "#34d399", padding: "0.35rem 0.85rem", borderRadius: "9999px", fontSize: "0.85rem", fontWeight: 600, marginBottom: "1rem" }}>
-          <span>{t("badge")}</span>
+    <section className="free-tools-hub" style={{ marginTop: "3.5rem", marginBottom: "2rem" }}>
+      <div className="section-header" style={{ marginBottom: "2rem", textAlign: "left" }}>
+        <div style={{ display: "inline-flex", alignItems: "center", gap: "0.5rem", background: "rgba(16, 185, 129, 0.1)", color: "#10b981", padding: "0.35rem 0.85rem", borderRadius: "9999px", fontSize: "0.85rem", fontWeight: 700, marginBottom: "0.75rem" }}>
+          <span>✨</span> {t("badge")}
         </div>
-        <h1 style={{ fontSize: "2.5rem", fontWeight: 800, marginBottom: "0.75rem", letterSpacing: "-0.03em" }}>
-          {t("title", { year: "2026" })}
-        </h1>
-        <p style={{ fontSize: "1.1rem", color: "var(--text-secondary)", maxWidth: "680px", margin: "0 auto" }}>
+        <h2 style={{ fontSize: "2rem", fontWeight: 800, color: "var(--text-primary)", letterSpacing: "-0.02em", marginBottom: "0.5rem" }}>
+          {t("title")}
+        </h2>
+        <p style={{ color: "var(--text-secondary)", fontSize: "1.05rem", maxWidth: "700px" }}>
           {t("subtitle")}
         </p>
-      </header>
+      </div>
 
-      {/* Categorized Groups */}
-      <div className="free-groups-container" style={{ display: "flex", flexDirection: "column", gap: "3.5rem" }}>
+      <div style={{ display: "flex", flexDirection: "column", gap: "2.5rem" }}>
         {activeGroups.map((group) => (
-          <section key={group.categorySlug} className="free-category-section">
-            <div style={{ display: "flex", alignItems: "center", justifyContent: "space-between", marginBottom: "1.5rem", borderBottom: "1px solid var(--border-subtle)", paddingBottom: "0.75rem" }}>
+          <div key={group.categorySlug} className="category-group-block">
+            <div style={{ display: "flex", alignItems: "center", justifyContent: "space-between", marginBottom: "1.25rem" }}>
               <div>
                 <h2 style={{ fontSize: "1.5rem", fontWeight: 700, color: "var(--text-primary)" }}>
                   {t("topFreeCategory", { category: group.categoryName })}
@@ -100,7 +99,7 @@ export async function FreeToolsHub({ locale }: FreeToolsHubProps) {
                 </span>
               </div>
               <Link
-                href={`/${locale}/category/${group.categorySlug}?pricing=free`}
+                href={getLocalizedPath(`/category/${group.categorySlug}?pricing=free`, locale)}
                 className="view-all-link"
                 style={{ fontSize: "0.9rem", color: "var(--accent-primary)", fontWeight: 600 }}
               >
@@ -109,7 +108,7 @@ export async function FreeToolsHub({ locale }: FreeToolsHubProps) {
             </div>
 
             <div className="grid-cards">
-              {group.items.map((sw) => (
+              {group.items.map((sw: any) => (
                 <div key={sw.id} className="software-card" style={{ display: "flex", flexDirection: "column", justifyContent: "space-between" }}>
                   <div>
                     <div style={{ display: "flex", alignItems: "flex-start", gap: "0.875rem", marginBottom: "1rem" }}>
@@ -127,7 +126,7 @@ export async function FreeToolsHub({ locale }: FreeToolsHubProps) {
                       </div>
                       <div style={{ minWidth: 0, flex: 1 }}>
                         <h3 style={{ fontSize: "1.1rem", fontWeight: 700, margin: 0, whiteSpace: "nowrap", overflow: "hidden", textOverflow: "ellipsis" }}>
-                          <Link href={`/${locale}/${sw.slug}`} style={{ color: "var(--text-primary)" }}>
+                          <Link href={getLocalizedPath(`/${sw.slug}`, locale)} style={{ color: "var(--text-primary)" }}>
                             {sw.name}
                           </Link>
                         </h3>
@@ -152,7 +151,7 @@ export async function FreeToolsHub({ locale }: FreeToolsHubProps) {
                     )}
 
                     <div style={{ display: "flex", gap: "0.5rem", paddingTop: "0.75rem", borderTop: "1px solid var(--border-subtle)" }}>
-                      <Link href={`/${locale}/${sw.slug}`} className="btn btn-secondary btn-sm" style={{ flex: 1, textAlign: "center" }}>
+                      <Link href={getLocalizedPath(`/${sw.slug}`, locale)} className="btn btn-secondary btn-sm" style={{ flex: 1, textAlign: "center" }}>
                         Alternatives
                       </Link>
                       <a
@@ -169,9 +168,9 @@ export async function FreeToolsHub({ locale }: FreeToolsHubProps) {
                 </div>
               ))}
             </div>
-          </section>
+          </div>
         ))}
       </div>
-    </div>
+    </section>
   );
 }

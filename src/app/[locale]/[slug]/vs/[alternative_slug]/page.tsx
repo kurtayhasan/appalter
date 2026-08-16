@@ -89,15 +89,23 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
     alternative: alternative.name,
   });
 
+  const siteUrl = process.env.NEXT_PUBLIC_SITE_URL ?? "https://appalter.com";
+  const canonicalUrl =
+    locale === routing.defaultLocale
+      ? `${siteUrl}/${slug}/vs/${alternative_slug}`
+      : `${siteUrl}/${locale}/${slug}/vs/${alternative_slug}`;
+
   return {
     title,
     description,
     alternates: {
-      canonical: `/${slug}/vs/${alternative_slug}`,
+      canonical: canonicalUrl,
       languages: Object.fromEntries(
         routing.locales.map((loc) => [
           loc,
-          `/${loc}/${slug}/vs/${alternative_slug}`,
+          loc === routing.defaultLocale
+            ? `${siteUrl}/${slug}/vs/${alternative_slug}`
+            : `${siteUrl}/${loc}/${slug}/vs/${alternative_slug}`,
         ])
       ),
     },
@@ -105,6 +113,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
       title,
       description,
       type: "website",
+      url: canonicalUrl,
     },
   };
 }

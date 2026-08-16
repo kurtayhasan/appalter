@@ -139,6 +139,8 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   };
 }
 
+import { getLocalizedPath } from "@/lib/utils";
+
 // ---------------------------------------------------------------------------
 // PAGE COMPONENT
 // ---------------------------------------------------------------------------
@@ -164,10 +166,10 @@ export default async function SoftwarePage({ params }: Props) {
       <SoftwareJsonLd software={software} url={canonicalUrl} />
       <BreadcrumbJsonLd
         items={[
-          { name: "Home", url: siteUrl },
+          { name: "Home", url: `${siteUrl}${getLocalizedPath("/", locale)}` },
           {
             name: software.category_name ?? "Software",
-            url: `${siteUrl}/${locale}/category/${software.category_slug ?? "all"}`,
+            url: `${siteUrl}${getLocalizedPath(`/category/${software.category_slug ?? "all"}`, locale)}`,
           },
           { name: software.name, url: canonicalUrl },
         ]}

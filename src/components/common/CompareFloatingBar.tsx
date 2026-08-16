@@ -5,6 +5,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { useCompare } from "@/context/CompareContext";
 import { useLocale } from "next-intl";
+import { getLocalizedPath } from "@/lib/utils";
 
 export function CompareFloatingBar() {
   const { selectedItems, removeFromCompare, clearCompare } = useCompare();
@@ -19,7 +20,7 @@ export function CompareFloatingBar() {
   const isReady = Boolean(item1 && item2);
 
   const vsUrl = isReady && item2
-    ? `/${locale}/${item1.slug}/vs/${item2.slug}`
+    ? getLocalizedPath(`/${item1.slug}/vs/${item2.slug}`, locale)
     : "#";
 
   return (

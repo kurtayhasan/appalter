@@ -11,6 +11,8 @@ import { AdBanner } from "@/components/ads/AdBanner";
 import Link from "next/link";
 import { Suspense } from "react";
 
+import { getLocalizedPath } from "@/lib/utils";
+
 export async function generateMetadata({
   params,
 }: {
@@ -65,7 +67,7 @@ export default async function HomePage({
             <p className="home-subtitle">{t("subtitle")}</p>
             
             <div className="home-search-wrapper">
-              <form action={`/${locale}/search`} className="search-form" role="search">
+              <form action={getLocalizedPath("/search", locale)} className="search-form" role="search">
                 <input
                   type="search"
                   name="q"
@@ -89,7 +91,7 @@ export default async function HomePage({
           <div className="container">
             <div className="home-section-header">
               <h2 className="home-section-title">{t("featuredSoftware")}</h2>
-              <Link href={`/${locale}/search`} className="view-all-link">
+              <Link href={getLocalizedPath("/search", locale)} className="view-all-link">
                 {t("viewAll")} →
               </Link>
             </div>
@@ -110,7 +112,7 @@ export default async function HomePage({
           <div className="container">
             <div className="home-section-header">
               <h2 className="home-section-title">{t("popularCategories")}</h2>
-              <Link href={`/${locale}/categories`} className="view-all-link">
+              <Link href={getLocalizedPath("/categories", locale)} className="view-all-link">
                 {t("viewAll")} →
               </Link>
             </div>
@@ -161,7 +163,7 @@ async function CategoriesIsland({ locale }: { locale: Locale }) {
       {topCategories.map((cat) => (
         <Link
           key={cat.id}
-          href={`/${locale}/category/${cat.slug}`}
+          href={getLocalizedPath(`/category/${cat.slug}`, locale)}
           className="category-card"
         >
           <div className="category-icon" aria-hidden="true" style={{ display: 'flex', alignItems: 'center', justifyContent: 'center', width: '40px', height: '40px', borderRadius: '8px', backgroundColor: 'transparent', overflow: 'hidden' }}>
