@@ -421,6 +421,7 @@ async function seedOpenSource() {
         free_trial_days: 0,
         avg_rating: 4.8,
         review_count: Math.round(tool.github_stars_k * 45),
+        status: "published",
         is_verified: true,
         is_featured: true,
         ai_features: tool.ai_features,
@@ -451,6 +452,7 @@ async function seedOpenSource() {
             alternative_id: saved.id,
             similarity_score: 0.95,
             is_approved: true,
+            is_indexable: true,
           },
           { onConflict: "software_id,alternative_id" }
         );
@@ -462,6 +464,7 @@ async function seedOpenSource() {
             alternative_id: saasSoftware.id,
             similarity_score: 0.95,
             is_approved: true,
+            is_indexable: true,
           },
           { onConflict: "software_id,alternative_id" }
         );

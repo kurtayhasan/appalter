@@ -209,7 +209,11 @@ export default async function SoftwarePage({ params }: Props) {
           <Suspense
             fallback={<SectionSkeleton rows={3} label="Loading reviews..." />}
           >
-            <ReviewsIsland softwareId={software.id} locale={locale as Locale} />
+            <ReviewsIsland
+              softwareId={software.id}
+              softwareName={software.name}
+              locale={locale as Locale}
+            />
           </Suspense>
         </section>
 
@@ -257,15 +261,23 @@ async function ScreenshotsIsland({ softwareId }: { softwareId: string }) {
 
 async function ReviewsIsland({
   softwareId,
+  softwareName,
   locale,
 }: {
   softwareId: string;
+  softwareName: string;
   locale: Locale;
 }) {
   const { ReviewsSection } = await import(
     "@/components/software/ReviewsSection"
   );
-  return <ReviewsSection softwareId={softwareId} locale={locale} />;
+  return (
+    <ReviewsSection
+      softwareId={softwareId}
+      softwareName={softwareName}
+      locale={locale}
+    />
+  );
 }
 
 async function FAQIsland({

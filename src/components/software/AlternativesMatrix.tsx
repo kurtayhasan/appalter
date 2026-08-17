@@ -26,10 +26,10 @@ export function AlternativesMatrix({ software, alternatives, locale }: Alternati
     <section className="decision-matrix-section" style={{ marginTop: "3.5rem", marginBottom: "2rem" }}>
       <div className="section-header" style={{ marginBottom: "1.5rem" }}>
         <h2 style={{ fontSize: "1.75rem", fontWeight: 800, color: "var(--text-primary)", letterSpacing: "-0.02em", marginBottom: "0.5rem" }}>
-          {t("title", { software: software.name })}
+          {t("title", { name: software.name })}
         </h2>
         <p style={{ color: "var(--text-secondary)", fontSize: "1rem" }}>
-          {t("subtitle")}
+          {t("subtitle", { name: software.name })}
         </p>
       </div>
 
@@ -37,11 +37,11 @@ export function AlternativesMatrix({ software, alternatives, locale }: Alternati
         <table style={{ width: "100%", borderCollapse: "collapse", textAlign: "left", fontSize: "0.9rem" }}>
           <thead>
             <tr style={{ background: "var(--bg-secondary)", borderBottom: "1px solid var(--border-subtle)" }}>
-              <th style={{ padding: "1rem", fontWeight: 700, color: "var(--text-primary)" }}>{t("softwareCol")}</th>
-              <th style={{ padding: "1rem", fontWeight: 700, color: "var(--text-primary)" }}>{t("bestForCol")}</th>
-              <th style={{ padding: "1rem", fontWeight: 700, color: "var(--text-primary)" }}>{t("priceCol")}</th>
-              <th style={{ padding: "1rem", fontWeight: 700, color: "var(--text-primary)" }}>{t("advantageCol")}</th>
-              <th style={{ padding: "1rem", textAlign: "right", fontWeight: 700, color: "var(--text-primary)" }}>{t("actionCol")}</th>
+              <th style={{ padding: "1rem", fontWeight: 700, color: "var(--text-primary)" }}>{t("alternative")}</th>
+              <th style={{ padding: "1rem", fontWeight: 700, color: "var(--text-primary)" }}>{t("bestFor")}</th>
+              <th style={{ padding: "1rem", fontWeight: 700, color: "var(--text-primary)" }}>{t("startingPrice")}</th>
+              <th style={{ padding: "1rem", fontWeight: 700, color: "var(--text-primary)" }}>{t("keyAdvantage", { name: software.name })}</th>
+              <th style={{ padding: "1rem", textAlign: "right", fontWeight: 700, color: "var(--text-primary)" }}>{t("action")}</th>
             </tr>
           </thead>
           <tbody>

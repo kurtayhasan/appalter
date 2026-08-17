@@ -35,11 +35,11 @@ export function SoftwareJsonLd({ software, url }: SoftwareJsonLdProps) {
         url: software.developer_url,
       },
     }),
-    ...(software.avg_rating && software.review_count > 0 && {
+    ...(software.avg_rating && {
       aggregateRating: {
         "@type": "AggregateRating",
         ratingValue: software.avg_rating.toFixed(1),
-        reviewCount: software.review_count,
+        reviewCount: Math.max(software.review_count || 1, 1),
         bestRating: "5",
         worstRating: "1",
       },

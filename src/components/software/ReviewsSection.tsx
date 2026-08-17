@@ -9,12 +9,14 @@ import { ReviewForm } from "@/components/software/ReviewForm";
 
 interface ReviewsSectionProps {
   softwareId: string;
+  softwareName?: string;
   locale: Locale;
   page?: number;
 }
 
 export async function ReviewsSection({
   softwareId,
+  softwareName,
   locale,
   page = 1,
 }: ReviewsSectionProps) {
@@ -99,6 +101,13 @@ export async function ReviewsSection({
             itemScope
             itemType="https://schema.org/Review"
           >
+            {/* itemReviewed Schema for Google Search Console */}
+            {softwareName && (
+              <span itemProp="itemReviewed" itemScope itemType="https://schema.org/SoftwareApplication" style={{ display: "none" }}>
+                <meta itemProp="name" content={softwareName} />
+              </span>
+            )}
+
             {/* Reviewer */}
             <div className="review-header">
               <div className="reviewer-avatar" aria-hidden="true">
@@ -135,7 +144,12 @@ export async function ReviewsSection({
               </div>
 
               <div className="review-meta">
-                <StarRating rating={review.rating} size="xs" />
+                <div itemProp="reviewRating" itemScope itemType="https://schema.org/Rating">
+                  <meta itemProp="ratingValue" content={String(review.rating)} />
+                  <meta itemProp="bestRating" content="5" />
+                  <meta itemProp="worstRating" content="1" />
+                  <StarRating rating={review.rating} size="xs" />
+                </div>
                 <time
                   className="review-date"
                   dateTime={review.created_at}
