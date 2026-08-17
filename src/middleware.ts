@@ -36,13 +36,18 @@ const PUBLIC_PATHS_NO_LOCALE = new Set([
 // Locale slugs that are NOT software slugs (skip slug-redirect check)
 const NON_SOFTWARE_SLUGS = new Set([
   "category",
+  "categories",
   "search",
+  "ara",
+  "buscar",
+  "suchen",
   "collections",
   "dashboard",
   "blog",
   "about",
   "privacy",
   "terms",
+  "contact",
 ]);
 
 // ---------------------------------------------------------------------------
