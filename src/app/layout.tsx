@@ -28,6 +28,7 @@ export default async function GlobalLayout({
   return (
     <html lang={locale} className={`${inter.variable} ${outfit.variable}`} suppressHydrationWarning>
       <head>
+        <meta name="yandex-verification" content="d0688516d81af187" />
         <script
           dangerouslySetInnerHTML={{
             __html: `
