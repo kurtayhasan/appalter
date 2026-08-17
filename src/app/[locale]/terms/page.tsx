@@ -24,9 +24,11 @@ export async function generateMetadata({
         ])
       ),
     },
-    robots: {
-      index: false,
-      follow: true,
+    openGraph: {
+      title: "Terms of Service | AppAlter",
+      description: "Read our Terms of Service to understand the rules and regulations for using AppAlter.",
+      url: canonicalUrl,
+      type: "website",
     },
   };
 }

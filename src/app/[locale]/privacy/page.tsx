@@ -24,9 +24,11 @@ export async function generateMetadata({
         ])
       ),
     },
-    robots: {
-      index: false,
-      follow: true,
+    openGraph: {
+      title: "Privacy Policy | AppAlter",
+      description: "Read our Privacy Policy to understand how AppAlter collects, uses, and protects your data.",
+      url: canonicalUrl,
+      type: "website",
     },
   };
 }
