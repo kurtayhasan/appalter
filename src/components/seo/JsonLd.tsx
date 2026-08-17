@@ -24,7 +24,7 @@ export function SoftwareJsonLd({ software, url }: SoftwareJsonLdProps) {
       software.description,
     url: software.website_url ?? url,
     applicationCategory: software.category_name ?? "SoftwareApplication",
-    operatingSystem: "Web",
+    operatingSystem: "Web, Windows, macOS, Linux, iOS, Android",
     ...(software.logo_url && {
       image: software.logo_url,
     }),
@@ -35,10 +35,11 @@ export function SoftwareJsonLd({ software, url }: SoftwareJsonLdProps) {
         url: software.developer_url,
       },
     }),
-    ...(software.avg_rating && {
+    ...(software.avg_rating && software.avg_rating > 0 && {
       aggregateRating: {
         "@type": "AggregateRating",
         ratingValue: software.avg_rating.toFixed(1),
+        ratingCount: Math.max(software.review_count || 1, 1),
         reviewCount: Math.max(software.review_count || 1, 1),
         bestRating: "5",
         worstRating: "1",
@@ -101,6 +102,8 @@ interface AlternativesListJsonLdProps {
     description?: string | null;
     logoUrl?: string | null;
     rating?: number | null;
+    ratingCount?: number | null;
+    reviewCount?: number | null;
   }>;
 }
 
@@ -122,13 +125,16 @@ export function AlternativesListJsonLd({
         "@type": "SoftwareApplication",
         name: alt.name,
         url: alt.url,
-        description: alt.description,
+        ...(alt.description && { description: alt.description }),
         ...(alt.logoUrl && { image: alt.logoUrl }),
-        ...(alt.rating && {
+        ...(alt.rating && alt.rating > 0 && {
           aggregateRating: {
             "@type": "AggregateRating",
             ratingValue: alt.rating.toFixed(1),
+            ratingCount: Math.max(alt.ratingCount || alt.reviewCount || 1, 1),
+            reviewCount: Math.max(alt.reviewCount || alt.ratingCount || 1, 1),
             bestRating: "5",
+            worstRating: "1",
           },
         }),
       },
@@ -146,9 +152,18 @@ export function AlternativesListJsonLd({
 // ---------------------------------------------------------------------------
 // ComparisonJsonLd — ItemList for VS pages
 // ---------------------------------------------------------------------------
+interface ComparisonEntity {
+  name: string;
+  url: string;
+  logo?: string | null;
+  rating?: number | null;
+  ratingCount?: number | null;
+  reviewCount?: number | null;
+}
+
 interface ComparisonJsonLdProps {
-  software: { name: string; url: string; logo?: string | null; rating?: number | null };
-  alternative: { name: string; url: string; logo?: string | null; rating?: number | null };
+  software: ComparisonEntity;
+  alternative: ComparisonEntity;
   comparisonUrl: string;
 }
 
@@ -172,11 +187,14 @@ export function ComparisonJsonLd({
           name: software.name,
           url: software.url,
           ...(software.logo && { image: software.logo }),
-          ...(software.rating && {
+          ...(software.rating && software.rating > 0 && {
             aggregateRating: {
               "@type": "AggregateRating",
               ratingValue: software.rating.toFixed(1),
+              ratingCount: Math.max(software.ratingCount || software.reviewCount || 1, 1),
+              reviewCount: Math.max(software.reviewCount || software.ratingCount || 1, 1),
               bestRating: "5",
+              worstRating: "1",
             },
           }),
         },
@@ -189,11 +207,14 @@ export function ComparisonJsonLd({
           name: alternative.name,
           url: alternative.url,
           ...(alternative.logo && { image: alternative.logo }),
-          ...(alternative.rating && {
+          ...(alternative.rating && alternative.rating > 0 && {
             aggregateRating: {
               "@type": "AggregateRating",
               ratingValue: alternative.rating.toFixed(1),
+              ratingCount: Math.max(alternative.ratingCount || alternative.reviewCount || 1, 1),
+              reviewCount: Math.max(alternative.reviewCount || alternative.ratingCount || 1, 1),
               bestRating: "5",
+              worstRating: "1",
             },
           }),
         },
@@ -262,6 +283,7 @@ export function WebSiteJsonLd({ baseUrl }: { baseUrl: string }) {
 // ---------------------------------------------------------------------------
 function buildOffers(software: SoftwareDetail) {
   const { pricing_model_slug, starting_price, price_currency } = software;
+  const currency = price_currency || "USD";
 
   if (
     pricing_model_slug === "free" ||
@@ -282,14 +304,16 @@ function buildOffers(software: SoftwareDetail) {
         price: "0",
         priceCurrency: "USD",
         name: "Free tier",
+        availability: "https://schema.org/InStock",
       },
       ...(starting_price
         ? [
             {
               "@type": "Offer",
               price: starting_price.toFixed(2),
-              priceCurrency: price_currency,
+              priceCurrency: currency,
               name: "Paid tier",
+              availability: "https://schema.org/InStock",
             },
           ]
         : []),
@@ -300,13 +324,16 @@ function buildOffers(software: SoftwareDetail) {
     return {
       "@type": "Offer",
       price: starting_price.toFixed(2),
-      priceCurrency: price_currency,
+      priceCurrency: currency,
       availability: "https://schema.org/InStock",
     };
   }
 
   return {
     "@type": "Offer",
+    price: "0",
+    priceCurrency: currency,
     availability: "https://schema.org/InStock",
   };
 }
+

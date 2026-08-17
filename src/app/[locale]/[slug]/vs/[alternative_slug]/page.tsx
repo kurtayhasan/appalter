@@ -5,6 +5,8 @@ import { Suspense } from "react";
 import type { Metadata } from "next";
 import { type Locale, routing } from "@/i18n/routing";
 import { getSoftwareBasic } from "@/lib/cache/queries";
+import { BreadcrumbJsonLd } from "@/components/seo/BreadcrumbJsonLd";
+import { getLocalizedPath } from "@/lib/utils";
 
 // ---------------------------------------------------------------------------
 // Route: /[locale]/[slug]/vs/[alternative_slug]
@@ -134,53 +136,76 @@ export default async function VsPage({ params }: Props) {
 
   if (!software || !alternative) notFound();
 
-  return (
-    <main>
-      {/* Static shell — hero with both software logos */}
-      <section className="vs-hero">
-        <h1>
-          {software.name} vs {alternative.name}
-        </h1>
-        <div className="vs-brands">
-          <div className="vs-brand">
-            {software.logo_url && (
-              // eslint-disable-next-line @next/next/no-img-element
-              <img
-                src={software.logo_url}
-                alt={`${software.name} logo`}
-                width={64}
-                height={64}
-              />
-            )}
-            <span>{software.name}</span>
-          </div>
-          <span className="vs-divider" aria-hidden="true">
-            VS
-          </span>
-          <div className="vs-brand">
-            {alternative.logo_url && (
-              // eslint-disable-next-line @next/next/no-img-element
-              <img
-                src={alternative.logo_url}
-                alt={`${alternative.name} logo`}
-                width={64}
-                height={64}
-              />
-            )}
-            <span>{alternative.name}</span>
-          </div>
-        </div>
-      </section>
+  const siteUrl = process.env.NEXT_PUBLIC_SITE_URL ?? "https://appalter.com";
+  const canonicalUrl =
+    locale === routing.defaultLocale
+      ? `${siteUrl}/${slug}/vs/${alternative_slug}`
+      : `${siteUrl}/${locale}/${slug}/vs/${alternative_slug}`;
+  const softwareUrl =
+    locale === routing.defaultLocale
+      ? `${siteUrl}/${slug}`
+      : `${siteUrl}/${locale}/${slug}`;
 
-      {/* Dynamic comparison table — streamed */}
-      <Suspense fallback={<ComparisonSkeleton />}>
-        <ComparisonIsland
-          softwareSlug={slug}
-          alternativeSlug={alternative_slug}
-          locale={locale as Locale}
-        />
-      </Suspense>
-    </main>
+  return (
+    <>
+      <BreadcrumbJsonLd
+        items={[
+          { name: "Home", url: `${siteUrl}${getLocalizedPath("/", locale)}` },
+          { name: software.name, url: softwareUrl },
+          {
+            name: `${software.name} vs ${alternative.name}`,
+            url: canonicalUrl,
+          },
+        ]}
+      />
+
+      <main>
+        {/* Static shell — hero with both software logos */}
+        <section className="vs-hero">
+          <h1>
+            {software.name} vs {alternative.name}
+          </h1>
+          <div className="vs-brands">
+            <div className="vs-brand">
+              {software.logo_url && (
+                // eslint-disable-next-line @next/next/no-img-element
+                <img
+                  src={software.logo_url}
+                  alt={`${software.name} logo`}
+                  width={64}
+                  height={64}
+                />
+              )}
+              <span>{software.name}</span>
+            </div>
+            <span className="vs-divider" aria-hidden="true">
+              VS
+            </span>
+            <div className="vs-brand">
+              {alternative.logo_url && (
+                // eslint-disable-next-line @next/next/no-img-element
+                <img
+                  src={alternative.logo_url}
+                  alt={`${alternative.name} logo`}
+                  width={64}
+                  height={64}
+                />
+              )}
+              <span>{alternative.name}</span>
+            </div>
+          </div>
+        </section>
+
+        {/* Dynamic comparison table — streamed */}
+        <Suspense fallback={<ComparisonSkeleton />}>
+          <ComparisonIsland
+            softwareSlug={slug}
+            alternativeSlug={alternative_slug}
+            locale={locale as Locale}
+          />
+        </Suspense>
+      </main>
+    </>
   );
 }
 

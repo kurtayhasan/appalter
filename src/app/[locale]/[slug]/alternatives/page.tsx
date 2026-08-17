@@ -8,6 +8,9 @@ import { type Locale, routing } from "@/i18n/routing";
 import { AlternativesList } from "@/components/software/AlternativesList";
 import { getSoftwareBasic } from "@/lib/cache/queries";
 
+import { BreadcrumbJsonLd } from "@/components/seo/BreadcrumbJsonLd";
+import { getLocalizedPath } from "@/lib/utils";
+
 // ---------------------------------------------------------------------------
 // Route: /[locale]/[slug]/alternatives
 // Shows all alternatives for a given software, paginated.
@@ -104,30 +107,50 @@ export default async function AlternativesPage({ params, searchParams }: Props) 
   const software = await getSoftwareBasic(slug, locale);
   if (!software) notFound();
 
-  return (
-    <main>
-      {/* Static shell — immediately rendered */}
-      <section className="alternatives-hero">
-        <h1>
-          {t("bestAlternativesTo", {
-            name: software.name,
-            year: 2026,
-          })}
-        </h1>
-        <p className="alternatives-count">
-          {t("basedOnReviews", { count: software.alternative_count })}
-        </p>
-      </section>
+  const siteUrl = process.env.NEXT_PUBLIC_SITE_URL ?? "https://appalter.com";
+  const canonicalUrl =
+    locale === routing.defaultLocale
+      ? `${siteUrl}/${slug}/alternatives`
+      : `${siteUrl}/${locale}/${slug}/alternatives`;
+  const softwareUrl =
+    locale === routing.defaultLocale
+      ? `${siteUrl}/${slug}`
+      : `${siteUrl}/${locale}/${slug}`;
 
-      {/* Dynamic slot — streamed */}
-      <Suspense fallback={<AlternativesListSkeleton />}>
-        <AlternativesListWrapper
-          softwareSlug={slug}
-          locale={locale as Locale}
-          searchParamsPromise={searchParams}
-        />
-      </Suspense>
-    </main>
+  return (
+    <>
+      <BreadcrumbJsonLd
+        items={[
+          { name: "Home", url: `${siteUrl}${getLocalizedPath("/", locale)}` },
+          { name: software.name, url: softwareUrl },
+          { name: `Alternatives to ${software.name}`, url: canonicalUrl },
+        ]}
+      />
+
+      <main>
+        {/* Static shell — immediately rendered */}
+        <section className="alternatives-hero">
+          <h1>
+            {t("bestAlternativesTo", {
+              name: software.name,
+              year: 2026,
+            })}
+          </h1>
+          <p className="alternatives-count">
+            {t("basedOnReviews", { count: software.alternative_count })}
+          </p>
+        </section>
+
+        {/* Dynamic slot — streamed */}
+        <Suspense fallback={<AlternativesListSkeleton />}>
+          <AlternativesListWrapper
+            softwareSlug={slug}
+            locale={locale as Locale}
+            searchParamsPromise={searchParams}
+          />
+        </Suspense>
+      </main>
+    </>
   );
 }
 

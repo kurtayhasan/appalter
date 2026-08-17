@@ -55,6 +55,8 @@ export async function AlternativesList({
           description: alt.tagline,
           logoUrl: alt.alternative_logo,
           rating: alt.avg_rating,
+          ratingCount: alt.review_count,
+          reviewCount: alt.review_count,
         }))}
       />
 

@@ -64,12 +64,16 @@ export async function ComparisonTable({
           url: `${baseUrl}${getLocalizedPath(`/${softwareSlug}`, locale)}`,
           logo: software.logo_url,
           rating: software.avg_rating,
+          ratingCount: software.review_count,
+          reviewCount: software.review_count,
         }}
         alternative={{
           name: alternative.name,
           url: `${baseUrl}${getLocalizedPath(`/${alternativeSlug}`, locale)}`,
           logo: alternative.logo_url,
           rating: alternative.avg_rating,
+          ratingCount: alternative.review_count,
+          reviewCount: alternative.review_count,
         }}
         comparisonUrl={`${baseUrl}${getLocalizedPath(`/${softwareSlug}/vs/${alternativeSlug}`, locale)}`}
       />

@@ -171,11 +171,12 @@ export function generateGeoJson(params: {
           priceCurrency: "USD",
           availability: "https://schema.org/InStock",
         },
-    aggregateRating: software.avg_rating
+    aggregateRating: software.avg_rating && software.avg_rating > 0
       ? {
           "@type": "AggregateRating",
           ratingValue: software.avg_rating,
-          ratingCount: software.review_count,
+          ratingCount: Math.max(software.review_count || 1, 1),
+          reviewCount: Math.max(software.review_count || 1, 1),
           bestRating: 5,
           worstRating: 1,
         }
