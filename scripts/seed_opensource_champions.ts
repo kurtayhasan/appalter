@@ -436,6 +436,23 @@ async function seedOpenSource() {
 
     console.log(`Saved ${tool.name} (${saved?.id})`);
 
+    // 3.5 Upsert into software_translations for all locales
+    if (saved?.id) {
+      for (const loc of ["en", "tr", "es", "de"]) {
+        await supabase.from("software_translations").upsert(
+          {
+            software_id: saved.id,
+            locale: loc,
+            name: tool.name,
+            tagline: tool.tagline,
+            short_description: tool.short_description,
+            ai_features: tool.ai_features,
+          },
+          { onConflict: "software_id,locale" }
+        );
+      }
+    }
+
     // 4. Link against paired SaaS competitors
     for (const saasSlug of tool.paired_saas_slugs) {
       const { data: saasSoftware } = await supabase

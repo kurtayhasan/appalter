@@ -102,8 +102,7 @@ export async function getSoftwareBasic(
         )
         .eq("slug", slug)
         .eq("status", "published")
-        .eq("software_translations.locale", locale)
-        .single();
+        .maybeSingle();
 
       if (error || !data) return null;
 
@@ -117,7 +116,7 @@ export async function getSoftwareBasic(
 
       const translation =
         Array.isArray(data.software_translations) && data.software_translations.length > 0
-          ? data.software_translations[0]
+          ? data.software_translations.find((t: any) => t.locale === locale) ?? data.software_translations[0]
           : null;
 
       return {
