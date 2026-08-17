@@ -23,7 +23,7 @@ export function SoftwareJsonLd({ software, url }: SoftwareJsonLdProps) {
       software.short_description ??
       software.description,
     url: software.website_url ?? url,
-    applicationCategory: software.category_name ?? "SoftwareApplication",
+    applicationCategory: mapApplicationCategory(software.category_slug ?? software.category_name),
     operatingSystem: "Web, Windows, macOS, Linux, iOS, Android",
     ...(software.logo_url && {
       image: software.logo_url,
@@ -46,9 +46,6 @@ export function SoftwareJsonLd({ software, url }: SoftwareJsonLdProps) {
       },
     }),
     offers: buildOffers(software),
-    ...(software.is_discontinued && {
-      applicationCategory: "DiscontinuedApplication",
-    }),
   };
 
   return (
@@ -57,6 +54,21 @@ export function SoftwareJsonLd({ software, url }: SoftwareJsonLdProps) {
       dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }}
     />
   );
+}
+
+function mapApplicationCategory(categorySlug?: string | null): string {
+  if (!categorySlug) return "BusinessApplication";
+  const slug = categorySlug.toLowerCase();
+  if (slug.includes("design") || slug.includes("photo") || slug.includes("video") || slug.includes("3d")) return "DesignApplication";
+  if (slug.includes("dev") || slug.includes("code") || slug.includes("api") || slug.includes("database")) return "DeveloperApplication";
+  if (slug.includes("security") || slug.includes("antivirus") || slug.includes("vpn") || slug.includes("password")) return "SecurityApplication";
+  if (slug.includes("finance") || slug.includes("accounting") || slug.includes("billing") || slug.includes("invoice")) return "FinanceApplication";
+  if (slug.includes("crm") || slug.includes("business") || slug.includes("project") || slug.includes("marketing") || slug.includes("hr")) return "BusinessApplication";
+  if (slug.includes("communication") || slug.includes("chat") || slug.includes("email") || slug.includes("meet")) return "CommunicationApplication";
+  if (slug.includes("media") || slug.includes("audio") || slug.includes("music")) return "MultimediaApplication";
+  if (slug.includes("social")) return "SocialNetworkingApplication";
+  if (slug.includes("utilit") || slug.includes("tool") || slug.includes("browser") || slug.includes("backup")) return "UtilitiesApplication";
+  return "BusinessApplication";
 }
 
 // ---------------------------------------------------------------------------

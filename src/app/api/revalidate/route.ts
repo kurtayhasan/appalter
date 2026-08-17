@@ -6,16 +6,17 @@ export async function POST(request: NextRequest) {
     const body = await request.json();
     const { secret, tag, path, type } = body;
 
-    // Use a simple CRON_SECRET or ADMIN_SECRET from env
-    const validSecret = process.env.ADMIN_SECRET || process.env.CRON_SECRET || 'dev-secret';
+    // Validate secret strictly
+    const validSecret = process.env.ADMIN_SECRET || process.env.CRON_SECRET || process.env.REVALIDATE_SECRET;
 
-    if (secret !== validSecret && process.env.NODE_ENV !== 'development') {
-      return NextResponse.json({ message: "Invalid secret" }, { status: 401 });
+    if (!validSecret || secret !== validSecret) {
+      return NextResponse.json({ message: "Invalid or missing secret" }, { status: 401 });
     }
 
     if (path) {
-      revalidatePath(path, type || "page");
-      return NextResponse.json({ revalidated: true, path, type, now: Date.now() });
+      const validPathType: "page" | "layout" = type === "layout" ? "layout" : "page";
+      revalidatePath(path, validPathType);
+      return NextResponse.json({ revalidated: true, path, type: validPathType, now: Date.now() });
     }
 
     if (!tag) {

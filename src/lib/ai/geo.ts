@@ -162,8 +162,9 @@ export function generateGeoJson(params: {
     offers: software.starting_price
       ? {
           "@type": "Offer",
-          price: software.starting_price,
-          priceCurrency: software.price_currency,
+          price: software.starting_price.toFixed(2),
+          priceCurrency: software.price_currency || "USD",
+          availability: "https://schema.org/InStock",
         }
       : {
           "@type": "Offer",

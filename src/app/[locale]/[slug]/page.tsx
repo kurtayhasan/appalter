@@ -11,6 +11,7 @@ import { SoftwareJsonLd } from "@/components/seo/JsonLd";
 import { BreadcrumbJsonLd } from "@/components/seo/BreadcrumbJsonLd";
 import { getSoftwareBySlugCached } from "@/lib/cache/queries";
 import { AdBanner } from "@/components/ads/AdBanner";
+import { getLocalizedPath } from "@/lib/utils";
 
 // ---------------------------------------------------------------------------
 // Route: /[locale]/[slug]
@@ -139,8 +140,6 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   };
 }
 
-import { getLocalizedPath } from "@/lib/utils";
-
 // ---------------------------------------------------------------------------
 // PAGE COMPONENT
 // ---------------------------------------------------------------------------
@@ -212,6 +211,7 @@ export default async function SoftwarePage({ params }: Props) {
             <ReviewsIsland
               softwareId={software.id}
               softwareName={software.name}
+              softwareAvgRating={software.avg_rating}
               locale={locale as Locale}
             />
           </Suspense>
@@ -262,10 +262,12 @@ async function ScreenshotsIsland({ softwareId }: { softwareId: string }) {
 async function ReviewsIsland({
   softwareId,
   softwareName,
+  softwareAvgRating,
   locale,
 }: {
   softwareId: string;
   softwareName: string;
+  softwareAvgRating?: number | null;
   locale: Locale;
 }) {
   const { ReviewsSection } = await import(
@@ -275,6 +277,7 @@ async function ReviewsIsland({
     <ReviewsSection
       softwareId={softwareId}
       softwareName={softwareName}
+      softwareAvgRating={softwareAvgRating}
       locale={locale}
     />
   );

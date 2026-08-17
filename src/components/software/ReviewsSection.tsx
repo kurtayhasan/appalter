@@ -10,6 +10,7 @@ import { ReviewForm } from "@/components/software/ReviewForm";
 interface ReviewsSectionProps {
   softwareId: string;
   softwareName?: string;
+  softwareAvgRating?: number | null;
   locale: Locale;
   page?: number;
 }
@@ -17,6 +18,7 @@ interface ReviewsSectionProps {
 export async function ReviewsSection({
   softwareId,
   softwareName,
+  softwareAvgRating,
   locale,
   page = 1,
 }: ReviewsSectionProps) {
@@ -48,9 +50,11 @@ export async function ReviewsSection({
   }));
   const maxCount = Math.max(...ratingCounts.map((r) => r.count), 1);
 
-  // Ortalama rating
+  // Ortalama rating (DB'den gelen gerçek ortalama varsa onu kullan)
   const avgRating =
-    reviews.reduce((sum, r) => sum + r.rating, 0) / reviews.length;
+    typeof softwareAvgRating === "number" && softwareAvgRating > 0
+      ? softwareAvgRating
+      : reviews.reduce((sum, r) => sum + r.rating, 0) / reviews.length;
 
   return (
     <section className="reviews-section" aria-labelledby="reviews-heading">

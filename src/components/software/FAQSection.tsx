@@ -31,36 +31,16 @@ export async function FAQSection({
         <span className="faq-subtitle">about {softwareName}</span>
       </h2>
 
-      <div
-        className="faq-list"
-        itemScope
-        itemType="https://schema.org/FAQPage"
-      >
+      <div className="faq-list">
         {faqs.map((faq, index) => (
-          <details
-            key={faq.id}
-            className="faq-item"
-            itemScope
-            itemProp="mainEntity"
-            itemType="https://schema.org/Question"
-          >
-            <summary
-              className="faq-question"
-              id={`faq-q-${index}`}
-              itemProp="name"
-            >
+          <details key={faq.id} className="faq-item">
+            <summary className="faq-question" id={`faq-q-${index}`}>
               <span className="faq-question-text">{faq.question}</span>
               <span className="faq-chevron" aria-hidden="true">›</span>
             </summary>
 
-            <div
-              className="faq-answer"
-              itemScope
-              itemProp="acceptedAnswer"
-              itemType="https://schema.org/Answer"
-              id={`faq-a-${index}`}
-            >
-              <p itemProp="text">{faq.answer}</p>
+            <div className="faq-answer" id={`faq-a-${index}`}>
+              <p>{faq.answer}</p>
             </div>
           </details>
         ))}

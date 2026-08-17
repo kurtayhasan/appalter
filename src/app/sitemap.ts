@@ -56,7 +56,7 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
 
     // 3. Fetch Softwares
     // Added order=updated_at.desc.nullslast to ensure the newest published softwares are always included
-    const swRes = await fetch(`${supabaseUrl}/rest/v1/softwares?status=eq.published&select=slug,updated_at&order=updated_at.desc.nullslast&limit=10000`, { headers });
+    const swRes = await fetch(`${supabaseUrl}/rest/v1/softwares?status=eq.published&select=slug,updated_at,alternative_count&order=updated_at.desc.nullslast&limit=10000`, { headers });
     let softwares = [];
     if (swRes.ok) {
       softwares = await swRes.json();
@@ -70,13 +70,15 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
             changeFrequency: "weekly",
             priority: 0.9,
           });
-          // Alternatives List Page
-          routes.push({
-            url: getUrl(locale, `/${sw.slug}/alternatives`),
-            lastModified: lastMod,
-            changeFrequency: "weekly",
-            priority: 0.7,
-          });
+          // Alternatives List Page (only if software actually has alternatives)
+          if ((sw.alternative_count ?? 0) > 0) {
+            routes.push({
+              url: getUrl(locale, `/${sw.slug}/alternatives`),
+              lastModified: lastMod,
+              changeFrequency: "weekly",
+              priority: 0.7,
+            });
+          }
         }
       }
     }

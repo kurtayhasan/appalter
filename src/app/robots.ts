@@ -13,22 +13,27 @@ export default function robots(): MetadataRoute.Robots {
       {
         userAgent: "GPTBot",
         allow: ["/", "/llms.txt", "/ai.json"],
+        disallow: ["/api/", "/(admin)/"],
       },
       {
         userAgent: "ClaudeBot",
         allow: ["/", "/llms.txt"],
+        disallow: ["/api/", "/(admin)/"],
       },
       {
         userAgent: "Google-Extended",
         allow: ["/", "/llms.txt"],
+        disallow: ["/api/", "/(admin)/"],
       },
       {
         userAgent: "PerplexityBot",
         allow: ["/", "/llms.txt"],
+        disallow: ["/api/", "/(admin)/"],
       },
       {
         userAgent: "Applebot-Extended",
         allow: ["/", "/llms.txt"],
+        disallow: ["/api/", "/(admin)/"],
       },
     ],
     sitemap: [
