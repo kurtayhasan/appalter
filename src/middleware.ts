@@ -31,6 +31,7 @@ const PUBLIC_PATHS_NO_LOCALE = new Set([
   "/icon",
   "/appalter2026indexnowkey889.txt",
   "/BingSiteAuth.xml",
+  "/yandex_d0688516d81af187.html",
 ]);
 
 // Locale slugs that are NOT software slugs (skip slug-redirect check)
