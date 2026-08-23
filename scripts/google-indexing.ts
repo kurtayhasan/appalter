@@ -9,8 +9,15 @@ config({ path: resolve(process.cwd(), ".env") });
 
 const supabaseUrl = process.env.NEXT_PUBLIC_SUPABASE_URL;
 const supabaseKey = process.env.SUPABASE_SERVICE_ROLE_KEY || process.env.NEXT_PUBLIC_SUPABASE_ANON_KEY;
-const host = "https://www.appalter.com";
-const keyFilePath = resolve(process.cwd(), "service-account.json");
+const host = "https://appalter.com";
+const locales = ["en", "tr", "de", "es"];
+
+function getUrl(loc: string, path: string = "") {
+  const cleanPath = path ? (path.startsWith("/") ? path : `/${path}`) : "";
+  return loc === "en"
+    ? `${host}${cleanPath}`
+    : `${host}/${loc}${cleanPath}`;
+}
 
 if (!fs.existsSync(keyFilePath)) {
   console.error("❌ service-account.json file not found in project root!");
@@ -44,9 +51,9 @@ async function runGoogleIndexing() {
   const priorityUrls: string[] = [];
 
   // Home & Main Pages
-  for (const loc of ["en", "tr", "de", "es"]) {
-    priorityUrls.push(`${host}/${loc}`);
-    priorityUrls.push(`${host}/${loc}/categories`);
+  for (const loc of locales) {
+    priorityUrls.push(getUrl(loc, ""));
+    priorityUrls.push(getUrl(loc, "/categories"));
   }
 
   // Active Categories
@@ -57,7 +64,7 @@ async function runGoogleIndexing() {
 
   for (const cat of categories || []) {
     for (const loc of ["en", "tr"]) {
-      priorityUrls.push(`${host}/${loc}/category/${cat.slug}`);
+      priorityUrls.push(getUrl(loc, `/category/${cat.slug}`));
     }
   }
 
@@ -69,8 +76,8 @@ async function runGoogleIndexing() {
     .limit(50);
 
   for (const sw of softwares || []) {
-    priorityUrls.push(`${host}/en/${sw.slug}`);
-    priorityUrls.push(`${host}/en/${sw.slug}/alternatives`);
+    priorityUrls.push(getUrl("en", `/${sw.slug}`));
+    priorityUrls.push(getUrl("en", `/${sw.slug}/alternatives`));
   }
 
   // Top 40 VS Comparisons
@@ -85,7 +92,7 @@ async function runGoogleIndexing() {
 
   for (const alt of (alternatives as any[]) || []) {
     if (alt.software?.slug && alt.alternative?.slug) {
-      priorityUrls.push(`${host}/en/${alt.software.slug}/vs/${alt.alternative.slug}`);
+      priorityUrls.push(getUrl("en", `/${alt.software.slug}/vs/${alt.alternative.slug}`));
     }
   }
 
