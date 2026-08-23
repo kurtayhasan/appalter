@@ -19,6 +19,8 @@ function getUrl(loc: string, path: string = "") {
     : `${host}/${loc}${cleanPath}`;
 }
 
+const keyFilePath = resolve(process.cwd(), "service-account.json");
+
 if (!fs.existsSync(keyFilePath)) {
   console.error("❌ service-account.json file not found in project root!");
   process.exit(1);
