@@ -5,17 +5,15 @@ import { createNavigation } from "next-intl/navigation";
 // next-intl routing configuration
 // ---------------------------------------------------------------------------
 export const routing = defineRouting({
-  // Desteklenen tüm diller — veritabanındaki translation_status lokalleriyle eşleşmeli
-  locales: ["en", "tr", "es", "de"],
+  // Desteklenen diller — tekil İngilizce root mimarisi (Index bloat önleme)
+  locales: ["en"],
 
   // Varsayılan dil — "/" rotası "en" içeriğini prefix'siz sunar
   defaultLocale: "en",
 
   // Prefix stratejisi:
-  //   "as-needed" → default locale (/en) prefix'i olmadan yayınlanır → SEO dostu
-  //   URL: /project-management  (en, prefix yok)
-  //        /tr/proje-yonetimi   (tr)
-  //        /de/projektmanagement (de)
+  //   "as-needed" → default locale (/en) prefix'i olmadan doğrudan root'tan sunulur
+  //   URL: /notion, /slack, /categories
   localePrefix: "as-needed",
 
   // Locale algılama sırası: URL → Accept-Language header → varsayılan

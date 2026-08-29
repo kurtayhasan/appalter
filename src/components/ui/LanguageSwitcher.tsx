@@ -9,6 +9,8 @@ interface LanguageSwitcherProps {
 }
 
 export function LanguageSwitcher({ currentLocale, locales }: LanguageSwitcherProps) {
+  if (!locales || locales.length <= 1) return null;
+
   const router = useRouter();
   const pathname = usePathname();
   const [isPending, startTransition] = useTransition();

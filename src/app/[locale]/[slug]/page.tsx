@@ -48,8 +48,8 @@ export async function generateStaticParams(): Promise<
 
   if (!data || data.length === 0) return [];
 
-  // Only pre-render for top 3 locales to control build time
-  const buildLocales: Locale[] = ["en", "tr"];
+  // Pre-render for active locale (en)
+  const buildLocales = [...routing.locales];
 
   return buildLocales.flatMap((locale) =>
     data.map((row: any) => ({ locale, slug: row.slug }))
