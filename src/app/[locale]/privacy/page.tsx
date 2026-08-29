@@ -2,6 +2,8 @@ import { setRequestLocale } from "next-intl/server";
 import type { Metadata } from "next";
 import { type Locale, routing } from "@/i18n/routing";
 
+export const revalidate = 86400;
+
 export async function generateMetadata({
   params,
 }: {

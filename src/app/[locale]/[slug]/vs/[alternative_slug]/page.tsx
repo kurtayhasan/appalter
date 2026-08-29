@@ -11,6 +11,7 @@ import { getLocalizedPath } from "@/lib/utils";
 // ---------------------------------------------------------------------------
 // Route: /[locale]/[slug]/vs/[alternative_slug]
 // ---------------------------------------------------------------------------
+export const revalidate = 86400; // 24-hour Edge CDN Cache
 
 // ---------------------------------------------------------------------------
 // generateStaticParams — top 1000 VS pairs

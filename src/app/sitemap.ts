@@ -4,7 +4,7 @@ import { routing } from "@/i18n/routing";
 export const revalidate = 86400; // Cache for 24 hours
 
 export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
-  const baseUrl = process.env.NEXT_PUBLIC_SITE_URL ?? "https://appalter.com";
+  const baseUrl = process.env.NEXT_PUBLIC_SITE_URL ?? "https://www.appalter.com";
   const supabaseUrl = process.env.NEXT_PUBLIC_SUPABASE_URL;
   const anonKey = process.env.NEXT_PUBLIC_SUPABASE_ANON_KEY;
 

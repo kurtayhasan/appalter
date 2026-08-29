@@ -8,6 +8,8 @@ import { routing } from "@/i18n/routing";
 
 import { getLocalizedPath } from "@/lib/utils";
 
+export const revalidate = 86400; // 24-hour Edge CDN Cache
+
 export async function generateMetadata({ params }: { params: Promise<{ locale: string }> }): Promise<Metadata> {
   const { locale } = await params;
   

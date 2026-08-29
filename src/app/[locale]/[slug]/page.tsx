@@ -24,7 +24,9 @@ import { getLocalizedPath } from "@/lib/utils";
 //   Dynamic Island 3    → Reviews section             → streamed
 //   Dynamic Island 4    → FAQs                        → streamed
 // ---------------------------------------------------------------------------
-
+// ISR: 24-hour Edge CDN Cache
+// ---------------------------------------------------------------------------
+export const revalidate = 86400;
 
 // ---------------------------------------------------------------------------
 // generateStaticParams — top 10,000 softwares pre-rendered at build

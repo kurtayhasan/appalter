@@ -16,7 +16,9 @@ import { getLocalizedPath } from "@/lib/utils";
 // Shows all alternatives for a given software, paginated.
 // Uses PPR: static shell (hero) + dynamic alternatives list (Suspense).
 // ---------------------------------------------------------------------------
-
+// ISR: 24-hour Edge CDN Cache
+// ---------------------------------------------------------------------------
+export const revalidate = 86400;
 
 // ---------------------------------------------------------------------------
 // generateStaticParams — pre-render the first page for top 500 softwares

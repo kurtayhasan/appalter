@@ -13,6 +13,8 @@ import Link from "next/link";
 
 type SortOption = "relevance" | "rating" | "reviews" | "newest" | undefined;
 
+export const revalidate = 86400; // 24-hour Edge CDN Cache
+
 interface Props {
   params: Promise<{ locale: string; category_slug: string }>;
   searchParams: Promise<{

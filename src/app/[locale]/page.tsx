@@ -12,6 +12,8 @@ import Link from "next/link";
 import { Suspense } from "react";
 
 import { getLocalizedPath } from "@/lib/utils";
+ 
+ export const revalidate = 86400; // 24-hour Edge CDN Cache
 
 export async function generateMetadata({
   params,
