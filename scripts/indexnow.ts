@@ -7,10 +7,10 @@ config({ path: resolve(process.cwd(), ".env") });
 
 const supabaseUrl = process.env.NEXT_PUBLIC_SUPABASE_URL;
 const supabaseKey = process.env.SUPABASE_SERVICE_ROLE_KEY || process.env.NEXT_PUBLIC_SUPABASE_ANON_KEY;
-const host = "appalter.com";
+const host = "www.appalter.com";
 const key = "appalter2026indexnowkey889";
 const keyLocation = `https://${host}/${key}.txt`;
-const locales = ["en", "tr", "de", "es"];
+const locales = ["en"];
 
 if (!supabaseUrl || !supabaseKey) {
   console.error("Missing Supabase credentials");
