@@ -58,9 +58,38 @@ export default async function middleware(request: NextRequest) {
   try {
     const { pathname } = request.nextUrl;
 
+    // ── 0. Non-WWW to WWW Permanent 301 Redirect (Canonical Host) ───────────
+    const host = request.headers.get("host") || "";
+    if (host === "appalter.com") {
+      const redirectUrl = new URL(request.url);
+      redirectUrl.host = "www.appalter.com";
+      redirectUrl.protocol = "https:";
+      return NextResponse.redirect(redirectUrl, {
+        status: 301,
+        headers: {
+          "Cache-Control": "public, max-age=86400, stale-while-revalidate=3600",
+        },
+      });
+    }
+
     // ── 1. Skip locale handling for known public paths ────────────────────────
     if (PUBLIC_PATHS_NO_LOCALE.has(pathname)) {
       return NextResponse.next();
+    }
+
+    // ── 1.5. Legacy Multilingual 301 Redirects to Clean Root ──────────────────
+    // Transfers historical GSC index impressions (/de, /es, /tr) directly to root
+    const legacyLocaleMatch = pathname.match(/^\/(de|tr|es|fr|it|pt)(\/.*)?$/);
+    if (legacyLocaleMatch) {
+      const targetPath = legacyLocaleMatch[2] || "/";
+      const redirectUrl = new URL(request.url);
+      redirectUrl.pathname = targetPath;
+      return NextResponse.redirect(redirectUrl, {
+        status: 301,
+        headers: {
+          "Cache-Control": "public, max-age=86400, stale-while-revalidate=3600",
+        },
+      });
     }
 
     // ── 2. Run next-intl locale middleware ─────────────────────────────────────

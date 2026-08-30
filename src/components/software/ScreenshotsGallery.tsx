@@ -47,6 +47,7 @@ export async function ScreenshotsGallery({
                 className="screenshot-img"
                 sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
                 loading={index === 0 ? "eager" : "lazy"}
+                unoptimized={true}
               />
             </div>
             {screenshot.caption && (

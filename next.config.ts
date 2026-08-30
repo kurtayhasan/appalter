@@ -84,6 +84,14 @@ const nextConfig: NextConfig = {
         protocol: "https",
         hostname: "logo.brandfetch.io",
       },
+      {
+        protocol: "https",
+        hostname: "api.microlink.io",
+      },
+      {
+        protocol: "https",
+        hostname: "image.thum.io",
+      },
     ],
     formats: ["image/avif", "image/webp"],
     minimumCacheTTL: 604800,       // 7 days CDN cache for images
