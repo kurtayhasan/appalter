@@ -64,6 +64,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
       description = t("categoryDescription", {
         category: category.name,
         count: category.software_count,
+        year,
       });
     }
   } catch (e) {
@@ -71,7 +72,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
     const category = await getCategoryCached(category_slug);
     if (category) {
       title = `Best ${category.name} Software & Tools (${2026})`;
-      description = `Compare ${category.software_count} best ${category.name} tools. Find alternatives and read user reviews.`;
+      description = `Discover top ${category.software_count}+ ${category.name} software alternatives in 2026. Compare verified features, real pricing, and user reviews.`;
     }
   }
 

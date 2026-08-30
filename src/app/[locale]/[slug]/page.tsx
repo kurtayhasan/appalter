@@ -88,7 +88,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
 
   const description =
     software.meta_description ??
-    `Find the best alternatives to ${software.name}. Compare ${software.alternative_count}+ competitors by features, pricing, and user reviews.`;
+    `Looking for the best ${software.name} alternatives in ${year}? Compare top ${software.alternative_count || 5}+ competitors by real 2026 pricing, hidden costs, dealbreakers, and user reviews.`;
 
   const canonicalUrl =
     locale === routing.defaultLocale

@@ -90,6 +90,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const description = t("compareDescription", {
     name: software.name,
     alternative: alternative.name,
+    year,
   });
 
   const siteUrl = process.env.NEXT_PUBLIC_SITE_URL ?? "https://appalter.com";

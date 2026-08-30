@@ -28,14 +28,14 @@
     "retry": "Try again"
   },
   "seo": {
-    "title": "SEO Title",
-    "description": "SEO Description",
-    "categoryTitle": "{category} Alternatives & Competitors",
-    "categoryDescription": "Find the best alternatives and competitors to {category}.",
+    "title": "AppAlter — Find the Best Software Alternatives",
+    "description": "Discover, compare, and choose the best software alternatives. In-depth 2026 comparisons with real pricing, hidden costs, dealbreakers, and verified user ratings.",
+    "categoryTitle": "{category} Alternatives & Competitors ({year}) | AppAlter",
+    "categoryDescription": "Discover top {count}+ {category} software alternatives in {year}. Compare verified features, real pricing, hidden costs, and honest user reviews to choose the right tool.",
     "compareTitle": "{name} vs {alternative} ({year}) | AppAlter",
-    "compareDescription": "Compare {name} and {alternative} by features, pricing, and user reviews.",
-    "alternativesTitle": "{name} Alternatives & Competitors ({year})",
-    "alternativesDescription": "Find the best alternatives to {name}. Compare {count}+ competitors by features, pricing, and user reviews."
+    "compareDescription": "In-depth {name} vs {alternative} comparison ({year}). Compare real pricing differences, hidden costs, dealbreakers, features, and user ratings to find the winner.",
+    "alternativesTitle": "{name} Alternatives & Competitors ({year}) | AppAlter",
+    "alternativesDescription": "Looking for the best {name} alternatives in {year}? Compare top {count}+ competitors by real pricing, hidden costs, verified dealbreakers, and user reviews."
   },
   "software": {
     "about": "About",

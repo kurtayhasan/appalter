@@ -205,23 +205,68 @@ export async function ComparisonTable({
               </div>
             )}
 
-            <div className="decision-grid">
-              <div className="decision-block">
-                <div className="decision-block-title" style={{ color: "var(--accent-primary)" }}>
-                  Why Choose {software.name}?
+            {/* Side-by-Side Decision Grid */}
+            <div className="decision-grid" style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(280px, 1fr))", gap: "1.25rem", marginTop: "1.25rem" }}>
+              {/* Software A Block */}
+              <div className="decision-block" style={{ padding: "1.25rem", background: "var(--bg-secondary)", borderRadius: "var(--radius-md)", border: "1px solid var(--border-subtle)" }}>
+                <div style={{ display: "flex", alignItems: "center", gap: "0.5rem", marginBottom: "0.75rem" }}>
+                  {software.logo_url && (
+                    <img src={software.logo_url} alt={software.name} width={24} height={24} style={{ borderRadius: "4px", objectFit: "contain" }} />
+                  )}
+                  <strong style={{ color: "var(--text-primary)", fontSize: "1.05rem" }}>Why Choose {software.name}?</strong>
                 </div>
-                <p style={{ fontSize: "0.9rem", color: "var(--text-secondary)", lineHeight: 1.5 }}>
+                <p style={{ fontSize: "0.875rem", color: "var(--text-secondary)", lineHeight: 1.5, marginBottom: "0.75rem" }}>
                   {(software.ai_features as any)?.tldr || `${software.name} offers specialized features with a starting price of ${formatPrice(software.starting_price, software.price_currency)}.`}
                 </p>
+                {Array.isArray((software.ai_features as any)?.best_for) && (software.ai_features as any).best_for.length > 0 && (
+                  <div style={{ marginTop: "0.5rem" }}>
+                    <span style={{ fontSize: "0.75rem", fontWeight: 700, color: "var(--text-muted)", textTransform: "uppercase", letterSpacing: "0.05em" }}>Best Suited For:</span>
+                    <ul style={{ margin: "0.35rem 0 0 0", paddingLeft: "1.2rem", fontSize: "0.85rem", color: "var(--text-secondary)", lineHeight: 1.4 }}>
+                      {(software.ai_features as any).best_for.slice(0, 3).map((item: string, i: number) => (
+                        <li key={i} style={{ marginBottom: "0.25rem" }}>{item}</li>
+                      ))}
+                    </ul>
+                  </div>
+                )}
+                {Array.isArray((software.ai_features as any)?.dealbreakers) && (software.ai_features as any).dealbreakers.length > 0 && (
+                  <div style={{ marginTop: "0.75rem", padding: "0.5rem 0.75rem", background: "rgba(239, 68, 68, 0.06)", borderLeft: "2px solid var(--danger)", borderRadius: "4px" }}>
+                    <span style={{ fontSize: "0.75rem", fontWeight: 700, color: "var(--danger)" }}>⚠️ Potential Dealbreaker:</span>
+                    <p style={{ margin: "0.2rem 0 0 0", fontSize: "0.8rem", color: "var(--text-secondary)" }}>
+                      {(software.ai_features as any).dealbreakers[0]}
+                    </p>
+                  </div>
+                )}
               </div>
 
-              <div className="decision-block">
-                <div className="decision-block-title" style={{ color: "var(--accent-primary)" }}>
-                  Why Choose {alternative.name}?
+              {/* Software B Block */}
+              <div className="decision-block" style={{ padding: "1.25rem", background: "var(--bg-secondary)", borderRadius: "var(--radius-md)", border: "1px solid var(--border-subtle)" }}>
+                <div style={{ display: "flex", alignItems: "center", gap: "0.5rem", marginBottom: "0.75rem" }}>
+                  {alternative.logo_url && (
+                    <img src={alternative.logo_url} alt={alternative.name} width={24} height={24} style={{ borderRadius: "4px", objectFit: "contain" }} />
+                  )}
+                  <strong style={{ color: "var(--text-primary)", fontSize: "1.05rem" }}>Why Choose {alternative.name}?</strong>
                 </div>
-                <p style={{ fontSize: "0.9rem", color: "var(--text-secondary)", lineHeight: 1.5 }}>
+                <p style={{ fontSize: "0.875rem", color: "var(--text-secondary)", lineHeight: 1.5, marginBottom: "0.75rem" }}>
                   {(alternative.ai_features as any)?.tldr || `${alternative.name} provides an alternative approach with starting price of ${formatPrice(alternative.starting_price, alternative.price_currency)}.`}
                 </p>
+                {Array.isArray((alternative.ai_features as any)?.best_for) && (alternative.ai_features as any).best_for.length > 0 && (
+                  <div style={{ marginTop: "0.5rem" }}>
+                    <span style={{ fontSize: "0.75rem", fontWeight: 700, color: "var(--text-muted)", textTransform: "uppercase", letterSpacing: "0.05em" }}>Best Suited For:</span>
+                    <ul style={{ margin: "0.35rem 0 0 0", paddingLeft: "1.2rem", fontSize: "0.85rem", color: "var(--text-secondary)", lineHeight: 1.4 }}>
+                      {(alternative.ai_features as any).best_for.slice(0, 3).map((item: string, i: number) => (
+                        <li key={i} style={{ marginBottom: "0.25rem" }}>{item}</li>
+                      ))}
+                    </ul>
+                  </div>
+                )}
+                {Array.isArray((alternative.ai_features as any)?.dealbreakers) && (alternative.ai_features as any).dealbreakers.length > 0 && (
+                  <div style={{ marginTop: "0.75rem", padding: "0.5rem 0.75rem", background: "rgba(239, 68, 68, 0.06)", borderLeft: "2px solid var(--danger)", borderRadius: "4px" }}>
+                    <span style={{ fontSize: "0.75rem", fontWeight: 700, color: "var(--danger)" }}>⚠️ Potential Dealbreaker:</span>
+                    <p style={{ margin: "0.2rem 0 0 0", fontSize: "0.8rem", color: "var(--text-secondary)" }}>
+                      {(alternative.ai_features as any).dealbreakers[0]}
+                    </p>
+                  </div>
+                )}
               </div>
             </div>
           </div>
