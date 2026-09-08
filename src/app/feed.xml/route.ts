@@ -4,7 +4,7 @@ import { createStaticClient } from "@/lib/supabase/server";
 export const revalidate = 3600; // 1 hour
 
 export async function GET() {
-  const baseUrl = process.env.NEXT_PUBLIC_SITE_URL ?? "https://appalter.com";
+  const baseUrl = process.env.NEXT_PUBLIC_SITE_URL ?? "https://www.appalter.com";
   const supabase = createStaticClient();
 
   // En son eklenen veya güncellenen 50 yazılımı çek

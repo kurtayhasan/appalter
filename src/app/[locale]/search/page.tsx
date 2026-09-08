@@ -22,7 +22,7 @@ export async function generateMetadata({
   const { locale } = await params;
   const { q } = await searchParams;
   
-  const siteUrl = process.env.NEXT_PUBLIC_SITE_URL ?? "https://appalter.com";
+  const siteUrl = process.env.NEXT_PUBLIC_SITE_URL ?? "https://www.appalter.com";
   const query = typeof q === 'string' ? q : '';
   
   const title = query 

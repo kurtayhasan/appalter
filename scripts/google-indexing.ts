@@ -10,7 +10,7 @@ config({ path: resolve(process.cwd(), ".env") });
 const supabaseUrl = process.env.NEXT_PUBLIC_SUPABASE_URL;
 const supabaseKey = process.env.SUPABASE_SERVICE_ROLE_KEY || process.env.NEXT_PUBLIC_SUPABASE_ANON_KEY;
 const host = "https://www.appalter.com";
-const locales = ["en", "tr", "de", "es"];
+const locales = ["en"];
 
 function getUrl(loc: string, path: string = "") {
   const cleanPath = path ? (path.startsWith("/") ? path : `/${path}`) : "";
@@ -65,7 +65,7 @@ async function runGoogleIndexing() {
     .eq("is_active", true);
 
   for (const cat of categories || []) {
-    for (const loc of ["en", "tr"]) {
+    for (const loc of locales) {
       priorityUrls.push(getUrl(loc, `/category/${cat.slug}`));
     }
   }

@@ -76,7 +76,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
     }
   }
 
-  const siteUrl = process.env.NEXT_PUBLIC_SITE_URL ?? "https://appalter.com";
+  const siteUrl = process.env.NEXT_PUBLIC_SITE_URL ?? "https://www.appalter.com";
   const canonicalUrl =
     locale === routing.defaultLocale
       ? `${siteUrl}/category/${category_slug}`
@@ -112,7 +112,7 @@ export default async function CategoryPage({ params, searchParams }: Props) {
   const category = await getCategoryCached(category_slug);
   if (!category) notFound();
 
-  const siteUrl = process.env.NEXT_PUBLIC_SITE_URL ?? "https://appalter.com";
+  const siteUrl = process.env.NEXT_PUBLIC_SITE_URL ?? "https://www.appalter.com";
   const canonicalUrl =
     locale === routing.defaultLocale
       ? `${siteUrl}/category/${category_slug}`

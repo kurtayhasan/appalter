@@ -71,7 +71,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   if (!software) return {};
 
   const year = 2026;
-  const siteUrl = process.env.NEXT_PUBLIC_SITE_URL ?? "https://appalter.com";
+  const siteUrl = process.env.NEXT_PUBLIC_SITE_URL ?? "https://www.appalter.com";
 
   const hreflangAlternates = Object.fromEntries(
     routing.locales.map((loc) => [
@@ -152,7 +152,7 @@ export default async function SoftwarePage({ params }: Props) {
   const software = await getSoftwareBySlugCached(slug, locale);
   if (!software) notFound();
 
-  const siteUrl = process.env.NEXT_PUBLIC_SITE_URL ?? "https://appalter.com";
+  const siteUrl = process.env.NEXT_PUBLIC_SITE_URL ?? "https://www.appalter.com";
   const canonicalUrl =
     locale === routing.defaultLocale
       ? `${siteUrl}/${slug}`

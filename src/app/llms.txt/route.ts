@@ -9,7 +9,7 @@ import { NextResponse } from "next/server";
 
 export async function GET() {
   const baseUrl =
-    process.env.NEXT_PUBLIC_SITE_URL ?? "https://appalter.com";
+    process.env.NEXT_PUBLIC_SITE_URL ?? "https://www.appalter.com";
 
   const supabaseUrl = process.env.NEXT_PUBLIC_SUPABASE_URL;
   const anonKey = process.env.NEXT_PUBLIC_SUPABASE_ANON_KEY;

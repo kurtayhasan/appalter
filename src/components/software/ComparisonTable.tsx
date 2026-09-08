@@ -22,7 +22,7 @@ export async function ComparisonTable({
   alternativeSlug,
   locale,
 }: ComparisonTableProps) {
-  const baseUrl = process.env.NEXT_PUBLIC_SITE_URL ?? "https://appalter.com";
+  const baseUrl = process.env.NEXT_PUBLIC_SITE_URL ?? "https://www.appalter.com";
 
   const { software, alternative, relation } = await getComparisonDataCached(
     softwareSlug,

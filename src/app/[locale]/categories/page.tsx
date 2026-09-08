@@ -13,7 +13,7 @@ export const revalidate = 86400; // 24-hour Edge CDN Cache
 export async function generateMetadata({ params }: { params: Promise<{ locale: string }> }): Promise<Metadata> {
   const { locale } = await params;
   
-  const siteUrl = process.env.NEXT_PUBLIC_SITE_URL ?? "https://appalter.com";
+  const siteUrl = process.env.NEXT_PUBLIC_SITE_URL ?? "https://www.appalter.com";
   const canonicalUrl =
     locale === routing.defaultLocale ? `${siteUrl}/categories` : `${siteUrl}/${locale}/categories`;
     
@@ -45,7 +45,7 @@ export default async function CategoriesPage({
 }) {
   const { locale } = await params;
   setRequestLocale(locale);
-  const baseUrl = process.env.NEXT_PUBLIC_SITE_URL ?? "https://appalter.com";
+  const baseUrl = process.env.NEXT_PUBLIC_SITE_URL ?? "https://www.appalter.com";
 
   // Fetch all categories and filter for active ones with products (> 0)
   const categories = await getCategoriesCached();

@@ -26,7 +26,7 @@ export async function GET(
   const locale = searchParams.get("locale") ?? "en";
 
   const baseUrl =
-    process.env.NEXT_PUBLIC_SITE_URL ?? "https://appalter.com";
+    process.env.NEXT_PUBLIC_SITE_URL ?? "https://www.appalter.com";
 
   // Doğrulama
   if (!slug || !/^[a-z0-9-]+$/.test(slug)) {

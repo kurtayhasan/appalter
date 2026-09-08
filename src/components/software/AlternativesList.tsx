@@ -28,7 +28,7 @@ export async function AlternativesList({
   limit = 12,
 }: AlternativesListProps) {
   const { items, total } = await getAlternativesCached(softwareSlug, page, limit, locale);
-  const baseUrl = process.env.NEXT_PUBLIC_SITE_URL ?? "https://appalter.com";
+  const baseUrl = process.env.NEXT_PUBLIC_SITE_URL ?? "https://www.appalter.com";
 
   if (items.length === 0) {
     return (

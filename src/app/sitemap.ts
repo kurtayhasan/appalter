@@ -17,20 +17,17 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
 
   const routes: MetadataRoute.Sitemap = [];
 
-  // 1. Static Routes (Home & Categories Index)
-  for (const locale of routing.locales) {
-    routes.push({
-      url: getUrl(locale, ""),
-      lastModified: new Date(),
-      changeFrequency: "daily",
-      priority: 1,
-    });
-    routes.push({
-      url: getUrl(locale, "/categories"),
-      lastModified: new Date(),
-      changeFrequency: "weekly",
-      priority: 0.8,
-    });
+  // 1. Static Routes (Home, Categories Index, Informational & Legal)
+  const staticPaths = ["", "/categories", "/about", "/contact", "/privacy", "/terms"];
+  for (const path of staticPaths) {
+    for (const locale of routing.locales) {
+      routes.push({
+        url: getUrl(locale, path),
+        lastModified: new Date(),
+        changeFrequency: path === "" ? "daily" : "weekly",
+        priority: path === "" ? 1 : 0.8,
+      });
+    }
   }
 
   if (!supabaseUrl || !anonKey) return routes;

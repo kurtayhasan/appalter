@@ -97,7 +97,7 @@ export function getInitials(name: string): string {
 // absoluteUrl — relative path'i absolute URL'ye çevirir
 // ---------------------------------------------------------------------------
 export function absoluteUrl(path: string): string {
-  const baseUrl = process.env.NEXT_PUBLIC_SITE_URL ?? "https://appalter.com";
+  const baseUrl = process.env.NEXT_PUBLIC_SITE_URL ?? "https://www.appalter.com";
   return `${baseUrl}${path.startsWith("/") ? path : `/${path}`}`;
 }
 

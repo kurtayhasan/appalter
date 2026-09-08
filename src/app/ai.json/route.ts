@@ -9,7 +9,7 @@ import { NextResponse } from "next/server";
 
 export async function GET() {
   const baseUrl =
-    process.env.NEXT_PUBLIC_SITE_URL ?? "https://appalter.com";
+    process.env.NEXT_PUBLIC_SITE_URL ?? "https://www.appalter.com";
 
   const supabaseUrl = process.env.NEXT_PUBLIC_SUPABASE_URL;
   const anonKey = process.env.NEXT_PUBLIC_SUPABASE_ANON_KEY;
@@ -55,7 +55,7 @@ export async function GET() {
   }
 
   const aiJson = {
-    "$schema": "https://appalter.com/ai-schema.json",
+    "$schema": "https://www.appalter.com/ai-schema.json",
     name: "AppAlter",
     description:
       "Programmatic SEO platform indexing 1,000,000+ software products with alternatives, comparisons, and AI-readable content.",
@@ -63,58 +63,84 @@ export async function GET() {
     version: "1.0.0",
     updated_at: "2026-01-01T00:00:00Z",
     contact: {
-      ai_partnerships: "ai@appalter.com",
-      data_licensing: "data@appalter.com",
+      email: "ai@appalter.com",
+      website: "https://www.appalter.com",
+    },
+    authentication: {
+      required: false,
+      type: "none",
+      note: "Public read-only AI endpoints do not require authentication.",
+    },
+    rate_limits: {
+      requests_per_minute: 60,
+      requests_per_day: 10000,
     },
     statistics: stats,
     languages: ["en", "tr", "de", "fr", "es", "ja", "pt", "zh", "ar", "ko"],
     endpoints: {
-      ai_content: {
-        description:
-          "Retrieve AI-optimized content for any software. Returns Markdown by default.",
-        url: `${baseUrl}/api/ai/{slug}`,
-        method: "GET",
-        formats: {
-          markdown: `${baseUrl}/api/ai/{slug}`,
-          json: `${baseUrl}/api/ai/{slug}?format=json`,
-          locale: `${baseUrl}/api/ai/{slug}?locale=tr`,
-        },
-        example: `${baseUrl}/api/ai/figma`,
-        response_fields: [
-          "name", "slug", "description", "pricing", "rating",
-          "alternatives", "faqs", "links",
-        ],
-        cache: "1 hour",
-        rate_limit: "1000 req/hour",
+      home: {
+        path: "/",
+        description: "AppAlter homepage and core search interface",
+        format: "text/html",
       },
-      search: {
-        description: "Full-text + semantic hybrid search across all software.",
-        url: `${baseUrl}/api/search`,
-        method: "GET",
+      software_detail: {
+        path: "/{slug}",
+        description: "Full software profile page with alternatives, reviews, and pricing",
+        format: "text/html",
         parameters: {
-          q: "Search query (required)",
-          category: "Filter by category slug",
-          pricing: "Filter by pricing model slug",
-          locale: "Response language (default: en)",
-          limit: "Results per page (default: 20, max: 50)",
-          offset: "Pagination offset",
+          slug: "Software identifier (e.g. 'notion', 'slack', 'docker')",
         },
-        example: `${baseUrl}/api/search?q=project+management&pricing=free`,
       },
-      llms_txt: {
-        description: "LLMs.txt directory file for AI crawlers.",
-        url: `${baseUrl}/llms.txt`,
-        method: "GET",
-        format: "text/plain",
-        cache: "24 hours",
+      alternatives_list: {
+        path: "/{slug}/alternatives",
+        description: "List of all alternatives for a specific software",
+        format: "text/html",
+      },
+      side_by_side_comparison: {
+        path: "/{slug}/vs/{alternative_slug}",
+        description: "Direct head-to-head comparison between two software products",
+        format: "text/html",
+      },
+      category_detail: {
+        path: "/category/{category_slug}",
+        description: "Category index page listing all software in that category",
+        format: "text/html",
+      },
+      ai_software_data: {
+        path: "/api/ai/{slug}",
+        description:
+          "AI-optimized structured data for any software (GEO/AEO format). Supports ?format=json and ?format=markdown",
+        formats: ["application/json", "text/markdown"],
+        parameters: {
+          slug: "Software identifier",
+          format: "'json' | 'markdown' (default: markdown)",
+          locale: "Target language code (e.g. 'en', 'tr', 'de')",
+        },
+      },
+      search_api: {
+        path: "/api/search",
+        description: "Search software database with hybrid FTS + vector search",
+        format: "application/json",
+        parameters: {
+          q: "Search query string",
+          limit: "Number of results (default: 10, max: 50)",
+          locale: "Language code (default: en)",
+        },
       },
       sitemap: {
-        description: "Sitemap index with all software, category, and comparison URLs.",
-        url: `${baseUrl}/sitemap.xml`,
-        method: "GET",
+        path: "/sitemap.xml",
+        description: "XML sitemap index of all pages",
         format: "application/xml",
-        cache: "24 hours",
       },
+      feed: {
+        path: "/feed.xml",
+        description: "RSS 2.0 feed of recently added/updated software",
+        format: "application/rss+xml",
+      },
+    },
+    data_freshness: {
+      revalidation_interval_seconds: 86400,
+      cache_tier: "Edge CDN",
     },
     data_schema: {
       software: {

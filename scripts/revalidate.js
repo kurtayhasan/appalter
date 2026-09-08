@@ -2,7 +2,7 @@ const fetch = require('node-fetch');
 require('dotenv').config({ path: '.env.local' });
 
 async function revalidateCache() {
-  const siteUrl = process.env.NEXT_PUBLIC_SITE_URL || 'https://appalter.com';
+  const siteUrl = process.env.NEXT_PUBLIC_SITE_URL || 'https://www.appalter.com';
   const secret = process.env.ADMIN_SECRET || process.env.CRON_SECRET || 'dev-secret';
 
   const tags = ['categories', 'featured', 'search'];

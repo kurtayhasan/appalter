@@ -69,7 +69,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
     year,
   });
 
-  const siteUrl = process.env.NEXT_PUBLIC_SITE_URL ?? "https://appalter.com";
+  const siteUrl = process.env.NEXT_PUBLIC_SITE_URL ?? "https://www.appalter.com";
   const canonicalUrl =
     locale === routing.defaultLocale
       ? `${siteUrl}/${slug}/alternatives`
@@ -109,7 +109,7 @@ export default async function AlternativesPage({ params, searchParams }: Props) 
   const software = await getSoftwareBasic(slug, locale);
   if (!software) notFound();
 
-  const siteUrl = process.env.NEXT_PUBLIC_SITE_URL ?? "https://appalter.com";
+  const siteUrl = process.env.NEXT_PUBLIC_SITE_URL ?? "https://www.appalter.com";
   const canonicalUrl =
     locale === routing.defaultLocale
       ? `${siteUrl}/${slug}/alternatives`
