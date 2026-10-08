@@ -35,7 +35,8 @@ export async function generateStaticParams(): Promise<
   const { data } = await supabase
     .from("categories")
     .select("slug")
-    .eq("is_active", true);
+    .eq("is_active", true)
+    .gt("software_count", 0);
 
   if (!data || data.length === 0) return [];
 
@@ -47,8 +48,11 @@ export async function generateStaticParams(): Promise<
   );
 }
 
-export async function generateMetadata({ params }: Props): Promise<Metadata> {
+export async function generateMetadata({ params, searchParams }: Props): Promise<Metadata> {
   const { locale, category_slug } = await params;
+  const searchParamsValue = await searchParams;
+  const page = searchParamsValue?.page ? parseInt(searchParamsValue.page, 10) : 1;
+  const hasFilters = !!(searchParamsValue?.pricing || searchParamsValue?.platform || searchParamsValue?.sort);
   setRequestLocale(locale);
   
   // Use a fallback if translation is not found
@@ -85,6 +89,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   return {
     title,
     description,
+    robots: (page > 1 || hasFilters) ? { index: false } : undefined,
     alternates: {
       canonical: canonicalUrl,
       languages: Object.fromEntries(
@@ -110,7 +115,7 @@ export default async function CategoryPage({ params, searchParams }: Props) {
   setRequestLocale(locale);
 
   const category = await getCategoryCached(category_slug);
-  if (!category) notFound();
+  if (!category || !category.is_active || (category.software_count ?? 0) === 0) notFound();
 
   const siteUrl = process.env.NEXT_PUBLIC_SITE_URL ?? "https://www.appalter.com";
   const canonicalUrl =

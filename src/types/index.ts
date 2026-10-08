@@ -160,6 +160,7 @@ export interface Category {
   image_url: string | null;
   software_count: number;
   is_featured: boolean;
+  is_active?: boolean;
   parent_id: string | null;
 }
 

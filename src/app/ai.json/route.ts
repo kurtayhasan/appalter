@@ -58,10 +58,10 @@ export async function GET() {
     "$schema": "https://www.appalter.com/ai-schema.json",
     name: "AppAlter",
     description:
-      "Programmatic SEO platform indexing 1,000,000+ software products with alternatives, comparisons, and AI-readable content.",
+      "AI-driven software discovery and alternative comparison engine providing verified SaaS breakdowns, pricing metrics, and deep feature comparisons.",
     url: baseUrl,
-    version: "1.0.0",
-    updated_at: "2026-01-01T00:00:00Z",
+    version: "2.0.0",
+    updated_at: new Date().toISOString(),
     contact: {
       email: "ai@appalter.com",
       website: "https://www.appalter.com",
@@ -76,7 +76,7 @@ export async function GET() {
       requests_per_day: 10000,
     },
     statistics: stats,
-    languages: ["en", "tr", "de", "fr", "es", "ja", "pt", "zh", "ar", "ko"],
+    languages: ["en"],
     endpoints: {
       home: {
         path: "/",

@@ -37,11 +37,12 @@ async function submitIndexNow() {
     urlList.push(getUrl(loc, "/categories"));
   }
 
-  // 2. Active Categories
+  // 2. Active Categories (only with products)
   const { data: categories } = await supabase
     .from("categories")
     .select("slug")
-    .eq("is_active", true);
+    .eq("is_active", true)
+    .gt("software_count", 0);
 
   for (const cat of categories || []) {
     for (const loc of locales) {
@@ -52,28 +53,30 @@ async function submitIndexNow() {
   // 3. Published Softwares
   const { data: softwares } = await supabase
     .from("softwares")
-    .select("slug")
+    .select("slug, alternative_count")
     .eq("status", "published");
 
   for (const sw of softwares || []) {
     for (const loc of locales) {
       urlList.push(getUrl(loc, `/${sw.slug}`));
-      urlList.push(getUrl(loc, `/${sw.slug}/alternatives`));
+      if ((sw.alternative_count ?? 0) > 0) {
+        urlList.push(getUrl(loc, `/${sw.slug}/alternatives`));
+      }
     }
   }
 
-  // 4. VS Comparisons
+  // 4. Indexable VS Comparisons
   const { data: alternatives } = await supabase
     .from("alternatives")
     .select(`
-      software:softwares!alternatives_software_id_fkey(slug),
-      alternative:softwares!alternatives_alternative_id_fkey(slug)
+      software:softwares!alternatives_software_id_fkey(slug, status),
+      alternative:softwares!alternatives_alternative_id_fkey(slug, status)
     `)
     .eq("is_approved", true)
-    .limit(1000);
+    .eq("is_indexable", true);
 
   for (const alt of (alternatives as any[]) || []) {
-    if (alt.software?.slug && alt.alternative?.slug) {
+    if (alt.software?.slug && alt.alternative?.slug && alt.software.status === "published" && alt.alternative.status === "published") {
       for (const loc of locales) {
         urlList.push(getUrl(loc, `/${alt.software.slug}/vs/${alt.alternative.slug}`));
       }

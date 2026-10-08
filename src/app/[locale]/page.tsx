@@ -73,7 +73,7 @@ export default async function HomePage({
                 <input
                   type="search"
                   name="q"
-                  placeholder="Search 1,000,000+ software products..."
+                  placeholder="Search software, alternatives & AI tools..."
                   className="search-input"
                   aria-label="Search software"
                 />

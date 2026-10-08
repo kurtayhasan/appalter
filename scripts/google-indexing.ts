@@ -58,11 +58,12 @@ async function runGoogleIndexing() {
     priorityUrls.push(getUrl(loc, "/categories"));
   }
 
-  // Active Categories
+  // Active Categories (only with products)
   const { data: categories } = await supabase
     .from("categories")
     .select("slug")
-    .eq("is_active", true);
+    .eq("is_active", true)
+    .gt("software_count", 0);
 
   for (const cat of categories || []) {
     for (const loc of locales) {
@@ -73,27 +74,31 @@ async function runGoogleIndexing() {
   // Top 50 Published Softwares
   const { data: softwares } = await supabase
     .from("softwares")
-    .select("slug")
+    .select("slug, alternative_count")
     .eq("status", "published")
+    .order("view_count", { ascending: false })
     .limit(50);
 
   for (const sw of softwares || []) {
     priorityUrls.push(getUrl("en", `/${sw.slug}`));
-    priorityUrls.push(getUrl("en", `/${sw.slug}/alternatives`));
+    if ((sw.alternative_count ?? 0) > 0) {
+      priorityUrls.push(getUrl("en", `/${sw.slug}/alternatives`));
+    }
   }
 
-  // Top 40 VS Comparisons
+  // Top Indexable VS Comparisons
   const { data: alternatives } = await supabase
     .from("alternatives")
     .select(`
-      software:softwares!alternatives_software_id_fkey(slug),
-      alternative:softwares!alternatives_alternative_id_fkey(slug)
+      software:softwares!alternatives_software_id_fkey(slug, status),
+      alternative:softwares!alternatives_alternative_id_fkey(slug, status)
     `)
     .eq("is_approved", true)
-    .limit(40);
+    .eq("is_indexable", true)
+    .limit(50);
 
   for (const alt of (alternatives as any[]) || []) {
-    if (alt.software?.slug && alt.alternative?.slug) {
+    if (alt.software?.slug && alt.alternative?.slug && alt.software.status === "published" && alt.alternative.status === "published") {
       priorityUrls.push(getUrl("en", `/${alt.software.slug}/vs/${alt.alternative.slug}`));
     }
   }

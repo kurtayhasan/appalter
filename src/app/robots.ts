@@ -7,10 +7,6 @@ export default function robots(): MetadataRoute.Robots {
     "/api/",
     "/_next/",
     "/(admin)/",
-    "/*?*sort=",
-    "/*?*pricing=",
-    "/*?*platform=",
-    "/*?*page=",
   ];
 
   return {
@@ -48,7 +44,6 @@ export default function robots(): MetadataRoute.Robots {
     ],
     sitemap: [
       `${siteUrl}/sitemap.xml`,
-      `${siteUrl}/feed.xml`,
     ],
   };
 }

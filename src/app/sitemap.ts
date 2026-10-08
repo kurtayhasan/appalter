@@ -35,15 +35,19 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
   try {
     const headers = { apikey: anonKey, Authorization: `Bearer ${anonKey}` };
 
-    // 2. Fetch Categories
-    const catRes = await fetch(`${supabaseUrl}/rest/v1/categories?select=slug`, { headers });
+    // 2. Fetch Active Categories (only those with software_count > 0)
+    const catRes = await fetch(
+      `${supabaseUrl}/rest/v1/categories?is_active=eq.true&software_count=gt.0&select=slug,updated_at&order=software_count.desc`,
+      { headers }
+    );
     if (catRes.ok) {
       const categories = await catRes.json();
       for (const cat of categories) {
+        const lastMod = cat.updated_at ? new Date(cat.updated_at) : new Date();
         for (const locale of routing.locales) {
           routes.push({
             url: getUrl(locale, `/category/${cat.slug}`),
-            lastModified: new Date(),
+            lastModified: lastMod,
             changeFrequency: "weekly",
             priority: 0.8,
           });
@@ -51,12 +55,13 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
       }
     }
 
-    // 3. Fetch Softwares
-    // Added order=updated_at.desc.nullslast to ensure the newest published softwares are always included
-    const swRes = await fetch(`${supabaseUrl}/rest/v1/softwares?status=eq.published&select=slug,updated_at,alternative_count&order=updated_at.desc.nullslast&limit=10000`, { headers });
-    let softwares = [];
+    // 3. Fetch Softwares (published only)
+    const swRes = await fetch(
+      `${supabaseUrl}/rest/v1/softwares?status=eq.published&select=slug,updated_at,alternative_count&order=updated_at.desc.nullslast&limit=10000`,
+      { headers }
+    );
     if (swRes.ok) {
-      softwares = await swRes.json();
+      const softwares = await swRes.json();
       for (const sw of softwares) {
         const lastMod = sw.updated_at ? new Date(sw.updated_at) : new Date();
         for (const locale of routing.locales) {
@@ -80,22 +85,22 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
       }
     }
 
-    // 4. Fetch Top VS Pairs (Alternatives)
-    // Added order=created_at.desc.nullslast to ensure newly opened comparisons are indexed
+    // 4. Fetch Top High-Value Indexable VS Pairs
     const altRes = await fetch(
-      `${supabaseUrl}/rest/v1/alternatives?select=software_id,alternative_id,software:softwares!alternatives_software_id_fkey(slug),alternative:softwares!alternatives_alternative_id_fkey(slug)&is_approved=eq.true&is_indexable=eq.true&order=created_at.desc.nullslast&limit=10000`,
+      `${supabaseUrl}/rest/v1/alternatives?select=software_id,alternative_id,updated_at,software:softwares!alternatives_software_id_fkey(slug,status),alternative:softwares!alternatives_alternative_id_fkey(slug,status)&is_approved=eq.true&is_indexable=eq.true&order=updated_at.desc.nullslast&limit=5000`,
       { headers }
     );
     if (altRes.ok) {
       const alternatives = await altRes.json();
       for (const alt of alternatives) {
-        const swSlug = alt.software?.slug;
-        const altSlug = alt.alternative?.slug;
-        if (swSlug && altSlug) {
+        const sw = alt.software;
+        const targetSw = alt.alternative;
+        if (sw?.slug && targetSw?.slug && sw.status === "published" && targetSw.status === "published") {
+          const lastMod = alt.updated_at ? new Date(alt.updated_at) : new Date();
           for (const locale of routing.locales) {
             routes.push({
-              url: getUrl(locale, `/${swSlug}/vs/${altSlug}`),
-              lastModified: new Date(),
+              url: getUrl(locale, `/${sw.slug}/vs/${targetSw.slug}`),
+              lastModified: lastMod,
               changeFrequency: "monthly",
               priority: 0.6,
             });

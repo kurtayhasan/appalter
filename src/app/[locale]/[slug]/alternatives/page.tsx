@@ -53,8 +53,10 @@ interface Props {
 // ---------------------------------------------------------------------------
 // generateMetadata
 // ---------------------------------------------------------------------------
-export async function generateMetadata({ params }: Props): Promise<Metadata> {
+export async function generateMetadata({ params, searchParams }: Props): Promise<Metadata> {
   const { locale, slug } = await params;
+  const searchParamsValue = await searchParams;
+  const page = Math.max(1, parseInt(searchParamsValue?.page ?? "1", 10));
   setRequestLocale(locale);
   const t = await getTranslations({ locale, namespace: "seo" });
   const software = await getSoftwareBasic(slug, locale);
@@ -78,6 +80,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   return {
     title,
     description,
+    robots: software.alternative_count === 0 || page > 1 ? { index: false } : undefined,
     alternates: {
       canonical: canonicalUrl,
       languages: Object.fromEntries(

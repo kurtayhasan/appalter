@@ -22,7 +22,10 @@ export function SoftwareJsonLd({ software, url }: SoftwareJsonLdProps) {
       software.meta_description ??
       software.short_description ??
       software.description,
-    url: software.website_url ?? url,
+    url: url,
+    ...(software.website_url && {
+      sameAs: software.website_url,
+    }),
     applicationCategory: mapApplicationCategory(software.category_slug ?? software.category_name),
     operatingSystem: "Web, Windows, macOS, Linux, iOS, Android",
     ...(software.logo_url && {

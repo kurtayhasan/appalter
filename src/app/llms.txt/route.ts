@@ -46,15 +46,15 @@ export async function GET() {
 
   const content = `# AppAlter — AI-Readable Content Directory
 
-> AppAlter is a programmatic SEO platform that indexes 1,000,000+ software products
-> and their alternatives. This file helps AI systems discover and consume structured
-> software data for answering user queries about software recommendations.
+> AppAlter is an AI-powered SaaS and software alternative intelligence engine.
+> This file helps AI systems and LLM crawlers discover verified software breakdowns,
+> real pricing, dealbreakers, personas, and structured alternative recommendations.
 
 ## About AppAlter
 
-AppAlter helps users find the best alternatives to any software tool.
-Each software page includes: description, pricing, features, alternatives,
-user reviews, FAQs, and migration guides.
+AppAlter provides in-depth, verified comparisons for modern software tools.
+Each software profile includes: real pricing, hidden costs, dealbreakers, personas,
+curated pros & cons, UI screenshots, user ratings, and direct alternative comparisons.
 
 ## Usage for AI Systems
 
@@ -67,7 +67,7 @@ To access machine-readable data for any software:
 
 - **Homepage**: ${baseUrl}
 - **Search API**: ${baseUrl}/api/search?q={query}
-- **Category index**: ${baseUrl}/sitemap.xml
+- **Sitemap**: ${baseUrl}/sitemap.xml
 - **AI JSON index**: ${baseUrl}/ai.json
 
 ## Top Software (AI-Readable Pages)
@@ -76,10 +76,10 @@ ${softwareLinks || "- Visit the sitemap for a complete list of software pages."}
 
 ## Site Statistics
 
-- **Total software**: 1,000,000+
-- **Categories**: 30+
-- **Languages**: English, Turkish, German, French, Spanish, Japanese, Portuguese, Chinese, Arabic, Korean
-- **Updated**: ${"2026-01-01T00:00:00Z".split("T")[0]}
+- **Catalog**: Verified SaaS, Open-Source & AI Tools
+- **Categories**: Active B2B & Developer Categories
+- **Primary Language**: English (Canonical Root)
+- **Updated**: ${new Date().toISOString().split("T")[0]}
 
 ## Data License
 

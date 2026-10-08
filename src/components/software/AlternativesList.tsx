@@ -306,6 +306,7 @@ export async function AlternativesList({
                 href={getLocalizedPath(`/${softwareSlug}/alternatives?page=${page - 1}`, locale)}
                 className="pagination-btn"
                 rel="prev"
+                prefetch={false}
               >
                 ← Previous
               </Link>
@@ -320,6 +321,7 @@ export async function AlternativesList({
                 href={getLocalizedPath(`/${softwareSlug}/alternatives?page=${page + 1}`, locale)}
                 className="pagination-btn"
                 rel="next"
+                prefetch={false}
               >
                 Next →
               </Link>

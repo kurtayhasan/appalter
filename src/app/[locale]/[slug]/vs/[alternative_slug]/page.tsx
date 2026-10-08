@@ -4,7 +4,7 @@ import { notFound } from "next/navigation";
 import { Suspense } from "react";
 import type { Metadata } from "next";
 import { type Locale, routing } from "@/i18n/routing";
-import { getSoftwareBasic } from "@/lib/cache/queries";
+import { getSoftwareBasic, getComparisonDataCached } from "@/lib/cache/queries";
 import { BreadcrumbJsonLd } from "@/components/seo/BreadcrumbJsonLd";
 import { getLocalizedPath } from "@/lib/utils";
 
@@ -35,6 +35,7 @@ export async function generateStaticParams(): Promise<
       `
     )
     .eq("is_approved", true)
+    .eq("is_indexable", true)
     .order("similarity_score", { ascending: false })
     .limit(1000);
 
@@ -74,10 +75,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const { getTranslations } = await import("next-intl/server");
   const t = await getTranslations({ locale, namespace: "seo" });
 
-  const [software, alternative] = await Promise.all([
-    getSoftwareBasic(slug, locale),
-    getSoftwareBasic(alternative_slug, locale),
-  ]);
+  const { software, alternative, relation } = await getComparisonDataCached(slug, alternative_slug);
 
   if (!software || !alternative) return {};
 
@@ -102,6 +100,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   return {
     title,
     description,
+    robots: !relation || (!relation.core_difference && (!relation.pros || relation.pros.length === 0)) ? { index: false } : undefined,
     alternates: {
       canonical: canonicalUrl,
       languages: Object.fromEntries(
