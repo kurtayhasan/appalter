@@ -521,7 +521,7 @@ export async function getCategoriesCached(): Promise<Category[]> {
       const { data, error } = await supabase
         .from("categories")
         .select(
-          "id, slug, name, description, icon_url, image_url, software_count, is_featured, parent_id"
+          "id, slug, name, description, icon_url, image_url, software_count, is_featured, is_active, parent_id"
         )
         .eq("is_active", true)
         .order("sort_order", { ascending: true });
@@ -551,7 +551,7 @@ export async function getCategoryCached(
       const { data, error } = await supabase
         .from("categories")
         .select(
-          "id, slug, name, description, icon_url, image_url, software_count, is_featured, parent_id"
+          "id, slug, name, description, icon_url, image_url, software_count, is_featured, is_active, parent_id"
         )
         .eq("slug", slug)
         .eq("is_active", true)

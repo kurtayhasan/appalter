@@ -115,7 +115,7 @@ export default async function CategoryPage({ params, searchParams }: Props) {
   setRequestLocale(locale);
 
   const category = await getCategoryCached(category_slug);
-  if (!category || !category.is_active || (category.software_count ?? 0) === 0) notFound();
+  if (!category || (category.software_count ?? 0) === 0) notFound();
 
   const siteUrl = process.env.NEXT_PUBLIC_SITE_URL ?? "https://www.appalter.com";
   const canonicalUrl =
